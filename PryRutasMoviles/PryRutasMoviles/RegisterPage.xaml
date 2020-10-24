@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+            BackgroundColor="#3E606F"
+            xmlns:local="clr-namespace:PryRutasMoviles.Extensions"
+            xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PryRutasMoviles.RegisterPage">
+    <StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <TableView Intent="Form">
+                <TableRoot>
+                    <TableSection Title="BASICS" TextColor="#CBDBD7">
+                        <local:GenericCell Placeholder="First Name" />
+                        <local:GenericCell Placeholder="Last Name" />
+                        <local:GenericCell Placeholder="Address" />
+                        <SwitchCell Text="GO DRIVER" On="False" OnChanged="SwitchCell_OnChanged"/>
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <TableView x:Name="tblVehicle" Intent="Form" IsVisible="false">
+                <TableRoot>
+                    <TableSection Title="VEHICLE INFORMATION" TextColor="#CBDBD7">
+                        <local:GenericCell Placeholder="Car's Registration Number" />
+                        <local:GenericPickerCell />
+
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <TableView x:Name="tblCredentials" Intent="Form" IsEnabled="False">
+                <TableRoot>
+                    <TableSection Title="CREDENTIALS" TextColor="#FCFFF5">
+                        <local:GenericCell Placeholder="User" />
+                        <local:GenericCell Placeholder="Password" />
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

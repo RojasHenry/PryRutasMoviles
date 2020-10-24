@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+        Title="Welcome"    
+        BackgroundColor="#3E606F" xmlns="http://xamarin.com/schemas/2014/forms"
+        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+        x:Class="PryRutasMoviles.LoginPage">
+
+    <StackLayout VerticalOptions="Center" >
+        <StackLayout VerticalOptions ="Center" Padding="0,30">
+            <Label 
+			Text="U Driver"
+			VerticalOptions="Center"    
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"
+            TextColor="#FCFFF5"
+			FontSize="30" 
+			FontAttributes="Bold"  
+			HorizontalOptions="Center" />
+        </StackLayout>
+
+        <Entry
+            x:Name="txtUser"
+            Placeholder="User"
+            PlaceholderColor="#193441"
+            HorizontalTextAlignment="Center"
+            FontSize="20" 
+            TextColor="#FCFFF5"/>
+        <Entry
+            x:Name="txtPassword"
+            Placeholder="Password"
+            PlaceholderColor="#193441"
+            HorizontalTextAlignment="Center"
+            FontSize="20"
+            TextColor="#FCFFF5"
+            IsPassword="True"/>
+
+        <StackLayout Padding="30">
+            <Button 
+			x:Name="btnLogin"
+            Text="Login" 
+			TextColor="#CBDBD7"
+            FontSize="20"                
+			BackgroundColor="#193441"            
+            />
+            <Button 
+			x:Name="btnRegister"
+            Text="Register" 
+			TextColor="#CBDBD7"
+            FontSize="20"                
+			BackgroundColor="#193441"            
+            />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
