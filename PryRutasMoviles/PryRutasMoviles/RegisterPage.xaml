@@ -24,7 +24,6 @@
                     <TableSection Title="VEHICLE INFORMATION" TextColor="#CBDBD7">
                         <local:GenericCell Placeholder="Car's Registration Number" />
                         <local:GenericPickerCell />
-
                     </TableSection>
                 </TableRoot>
             </TableView>
