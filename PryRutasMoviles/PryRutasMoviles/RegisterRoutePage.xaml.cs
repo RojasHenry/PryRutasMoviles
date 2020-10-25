@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Threading.Tasks;
+using Rg.Plugins.Popup.Extensions;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Maps;
@@ -326,12 +327,12 @@ namespace PryRutasMoviles
             return new Position(latitude / n, longitude / n);
         }
 
-        void btnOfertar_Clicked(System.Object sender, System.EventArgs e)
+        async void btnOfertar_Clicked(System.Object sender, System.EventArgs e)
         {
-            if (isValidaForm())
-            {
-                // persistir
-            }
+            /*if (isValidaForm())
+            {*/
+                var result = await ConfirmConferenceAttendance(this.Navigation);
+           /* }*/
         }
 
         private bool isValidaForm()
@@ -365,6 +366,22 @@ namespace PryRutasMoviles
             }
 
             return isValid;
+        }
+
+        public static async Task<bool> ConfirmConferenceAttendance(INavigation navigation)
+        {
+            TaskCompletionSource<bool> completionSource = new TaskCompletionSource<bool>();
+
+            void callback(bool didConfirm)
+            {
+                completionSource.TrySetResult(didConfirm);
+            }
+
+            var popup = new DetailRoutePopup(callback);
+
+            await navigation.PushPopupAsync(popup);
+
+            return await completionSource.Task;
         }
     }
 }
