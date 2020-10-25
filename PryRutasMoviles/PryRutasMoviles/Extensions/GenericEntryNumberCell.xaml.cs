@@ -5,11 +5,11 @@ using Xamarin.Forms.Xaml;
 namespace PryRutasMoviles.Extensions
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class GenericCell : ViewCell
+    public partial class GenericEntryNumberCell : ViewCell
     {
         public static readonly BindableProperty PlaceHolderProperty =
-            BindableProperty.Create("Placeholder", typeof(string), typeof(GenericCell));
-        
+           BindableProperty.Create("Placeholder", typeof(string), typeof(GenericCell));
+
         public static readonly BindableProperty TextProperty =
             BindableProperty.Create("Text", typeof(string), typeof(GenericCell));
 
@@ -22,10 +22,10 @@ namespace PryRutasMoviles.Extensions
             set { SetValue(PlaceHolderProperty, value); }
         }
 
-        public string Text 
-        { 
+        public string Text
+        {
             get { return (string)GetValue(TextProperty); }
-            set { SetValue(TextProperty,value); }
+            set { SetValue(TextProperty, value); }
         }
 
         public bool IsPassword
@@ -33,8 +33,8 @@ namespace PryRutasMoviles.Extensions
             get { return (bool)GetValue(IsPasswordProperty); }
             set { SetValue(IsPasswordProperty, value); }
         }
-        
-        public GenericCell()
+
+        public GenericEntryNumberCell()
         {
             InitializeComponent();
             BindingContext = this;

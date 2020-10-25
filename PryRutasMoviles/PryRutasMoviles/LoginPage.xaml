@@ -47,7 +47,8 @@
             Text="Register" 
 			TextColor="#CBDBD7"
             FontSize="20"                
-			BackgroundColor="#193441"            
+			BackgroundColor="#193441"
+            Clicked="BtnRegister_Clicked"    
             />
         </StackLayout>
     </StackLayout>

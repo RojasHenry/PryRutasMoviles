@@ -10,5 +10,10 @@ namespace PryRutasMoviles
         {
             InitializeComponent();
         }
+
+        private void BtnRegister_Clicked(object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new RegisterPage());
+        }
     }
 }
