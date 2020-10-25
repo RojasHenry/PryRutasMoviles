@@ -10,16 +10,18 @@ using Xamarin.Forms.Xaml;
 namespace PryRutasMoviles.Extensions
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class GenericPickerCell : ViewCell
+    public partial class CarBrandList : ContentPage
     {
-        public GenericPickerCell()
+        public CarBrandList()
         {
             InitializeComponent();
+            brandListView.ItemsSource = new List<string>{
+                "Toyota"
+                ,"KIA"
+                ,"Chevi"
+            };
         }
 
-        private void Picker_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
+        public ListView CarBrands { get { return brandListView; } }
     }
 }
