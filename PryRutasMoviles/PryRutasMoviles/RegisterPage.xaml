@@ -23,6 +23,7 @@
         <StackLayout Orientation="Horizontal">
             <TableView x:Name="tblVehicle" Intent="Form" IsVisible="false">
                 <TableRoot>
+<<<<<<< HEAD
                     <TableSection Title="VEHICLE INFORMATION" TextColor="#FCFFF5">
                         <local:GenericCell x:Name="txtRegistration" Placeholder="Car's Registration Number" />
                         <ViewCell Tapped="ViewCellCarYear_Tapped">
@@ -58,6 +59,11 @@
 							        TextColor="#FCFFF5" />
                             </StackLayout>
                         </ViewCell>
+=======
+                    <TableSection Title="VEHICLE INFORMATION" TextColor="#CBDBD7">
+                        <local:GenericCell Placeholder="Car's Registration Number" />
+                        <local:GenericPickerCell />
+>>>>>>> d95559193f82c4b50d1894150c59857906095c66
                     </TableSection>
                 </TableRoot>
             </TableView>

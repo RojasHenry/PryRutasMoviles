@@ -16,7 +16,6 @@
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
     <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
     <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
     <AndroidUseAapt2>true</AndroidUseAapt2>
@@ -93,7 +92,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PryRutasMoviles\PryRutasMoviles.csproj">
-      <Project>{0D77E264-7CFF-4C37-AA0F-2CF6FF7C7548}</Project>
+      <Project>{D63848E1-15D2-4299-B297-2F9E42D11173}</Project>
       <Name>PryRutasMoviles</Name>
     </ProjectReference>
   </ItemGroup>

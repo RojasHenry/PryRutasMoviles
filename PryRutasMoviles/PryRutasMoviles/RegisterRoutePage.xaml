@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps" x:Class="PryRutasMoviles.RegisterRoutePage"
+              BackgroundColor="#3E606F">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+           <RowDefinition Height="*" />
+           <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <StackLayout Grid.Column="0" Grid.Row="0" Orientation="Vertical">
+            <maps:Map x:Name="map" IsShowingUser="true" HasZoomEnabled="True"
+                      ItemsSource="{Binding pinslist}">
+                <maps:Map.ItemTemplate>
+                    <DataTemplate>
+                        <maps:Pin Position="{Binding Position}" Label="{Binding Label}" />
+                    </DataTemplate>
+                </maps:Map.ItemTemplate>
+            </maps:Map>
+            <Frame x:Name="frmMsg" IsVisible="false" Margin="0">
+                <StackLayout HorizontalOptions="Center">
+                    <Label x:Name="txtmsg" Text="Seleccione la ubicación"></Label>
+                </StackLayout>
+            </Frame>
+            <StackLayout x:Name="stlbtns" IsVisible="false" Margin="0" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                <Button x:Name="btnAceptar" Text="Aceptar" BackgroundColor="LightGreen" Clicked="btnAceptar_Clicked"/>
+                <Button x:Name="btnCancelar" Text="Cancelar" BackgroundColor="Red" Clicked="btnCancelar_Clicked" />
+            </StackLayout>
+        </StackLayout>
+        <ScrollView Grid.Column="0" Grid.Row="1" Margin="10">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60" />
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                
+                <Button x:Name="btnpuntoEn" Grid.Row="0" Grid.Column="0" Text="Punto de encuentro" Clicked="btnpuntoEn_Clicked" />
+                <Button x:Name="btndestino" Grid.Row="0" Grid.Column="1" Text="Destino" Clicked="btndestino_Clicked" />
+
+                <Label Grid.Row="1" Grid.Column="0" Text="Precio de viaje:"></Label>
+                <Entry x:Name="txtPrice" Grid.Row="1" Grid.Column="1" Placeholder="" Keyboard="Numeric"/>
+
+                <Label Grid.Row="2" Grid.Column="0" Text="Hora de salida:"></Label>
+                <TimePicker x:Name="timeHour" Grid.Row="2" Grid.Column="1" />
+
+                <Button x:Name="btnOfertar" Grid.Row="3" Grid.ColumnSpan="2" Text="Ofertar" Margin="0,60,0,0" Clicked="btnOfertar_Clicked" />
+
+            </Grid>
+        </ScrollView>
+       
+    </Grid>
+    
+</ContentPage>
