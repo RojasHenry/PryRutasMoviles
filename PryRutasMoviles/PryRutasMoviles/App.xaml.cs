@@ -1,6 +1,4 @@
-﻿using System;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
+﻿using Xamarin.Forms;
 
 namespace PryRutasMoviles
 {
@@ -10,6 +8,7 @@ namespace PryRutasMoviles
         {
             InitializeComponent();
             MainPage = new NavigationPage(new LoginPage());
+            //MainPage = new NavigationPage(new RegisterRoutePage());
         }
 
         protected override void OnStart()

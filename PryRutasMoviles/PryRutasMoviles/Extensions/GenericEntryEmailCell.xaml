@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ViewCell xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="PryRutasMoviles.Extensions.GenericEntryNumberCell">
+             x:Class="PryRutasMoviles.Extensions.GenericEntryEmailCell">
     <StackLayout Orientation="Horizontal">
-        <Entry  Text="{Binding Text}}"
+        <Entry  Text="{Binding Text}"
                 Placeholder="{Binding Placeholder}"
                 PlaceholderColor="#193441"
                 HorizontalTextAlignment="Center"
@@ -11,7 +11,6 @@
                 TextColor="#FCFFF5"
                 HorizontalOptions="FillAndExpand"
                 IsPassword="{Binding IsPassword}"
-                MaxLength="10"                
-                Keyboard="Numeric"/>
+                Keyboard="Email"/>
     </StackLayout>
 </ViewCell>
