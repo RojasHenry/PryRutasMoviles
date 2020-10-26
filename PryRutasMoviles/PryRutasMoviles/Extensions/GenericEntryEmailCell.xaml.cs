@@ -1,11 +1,10 @@
-﻿
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace PryRutasMoviles.Extensions
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class GenericEntryNumberCell : ViewCell
+    public partial class GenericEntryEmailCell : ViewCell
     {
         public static readonly BindableProperty PlaceHolderProperty =
            BindableProperty.Create("Placeholder", typeof(string), typeof(GenericCell));
@@ -34,7 +33,7 @@ namespace PryRutasMoviles.Extensions
             set { SetValue(IsPasswordProperty, value); }
         }
 
-        public GenericEntryNumberCell()
+        public GenericEntryEmailCell()
         {
             InitializeComponent();
             BindingContext = this;

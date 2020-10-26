@@ -18,6 +18,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Extensions\GenericEntryEmailCell.xaml.cs">
+      <DependentUpon>GenericEntryEmailCell.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
     <EmbeddedResource Update="Extensions\CarBrandList.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -30,7 +36,7 @@
     <EmbeddedResource Update="Extensions\GenericEntryCell.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Extensions\GenericEntryNumberCell.xaml">
+    <EmbeddedResource Update="Extensions\GenericEntryEmailCell.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="LoginPage.xaml">
