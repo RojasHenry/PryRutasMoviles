@@ -13,10 +13,10 @@ namespace PryRutasMoviles.Extensions
             InitializeComponent();
             colorListView.ItemsSource = new List<string>
             {
-                "white",
-                "black",
-                "red",
-                "green",
+                "White",
+                "Black",
+                "Red",
+                "Green",
             };
         }           
         public ListView CarColors { get { return colorListView; } }

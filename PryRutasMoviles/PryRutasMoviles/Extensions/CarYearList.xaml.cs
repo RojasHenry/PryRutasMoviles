@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -11,7 +12,7 @@ namespace PryRutasMoviles.Extensions
         public CarYearList()
         {
             InitializeComponent();
-            yearListView.ItemsSource = GetYears(2000, 2020);
+            yearListView.ItemsSource = GetYears(2010, DateTime.Now.Year);
         }
 
         public ListView CarYears { get { return yearListView; } }
