@@ -60,14 +60,14 @@ namespace PryRutasMoviles
 
         private async void BtnRegister_Clicked(object sender, System.EventArgs e)
         {
-            EnableActivityIndicator();
+            EnableDisableActivityIndicator(true);
             btnRegister.IsEnabled = false;
 
             try
             {
                 using (UserRepository userRepository = new UserRepository())
                 {
-                    if (AreEntriesComplete())
+                    if (IsValidForm())
                     {
                         var userInBDD = await userRepository.GetUserById(txtEmail.Text.ToUpper().Trim());
 
@@ -102,21 +102,21 @@ namespace PryRutasMoviles
                             user.UserType = "Passenger";
 
                         await userRepository.AddUser(user);
-                        DisableActivityIndicator();
+                        EnableDisableActivityIndicator(false);
                         await DisplayAlert("Alert", $"You are registered succesfully as {user.UserType}", "Ok");
                         CleanEntries();
                         await Navigation.PopAsync();
                     }
                     else
                     {
-                        DisableActivityIndicator();
+                        EnableDisableActivityIndicator(false);
                         await DisplayAlert("Alert", "Please complete all entries", "Ok");
                     }
                 }
             }
             catch
             {
-                EnableActivityIndicator();
+                EnableDisableActivityIndicator(false);
                 await DisplayAlert("Error", "An unexpected error has occurred", "Ok");
             }
             finally 
@@ -125,7 +125,7 @@ namespace PryRutasMoviles
             }            
         }
 
-        private bool AreEntriesComplete() 
+        private bool IsValidForm() 
         {
             if (string.IsNullOrWhiteSpace(txtEmail.Text) ||
                 string.IsNullOrWhiteSpace(txtFirstName.Text) ||
@@ -155,18 +155,11 @@ namespace PryRutasMoviles
             carColor.Text = "None";
         }
 
-        private void EnableActivityIndicator()
+        private void EnableDisableActivityIndicator(bool flagActivityIndicator)
         {
-            activity.IsEnabled = true;
-            activity.IsRunning = true;
-            activity.IsVisible = true;
-        }
-
-        private void DisableActivityIndicator()
-        {
-            activity.IsEnabled = false;
-            activity.IsRunning = false;
-            activity.IsVisible = false;
-        }
+            activity.IsEnabled = flagActivityIndicator;
+            activity.IsRunning = flagActivityIndicator;
+            activity.IsVisible = flagActivityIndicator;
+        }      
     }
 }

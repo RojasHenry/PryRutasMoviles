@@ -1,22 +1,30 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<popups:PopupPage  xmlns:popups="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup" xmlns="http://xamarin.com/schemas/2014/forms"
-                   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps" x:Class="PryRutasMoviles.DetailRoutePopup">
-
-    <Grid BackgroundColor="WhiteSmoke" HorizontalOptions="Center" VerticalOptions="Center" Margin="10">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="150" />
-            <RowDefinition Height="50" />
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
-
-         <maps:Map Grid.ColumnSpan="2" Grid.Row="0" x:Name="map" IsShowingUser="true" HasZoomEnabled="True" HeightRequest="200">
-        </maps:Map>
-        <Label Grid.ColumnSpan="2" Grid.Row="1" Text="Un cuadro de dialogo"></Label>
-        <Button Grid.Column="0" Grid.Row="2" Text="Confirm Attendance" Clicked="ConfirmAttendanceClicked"/>
-        <Button Grid.Column="1" Grid.Row="2" Text="Cancel Attendance" Clicked="CancelAttendanceClicked"/>
-    </Grid>
+<popups:PopupPage  xmlns:popups="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup" 
+                   xmlns="http://xamarin.com/schemas/2014/forms"
+                   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+                   xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps" x:Class="PryRutasMoviles.DetailRoutePopup">
+    <StackLayout HorizontalOptions="Center"
+                 VerticalOptions="Center">
+        <Grid BackgroundColor="WhiteSmoke" 
+          HorizontalOptions="Center"
+          VerticalOptions="Center"
+          RowSpacing="10" 
+          ColumnSpacing="10" 
+          Padding="10,10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*" />                
+            </Grid.RowDefinitions> 
+            <maps:Map 
+                Grid.Row="0"
+                Grid.ColumnSpan="4"                   
+                x:Name="map" 
+                IsShowingUser="true" 
+                HasZoomEnabled="True"                  
+                HeightRequest="200">
+            </maps:Map>
+            <Label Grid.Row="1" Grid.ColumnSpan="2" x:Name="Resume"/>
+            <Button Grid.Row="2" Grid.ColumnSpan="2" Text="Confirm" Clicked="ConfirmAttendanceClicked"/>
+            <Button Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" Text="Cancel" Clicked="CancelAttendanceClicked"/>
+        </Grid>
+    </StackLayout>    
 </popups:PopupPage>

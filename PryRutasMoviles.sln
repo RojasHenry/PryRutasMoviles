@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PryRutasMoviles.Android", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PryRutasMoviles.iOS", "PryRutasMoviles\PryRutasMoviles.iOS\PryRutasMoviles.iOS.csproj", "{4F79C98D-2E38-4D4D-8DE6-8AE13A997A2D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PryRutasMoviles", "PryRutasMoviles\PryRutasMoviles\PryRutasMoviles.csproj", "{D63848E1-15D2-4299-B297-2F9E42D11173}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PryRutasMoviles", "PryRutasMoviles\PryRutasMoviles\PryRutasMoviles.csproj", "{D63848E1-15D2-4299-B297-2F9E42D11173}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

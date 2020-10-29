@@ -6,6 +6,15 @@
         x:Class="PryRutasMoviles.LoginPage">
 
     <StackLayout VerticalOptions="Center" >
+        <AbsoluteLayout>
+            <ActivityIndicator x:Name="activity"  
+                       IsRunning="False"  
+                       IsEnabled="False"  
+                       IsVisible="False"  
+                       Color="#FCFFF5"  
+                       BackgroundColor="Transparent"
+                       AbsoluteLayout.LayoutBounds="0.5,0,20,20" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+        </AbsoluteLayout>
         <StackLayout VerticalOptions ="Center" Padding="0,30">
             <Label 
 			Text="U Driver"
@@ -19,8 +28,8 @@
         </StackLayout>
 
         <Entry
-            x:Name="txtUser"
-            Placeholder="User"
+            x:Name="txtEmail"
+            Placeholder="Email"
             PlaceholderColor="#193441"
             HorizontalTextAlignment="Center"
             FontSize="20" 
@@ -40,16 +49,15 @@
             Text="Login" 
 			TextColor="#CBDBD7"
             FontSize="20"                
-			BackgroundColor="#193441"            
-            />
+			BackgroundColor="#193441" 
+            Clicked="BtnLogin_Clicked"/>
             <Button 
 			x:Name="btnRegister"
             Text="Register" 
 			TextColor="#CBDBD7"
             FontSize="20"                
 			BackgroundColor="#193441"
-            Clicked="BtnRegister_Clicked"    
-            />
+            Clicked="BtnRegister_Clicked"/>
         </StackLayout>
     </StackLayout>
 </ContentPage>

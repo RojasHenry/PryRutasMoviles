@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Linq;
 using System.Threading.Tasks;
+using PryRutasMoviles.Entities;
+using PryRutasMoviles.Models;
+using PryRutasMoviles.Repositories;
 using Rg.Plugins.Popup.Extensions;
 using Xamarin.Essentials;
 using Xamarin.Forms;
@@ -12,363 +14,307 @@ namespace PryRutasMoviles
 {
     public partial class RegisterRoutePage : ContentPage
     {
-        public ObservableCollection<Pin> pinslist = new ObservableCollection<Pin>();
-        bool isPuntoEnc = false;
-
-        Pin pin;
-
-        public RegisterRoutePage()
+        private readonly User _driver;
+        private readonly Route route = new Route();
+        private string workingPointFlag = string.Empty;
+        
+        public RegisterRoutePage(User driver)
         {
             InitializeComponent();
-            map.ItemsSource = pinslist;
+            _driver = driver;
             GetLocation();
-
-            txtPrice.Text = "0,00";
-            timeHour.Time = DateTime.Now.TimeOfDay;
-
+            tpMeetingTime.Time = DateTime.Now.TimeOfDay;
         }
 
-        public async void GetLocation()
+        #region events
+
+        public async void BtnMeetingPoint_Clicked(object sender, EventArgs e)
+        {
+            EnableDisableControls(false);
+            workingPointFlag = "MeetingPoint";
+            if (route.MeetingPoint != null)
+                await EditMeetingPoint();
+            else
+                await SelectMeetingPoint();
+        }
+
+        public async void BtnGetTargetPoint_Clicked(object sender, EventArgs e)
+        {
+            EnableDisableControls(false);
+            workingPointFlag = "TargetPoint";
+            if (route.TargetPoint != null)
+                await EditTargetPoint();
+            else
+                await SelectTargetPoint();
+        }
+
+        public async void BtnPostTrip_Clicked(object sender, EventArgs e)
         {
             try
             {
-                var location = await Geolocation.GetLastKnownLocationAsync();
-
-                if (location != null)
+                using (TripRepository tripRepository = new TripRepository())
                 {
-                    Console.WriteLine($"Latitude: {location.Latitude}, Longitude: {location.Longitude}, Altitude: {location.Altitude}");
-                    Position position = new Position(location.Latitude, location.Longitude);
-                    MapSpan mapSpan = new MapSpan(position, 0.01, 0.01);
-                    map.MoveToRegion(mapSpan);
+                    if (IsValidForm())
+                    {
+                        var result = await ConfirmPostTrip(this.Navigation);
+                        if (result)
+                        {
+                            EnableDisableActivityIndicator(true);
+                            EnableDisableControls(false);
+                            var trip = new Trip
+                            {
+                                TripId = Guid.NewGuid().ToString(),
+                                Driver = _driver,
+                                TripRoute = new TripRoute
+                                {
+                                    MeetingPointLongitude = route.MeetingPoint.Pin.Position.Longitude,
+                                    MeetingPoitnLatitude = route.MeetingPoint.Pin.Position.Latitude,
+                                    MeetingPoitnAddress = route.MeetingPoint.Pin.Address,
+                                    TargetPointLongitude = route.TargetPoint.Pin.Position.Longitude,
+                                    TargetPointLatitude = route.TargetPoint.Pin.Position.Latitude,
+                                    TargetPoitnAddress = route.TargetPoint.Pin.Address
+                                },
+                                MeetingTime = tpMeetingTime.Time.ToString(),
+                                Price = Convert.ToDecimal(txtPrice.Text),
+                                SeatsAvailables = Convert.ToInt16(txtSeatsAvailables.Text),
+                                State = "Posted"
+                            };
+
+                            await tripRepository.AddTrip(trip);
+                            EnableDisableActivityIndicator(false);                            
+                            await DisplayAlert("Info", "Route posted successfully", "Ok");
+                            workingPointFlag = string.Empty;
+                            RemovePoint();
+                            CleanEntries();
+                            EnableDisableControls(true);
+                            // {.....}move to next page;
+
+                        }
+                    }
                 }
             }
-            catch (FeatureNotSupportedException fnsEx)
+            catch
             {
-                // Handle not supported on device exception
-            }
-            catch (FeatureNotEnabledException fneEx)
-            {
-                // Handle not enabled on device exception
-            }
-            catch (PermissionException pEx)
-            {
-                // Handle permission exception
-            }
-            catch (Exception ex)
-            {
-                // Unable to get location
-            }
+                EnableDisableActivityIndicator(false);
+                await DisplayAlert("Error", "An unexpected error has occurred", "Ok");
+            }            
         }
 
-        public async void map_MapClicked(System.Object sender, Xamarin.Forms.Maps.MapClickedEventArgs e)
+        public async void Map_MapClicked(object sender, MapClickedEventArgs e)
         {
-            Position pos = e.Position;
-
-            Console.WriteLine(pos.Longitude +" "+pos.Latitude);
-
-            pin = new Pin
+            try
             {
-                Position = pos,
-                Label = (isPuntoEnc) ? "Punto de encuentro" : "Destino",
-                ClassId = (isPuntoEnc) ? "PE" : "PD"
-            };
+                Position positionSelected = e.Position;
 
-            stlbtns.IsVisible = true;
-
-            Geocoder geocoder = new Geocoder();
-
-            IEnumerable<string> possibleAddresses = await geocoder.GetAddressesForPositionAsync(pos);
-            string address = possibleAddresses.FirstOrDefault();
-            txtmsg.Text = "Ubicación escogida: " + address;
-            frmMsg.IsVisible = true;
-
-            if(pinslist.Count < 2)
-                pinslist.Add(pin);
-
-            if (pinslist.Count == 2)
-            {
-                Polyline polyline = new Polyline
+                if (workingPointFlag.Equals("MeetingPoint"))
                 {
-                    StrokeColor = Color.Blue,
-                    StrokeWidth = 12,
-                    Geopath =
-                        {
-                            pinslist[0].Position,
-                            pinslist[1].Position
-                        }
-                };
-                var zoomLevel = 13; // pick a value between 1 and 18
-                var latlongdeg = 360 / (Math.Pow(2, zoomLevel));
-                Position center = computeCentroid(pinslist);
-                MapSpan mapSpan = new MapSpan(center, latlongdeg, latlongdeg);
-                map.MoveToRegion(mapSpan);
-                map.MapElements.Add(polyline);
-            }
-            else
-            {
-                MapSpan mapSpan = new MapSpan(pin.Position, 0.01, 0.01);
-                map.MoveToRegion(mapSpan);
-            }
-
-        }
-
-        async void btnpuntoEn_Clicked(System.Object sender, System.EventArgs e)
-        {
-            isPuntoEnc = true;
-            if (pinslist.Count == 2 || hadChossen(isPuntoEnc))
-            {
-                await EditRouteLocation(isPuntoEnc);
-            }
-            else
-            {
-                await ShowMessageRouteLocations(isPuntoEnc);
-            }
-            
-        }
-
-        async void btndestino_Clicked(System.Object sender, System.EventArgs e)
-        {
-            isPuntoEnc = false;
-            if (pinslist.Count == 2 || hadChossen(isPuntoEnc))
-            {
-                
-                await EditRouteLocation(isPuntoEnc);
-            }
-            else
-            {
-                await ShowMessageRouteLocations(isPuntoEnc);
-            }
-
-        }
-
-        private async Task ShowMessageRouteLocations(bool isPuntEncuentro)
-        {
-            string action = await DisplayActionSheet(
-                (isPuntEncuentro)?"¿Desea escoger como punto de encuentro su ubicación actual?":"¿Desea escoger como destino su ubicación actual?"
-                , null, null, "Si", "No");
-            if (action.Equals("Si"))
-            {
-                Position actualPos = await GetLocationUserAsync();
-
-                pin = new Pin
-                {
-                    Position = actualPos,
-                    Label = (isPuntEncuentro) ? "Punto de encuentro" : "Destino",
-                    ClassId = (isPuntEncuentro) ? "PE":  "PD"
-                };
-
-                stlbtns.IsVisible = true;
-
-                Geocoder geocoder = new Geocoder();
-
-                IEnumerable<string> possibleAddresses = await geocoder.GetAddressesForPositionAsync(actualPos);
-                string address = possibleAddresses.FirstOrDefault();
-                txtmsg.Text = "Ubicación escogida: " + address;
-                frmMsg.IsVisible = true;
-
-                pinslist.Add(pin);
-                if (pinslist.Count == 2)
-                {
-                    Polyline polyline = new Polyline
+                    if (map.Pins.Count > 0)
                     {
-                        StrokeColor = Color.Blue,
-                        StrokeWidth = 12,
-                        Geopath =
+                        if (route.MeetingPoint != null)
+                            map.Pins.Remove(route.MeetingPoint.Pin);
+                    }
+                    route.MeetingPoint = new MeetingPoint
+                    {
+                        Pin = new Pin
                         {
-                            pinslist[0].Position,
-                            pinslist[1].Position
-                        }
+                            ClassId = workingPointFlag,
+                            Label = workingPointFlag,
+                            Position = positionSelected,
+                            Address = await GetAddress(positionSelected)
+                        },
+                    };
+                }
+                else
+                {
+                    if (map.Pins.Count > 0)
+                    {
+                        if (route.TargetPoint != null)
+                            map.Pins.Remove(route.MeetingPoint.Pin);
+                    }
+                    route.TargetPoint = new TargetPoint
+                    {
+                        Pin = new Pin
+                        {
+                            ClassId = workingPointFlag,
+                            Label = workingPointFlag,
+                            Position = positionSelected,
+                            Address = await GetAddress(positionSelected)
+                        },
+                    };
+                }
+
+                DrawRoute(route);
+            }
+            catch
+            {
+                await DisplayAlert("Error", "An unexpected error has occurred", "Ok");
+            }
+
+        }
+
+        public void BtnAcept_Clicked(object sender, EventArgs e)
+        {
+            map.MapClicked -= Map_MapClicked;
+            frameInfo.IsVisible = false;
+            layoutButtons.IsVisible = false;
+            btnGetMeetingPoint.IsEnabled = true;
+            btnGetTargetPoint.IsEnabled = true;
+            btnPostTrip.IsEnabled = true;
+            EnableDisableControls(true);
+        }
+
+        public void BtnCancel_Clicked(object sender, EventArgs e)
+        {
+            
+            RemovePoint();
+            map.MapClicked -= Map_MapClicked;
+            frameInfo.IsVisible = false;
+            layoutButtons.IsVisible = false;
+            EnableDisableControls(true);
+        }
+        #endregion
+
+        #region funtional methods
+        private async Task SelectMeetingPoint()
+        {
+            string response = await DisplayActionSheet("Choose your current location as meeting point?"
+                , null, null, "Yes", "No");
+
+            if (response.Equals("Yes"))
+            {
+                route.MeetingPoint = new MeetingPoint
+                {
+                    Pin = await GetCurrentPin()
+                };
+
+                DrawRoute(route);
+            }
+            else
+            {
+                frameInfo.IsVisible = true;
+                txtMapMessage.Text = "Select the meeting point on the map";
+                map.MapClicked += Map_MapClicked;
+            }
+        }
+
+        private async Task SelectTargetPoint()
+        {
+            string response = await DisplayActionSheet("Choose your current location as target point?"
+                , null, null, "Yes", "No");
+
+            if (response.Equals("Yes"))
+            {
+                route.TargetPoint = new TargetPoint
+                {
+                    Pin = await GetCurrentPin()
+                };
+                DrawRoute(route);
+            }
+            else
+            {
+                frameInfo.IsVisible = true;
+                txtMapMessage.Text = "Select the target point on the map";
+                map.MapClicked += Map_MapClicked;
+            }
+        }
+
+        private async Task EditMeetingPoint()
+        {
+            string response = await DisplayActionSheet("Do you want change meeting point?"
+                , null, null, "Yes", "No");
+
+            if (response.Equals("Yes"))
+            {
+                RemovePoint();
+                route.MeetingPoint = null;
+
+                response = await DisplayActionSheet("Choose your current location as meeting point?"
+                , null, null, "Yes", "No");
+
+                if (response.Equals("Yes"))
+                {
+                    route.MeetingPoint = new MeetingPoint
+                    {
+                        Pin = await GetCurrentPin()
                     };
 
-                    var zoomLevel = 13; // pick a value between 1 and 18
-                    var latlongdeg = 360 / (Math.Pow(2, zoomLevel));
-                    Position center = computeCentroid(pinslist);
-                    MapSpan mapSpan = new MapSpan(center, latlongdeg, latlongdeg);
-                    map.MoveToRegion(mapSpan);
-                    map.MapElements.Add(polyline);
+                    DrawRoute(route);
                 }
                 else
                 {
-                    MapSpan mapSpan = new MapSpan(pin.Position, 0.01, 0.01);
-                    map.MoveToRegion(mapSpan);
+                    frameInfo.IsVisible = true;
+                    txtMapMessage.Text = "Select the meeting point on the map";
+                    map.MapClicked += Map_MapClicked;
                 }
             }
             else
-            {
-                map.MapClicked += map_MapClicked;
-                frmMsg.IsVisible = true;
-                txtmsg.Text = (isPuntEncuentro) ? "Seleccione el punto de encuentro en el mapa.":"Seleccione el punto de destino en el mapa.";
-
-            }
+                EnableDisableControls(true);
         }
 
-        private async Task EditRouteLocation(bool isPuntoEncuentro)
+        private async Task EditTargetPoint()
         {
-            string action = await DisplayActionSheet(
-                (isPuntoEncuentro) ? "¿Desea editar el punto de encuentro escogido?" : "¿Desea editar el destino escogido?",
-                null, null, "Si", "No");
+            string response = await DisplayActionSheet("Do you want change target point?"
+                , null, null, "Yes", "No");
 
-            if (action.Equals("Si"))
+            if (response.Equals("Yes"))
             {
-                foreach (Pin pin in pinslist)
+                RemovePoint();
+                route.TargetPoint = null;
+
+                response = await DisplayActionSheet("Choose your current location as target point?"
+                , null, null, "Yes", "No");
+
+                if (response.Equals("Yes"))
                 {
-                    if (pin.ClassId.Equals((isPuntoEncuentro) ? "PE" : "PD"))
+                    route.TargetPoint = new TargetPoint
                     {
-                        pinslist.Remove(pin);
-                        break;
-                    }
-                        
-                }
+                        Pin = await GetCurrentPin()
+                    };
 
-                map.MapElements.Clear();
-                await ShowMessageRouteLocations(isPuntoEnc);
-            }
-        }
-
-        public bool hadChossen(bool isPuntoEnc)
-        {
-            foreach (Pin pin in pinslist)
-            {
-                if (pin.ClassId.Equals((isPuntoEnc) ? "PE" : "PD"))
-                    return true;
-            }
-            return false;
-        }
-
-        public async Task<Position> GetLocationUserAsync()
-        {
-            try
-            {
-                var location = await Geolocation.GetLastKnownLocationAsync();
-
-                if (location != null)
-                {
-                    Console.WriteLine($"Latitude: {location.Latitude}, Longitude: {location.Longitude}, Altitude: {location.Altitude}");
-                    Position position = new Position(location.Latitude, location.Longitude);
-                    return position;
+                    DrawRoute(route);
                 }
                 else
                 {
-                    return new Position(0.0, 0.0);
+                    frameInfo.IsVisible = true;
+                    txtMapMessage.Text = "Select the target point on the map";
+                    map.MapClicked += Map_MapClicked;
                 }
             }
-            catch (FeatureNotSupportedException fnsEx)
-            {
-                // Handle not supported on device exception
-                return new Position(0.0, 0.0);
-            }
-            catch (FeatureNotEnabledException fneEx)
-            {
-                // Handle not enabled on device exception
-                return new Position(0.0, 0.0);
-            }
-            catch (PermissionException pEx)
-            {
-                // Handle permission exception
-                return new Position(0.0, 0.0);
-            }
-            catch (Exception ex)
-            {
-                // Unable to get location
-                return new Position(0.0, 0.0);
-            }
-        }
-
-        void btnAceptar_Clicked(System.Object sender, System.EventArgs e)
-        {
-            if (pinslist.Count == 2)
-            {
-                frmMsg.IsVisible = false;
-            }
             else
-            {
-                map.MapClicked -= map_MapClicked;
-                isPuntoEnc = false;
-                frmMsg.IsVisible = false;
-            }
-
-            stlbtns.IsVisible = false;
+                EnableDisableControls(true);
         }
 
-        void btnCancelar_Clicked(System.Object sender, System.EventArgs e)
+        private bool IsValidForm()
         {
-            if (pinslist.Count == 2)
+
+            if (route.MeetingPoint == null || route.TargetPoint == null)
             {
-                pinslist.Remove(pin);
-                map.MapElements.Clear();
-                map.MapClicked -= map_MapClicked;
-                isPuntoEnc = false;
-                frmMsg.IsVisible = false;
-                stlbtns.IsVisible = false;
-            }
-            else
-            {
-                pinslist.Remove(pin);
-                map.MapClicked -= map_MapClicked;
-                isPuntoEnc = false;
-                frmMsg.IsVisible = false;
-                stlbtns.IsVisible = false;
-            }
-            
-        }
-
-        private Position computeCentroid(ObservableCollection<Pin> points)
-        {
-            double latitude = 0;
-            double longitude = 0;
-            int n = points.Count;
-
-            foreach(Pin point in points)
-            {
-                latitude += point.Position.Latitude;
-                longitude += point.Position.Longitude;
-            }
-
-            return new Position(latitude / n, longitude / n);
-        }
-
-        async void btnOfertar_Clicked(System.Object sender, System.EventArgs e)
-        {
-            /*if (isValidaForm())
-            {*/
-                var result = await ConfirmConferenceAttendance(this.Navigation);
-           /* }*/
-        }
-
-        private bool isValidaForm()
-        {
-            bool isValid = true;
-
-            if(pinslist.Count != 2 || txtPrice.Text.Equals(""))
-            {
-                DisplayAlert("Alerta", "Complete todos los campos.", "OK");
+                DisplayAlert("Alerta", "Please select a route", "Ok");
                 return false;
             }
 
-            if (pinslist.Count != 2)
+            if (string.IsNullOrEmpty(txtPrice.Text) || Convert.ToDouble(txtPrice.Text) == 0)
             {
-                DisplayAlert("Alerta", "Complete toda su ruta.", "OK");
+                DisplayAlert("Alerta", "The price of the trip cannot be zero", "Ok");
                 return false;
             }
 
-            double precio = Convert.ToDouble(txtPrice.Text);
-
-            if (precio == 0)
+            if (tpMeetingTime.Time.CompareTo(DateTime.Now.TimeOfDay) < 0)
             {
-                DisplayAlert("Alerta", "Complete el precio de la ruta.", "OK");
+                DisplayAlert("Alerta", "Meeting time must be greater than current hour", "Ok");
                 return false;
             }
 
-            if(timeHour.Time.CompareTo(DateTime.Now.TimeOfDay) < 0)
+            if (string.IsNullOrEmpty(txtPrice.Text) || Convert.ToInt16(txtSeatsAvailables.Text) == 0)
             {
-                DisplayAlert("Alerta", "Hora menor a la actual.", "OK");
+                DisplayAlert("Alerta", "The number of seats available cannot be zero", "Ok");
                 return false;
             }
 
-            return isValid;
+            return true;
         }
 
-        public static async Task<bool> ConfirmConferenceAttendance(INavigation navigation)
+        private async Task<bool> ConfirmPostTrip(INavigation navigation)
         {
             TaskCompletionSource<bool> completionSource = new TaskCompletionSource<bool>();
 
@@ -377,11 +323,176 @@ namespace PryRutasMoviles
                 completionSource.TrySetResult(didConfirm);
             }
 
-            var popup = new DetailRoutePopup(callback);
-
+            var popup = new DetailRoutePopup(callback, route);
             await navigation.PushPopupAsync(popup);
-
             return await completionSource.Task;
         }
+        #endregion      
+
+        #region common methods
+        private void EnableDisableActivityIndicator(bool flagActivityIndicator)
+        {
+            activity.IsEnabled = flagActivityIndicator;
+            activity.IsRunning = flagActivityIndicator;
+            activity.IsVisible = flagActivityIndicator;
+        }
+        private void EnableDisableControls(bool controlFlag) 
+        {
+            btnGetMeetingPoint.IsEnabled = controlFlag;
+            btnGetTargetPoint.IsEnabled = controlFlag;
+            btnPostTrip.IsEnabled = controlFlag;
+        }
+        private void RemovePoint()
+        {
+            if (map.MapElements.Count > 0)
+                map.MapElements.Clear();
+
+            if (workingPointFlag.Equals("MeetingPoint"))
+            {
+                map.Pins.Remove(route.MeetingPoint.Pin);
+                route.MeetingPoint = null;
+            }
+            else if (workingPointFlag.Equals("TargetPoint"))
+            {
+                map.Pins.Remove(route.TargetPoint.Pin);
+                route.TargetPoint = null;
+            }
+            else
+            {
+                map.MapElements.Clear();
+                map.Pins.Clear();
+                layoutButtons.IsVisible = false;
+                frameInfo.IsVisible = false;
+                route.MeetingPoint = null;
+                route.TargetPoint = null;
+                EnableDisableControls(true);
+            }
+        }
+
+        private void CleanEntries() {
+            txtMapMessage.Text = string.Empty;
+            txtPrice.Text = string.Empty;
+            txtSeatsAvailables.Text = string.Empty;
+            tpMeetingTime.Time = DateTime.Now.TimeOfDay;
+        }
+
+        private async void GetLocation()
+        {
+            try
+            {
+                var location = await Geolocation.GetLastKnownLocationAsync();
+
+                if (location != null)
+                {
+                    Position position = new Position(location.Latitude, location.Longitude);
+                    MapSpan mapSpan = new MapSpan(position, 0.01, 0.01);
+                    map.MoveToRegion(mapSpan);
+                }
+            }
+            catch { }
+        }
+
+        private async Task<Pin> GetCurrentPin()
+        {
+            return new Pin
+            {
+                Position = await GetLocationUserAsync(),
+                Label = workingPointFlag,
+                ClassId = workingPointFlag,
+                Address = await GetAddress(await GetLocationUserAsync())
+            };
+        }
+
+        private async Task<Position> GetLocationUserAsync()
+        {
+            try
+            {
+                var location = await Geolocation.GetLastKnownLocationAsync();
+
+                if (location != null)
+                    return new Position(location.Latitude, location.Longitude);
+                else
+                    return new Position(0.0, 0.0);
+            }
+            catch
+            {
+                return new Position(0.0, 0.0);
+            }
+        }
+
+        private async Task<string> GetAddress(Position position)
+        {
+            Geocoder geocoder = new Geocoder();
+
+            try
+            {
+                IEnumerable<string> possibleAddresses =
+                    await geocoder.GetAddressesForPositionAsync(position);
+                return possibleAddresses.FirstOrDefault();
+            }
+            catch
+            {
+                return "It was not possible to get address";
+            }
+        }
+
+        private Position ComputeCentroid(Route route)
+        {
+            double latitude = (route.MeetingPoint.Pin.Position.Latitude
+                + route.TargetPoint.Pin.Position.Latitude) / 2;
+            double longitude = (route.MeetingPoint.Pin.Position.Longitude +
+                route.TargetPoint.Pin.Position.Longitude) / 2;
+
+            return new Position(latitude, longitude);
+        }
+
+        private void DrawRoute(Route route)
+        {
+            Pin selectedPin;
+            MapSpan mapSpan;
+
+            if (workingPointFlag.Equals("MeetingPoint"))
+                selectedPin = route.MeetingPoint.Pin;
+            else
+                selectedPin = route.TargetPoint.Pin;
+
+            layoutButtons.IsVisible = true;
+            txtMapMessage.Text = $"{workingPointFlag.Replace("Point", " point")} selected: {selectedPin.Address}";
+            frameInfo.IsVisible = true;
+
+            if (route.MeetingPoint != null && route.TargetPoint != null)
+            {
+                if (route.MeetingPoint.Pin.Address.Equals(route.TargetPoint.Pin.Address))
+                {
+                    DisplayAlert("Alert", "Meeting Point and target point are the same", "Try Again");
+                    workingPointFlag = string.Empty;
+                    RemovePoint();
+                    return;
+                }
+
+                Polyline polyLine = new Polyline
+                {
+                    StrokeColor = Color.Blue,
+                    StrokeWidth = 12,
+                    Geopath =
+                    {
+                        route.MeetingPoint.Pin.Position,
+                        route.TargetPoint.Pin.Position,
+                    }
+                };
+
+                var zoomLevel = 15; // between 1 and 18
+                var latLongDeg = 360 / (Math.Pow(2, zoomLevel));
+                Position center = ComputeCentroid(route);
+                mapSpan = new MapSpan(center, latLongDeg, latLongDeg);
+                map.MapElements.Add(polyLine);
+            }
+            else
+                mapSpan = new MapSpan(selectedPin.Position, 0.01, 0.01);
+
+            map.MoveToRegion(mapSpan);
+            map.Pins.Add(selectedPin);
+        }
+        #endregion
     }
 }
