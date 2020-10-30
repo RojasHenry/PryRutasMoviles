@@ -28,6 +28,11 @@ namespace PryRutasMoviles
 
         #region events
 
+        protected override bool OnBackButtonPressed()
+        {
+            return true;
+        }
+
         public async void BtnMeetingPoint_Clicked(object sender, EventArgs e)
         {
             EnableDisableControls(false);
