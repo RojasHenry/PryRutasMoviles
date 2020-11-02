@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage 
-        Title="Welcome"    
+        Title="Bienvenido"    
         BackgroundColor="#3E606F" xmlns="http://xamarin.com/schemas/2014/forms"
         xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
         x:Class="PryRutasMoviles.LoginPage">
@@ -17,7 +17,7 @@
         </AbsoluteLayout>
         <StackLayout VerticalOptions ="Center" Padding="0,30">
             <Label 
-			Text="U Driver"
+			Text="UI Driver"
 			VerticalOptions="Center"    
             HorizontalTextAlignment="Center"
             VerticalTextAlignment="Center"
