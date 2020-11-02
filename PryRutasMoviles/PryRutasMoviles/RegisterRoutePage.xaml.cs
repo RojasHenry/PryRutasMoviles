@@ -28,6 +28,11 @@ namespace PryRutasMoviles
 
         #region events
 
+        protected override bool OnBackButtonPressed()
+        {
+            return true;
+        }
+
         public async void BtnMeetingPoint_Clicked(object sender, EventArgs e)
         {
             EnableDisableControls(false);
@@ -67,12 +72,12 @@ namespace PryRutasMoviles
                                 Driver = _driver,
                                 TripRoute = new TripRoute
                                 {
-                                    MeetingPointLongitude = route.MeetingPoint.Pin.Position.Longitude,
-                                    MeetingPoitnLatitude = route.MeetingPoint.Pin.Position.Latitude,
-                                    MeetingPoitnAddress = route.MeetingPoint.Pin.Address,
-                                    TargetPointLongitude = route.TargetPoint.Pin.Position.Longitude,
-                                    TargetPointLatitude = route.TargetPoint.Pin.Position.Latitude,
-                                    TargetPoitnAddress = route.TargetPoint.Pin.Address
+                                    MeetingPointLongitude = route.MeetingPoint.Position.Longitude,
+                                    MeetingPoitnLatitude = route.MeetingPoint.Position.Latitude,
+                                    MeetingPoitnAddress = route.MeetingPoint.Address,
+                                    TargetPointLongitude = route.TargetPoint.Position.Longitude,
+                                    TargetPointLatitude = route.TargetPoint.Position.Latitude,
+                                    TargetPoitnAddress = route.TargetPoint.Address
                                 },
                                 MeetingTime = tpMeetingTime.Time.ToString(),
                                 Price = Convert.ToDecimal(txtPrice.Text),
@@ -111,36 +116,30 @@ namespace PryRutasMoviles
                     if (map.Pins.Count > 0)
                     {
                         if (route.MeetingPoint != null)
-                            map.Pins.Remove(route.MeetingPoint.Pin);
+                            map.Pins.Remove(route.MeetingPoint);
                     }
-                    route.MeetingPoint = new MeetingPoint
-                    {
-                        Pin = new Pin
+                    route.MeetingPoint = new Pin
                         {
                             ClassId = workingPointFlag,
                             Label = workingPointFlag,
                             Position = positionSelected,
                             Address = await GetAddress(positionSelected)
-                        },
-                    };
+                        };                    
                 }
                 else
                 {
                     if (map.Pins.Count > 0)
                     {
                         if (route.TargetPoint != null)
-                            map.Pins.Remove(route.MeetingPoint.Pin);
+                            map.Pins.Remove(route.MeetingPoint);
                     }
-                    route.TargetPoint = new TargetPoint
+                    route.TargetPoint = new Pin
                     {
-                        Pin = new Pin
-                        {
-                            ClassId = workingPointFlag,
-                            Label = workingPointFlag,
-                            Position = positionSelected,
-                            Address = await GetAddress(positionSelected)
-                        },
-                    };
+                        ClassId = workingPointFlag,
+                        Label = workingPointFlag,
+                        Position = positionSelected,
+                        Address = await GetAddress(positionSelected)
+                    };                    
                 }
 
                 DrawRoute(route);
@@ -182,11 +181,7 @@ namespace PryRutasMoviles
 
             if (response.Equals("Yes"))
             {
-                route.MeetingPoint = new MeetingPoint
-                {
-                    Pin = await GetCurrentPin()
-                };
-
+                route.MeetingPoint = await GetCurrentPin();               
                 DrawRoute(route);
             }
             else
@@ -204,10 +199,7 @@ namespace PryRutasMoviles
 
             if (response.Equals("Yes"))
             {
-                route.TargetPoint = new TargetPoint
-                {
-                    Pin = await GetCurrentPin()
-                };
+                route.TargetPoint = await GetCurrentPin();
                 DrawRoute(route);
             }
             else
@@ -233,10 +225,7 @@ namespace PryRutasMoviles
 
                 if (response.Equals("Yes"))
                 {
-                    route.MeetingPoint = new MeetingPoint
-                    {
-                        Pin = await GetCurrentPin()
-                    };
+                    route.MeetingPoint = await GetCurrentPin();
 
                     DrawRoute(route);
                 }
@@ -266,11 +255,7 @@ namespace PryRutasMoviles
 
                 if (response.Equals("Yes"))
                 {
-                    route.TargetPoint = new TargetPoint
-                    {
-                        Pin = await GetCurrentPin()
-                    };
-
+                    route.TargetPoint = await GetCurrentPin();
                     DrawRoute(route);
                 }
                 else
@@ -349,12 +334,12 @@ namespace PryRutasMoviles
 
             if (workingPointFlag.Equals("MeetingPoint"))
             {
-                map.Pins.Remove(route.MeetingPoint.Pin);
+                map.Pins.Remove(route.MeetingPoint);
                 route.MeetingPoint = null;
             }
             else if (workingPointFlag.Equals("TargetPoint"))
             {
-                map.Pins.Remove(route.TargetPoint.Pin);
+                map.Pins.Remove(route.TargetPoint);
                 route.TargetPoint = null;
             }
             else
@@ -438,10 +423,10 @@ namespace PryRutasMoviles
 
         private Position ComputeCentroid(Route route)
         {
-            double latitude = (route.MeetingPoint.Pin.Position.Latitude
-                + route.TargetPoint.Pin.Position.Latitude) / 2;
-            double longitude = (route.MeetingPoint.Pin.Position.Longitude +
-                route.TargetPoint.Pin.Position.Longitude) / 2;
+            double latitude = (route.MeetingPoint.Position.Latitude
+                + route.TargetPoint.Position.Latitude) / 2;
+            double longitude = (route.MeetingPoint.Position.Longitude +
+                route.TargetPoint.Position.Longitude) / 2;
 
             return new Position(latitude, longitude);
         }
@@ -452,9 +437,9 @@ namespace PryRutasMoviles
             MapSpan mapSpan;
 
             if (workingPointFlag.Equals("MeetingPoint"))
-                selectedPin = route.MeetingPoint.Pin;
+                selectedPin = route.MeetingPoint;
             else
-                selectedPin = route.TargetPoint.Pin;
+                selectedPin = route.TargetPoint;
 
             layoutButtons.IsVisible = true;
             txtMapMessage.Text = $"{workingPointFlag.Replace("Point", " point")} selected: {selectedPin.Address}";
@@ -462,7 +447,7 @@ namespace PryRutasMoviles
 
             if (route.MeetingPoint != null && route.TargetPoint != null)
             {
-                if (route.MeetingPoint.Pin.Address.Equals(route.TargetPoint.Pin.Address))
+                if (route.MeetingPoint.Address.Equals(route.TargetPoint.Address))
                 {
                     DisplayAlert("Alert", "Meeting Point and target point are the same", "Try Again");
                     workingPointFlag = string.Empty;
@@ -476,12 +461,12 @@ namespace PryRutasMoviles
                     StrokeWidth = 12,
                     Geopath =
                     {
-                        route.MeetingPoint.Pin.Position,
-                        route.TargetPoint.Pin.Position,
+                        route.MeetingPoint.Position,
+                        route.TargetPoint.Position,
                     }
                 };
 
-                var zoomLevel = 15; // between 1 and 18
+                var zoomLevel = 15;
                 var latLongDeg = 360 / (Math.Pow(2, zoomLevel));
                 Position center = ComputeCentroid(route);
                 mapSpan = new MapSpan(center, latLongDeg, latLongDeg);

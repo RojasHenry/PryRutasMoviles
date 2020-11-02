@@ -43,29 +43,29 @@ namespace PryRutasMoviles
                 StrokeWidth = 12,
                 Geopath =
                         {
-                            route.MeetingPoint.Pin.Position,
-                            route.TargetPoint.Pin.Position,
+                            route.MeetingPoint.Position,
+                            route.TargetPoint.Position,
                         }
             };
 
-            var zoomLevel = 15; // between 1 and 18
+            var zoomLevel = 15;
             var latlongdeg = 360 / (Math.Pow(2, zoomLevel));
             Position center = ComputeCentroid(route);
             mapSpan = new MapSpan(center, latlongdeg, latlongdeg);            
             map.MoveToRegion(mapSpan);
-            map.Pins.Add(route.MeetingPoint.Pin);
-            map.Pins.Add(route.TargetPoint.Pin);
+            map.Pins.Add(route.MeetingPoint);
+            map.Pins.Add(route.TargetPoint);
             map.MapElements.Add(polyline);
-            Resume.Text = $"Meeting Point: {route.MeetingPoint.Pin.Address}\n" +
-                $"Target Point: {route.TargetPoint.Pin.Address}";
+            Resume.Text = $"Meeting Point: {route.MeetingPoint.Address}\n" +
+                $"Target Point: {route.TargetPoint.Address}";
         }
 
         private Position ComputeCentroid(Route route)
         {
-            double latitude = (route.MeetingPoint.Pin.Position.Latitude
-                + route.TargetPoint.Pin.Position.Latitude) / 2;
-            double longitude = (route.MeetingPoint.Pin.Position.Longitude +
-                route.TargetPoint.Pin.Position.Longitude) / 2;
+            double latitude = (route.MeetingPoint.Position.Latitude
+                + route.TargetPoint.Position.Latitude) / 2;
+            double longitude = (route.MeetingPoint.Position.Longitude +
+                route.TargetPoint.Position.Longitude) / 2;
 
             return new Position(latitude, longitude);
         }

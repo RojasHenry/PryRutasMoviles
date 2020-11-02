@@ -1,8 +1,10 @@
-﻿namespace PryRutasMoviles.Entities
+﻿using Xamarin.Forms.Maps;
+
+namespace PryRutasMoviles.Entities
 {
     public class Route
     {
-        public MeetingPoint MeetingPoint { get; set; }
-        public TargetPoint TargetPoint { get; set; }
+        public Pin MeetingPoint { get; set; }
+        public Pin TargetPoint { get; set; }
     }
 }
