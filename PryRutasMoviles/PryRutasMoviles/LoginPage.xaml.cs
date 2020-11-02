@@ -70,5 +70,15 @@ namespace PryRutasMoviles
             txtEmail.IsEnabled = controlFlag;
             txtPassword.IsEnabled = controlFlag;
         }
+
+        private void btnPasajero_Clicked(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void btnConductor_Clicked(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }

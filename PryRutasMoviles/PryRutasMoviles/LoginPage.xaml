@@ -58,6 +58,23 @@
             FontSize="20"                
 			BackgroundColor="#193441"
             Clicked="BtnRegister_Clicked"/>
+
+            <Button 
+			x:Name="btnPasajero"
+            Text="Passenger" 
+			TextColor="#CBDBD7"
+            FontSize="20"                
+			BackgroundColor="#193441"
+            Clicked="btnPasajero_Clicked"/>
+
+            <Button 
+			x:Name="btnConductor"
+            Text="Driver" 
+			TextColor="#CBDBD7"
+            FontSize="20"                
+			BackgroundColor="#193441"
+            Clicked="btnConductor_Clicked"/>
+
         </StackLayout>
     </StackLayout>
 </ContentPage>
