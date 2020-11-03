@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+    <AndroidErrorOnCustomJavaObject>false</AndroidErrorOnCustomJavaObject>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -16,14 +17,61 @@
     <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
     <PackageReference Include="Xamarin.Forms.Maps" Version="4.8.0.1560" />
     <PackageReference Include="Rg.Plugins.Popup" Version="2.0.0.6" />
+        
+
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Plugin.FacebookClient" Version="2.2.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="Repositories\DetailRoutePopup.xaml.cs" />
+    <Compile Remove="DetailRoutePopup.xaml.cs" />
+    <Compile Remove="Pages\Driver.xaml.cs" />
+    <Compile Remove="Pages\Offers.xaml.cs" />
+    <Compile Remove="RegisterPage.xaml.cs" />
+    <Compile Remove="Repositories\Driver.xaml.cs" />
+    <Compile Remove="Repositories\Offers.xaml.cs" />
+    <Compile Remove="RegisterRoutePage.xaml.cs" />
+  </ItemGroup>
   <ItemGroup>
     <Compile Update="Extensions\GenericEntryEmailCell.xaml.cs">
       <DependentUpon>GenericEntryEmailCell.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Pages\RegistryPage.xaml.cs">
+      <DependentUpon>RegistryPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\DetailRouteModal.xaml.cs">
+      <DependentUpon>DetailRouteModal.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\DriverTabbedPage.xaml.cs">
+      <DependentUpon>DriverTabbedPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\PassengerTabbedPage.xaml.cs">
+      <DependentUpon>PassengerTabbedPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\TabsPage\MyTripDriverPage.xaml.cs">
+      <DependentUpon>MyTripDriverPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\TabsPage\MyTripPassengerPage.xaml.cs">
+      <DependentUpon>MyTripPassengerPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\TabsPage\ProfileUserPage.xaml.cs">
+      <DependentUpon>ProfileUserPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\TabsPage\OffersTripPage.xaml.cs">
+      <DependentUpon>OffersTripPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\SelectTypeModal.xaml.cs">
+      <DependentUpon>SelectTypeModal.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 
+  <ItemGroup>
+    <EmbeddedResource Remove="Pages\RegisterPage.xaml" />
+    <EmbeddedResource Remove="Repositories\Passenger.xaml" />
+    <EmbeddedResource Remove="RegisterRoutePage.xaml" />
+    <EmbeddedResource Remove="RegisterPage.xaml" />
+  </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Update="Extensions\CarBrandList.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
@@ -43,17 +91,10 @@
     <EmbeddedResource Update="LoginPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="RegisterPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Repositories\Driver.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Repositories\Offers.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Repositories\Passenger.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
+    <Folder Include="Pages\" />
+    <Folder Include="Pages\TabsPage\" />
   </ItemGroup>
 </Project>

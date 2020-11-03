@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "216415232228",
+    "firebase_url": "https://xamarinfirebase-c9db8.firebaseio.com",
+    "project_id": "xamarinfirebase-c9db8",
+    "storage_bucket": "xamarinfirebase-c9db8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:216415232228:android:a92a2e479c32820a504cf1",
+        "android_client_info": {
+          "package_name": "com.companyname.pryrutasmoviles"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "216415232228-mdog9csroslv4h36h08tbakl2v24kr6b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.companyname.pryrutasmoviles",
+            "certificate_hash": "148aafefe3833c19844ad4874355d4d10e923e6b"
+          }
+        },
+        {
+          "client_id": "216415232228-vsuoihg6h9i13p7vl0kdosaj6jl84k67.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEZucDm2av5tbevQpZI5gibHZc8dT38DU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "216415232228-vsuoihg6h9i13p7vl0kdosaj6jl84k67.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

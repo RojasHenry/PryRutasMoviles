@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage BackgroundColor="#3E606F"
+            Title="Registration"        
+            xmlns:local="clr-namespace:PryRutasMoviles.Extensions"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PryRutasMoviles.Pages.RegistryPage">
+    <StackLayout>
+        <AbsoluteLayout>
+            <ActivityIndicator x:Name="activity"  
+                       IsRunning="False"  
+                       IsEnabled="False"  
+                       IsVisible="False"  
+                       Color="#FCFFF5"  
+                       BackgroundColor="Transparent"
+                       AbsoluteLayout.LayoutBounds="0.5,0,20,20" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+        </AbsoluteLayout>
+        <StackLayout Orientation="Horizontal">
+            <TableView Intent="Form">
+                <TableRoot>
+                    <TableSection Title="BASICS" TextColor="#FCFFF5">
+                        <local:GenericCell x:Name="txtFirstName" Placeholder="First Name" />
+                        <local:GenericCell x:Name="txtLastName" Placeholder="Last Name" />
+                        <local:GenericCell x:Name="txtAddress" Placeholder="Address" />
+                        <SwitchCell x:Name="driverSwitch" Text="GO DRIVER" On="False" OnChanged="SwitchCell_OnChanged"/>
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <TableView x:Name="tblVehicle" Intent="Form" IsVisible="false">
+                <TableRoot>
+                    <TableSection Title="VEHICLE INFORMATION" TextColor="#FCFFF5">
+                        <local:GenericCell x:Name="txtRegistration" Placeholder="Car's Registration Number" />
+                        <ViewCell Tapped="ViewCellCarYear_Tapped">
+                            <StackLayout Orientation="Horizontal" Padding="13, 5">
+                                <Label Text="Car's Year" VerticalOptions="Center" />
+                                <Label 
+							x:Name="carYear"
+							VerticalOptions="Center" 
+							HorizontalOptions="EndAndExpand" 
+							Text="None" 
+							TextColor="#FCFFF5" />
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell Tapped="ViewCellCarBrand_Tapped">
+                            <StackLayout Orientation="Horizontal" Padding="13, 5">
+                                <Label Text="Car's Brand" VerticalOptions="Center" />
+                                <Label 
+							        x:Name="carBrand"
+							        VerticalOptions="Center" 
+							        HorizontalOptions="EndAndExpand" 
+							        Text="None" 
+							        TextColor="#FCFFF5" />
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell Tapped="ViewCellCarColor_Tapped">
+                            <StackLayout Orientation="Horizontal" Padding="13, 5">
+                                <Label Text="Car's Color" VerticalOptions="Center" />
+                                <Label 
+							        x:Name="carColor"
+							        VerticalOptions="Center" 
+							        HorizontalOptions="EndAndExpand" 
+							        Text="None" 
+							        TextColor="#FCFFF5" />
+                            </StackLayout>
+                        </ViewCell>
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <TableView x:Name="tblCredentials" Intent="Form" >
+                <TableRoot>
+                    <TableSection Title="CREDENTIALS" TextColor="#FCFFF5">
+                        <local:GenericEntryEmailCell x:Name="txtEmail" Placeholder="E-Mail"/>
+                        <local:GenericCell x:Name="txtPassword" Placeholder="Password" IsPassword="True" />
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+        </StackLayout>
+        <StackLayout>
+            <Button 
+			x:Name="btnRegister"
+            Text="Register" 
+			TextColor="#CBDBD7"
+            FontSize="20"                
+			BackgroundColor="#193441"
+            Clicked="BtnRegister_Clicked" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
