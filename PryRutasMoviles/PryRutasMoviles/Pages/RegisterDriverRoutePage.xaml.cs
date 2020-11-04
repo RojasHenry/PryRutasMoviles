@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using PryRutasMoviles.Entities;
 using PryRutasMoviles.Models;
+using PryRutasMoviles.Pages.TabsPage;
 using PryRutasMoviles.Repositories;
 using Rg.Plugins.Popup.Extensions;
 using Xamarin.Essentials;
@@ -89,7 +90,8 @@ namespace PryRutasMoviles.Pages
                                 MeetingTime = tpMeetingTime.Time.ToString(),
                                 Price = Convert.ToDecimal(txtPrice.Text),
                                 SeatsAvailables = Convert.ToInt16(txtSeatsAvailables.Text),
-                                State = "Posted"
+                                State = "Posted",
+                                Passengers = new List<User>()
                             };
 
                             await tripRepository.AddTrip(trip);
@@ -99,8 +101,7 @@ namespace PryRutasMoviles.Pages
                             RemovePoint();
                             CleanEntries();
                             EnableDisableControls(true);
-                            // {.....}move to next page;
-
+                            await Navigation.PushAsync(new TripWaitingRoomPage(trip.TripId));
                         }
                     }
                 }

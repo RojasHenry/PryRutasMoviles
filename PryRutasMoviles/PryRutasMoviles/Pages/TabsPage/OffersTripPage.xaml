@@ -1,5 +1,46 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PryRutasMoviles.Pages.TabsPage.OffersTripPage">
-    <ContentPage.Content>
-    </ContentPage.Content>
+    <ListView  x:Name="OfferTrip" ItemsSource="{Binding tripOfferList}" HasUnevenRows="True"
+               IsPullToRefreshEnabled="true"
+              Refreshing="OfferTrip_Refreshing"
+               ItemSelected="OfferTrip_ItemSelected"
+                RefreshControlColor="Red" >
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <Grid Margin="10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+
+                        <Image Grid.Column="0" Grid.Row="0" Source="https://images.vexels.com/media/users/3/128933/isolated/preview/b54944f7322722034cfda55e601b4f8d-icono-de-viaje-de-autob-s-redondo-by-vexels.png"></Image>
+
+                        <StackLayout Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="2" Orientation="Vertical" VerticalOptions="CenterAndExpand">
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="Driver: "></Label>
+                                <Label Text="{Binding Driver.FirstName}"></Label>
+                                <Label Text="{Binding Driver.LastName}"></Label>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Vertical">
+                                <Label Text="Route:"></Label>
+                                <Label Text="{Binding TripRoute.MeetingPoitnAddress}"></Label>
+                                <Label Text="{Binding TripRoute.TargetPoitnAddress}"></Label>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="Price"></Label>
+                                <Label Text="{Binding Price}"></Label>
+                            </StackLayout>
+                        </StackLayout>
+                    </Grid>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
 </ContentPage>

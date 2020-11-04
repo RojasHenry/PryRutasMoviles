@@ -14,6 +14,7 @@ namespace PryRutasMoviles.Pages
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class DriverTabbedPage : TabbedPage
     {
+        User userActual;
         public DriverTabbedPage(User user, bool isDriver)
         {
             InitializeComponent();
@@ -21,6 +22,8 @@ namespace PryRutasMoviles.Pages
             NavigationPage.SetHasNavigationBar(this, false);
 
             Title = "Bienvenido, "+user.FirstName + " "+ user.LastName;
+
+            userActual = user;
 
             if (isDriver)
             {
@@ -35,7 +38,7 @@ namespace PryRutasMoviles.Pages
             }
             else
             {
-                NavigationPage registerRoute = new NavigationPage(new OffersTripPage());
+                NavigationPage registerRoute = new NavigationPage(new OffersTripPage(user));
                 registerRoute.Title = "Oferta de Rutas";
 
                 NavigationPage tripsDriver = new NavigationPage(new MyTripDriverPage());
@@ -49,7 +52,7 @@ namespace PryRutasMoviles.Pages
 
         void ToolbarItem_Clicked(System.Object sender, System.EventArgs e)
         {
-            Navigation.PushAsync(new ProfileUserPage());
+            Navigation.PushAsync(new ProfileUserPage(userActual));
         }
 
     }

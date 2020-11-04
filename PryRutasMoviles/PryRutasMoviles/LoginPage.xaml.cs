@@ -32,7 +32,7 @@ namespace PryRutasMoviles
 
             try
             {
-                var respuesta = await serviceLogin.LoginWithFirebaseCredentials(txtEmail.Text, txtPassword.Text.Trim());
+                var respuesta = await serviceLogin.LoginWithFirebaseCredentials(txtEmail.Text.Trim(), txtPassword.Text.Trim());
 
                 if (respuesta)
                 {
@@ -129,7 +129,7 @@ namespace PryRutasMoviles
                     }
                     else
                     {
-                        Navigation.PushAsync(new RegistryPage(user));
+                        await Navigation.PushAsync(new RegistryPage(user));
                     }
                     
                 }
@@ -175,7 +175,7 @@ namespace PryRutasMoviles
                                 }
                                 else
                                 {
-                                    Navigation.PushAsync(new RegistryPage(respInfo.Data));
+                                    await Navigation.PushAsync(new RegistryPage(respInfo.Data));
                                 }
                                 
                             }

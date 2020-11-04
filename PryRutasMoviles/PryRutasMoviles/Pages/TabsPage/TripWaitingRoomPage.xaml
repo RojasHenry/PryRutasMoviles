@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PryRutasMoviles.Pages.TabsPage.TripWaitingRoomPage">
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <StackLayout Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" >
+            <Label Text="Info Trip"  HorizontalTextAlignment="Center"></Label>
+            <Label Text="Route: "></Label>
+            <StackLayout Orientation="Vertical">
+                <Label Text="{Binding Trip.TripRoute.MeetingPoitnAddress, StringFormat='Meeting Point Address: {0}'}"></Label>
+                <Label Text="{Binding Trip.TripRoute.TargetPoitnAddress, StringFormat='Target Point Address: {0}'}"></Label>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Meeting Time: "></Label>
+                <Label Text="{Binding Trip.MeetingTime}"></Label>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Price: "></Label>
+                <Label Text="{Binding TripIn.Price}"></Label>
+            </StackLayout>
+        </StackLayout>
+
+        <ListView Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2"  ItemsSource="{Binding userWaiting}" HasUnevenRows="True">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Passenger: "></Label>
+                            <Label Text="{Binding FirstName}"></Label>
+                            <Label Text="{Binding LastName}"></Label>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button x:Name="btnInitTrip" Grid.Column="0" Grid.Row="2" Text="Init Trip" Clicked="btnInitTrip_Clicked" />
+        <Button x:Name="btnCancelTrip" Grid.Column="1" Grid.Row="2" Text="Cancel Trip" Clicked="btnCancelTrip_Clicked"/>
+    </Grid>
+</ContentPage>

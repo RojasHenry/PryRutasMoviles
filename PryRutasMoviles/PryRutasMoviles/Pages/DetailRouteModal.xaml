@@ -12,19 +12,54 @@
           ColumnSpacing="10" 
           Padding="10,10">
             <Grid.RowDefinitions>
-                <RowDefinition Height="3*" />                
-            </Grid.RowDefinitions> 
+                <RowDefinition Height="200" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="60" />      
+            </Grid.RowDefinitions>
             <maps:Map 
                 Grid.Row="0"
-                Grid.ColumnSpan="4"                   
+                Grid.ColumnSpan="2"                   
                 x:Name="map" 
                 IsShowingUser="true" 
                 HasZoomEnabled="True"                  
                 HeightRequest="200">
             </maps:Map>
-            <Label Grid.Row="1" Grid.ColumnSpan="2" x:Name="Resume"/>
-            <Button Grid.Row="2" Grid.ColumnSpan="2" Text="Confirm" Clicked="ConfirmAttendanceClicked"/>
-            <Button Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" Text="Cancel" Clicked="CancelAttendanceClicked"/>
+            
+            <StackLayout Grid.Row="1" Grid.ColumnSpan="2" Orientation="Vertical">
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Driver: "></Label>
+                    <Label Text="{Binding TripIn.Driver.FirstName}"></Label>
+                    <Label Text="{Binding TripIn.Driver.LastName}"></Label>
+                </StackLayout>
+                <Label Text="Info Car Driver" HorizontalTextAlignment="Center"></Label>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Registration: "></Label>
+                    <Label Text="{Binding TripIn.Driver.Vehicle.Registration}"></Label>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Brand: "></Label>
+                    <Label Text="{Binding TripIn.Driver.Vehicle.Brand}"></Label>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Color: "></Label>
+                    <Label Text="{Binding TripIn.Driver.Vehicle.Color}"></Label>
+                </StackLayout>
+
+                <Label Text="Info Trip"  HorizontalTextAlignment="Center"></Label>
+                <Label x:Name="Resume"/>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="SeatsAvailables: "></Label>
+                    <Label Text="{Binding TripIn.SeatsAvailables}"></Label>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Price: "></Label>
+                    <Label Text="{Binding TripIn.Price}"></Label>
+                </StackLayout>
+            </StackLayout>
+            <Button Grid.Row="2" Grid.Column="0" Text="Confirm" Clicked="ConfirmAttendanceClicked"/>
+            <Button Grid.Row="2" Grid.Column="1" Text="Cancel" Clicked="CancelAttendanceClicked"/>
         </Grid>
     </StackLayout>    
 </popups:PopupPage>

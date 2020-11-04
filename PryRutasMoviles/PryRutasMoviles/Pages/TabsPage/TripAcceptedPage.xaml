@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PryRutasMoviles.Pages.TabsPage.TripAcceptedPage">
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackLayout Grid.Row="0" Grid.Column="0" Orientation="Vertical" HorizontalOptions="CenterAndExpand" >
+            <Image HeightRequest="150" WidthRequest="150" Source="https://e7.pngegg.com/pngimages/886/963/png-clipart-check-mark-computer-icons-wrong-miscellaneous-angle.png"></Image>
+            <Label Text="Trip Accepted!" VerticalTextAlignment="Center" FontSize="Large"/>
+        </StackLayout>
+
+        <StackLayout Grid.Row="1" Grid.Column="0">
+            <StackLayout>
+                <Label Text="Driver: "/>
+                <Label Text="{Binding TripIn.Driver.FirstName}"></Label>
+                <Label Text="{Binding TripIn.Driver.LastName}"></Label>
+            </StackLayout>
+
+            <Label Text="Info Car Driver" HorizontalTextAlignment="Center"></Label>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Registration: "></Label>
+                <Label Text="{Binding TripIn.Driver.Vehicle.Registration}"></Label>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Brand: "></Label>
+                <Label Text="{Binding TripIn.Driver.Vehicle.Brand}"></Label>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Color: "></Label>
+                <Label Text="{Binding TripIn.Driver.Vehicle.Color}"></Label>
+            </StackLayout>
+
+             <Label Text="Info Trip"  HorizontalTextAlignment="Center"></Label>
+
+             <StackLayout Orientation="Horizontal">
+                <Label Text="Total to pay: "></Label>
+                <Label Text="{Binding TripIn.Price}"></Label>
+            </StackLayout>
+        </StackLayout>
+
+        <StackLayout Grid.Row="2" Grid.Column="0">
+            <Button x:Name="btnCancelTrip" Text="Cancel Trip" Clicked="btnCancelTrip_Clicked"/>
+        </StackLayout>
+    </Grid>
+</ContentPage>

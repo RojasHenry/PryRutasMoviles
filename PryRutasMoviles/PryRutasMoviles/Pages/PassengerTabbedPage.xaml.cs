@@ -13,6 +13,7 @@ namespace PryRutasMoviles.Pages
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PassengerTabbedPage : TabbedPage
     {
+        User userActual;
         public PassengerTabbedPage(User user)
         {
             InitializeComponent();
@@ -21,7 +22,7 @@ namespace PryRutasMoviles.Pages
 
             Title = "Bienvenido, " + user.FirstName + " " + user.LastName;
 
-            NavigationPage offerTrips = new NavigationPage(new OffersTripPage());
+            NavigationPage offerTrips = new NavigationPage(new OffersTripPage(user));
             offerTrips.Title = "Oferta de Rutas";
 
             NavigationPage tripsPassenger = new NavigationPage(new MyTripPassengerPage());
@@ -29,11 +30,12 @@ namespace PryRutasMoviles.Pages
 
             Children.Add(offerTrips);
             Children.Add(tripsPassenger);
+            userActual = user;
         }
 
         void ToolbarItem_Clicked(System.Object sender, System.EventArgs e)
         {
-            Navigation.PushAsync(new ProfileUserPage());
+            Navigation.PushAsync(new ProfileUserPage(userActual));
         }
     }
 }
