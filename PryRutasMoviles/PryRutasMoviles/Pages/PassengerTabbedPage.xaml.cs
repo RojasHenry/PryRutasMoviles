@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using PryRutasMoviles.Models;
+﻿using PryRutasMoviles.Models;
 using PryRutasMoviles.Pages.TabsPage;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -13,29 +8,29 @@ namespace PryRutasMoviles.Pages
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PassengerTabbedPage : TabbedPage
     {
-        User userActual;
+        User _user;
         public PassengerTabbedPage(User user)
         {
             InitializeComponent();
 
             NavigationPage.SetHasNavigationBar(this, false);
 
-            Title = "Bienvenido, " + user.FirstName + " " + user.LastName;
+            Title = $"Welcome, {user.FullName}"; 
 
             NavigationPage offerTrips = new NavigationPage(new OffersTripPage(user));
-            offerTrips.Title = "Oferta de Rutas";
+            offerTrips.Title = "Trips offered";
 
             NavigationPage tripsPassenger = new NavigationPage(new MyTripPassengerPage());
-            tripsPassenger.Title = "Mis Viajes";
+            tripsPassenger.Title = "My Trips";
 
             Children.Add(offerTrips);
             Children.Add(tripsPassenger);
-            userActual = user;
+            _user = user;
         }
 
-        void ToolbarItem_Clicked(System.Object sender, System.EventArgs e)
+        private void ToolbarItem_Clicked(object sender, System.EventArgs e)
         {
-            Navigation.PushAsync(new ProfileUserPage(userActual));
+            Navigation.PushAsync(new ProfileUserPage(_user));
         }
     }
 }

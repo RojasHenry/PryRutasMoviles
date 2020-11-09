@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage BackgroundColor="#3E606F"
-            Title="Registration"        
-            xmlns:local="clr-namespace:PryRutasMoviles.Extensions"
+             Title="Registration"
+             xmlns:local="clr-namespace:PryRutasMoviles.Extensions"
              xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PryRutasMoviles.Pages.RegistryPage">
@@ -15,7 +15,7 @@
                        BackgroundColor="Transparent"
                        AbsoluteLayout.LayoutBounds="0.5,0,20,20" AbsoluteLayout.LayoutFlags="PositionProportional"/>
         </AbsoluteLayout>
-        <StackLayout Orientation="Horizontal">
+        <StackLayout x:Name="BasicsLayout" Orientation="Horizontal">
             <TableView Intent="Form">
                 <TableRoot>
                     <TableSection Title="BASICS" TextColor="#FCFFF5">
@@ -27,7 +27,7 @@
                 </TableRoot>
             </TableView>
         </StackLayout>
-        <StackLayout Orientation="Horizontal">
+        <StackLayout x:Name="vehicleLayout" Orientation="Horizontal">
             <TableView x:Name="tblVehicle" Intent="Form" IsVisible="false">
                 <TableRoot>
                     <TableSection Title="VEHICLE INFORMATION" TextColor="#FCFFF5">
@@ -69,7 +69,7 @@
                 </TableRoot>
             </TableView>
         </StackLayout>
-        <StackLayout Orientation="Horizontal">
+        <StackLayout x:Name="credentialsLayout" Orientation="Horizontal" IsVisible="false">
             <TableView x:Name="tblCredentials" Intent="Form" >
                 <TableRoot>
                     <TableSection Title="CREDENTIALS" TextColor="#FCFFF5">
@@ -86,7 +86,16 @@
 			TextColor="#CBDBD7"
             FontSize="20"                
 			BackgroundColor="#193441"
+            IsVisible="false"
             Clicked="BtnRegister_Clicked" />
+            
+            <Button 
+			x:Name="btnNext"
+            Text="Next" 
+			TextColor="#CBDBD7"
+            FontSize="20"                
+			BackgroundColor="#193441"
+            Clicked="btnNext_Clicked" />
         </StackLayout>
     </StackLayout>
 </ContentPage>

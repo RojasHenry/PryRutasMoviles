@@ -19,8 +19,13 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Button x:Name="btnPassenger" Grid.Row="0" Grid.Column="0" Text="Pasajero" Clicked="btnPassenger_Clicked"/>
-            <Button x:Name="btnDriver" Grid.Row="0" Grid.Column="1" Text="Conductor" Clicked="btnDriver_Clicked"/>
+            <Label Grid.Row="0" Grid.ColumnSpan="2" 
+                   Text="Login as:" 
+                   FontSize="Title"
+                   HorizontalOptions="CenterAndExpand" 
+                   VerticalOptions="Center"/>
+            <Button x:Name="btnPassenger" Grid.Row="1" Grid.Column="0" Text="Passenger" Clicked="btnPassenger_Clicked"/>
+            <Button x:Name="btnDriver" Grid.Row="1" Grid.Column="1" Text="Driver" Clicked="btnDriver_Clicked"/>
         </Grid>
     </StackLayout>    
 </popups:PopupPage>

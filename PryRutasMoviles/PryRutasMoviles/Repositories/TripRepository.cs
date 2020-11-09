@@ -3,9 +3,9 @@ using Firebase.Database.Query;
 using PryRutasMoviles.Models;
 using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Linq;
 using System.Threading.Tasks;
+using Xamarin.Forms.Shapes;
 
 namespace PryRutasMoviles.Repositories
 {
@@ -28,13 +28,14 @@ namespace PryRutasMoviles.Repositories
             .PostAsync(trip);
         }
 
-        public async Task<List<Trip>> GetTripsByState(string state)
+        public async Task<List<Trip>> GetAllTrips() 
         {
             return (await firebase
                .Child("Trip")
                .OnceAsync<Trip>()).Select(item => new Trip
                {
                    Driver = item.Object.Driver,
+                   MeetingDate = item.Object.MeetingDate,                   
                    MeetingTime = item.Object.MeetingTime,
                    Price = item.Object.Price,
                    SeatsAvailables = item.Object.SeatsAvailables,
@@ -42,129 +43,279 @@ namespace PryRutasMoviles.Repositories
                    TripId = item.Object.TripId,
                    TripRoute = item.Object.TripRoute,
                    Passengers = item.Object.Passengers
-               }).ToList()
-               .Where(a => a.State == state)
-               .ToList();
+               }).ToList();
         }
 
-        public async Task<Trip> GetTrip(string idTrip)
+        public async Task<List<Trip>> GetTripsOffered()
         {
-            var resultstrip = await firebase
-                          .Child("Trip")
-                          .OnceAsync<Trip>();
-            return resultstrip.Where(a => a.Object.TripId == idTrip).FirstOrDefault().Object;
+            var result = await GetAllTrips();
+            
+            if (result == null)
+                return null;
+
+            return result.Where(t => (t.SeatsAvailables>0) 
+                 && (t.State.Equals("Posted"))
+                 && (Convert.ToDateTime(t.FullMeetingDate) >= DateTime.Now))
+                .ToList();
         }
 
-        public async Task<bool> AddPassenger(User newPassenger, string idTrip)
+        public async Task<Trip> GetDriverCurrentTrip(User driver)
         {
-            var toUpdateTrip = (await firebase
-              .Child("Trip")
-              .OnceAsync<Trip>()).Where(a => a.Object.TripId == idTrip).FirstOrDefault();
+            var result = await GetAllTrips();
 
-            if(toUpdateTrip.Object.Passengers.Count <= toUpdateTrip.Object.SeatsAvailables )
-            {
-                toUpdateTrip.Object.Passengers.Add(newPassenger);
-                await firebase
-                 .Child("Trip")
-                 .Child(toUpdateTrip.Key)
-                 .PutAsync(toUpdateTrip);
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            if (result == null)
+                return null;
+
+            return result.Where(d => 
+            (d.Driver.Email.Equals(driver.Email))
+             && ((d.State.Equals("Posted") 
+                && (Convert.ToDateTime(d.FullMeetingDate) >= DateTime.Now))
+                || (d.State.Equals("OnWay")))
+            ).ToList()
+            .FirstOrDefault();
+
+            //return result.Where(d => (d.Driver.Email.Equals(driver.Email))
+            //     && (d.State.Equals("Posted") || d.State.Equals("OnWay"))
+            //     && (Convert.ToDateTime(d.FullMeetingDate) >= DateTime.Now))
+            //    .ToList()
+            //    .FirstOrDefault();
         }
 
-        public async Task<Trip> PassengerHasATrip(User actualPassenger)
+        public async Task<Trip> GetTripById(string tripId)
         {
-            actualPassenger.State = true;
-            var tripPassengerActual = (await firebase
-              .Child("Trip")
-              .OnceAsync<Trip>())
-              .Where(a => a.Object.Passengers.Contains(actualPassenger))
-              .Where(a => a.Object.State == "Posted" || a.Object.State == "OnWay").FirstOrDefault();
-            return tripPassengerActual.Object;
+            var result = await GetAllTrips();
+            if (result == null)
+                return null;
+            return result.Where(a => a.TripId.Equals(tripId)).FirstOrDefault();
         }
 
-
-        public async Task<List<Trip>> UsersTrip(User actualPassenger)
-        {
-            var tripPassengerActual = (await firebase
-              .Child("Trip")
-              .OnceAsync<Trip>()).Select(item => new Trip
-              {
-                  Driver = item.Object.Driver,
-                  MeetingTime = item.Object.MeetingTime,
-                  Price = item.Object.Price,
-                  SeatsAvailables = item.Object.SeatsAvailables,
-                  State = item.Object.State,
-                  TripId = item.Object.TripId,
-                  TripRoute = item.Object.TripRoute,
-                  Passengers = item.Object.Passengers
-              }).ToList()
-              .Where(a => a.Passengers.Contains(actualPassenger))
-              .Where(a => a.State.ToString() == "false")
-              .Where(a => a.State == "Finished").ToList();
-            return tripPassengerActual;
-        }
-
-        public async Task RemovePassenger(User oldPassenger, string idTrip)
-        {
-            var toDeletePass = (await firebase
-              .Child("Trip")
-              .OnceAsync<Trip>()).Where(a => a.Object.TripId == idTrip).FirstOrDefault();
-
-            toDeletePass.Object.Passengers.Remove(oldPassenger);
-                await firebase
-                 .Child("Trip")
-                 .Child(toDeletePass.Key)
-                 .PutAsync(toDeletePass);
-        }
-
-        public async Task RemoveSafePassenger(User oldPassenger, string idTrip)
-        {
-            oldPassenger.State = false;
-            var toDeletePass = (await firebase
-              .Child("Trip")
-              .OnceAsync<Trip>()).Where(a => a.Object.TripId == idTrip).FirstOrDefault();
-
-            await firebase
-             .Child("Trip")
-             .Child(toDeletePass.Key)
-             .PutAsync(toDeletePass);
-        }
-
-        public async Task<int> SeatsOcuppateds(string idTrip)
-        {
-            var TripSeats = (await firebase
-                .Child("Trip")
-                .OnceAsync<Trip>()).Where(a => a.Object.TripId == idTrip).FirstOrDefault();
-
-            return TripSeats.Object.Passengers.Count;
-        }
-
-        public async Task UpdateStateTrip(string state, string idTrip)
+        public async Task AddPassengerOnATrip(User passenger, string tripId)
         {
             var toUpdateTrip = (await firebase
                .Child("Trip")
-               .OnceAsync<Trip>()).Where(a => a.Object.TripId == idTrip).FirstOrDefault();
+               .OnceAsync<Trip>())
+               .Where(a => a.Object.TripId.Equals(tripId))
+               .FirstOrDefault();
+
+            if (toUpdateTrip.Object.Passengers == null)
+            {
+                toUpdateTrip.Object.Passengers = new List<User>() { passenger };
+                toUpdateTrip.Object.SeatsAvailables--;
+            }
+            else 
+            {
+                toUpdateTrip.Object.Passengers.Add(passenger);
+                toUpdateTrip.Object.SeatsAvailables--;
+            }               
+                            
+            await firebase
+                .Child("Trip")
+                .Child(toUpdateTrip.Key)
+                .PutAsync(new Trip() 
+                { 
+                    Driver = toUpdateTrip.Object.Driver,
+                    MeetingDate = toUpdateTrip.Object.MeetingDate,
+                    MeetingTime = toUpdateTrip.Object.MeetingTime,
+                    Price = toUpdateTrip.Object.Price,
+                    State = toUpdateTrip.Object.State,
+                    TripId = toUpdateTrip.Object.TripId,
+                    TripRoute = toUpdateTrip.Object.TripRoute,
+                    Passengers = toUpdateTrip.Object.Passengers,
+                    SeatsAvailables = toUpdateTrip.Object.SeatsAvailables,
+                });            
+        }
+
+        public async Task RemovePassenger(User passenger, string tripId)
+        {
+
+            var toUpdateTrip = (await firebase
+               .Child("Trip")
+               .OnceAsync<Trip>())
+               .Where(a => a.Object.TripId.Equals(tripId))
+               .FirstOrDefault();
+
+            toUpdateTrip.Object.Passengers.RemoveAll(p => p.Email.Equals(passenger.Email));
+            toUpdateTrip.Object.SeatsAvailables++;
+
+            await firebase
+                .Child("Trip")
+                .Child(toUpdateTrip.Key)
+                .PutAsync(new Trip()
+                {
+                    Driver = toUpdateTrip.Object.Driver,
+                    MeetingDate = toUpdateTrip.Object.MeetingDate,
+                    MeetingTime = toUpdateTrip.Object.MeetingTime,
+                    Price = toUpdateTrip.Object.Price,
+                    State = toUpdateTrip.Object.State,
+                    TripId = toUpdateTrip.Object.TripId,
+                    TripRoute = toUpdateTrip.Object.TripRoute,
+                    Passengers = toUpdateTrip.Object.Passengers,
+                    SeatsAvailables = toUpdateTrip.Object.SeatsAvailables,
+                });
+        }
+
+        public async Task<Trip> GetPassengerCurrentTrip(User currentPassenger)
+        {
+            var result = await GetAllTrips();
+            if (result == null)
+                return null;
+
+            var TripsWithPassengers =
+                result.Where(p => 
+                (p.Passengers != null)
+                && ((p.State.Equals("Posted")
+                    && (Convert.ToDateTime(p.FullMeetingDate) >= DateTime.Now))
+                    || (p.State.Equals("OnWay")))
+                ).ToList();
+
+            //var TripsWithPassengers = 
+            //    result.Where(p => (p.Passengers != null) 
+            //    && (p.State.Equals("Posted") || p.State.Equals("OnWay"))
+            //    && (Convert.ToDateTime(p.FullMeetingDate) >= DateTime.Now))
+            //    .ToList();
+
+            if (TripsWithPassengers.Count > 0)
+            {
+                return TripsWithPassengers
+                   .Where(t => t.Passengers.Any(p => (p.Email.Equals(currentPassenger.Email))&& p.State))
+                   .FirstOrDefault();
+            }
+            else
+                return null;            
+        }
+
+        public async Task<int> GetSeatsAvailableOnATrip(string tripId)
+        {
+            var selectedTrip = await GetTripById(tripId);
+            if (selectedTrip.Passengers == null)
+                return selectedTrip.SeatsAvailables;
+            return selectedTrip.Passengers.Count;
+        }
+
+        public async Task UpdateStateTrip(string state, string tripId)
+        {
+            var toUpdateTrip = (await firebase
+               .Child("Trip")
+               .OnceAsync<Trip>())
+               .Where(a => a.Object.TripId.Equals(tripId))
+               .FirstOrDefault();
 
             toUpdateTrip.Object.State = state;
 
             await firebase
                 .Child("Trip")
                 .Child(toUpdateTrip.Key)
-                .PutAsync(toUpdateTrip);
+                .PutAsync(new Trip()
+                {
+                    Driver = toUpdateTrip.Object.Driver,
+                    MeetingDate = toUpdateTrip.Object.MeetingDate,
+                    MeetingTime = toUpdateTrip.Object.MeetingTime,
+                    Price = toUpdateTrip.Object.Price,
+                    State = toUpdateTrip.Object.State,
+                    TripId = toUpdateTrip.Object.TripId,
+                    TripRoute = toUpdateTrip.Object.TripRoute,
+                    Passengers = toUpdateTrip.Object.Passengers,
+                    SeatsAvailables = toUpdateTrip.Object.SeatsAvailables,
+                });
         }
 
-        public async Task<string> GetStateTrip(string idTrip)
+        public async Task CancelTrip(string tripId) 
         {
             var toUpdateTrip = (await firebase
                .Child("Trip")
-               .OnceAsync<Trip>()).Where(a => a.Object.TripId == idTrip).FirstOrDefault();
+               .OnceAsync<Trip>())
+               .Where(a => a.Object.TripId.Equals(tripId))
+               .FirstOrDefault();
 
-            return toUpdateTrip.Object.State;
+            if (toUpdateTrip.Object.Passengers !=null)
+                toUpdateTrip.Object.Passengers.Clear();
+
+            toUpdateTrip.Object.State = "Canceled";
+
+            await firebase
+                .Child("Trip")
+                .Child(toUpdateTrip.Key)
+                .PutAsync(new Trip()
+                {
+                    Driver = toUpdateTrip.Object.Driver,
+                    MeetingDate = toUpdateTrip.Object.MeetingDate,
+                    MeetingTime = toUpdateTrip.Object.MeetingTime,
+                    Price = toUpdateTrip.Object.Price,
+                    State = toUpdateTrip.Object.State,
+                    TripId = toUpdateTrip.Object.TripId,
+                    TripRoute = toUpdateTrip.Object.TripRoute,
+                    Passengers = toUpdateTrip.Object.Passengers,
+                    SeatsAvailables = toUpdateTrip.Object.SeatsAvailables,
+                });
+        }
+
+        public async Task<string> GetStatusTrip(string tripId) 
+        {
+            var tripSelected = (await firebase
+               .Child("Trip")
+               .OnceAsync<Trip>())
+               .Where(a => a.Object.TripId.Equals(tripId))
+               .FirstOrDefault();
+
+            return tripSelected.Object.State.ToString();
+        }
+        
+        public async Task FinishTrip(string tripId)
+        {
+            var toUpdateTrip = (await firebase
+               .Child("Trip")
+               .OnceAsync<Trip>())
+               .Where(a => a.Object.TripId.Equals(tripId))
+               .FirstOrDefault();
+            
+            toUpdateTrip.Object.Passengers.ForEach(p => p.State = false);
+            toUpdateTrip.Object.State = "Finished";
+            
+            await firebase
+                .Child("Trip")
+                .Child(toUpdateTrip.Key)
+                .PutAsync(new Trip()
+                {
+                    Driver = toUpdateTrip.Object.Driver,
+                    MeetingDate = toUpdateTrip.Object.MeetingDate,                    
+                    MeetingTime = toUpdateTrip.Object.MeetingTime,
+                    Price = toUpdateTrip.Object.Price,
+                    State = toUpdateTrip.Object.State,
+                    TripId = toUpdateTrip.Object.TripId,
+                    TripRoute = toUpdateTrip.Object.TripRoute,
+                    Passengers = toUpdateTrip.Object.Passengers,
+                    SeatsAvailables = toUpdateTrip.Object.SeatsAvailables,
+                });
+        }
+
+        public async Task FinishPassengerTrip(User passenger, string tripId)
+        {
+            var selectedTrip = (await firebase
+               .Child("Trip")
+               .OnceAsync<Trip>())
+               .Where(a => a.Object.TripId.Equals(tripId))
+               .FirstOrDefault();
+
+            selectedTrip.Object.Passengers
+                .Where(p => p.Email.Equals(passenger.Email))
+                .ToList()
+                .ForEach(ps => ps.State = false);
+
+            await firebase
+                .Child("Trip")
+                .Child(selectedTrip.Key)
+                .PutAsync(new Trip()
+                {
+                    Driver = selectedTrip.Object.Driver,
+                    MeetingDate = selectedTrip.Object.MeetingDate,
+                    MeetingTime = selectedTrip.Object.MeetingTime,
+                    Price = selectedTrip.Object.Price,
+                    State = selectedTrip.Object.State,
+                    TripId = selectedTrip.Object.TripId,
+                    TripRoute = selectedTrip.Object.TripRoute,
+                    Passengers = selectedTrip.Object.Passengers,
+                    SeatsAvailables = selectedTrip.Object.SeatsAvailables,
+                });
         }
 
         public void Dispose()

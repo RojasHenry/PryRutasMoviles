@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using PryRutasMoviles.Models;
+﻿using PryRutasMoviles.Models;
 using Xamarin.Forms;
 
 namespace PryRutasMoviles.Pages.TabsPage

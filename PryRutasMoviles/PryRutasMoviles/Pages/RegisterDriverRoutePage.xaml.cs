@@ -6,7 +6,6 @@ using PryRutasMoviles.Entities;
 using PryRutasMoviles.Models;
 using PryRutasMoviles.Pages.TabsPage;
 using PryRutasMoviles.Repositories;
-using Rg.Plugins.Popup.Extensions;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Maps;
@@ -21,18 +20,11 @@ namespace PryRutasMoviles.Pages
 
         public RegisterDriverRoutePage(User driver)
         {
-            InitializeComponent();
+            InitializeComponent();            
             _driver = driver;
             GetLocation();
             tpMeetingTime.Time = DateTime.Now.TimeOfDay;
-        }
-
-        public RegisterDriverRoutePage()
-        {
-            InitializeComponent();
-            GetLocation();
-            tpMeetingTime.Time = DateTime.Now.TimeOfDay;
-        }
+        }        
 
         #region events
 
@@ -69,7 +61,7 @@ namespace PryRutasMoviles.Pages
                 {
                     if (IsValidForm())
                     {
-                        var result = await ConfirmPostTrip(this.Navigation);
+                        var result = await DisplayAlert("Warning","Are you sure ?","Yes","No");
                         if (result)
                         {
                             EnableDisableActivityIndicator(true);
@@ -87,11 +79,11 @@ namespace PryRutasMoviles.Pages
                                     TargetPointLatitude = route.TargetPoint.Position.Latitude,
                                     TargetPoitnAddress = route.TargetPoint.Address
                                 },
+                                MeetingDate = DateTime.Now.ToShortDateString(),
                                 MeetingTime = tpMeetingTime.Time.ToString(),
                                 Price = Convert.ToDecimal(txtPrice.Text),
                                 SeatsAvailables = Convert.ToInt16(txtSeatsAvailables.Text),
-                                State = "Posted",
-                                Passengers = new List<User>()
+                                State = "Posted"                                
                             };
 
                             await tripRepository.AddTrip(trip);
@@ -101,7 +93,7 @@ namespace PryRutasMoviles.Pages
                             RemovePoint();
                             CleanEntries();
                             EnableDisableControls(true);
-                            await Navigation.PushAsync(new TripWaitingRoomPage(trip.TripId));
+                            await Navigation.PushAsync(new TripWaitingRoomPage(trip));
                         }
                     }
                 }
@@ -181,7 +173,8 @@ namespace PryRutasMoviles.Pages
         }
         #endregion
 
-        #region funtional methods
+        #region funtional methods        
+
         private async Task SelectMeetingPoint()
         {
             string response = await DisplayActionSheet("Choose your current location as meeting point?"
@@ -282,44 +275,31 @@ namespace PryRutasMoviles.Pages
 
             if (route.MeetingPoint == null || route.TargetPoint == null)
             {
-                DisplayAlert("Alerta", "Please select a route", "Ok");
+                DisplayAlert("Alert", "Please select a route", "Ok");
                 return false;
             }
 
             if (string.IsNullOrEmpty(txtPrice.Text) || Convert.ToDouble(txtPrice.Text) == 0)
             {
-                DisplayAlert("Alerta", "The price of the trip cannot be zero", "Ok");
+                DisplayAlert("Alert", "The price of the trip cannot be zero", "Ok");
                 return false;
             }
 
             if (tpMeetingTime.Time.CompareTo(DateTime.Now.TimeOfDay) < 0)
             {
-                DisplayAlert("Alerta", "Meeting time must be greater than current hour", "Ok");
+                DisplayAlert("Alert", "Meeting time must be greater than current hour", "Ok");
                 return false;
             }
 
             if (string.IsNullOrEmpty(txtPrice.Text) || Convert.ToInt16(txtSeatsAvailables.Text) == 0)
             {
-                DisplayAlert("Alerta", "The number of seats available cannot be zero", "Ok");
+                DisplayAlert("Alert", "The number of seats available cannot be zero", "Ok");
                 return false;
             }
 
             return true;
         }
-
-        private async Task<bool> ConfirmPostTrip(INavigation navigation)
-        {
-            TaskCompletionSource<bool> completionSource = new TaskCompletionSource<bool>();
-
-            void callback(bool didConfirm)
-            {
-                completionSource.TrySetResult(didConfirm);
-            }
-
-            var popup = new DetailRouteModal(callback, route);
-            await navigation.PushPopupAsync(popup);
-            return await completionSource.Task;
-        }
+        
         #endregion      
 
         #region common methods
@@ -329,12 +309,14 @@ namespace PryRutasMoviles.Pages
             activity.IsRunning = flagActivityIndicator;
             activity.IsVisible = flagActivityIndicator;
         }
+
         private void EnableDisableControls(bool controlFlag)
         {
             btnGetMeetingPoint.IsEnabled = controlFlag;
             btnGetTargetPoint.IsEnabled = controlFlag;
             btnPostTrip.IsEnabled = controlFlag;
         }
+
         private void RemovePoint()
         {
             if (map.MapElements.Count > 0)

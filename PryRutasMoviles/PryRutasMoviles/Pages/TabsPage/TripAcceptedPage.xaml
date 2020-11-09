@@ -1,52 +1,37 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PryRutasMoviles.Pages.TabsPage.TripAcceptedPage">
-    <Grid Margin="10">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
+<ContentPage
+    Title="On Way"
+    NavigationPage.HasBackButton="false"
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="PryRutasMoviles.Pages.TabsPage.TripAcceptedPage">
+
+    <Grid Padding="20">
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="40" />            
         </Grid.RowDefinitions>
-
-        <StackLayout Grid.Row="0" Grid.Column="0" Orientation="Vertical" HorizontalOptions="CenterAndExpand" >
-            <Image HeightRequest="150" WidthRequest="150" Source="https://e7.pngegg.com/pngimages/886/963/png-clipart-check-mark-computer-icons-wrong-miscellaneous-angle.png"></Image>
-            <Label Text="Trip Accepted!" VerticalTextAlignment="Center" FontSize="Large"/>
+        <StackLayout Grid.Row="0" VerticalOptions="Center">
+            <Image 
+                Source="https://cdn.pixabay.com/photo/2017/01/13/01/22/ok-1976099_960_720.png"
+                HeightRequest="150" 
+                WidthRequest="150"/>
+            
+            <Label Text="Trip Accepted!" FontSize="30" TextColor="Black" HorizontalOptions="Center" />
+            
+            <Label Text="{Binding Trip.Driver.FullName, StringFormat='Driver: {0}'}" 
+                   FontSize="18" TextColor="Black" HorizontalOptions="Center" />
+            <Label Text="{Binding Trip.Driver.Vehicle.Brand, StringFormat='Brand Car: {0}'}" 
+                   FontSize="18" TextColor="Black" HorizontalOptions="Center" />
+            <Label Text="{Binding Trip.Driver.Vehicle.Registration, StringFormat='Registration Car: {0}'}" 
+                   FontSize="18" TextColor="Black" HorizontalOptions="Center" />
+            <Label Text="{Binding Trip.Driver.Vehicle.Color, StringFormat='Color Car: {0}'}" 
+                   FontSize="18" TextColor="Black" HorizontalOptions="Center" />
+            <Label Text="{Binding Trip.Price, StringFormat='Total Payment: ${0}'}" 
+                   FontSize="18" TextColor="Black" HorizontalOptions="Center" />
+            <Label Text="{Binding Trip.MeetingTime, StringFormat='Meeting Time: {0}'}" 
+                   FontSize="18" TextColor="Black" HorizontalOptions="Center" />
         </StackLayout>
-
-        <StackLayout Grid.Row="1" Grid.Column="0">
-            <StackLayout>
-                <Label Text="Driver: "/>
-                <Label Text="{Binding TripIn.Driver.FirstName}"></Label>
-                <Label Text="{Binding TripIn.Driver.LastName}"></Label>
-            </StackLayout>
-
-            <Label Text="Info Car Driver" HorizontalTextAlignment="Center"></Label>
-            <StackLayout Orientation="Horizontal">
-                <Label Text="Registration: "></Label>
-                <Label Text="{Binding TripIn.Driver.Vehicle.Registration}"></Label>
-            </StackLayout>
-
-            <StackLayout Orientation="Horizontal">
-                <Label Text="Brand: "></Label>
-                <Label Text="{Binding TripIn.Driver.Vehicle.Brand}"></Label>
-            </StackLayout>
-            <StackLayout Orientation="Horizontal">
-                <Label Text="Color: "></Label>
-                <Label Text="{Binding TripIn.Driver.Vehicle.Color}"></Label>
-            </StackLayout>
-
-             <Label Text="Info Trip"  HorizontalTextAlignment="Center"></Label>
-
-             <StackLayout Orientation="Horizontal">
-                <Label Text="Total to pay: "></Label>
-                <Label Text="{Binding TripIn.Price}"></Label>
-            </StackLayout>
-        </StackLayout>
-
-        <StackLayout Grid.Row="2" Grid.Column="0">
-            <Button x:Name="btnCancelTrip" Text="Cancel Trip" Clicked="btnCancelTrip_Clicked"/>
-        </StackLayout>
-    </Grid>
+        <Button Grid.Row="1" Text="Cancel" BackgroundColor="#1dabf0" TextColor="White" Clicked="BtnCancelTrip_Clicked"  />        
+    </Grid>    
 </ContentPage>

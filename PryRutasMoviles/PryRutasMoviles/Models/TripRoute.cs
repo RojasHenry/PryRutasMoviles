@@ -8,5 +8,13 @@
         public double TargetPointLongitude { get; set; }
         public double TargetPointLatitude { get; set; }
         public string TargetPoitnAddress { get; set; }
+
+        public string Resume 
+        {
+            get
+            {
+                return $"\nMeeting Point : { MeetingPoitnAddress}\nTarget Point : {TargetPoitnAddress}";
+            }
+        }
     }
 }
