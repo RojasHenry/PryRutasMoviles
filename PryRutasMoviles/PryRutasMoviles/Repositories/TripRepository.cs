@@ -5,7 +5,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Xamarin.Forms.Shapes;
 
 namespace PryRutasMoviles.Repositories
 {
@@ -72,13 +71,7 @@ namespace PryRutasMoviles.Repositories
                 && (Convert.ToDateTime(d.FullMeetingDate) >= DateTime.Now))
                 || (d.State.Equals("OnWay")))
             ).ToList()
-            .FirstOrDefault();
-
-            //return result.Where(d => (d.Driver.Email.Equals(driver.Email))
-            //     && (d.State.Equals("Posted") || d.State.Equals("OnWay"))
-            //     && (Convert.ToDateTime(d.FullMeetingDate) >= DateTime.Now))
-            //    .ToList()
-            //    .FirstOrDefault();
+            .FirstOrDefault();            
         }
 
         public async Task<Trip> GetTripById(string tripId)
@@ -166,13 +159,7 @@ namespace PryRutasMoviles.Repositories
                 && ((p.State.Equals("Posted")
                     && (Convert.ToDateTime(p.FullMeetingDate) >= DateTime.Now))
                     || (p.State.Equals("OnWay")))
-                ).ToList();
-
-            //var TripsWithPassengers = 
-            //    result.Where(p => (p.Passengers != null) 
-            //    && (p.State.Equals("Posted") || p.State.Equals("OnWay"))
-            //    && (Convert.ToDateTime(p.FullMeetingDate) >= DateTime.Now))
-            //    .ToList();
+                ).ToList();            
 
             if (TripsWithPassengers.Count > 0)
             {
