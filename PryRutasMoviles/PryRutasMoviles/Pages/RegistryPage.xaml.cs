@@ -229,7 +229,7 @@ namespace PryRutasMoviles.Pages
                 {
                     BasicsLayout.IsVisible = false;
                     vehicleLayout.IsVisible = false;
-                    btnNext.Text = "Previuos";
+                    btnNext.Text = "Previous";
                     btnRegister.IsVisible = true;
                     credentialsLayout.IsVisible = true;
                     return;
@@ -238,7 +238,7 @@ namespace PryRutasMoviles.Pages
                     await DisplayAlert("Alert", "Please complete all entries", "Ok");
             }
                        
-            if (btnNext.Text.Equals("Previuos") && !_user.IsFromSocialNetworks)
+            if (btnNext.Text.Equals("Previous") && !_user.IsFromSocialNetworks)
             {
                 BasicsLayout.IsVisible = true;
                 vehicleLayout.IsVisible = true;

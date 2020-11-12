@@ -21,24 +21,27 @@ namespace PryRutasMoviles.Pages.TabsPage
             BindingContext = this;
         }
                 
-        private void GetPassengersWaiting(Trip trip)
+        private async void GetPassengersWaiting(Trip trip)
         {
             try
             {
-                _passengersList = new ObservableCollection<User>();
-                if (trip.Passengers ==null)
-                    return;
-                
-                trip.Passengers
-                    .Where(p=>p.State)
-                    .ToList()
-                    .ForEach(p => _passengersList.Add(p));
-                passengersListView.ItemsSource = _passengersList;
+                using (TripRepository tripRepository = new TripRepository())
+                {
+                    var tripInDB = await tripRepository.GetTripById(trip.TripId);
+                    _passengersList = new ObservableCollection<User>();
+                    if (tripInDB.Passengers == null)
+                        return;
+
+                    tripInDB.Passengers
+                        .Where(p => p.State)
+                        .ToList()
+                        .ForEach(p => _passengersList.Add(p));
+                    passengersListView.ItemsSource = _passengersList;
+                }
             }
             catch (Exception ex)
             {
-
-                DisplayAlert("Error", "An unexpected error has occurred"+ ex.Message, "Ok");
+                await DisplayAlert("Error", "An unexpected error has occurred"+ ex.Message, "Ok");
             }
         }
 
@@ -99,8 +102,8 @@ namespace PryRutasMoviles.Pages.TabsPage
                 using (TripRepository tripRepository = new TripRepository())
                 {
                     await tripRepository.FinishTrip(Trip.TripId);
-                    await Navigation.PushAsync(new RegisterDriverRoutePage(Trip.Driver));
                     EnableDisableTripButtons("Finished");
+                    await Navigation.PushAsync(new RegisterDriverRoutePage(Trip.Driver));
                 }
             }
             catch
@@ -115,6 +118,12 @@ namespace PryRutasMoviles.Pages.TabsPage
             {
                 using (TripRepository tripRepository = new TripRepository())
                 {
+                    var tripState = await tripRepository.GetStatusTrip(Trip.TripId);
+                    if (tripState.Equals("OnWay"))
+                    {
+                        await DisplayAlert("Alert", "The trip is on way, please Finish the trip by passenger", "Ok");
+                        return;
+                    }
                     var passenger = (sender as MenuItem).CommandParameter as User;
                     await tripRepository.RemovePassenger(passenger, Trip.TripId);
                     _passengersList.Remove(passenger);
@@ -144,8 +153,8 @@ namespace PryRutasMoviles.Pages.TabsPage
                     if (_passengersList.Count==0)
                     {
                         await tripRepository.FinishTrip(Trip.TripId);
-                        await Navigation.PushAsync(new RegisterDriverRoutePage(Trip.Driver));
                         EnableDisableTripButtons("Initial");
+                        await Navigation.PushAsync(new RegisterDriverRoutePage(Trip.Driver));                        
                     }
                 }
             }

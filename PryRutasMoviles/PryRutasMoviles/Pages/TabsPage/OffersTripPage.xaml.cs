@@ -73,33 +73,34 @@ namespace PryRutasMoviles.Pages.TabsPage
                 if (e.SelectedItem == null)
                     return;
 
-                var selectedTrip = e.SelectedItem as Trip;
-                var confirmTrip = await ConfirmPostTrip(Navigation, selectedTrip);
-
-                if (confirmTrip)
+                using (TripRepository tripRepository = new TripRepository())
                 {
-                    using (TripRepository tripRepository = new TripRepository())
-                    {
-                        int seatsAvailableOnATrip = await tripRepository.GetSeatsAvailableOnATrip(selectedTrip.TripId);
+                    
+                    var selectedTrip = e.SelectedItem as Trip;
+                    int seatsAvailableOnATrip = await tripRepository.GetSeatsAvailableOnATrip(selectedTrip.TripId);
 
-                        if (seatsAvailableOnATrip == 0)
-                        {
-                            await DisplayAlert("Alert", "Trip with no available seats", "Ok");
-                            return;
-                        }
+                    if (seatsAvailableOnATrip == 0)
+                    {
+                        await DisplayAlert("Alert", "Trip with no available seats", "Ok");
+                        return;
+                    }
+
+                    var confirmTrip = await ConfirmPostTrip(Navigation, selectedTrip);
+
+                    if (confirmTrip)
+                    {
 
                         await tripRepository.AddPassengerOnATrip(_user, selectedTrip.TripId);
-                        await Navigation.PushAsync(new TripAcceptedPage(selectedTrip, _user));                        
+                        await Navigation.PushAsync(new TripAcceptedPage(selectedTrip, _user));
                     }
-                }
 
-                OfferTrip.SelectedItem = null;
+                    OfferTrip.SelectedItem = null;
+                }
             }
             catch (Exception exc)
             {
                 await DisplayAlert("Error", "An unexpected error has occurred" + exc.Message, "Ok");
-            }
-            
+            }            
         }
 
         private async Task<bool> ConfirmPostTrip(INavigation navigation, Trip trip)

@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Threading.Tasks;
 using PryRutasMoviles.Models;
 using PryRutasMoviles.Pages.TabsPage;
 using PryRutasMoviles.Repositories;
@@ -12,6 +11,7 @@ namespace PryRutasMoviles.Pages
     public partial class DriverTabbedPage : TabbedPage
     {
         private User _user;
+
         public DriverTabbedPage(User user, bool isDriver)
         {
             InitializeComponent();

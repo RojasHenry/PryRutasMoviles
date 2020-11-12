@@ -174,9 +174,7 @@ namespace PryRutasMoviles.Repositories
         public async Task<int> GetSeatsAvailableOnATrip(string tripId)
         {
             var selectedTrip = await GetTripById(tripId);
-            if (selectedTrip.Passengers == null)
-                return selectedTrip.SeatsAvailables;
-            return selectedTrip.Passengers.Count;
+            return selectedTrip.SeatsAvailables;
         }
 
         public async Task UpdateStateTrip(string state, string tripId)
