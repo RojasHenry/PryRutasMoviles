@@ -63,14 +63,7 @@ namespace PryRutasMoviles.Pages
                         return;
                     }
 
-                    NavigationPage registerRoute = new NavigationPage(new OffersTripPage(user));
-                    registerRoute.Title = "Trips offered";
-
-                    NavigationPage tripsDriver = new NavigationPage(new MyTripDriverPage());
-                    tripsDriver.Title = "My Trips";
-
-                    Children.Add(registerRoute);
-                    Children.Add(tripsDriver);
+                    await Navigation.PushAsync(new PassengerTabbedPage(user));                                        
                 }
             }
         }
