@@ -11,11 +11,11 @@ namespace PryRutasMoviles.Pages.TabsPage
     {
         private ObservableCollection<User> _passengersList;
         public Trip Trip { get; set; }
-
+        
         public TripWaitingRoomPage(Trip trip)
         {
             InitializeComponent();
-            Trip = trip;
+            Trip = trip;            
             GetPassengersWaiting(Trip);
             EnableDisableTripButtons(Trip.State);
             BindingContext = this;
@@ -85,8 +85,7 @@ namespace PryRutasMoviles.Pages.TabsPage
                 using (TripRepository tripRepository = new TripRepository())
                 {
                     await tripRepository.CancelTrip(Trip.TripId);
-                    EnableDisableTripButtons("Canceled");
-                    await Navigation.PushAsync(new RegisterDriverRoutePage(Trip.Driver));
+                    await Navigation.PopAsync();                    
                 }
             }
             catch
@@ -102,8 +101,7 @@ namespace PryRutasMoviles.Pages.TabsPage
                 using (TripRepository tripRepository = new TripRepository())
                 {
                     await tripRepository.FinishTrip(Trip.TripId);
-                    EnableDisableTripButtons("Finished");
-                    await Navigation.PushAsync(new RegisterDriverRoutePage(Trip.Driver));
+                    await Navigation.PopAsync();
                 }
             }
             catch
@@ -153,8 +151,7 @@ namespace PryRutasMoviles.Pages.TabsPage
                     if (_passengersList.Count==0)
                     {
                         await tripRepository.FinishTrip(Trip.TripId);
-                        EnableDisableTripButtons("Initial");
-                        await Navigation.PushAsync(new RegisterDriverRoutePage(Trip.Driver));                        
+                        await Navigation.PopAsync();
                     }
                 }
             }
@@ -180,10 +177,7 @@ namespace PryRutasMoviles.Pages.TabsPage
                     btnInitTrip.IsVisible = false;
                     btnCancelTrip.IsVisible = true;
                     btnFinishTrip.IsVisible = true;
-                    break;
-
-                default:
-                    break;
+                    break;                
             }
             
         }

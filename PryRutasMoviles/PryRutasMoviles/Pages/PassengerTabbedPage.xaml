@@ -1,11 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms" 
+<TabbedPage 
+    NavigationPage.HasBackButton="False"
+    NavigationPage.HasNavigationBar="False"
+    xmlns="http://xamarin.com/schemas/2014/forms" 
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
             x:Class="PryRutasMoviles.Pages.PassengerTabbedPage">
     <TabbedPage.ToolbarItems>
         <ToolbarItem Text="View Profile"
                      Order="Primary"
-                     Priority="0"
                      Clicked="ToolbarItem_Clicked"/>
     </TabbedPage.ToolbarItems>
 </TabbedPage>

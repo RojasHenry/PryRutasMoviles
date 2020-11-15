@@ -8,13 +8,13 @@ namespace PryRutasMoviles.Models
         public string TripId { get; set; }
         public User Driver { get; set; }
         public List<User> Passengers { get; set; }
-        public string MeetingDate { get; set; }
         public string MeetingTime { get; set; }
-        public string FullMeetingDate { get { return $"{MeetingDate} {MeetingTime}"; } }
+        public long TimestampMeetingDate { get; set; }
+        public string MeetingDate { get; set; }        
         public int SeatsAvailables { get; set; }
         public decimal Price { get; set; }
         public TripRoute TripRoute { get; set; }
-        public string State { get; set; } //Offered-full-In way
+        public string State { get; set; }
         
     }
 }

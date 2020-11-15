@@ -1,5 +1,6 @@
 ﻿using Firebase.Database;
 using Firebase.Database.Query;
+using PryRutasMoviles.Helpers;
 using PryRutasMoviles.Models;
 using System;
 using System.Collections.Generic;
@@ -18,6 +19,7 @@ namespace PryRutasMoviles.Repositories
          * OnWay
          * Canceled
          * Finished
+         * TimeOut
          */
 
         public async Task AddTrip(Trip trip)
@@ -34,8 +36,9 @@ namespace PryRutasMoviles.Repositories
                .OnceAsync<Trip>()).Select(item => new Trip
                {
                    Driver = item.Object.Driver,
-                   MeetingDate = item.Object.MeetingDate,                   
                    MeetingTime = item.Object.MeetingTime,
+                   TimestampMeetingDate = item.Object.TimestampMeetingDate,
+                   MeetingDate = item.Object.MeetingDate,
                    Price = item.Object.Price,
                    SeatsAvailables = item.Object.SeatsAvailables,
                    State = item.Object.State,
@@ -54,7 +57,63 @@ namespace PryRutasMoviles.Repositories
 
             return result.Where(t => (t.SeatsAvailables>0) 
                  && (t.State.Equals("Posted"))
-                 && (Convert.ToDateTime(t.FullMeetingDate) >= DateTime.Now))
+                 && (t.TimestampMeetingDate >= Util.GetCurrentDateTime()))
+                .ToList();
+        }
+
+        public async Task ChangeStatusOnTimeOutTrips() 
+        {
+            var timeOutTrips = (await firebase
+               .Child("Trip")
+               .OnceAsync<Trip>())
+               .Where(a => a.Object.State.Equals("Posted")
+               && (a.Object.TimestampMeetingDate < Util.GetCurrentDateTime()));
+
+            foreach (var timeOutTrip in timeOutTrips)
+            {
+                await firebase
+                .Child("Trip")
+                .Child(timeOutTrip.Key)
+                .PutAsync(new Trip()
+                {
+                    Driver = timeOutTrip.Object.Driver,
+                    MeetingTime = timeOutTrip.Object.MeetingTime,
+                    TimestampMeetingDate = timeOutTrip.Object.TimestampMeetingDate,
+                    MeetingDate = timeOutTrip.Object.MeetingDate,
+                    Price = timeOutTrip.Object.Price,
+                    State = "TimeOut",
+                    TripId = timeOutTrip.Object.TripId,
+                    TripRoute = timeOutTrip.Object.TripRoute,
+                    Passengers = timeOutTrip.Object.Passengers,
+                    SeatsAvailables = timeOutTrip.Object.SeatsAvailables,
+                });
+            }               
+        }
+
+        public async Task<List<Trip>> GetDriverFinishedTrips(User driver)
+        {
+            var result = await GetAllTrips();
+            if (result == null)
+                return null;
+
+            return result
+                .Where(t => (t.Driver.Email.Equals(driver.Email)
+                && t.State.Equals("Finished")))
+                .OrderByDescending(t => t.TimestampMeetingDate)
+                .ToList();
+        }
+
+        public async Task<List<Trip>> GetPassengerFinishedTrips(User passenger)
+        {
+            var result = await GetAllTrips();
+            if (result == null)
+                return null;
+            
+            return result
+                .Where(t => t.Passengers != null
+                && t.Passengers.Any(p => (p.Email.Equals(passenger.Email)) 
+                && !p.State))
+                .OrderByDescending(t=>t.TimestampMeetingDate)
                 .ToList();
         }
 
@@ -66,10 +125,8 @@ namespace PryRutasMoviles.Repositories
                 return null;
 
             return result.Where(d => 
-            (d.Driver.Email.Equals(driver.Email))
-             && ((d.State.Equals("Posted") 
-                && (Convert.ToDateTime(d.FullMeetingDate) >= DateTime.Now))
-                || (d.State.Equals("OnWay")))
+            d.Driver.Email.Equals(driver.Email)
+             && (d.State.Equals("Posted") || d.State.Equals("OnWay"))
             ).ToList()
             .FirstOrDefault();            
         }
@@ -80,6 +137,21 @@ namespace PryRutasMoviles.Repositories
             if (result == null)
                 return null;
             return result.Where(a => a.TripId.Equals(tripId)).FirstOrDefault();
+        }
+
+        public async Task<bool> TripIsEnable(string tripId)
+        {
+            var result = await GetAllTrips();
+            if (result == null)
+                return false;
+
+            var searchTrip = result.Where(t => t.TripId.Equals(tripId)
+            && t.State.Equals("Posted")
+            && t.TimestampMeetingDate >= Util.GetCurrentDateTime())
+                .FirstOrDefault();
+
+            return searchTrip != null ? true : false;
+
         }
 
         public async Task AddPassengerOnATrip(User passenger, string tripId)
@@ -106,9 +178,10 @@ namespace PryRutasMoviles.Repositories
                 .Child(toUpdateTrip.Key)
                 .PutAsync(new Trip() 
                 { 
-                    Driver = toUpdateTrip.Object.Driver,
-                    MeetingDate = toUpdateTrip.Object.MeetingDate,
+                    Driver = toUpdateTrip.Object.Driver,                    
                     MeetingTime = toUpdateTrip.Object.MeetingTime,
+                    TimestampMeetingDate = toUpdateTrip.Object.TimestampMeetingDate,
+                    MeetingDate = toUpdateTrip.Object.MeetingDate,
                     Price = toUpdateTrip.Object.Price,
                     State = toUpdateTrip.Object.State,
                     TripId = toUpdateTrip.Object.TripId,
@@ -136,8 +209,9 @@ namespace PryRutasMoviles.Repositories
                 .PutAsync(new Trip()
                 {
                     Driver = toUpdateTrip.Object.Driver,
-                    MeetingDate = toUpdateTrip.Object.MeetingDate,
                     MeetingTime = toUpdateTrip.Object.MeetingTime,
+                    TimestampMeetingDate = toUpdateTrip.Object.TimestampMeetingDate,
+                    MeetingDate = toUpdateTrip.Object.MeetingDate,
                     Price = toUpdateTrip.Object.Price,
                     State = toUpdateTrip.Object.State,
                     TripId = toUpdateTrip.Object.TripId,
@@ -152,23 +226,11 @@ namespace PryRutasMoviles.Repositories
             var result = await GetAllTrips();
             if (result == null)
                 return null;
-
-            var TripsWithPassengers =
-                result.Where(p => 
-                (p.Passengers != null)
-                && ((p.State.Equals("Posted")
-                    && (Convert.ToDateTime(p.FullMeetingDate) >= DateTime.Now))
-                    || (p.State.Equals("OnWay")))
-                ).ToList();            
-
-            if (TripsWithPassengers.Count > 0)
-            {
-                return TripsWithPassengers
-                   .Where(t => t.Passengers.Any(p => (p.Email.Equals(currentPassenger.Email))&& p.State))
-                   .FirstOrDefault();
-            }
-            else
-                return null;            
+            
+            return result
+                   .Where(t => t.Passengers!=null
+                   && t.Passengers.Any(p => (p.Email.Equals(currentPassenger.Email)) && p.State))
+                   .FirstOrDefault();            
         }
 
         public async Task<int> GetSeatsAvailableOnATrip(string tripId)
@@ -192,9 +254,10 @@ namespace PryRutasMoviles.Repositories
                 .Child(toUpdateTrip.Key)
                 .PutAsync(new Trip()
                 {
-                    Driver = toUpdateTrip.Object.Driver,
-                    MeetingDate = toUpdateTrip.Object.MeetingDate,
+                    Driver = toUpdateTrip.Object.Driver,                    
                     MeetingTime = toUpdateTrip.Object.MeetingTime,
+                    TimestampMeetingDate = toUpdateTrip.Object.TimestampMeetingDate,
+                    MeetingDate = toUpdateTrip.Object.MeetingDate,
                     Price = toUpdateTrip.Object.Price,
                     State = toUpdateTrip.Object.State,
                     TripId = toUpdateTrip.Object.TripId,
@@ -223,8 +286,9 @@ namespace PryRutasMoviles.Repositories
                 .PutAsync(new Trip()
                 {
                     Driver = toUpdateTrip.Object.Driver,
-                    MeetingDate = toUpdateTrip.Object.MeetingDate,
                     MeetingTime = toUpdateTrip.Object.MeetingTime,
+                    TimestampMeetingDate = toUpdateTrip.Object.TimestampMeetingDate,
+                    MeetingDate = toUpdateTrip.Object.MeetingDate,
                     Price = toUpdateTrip.Object.Price,
                     State = toUpdateTrip.Object.State,
                     TripId = toUpdateTrip.Object.TripId,
@@ -262,8 +326,9 @@ namespace PryRutasMoviles.Repositories
                 .PutAsync(new Trip()
                 {
                     Driver = toUpdateTrip.Object.Driver,
-                    MeetingDate = toUpdateTrip.Object.MeetingDate,                    
                     MeetingTime = toUpdateTrip.Object.MeetingTime,
+                    TimestampMeetingDate = toUpdateTrip.Object.TimestampMeetingDate,
+                    MeetingDate = toUpdateTrip.Object.MeetingDate,
                     Price = toUpdateTrip.Object.Price,
                     State = toUpdateTrip.Object.State,
                     TripId = toUpdateTrip.Object.TripId,
@@ -292,8 +357,9 @@ namespace PryRutasMoviles.Repositories
                 .PutAsync(new Trip()
                 {
                     Driver = selectedTrip.Object.Driver,
-                    MeetingDate = selectedTrip.Object.MeetingDate,
                     MeetingTime = selectedTrip.Object.MeetingTime,
+                    TimestampMeetingDate = selectedTrip.Object.TimestampMeetingDate,
+                    MeetingDate = selectedTrip.Object.MeetingDate,
                     Price = selectedTrip.Object.Price,
                     State = selectedTrip.Object.State,
                     TripId = selectedTrip.Object.TripId,
@@ -301,8 +367,8 @@ namespace PryRutasMoviles.Repositories
                     Passengers = selectedTrip.Object.Passengers,
                     SeatsAvailables = selectedTrip.Object.SeatsAvailables,
                 });
-        }
-
+        }        
+        
         public void Dispose()
         {
             Dispose(true);

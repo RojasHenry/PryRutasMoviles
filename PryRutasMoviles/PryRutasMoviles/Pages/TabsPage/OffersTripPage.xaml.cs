@@ -75,14 +75,24 @@ namespace PryRutasMoviles.Pages.TabsPage
 
                 using (TripRepository tripRepository = new TripRepository())
                 {
-                    
+
                     var selectedTrip = e.SelectedItem as Trip;
                     OfferTrip.SelectedItem = null;
+
+                    var response = await tripRepository.TripIsEnable(selectedTrip.TripId);
+
+                    if (!response)
+                    {
+                        await DisplayAlert("Alert", "The trip is no longer available", "Ok");
+                        GetTripsOffered();
+                        return;
+                    }
+
                     int seatsAvailableOnATrip = await tripRepository.GetSeatsAvailableOnATrip(selectedTrip.TripId);
 
                     if (seatsAvailableOnATrip == 0)
                     {
-                        await DisplayAlert("Alert", "Trip with no available seats", "Ok");                        
+                        await DisplayAlert("Alert", "Trip with no available seats", "Ok");
                         GetTripsOffered();
                         return;
                     }
@@ -91,16 +101,15 @@ namespace PryRutasMoviles.Pages.TabsPage
 
                     if (confirmTrip)
                     {
-
                         await tripRepository.AddPassengerOnATrip(_user, selectedTrip.TripId);
                         await Navigation.PushAsync(new TripAcceptedPage(selectedTrip, _user));
-                    }                    
+                    }
                 }
             }
             catch (Exception exc)
             {
                 await DisplayAlert("Error", "An unexpected error has occurred" + exc.Message, "Ok");
-            }            
+            }
         }
 
         private async Task<bool> ConfirmPostTrip(INavigation navigation, Trip trip)
