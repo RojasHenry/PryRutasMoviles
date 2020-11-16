@@ -1,7 +1,36 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-             x:Class="PryRutasMoviles.Pages.TabsPage.MyTripPassengerPage">
-    <ContentPage.Content>
-    </ContentPage.Content>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="PryRutasMoviles.Pages.TabsPage.MyTripPassengerPage">
+    
+    <StackLayout>
+        <ListView x:Name="passengerTripsListView"
+                  HasUnevenRows="True"
+                  IsPullToRefreshEnabled="True"
+                  Refreshing="PassengerTripsListView_Refreshing"
+                  ItemSelected="PassengerTripsListView_ItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" 
+                                     Padding="10">
+                            <Image Source="https://icons-for-free.com/iconfiles/png/128/location+map+navigation+paper+travel+trip+icon-1320183131743301155.png"/>
+                            <StackLayout HorizontalOptions="StartAndExpand"
+                                         VerticalOptions="StartAndExpand">
+                                <Label Text="{Binding TripRoute.Resume}" 
+                                       Padding="10" 
+                                       TextColor="black" 
+                                       FontSize="Medium"
+                                       HorizontalOptions="Center" 
+                                       VerticalOptions="Center"/>
+                                <Label Text="{Binding State }" TextColor="Brown"/>
+                                <Label Text="{Binding MeetingDate ,StringFormat='Date: {0}'}" TextColor="CadetBlue"/>
+                            </StackLayout>                            
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
 </ContentPage>

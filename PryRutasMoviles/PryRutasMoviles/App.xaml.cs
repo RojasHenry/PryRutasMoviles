@@ -9,8 +9,8 @@ namespace PryRutasMoviles
         public App()
         {
             InitializeComponent();
-
-            MainPage = new NavigationPage(new LoginPage());           
+            MainPage = new NavigationPage(new LoginPage());
+            //MainPage = new NavigationPage(new ProfileUserPage(new User()));
         }
 
         protected override void OnStart()

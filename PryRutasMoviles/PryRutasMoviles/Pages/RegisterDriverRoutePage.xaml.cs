@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using PryRutasMoviles.Entities;
+using PryRutasMoviles.Helpers;
 using PryRutasMoviles.Models;
 using PryRutasMoviles.Pages.TabsPage;
 using PryRutasMoviles.Repositories;
@@ -79,8 +80,9 @@ namespace PryRutasMoviles.Pages
                                     TargetPointLatitude = route.TargetPoint.Position.Latitude,
                                     TargetPoitnAddress = route.TargetPoint.Address
                                 },
-                                MeetingDate = DateTime.Now.ToShortDateString(),
                                 MeetingTime = tpMeetingTime.Time.ToString(),
+                                TimestampMeetingDate = Util.SetMeetingDate(tpMeetingTime.Time.ToString()),
+                                MeetingDate = Util.FormatMeetingDate(tpMeetingTime.Time.ToString()),
                                 Price = Convert.ToDecimal(txtPrice.Text),
                                 SeatsAvailables = Convert.ToInt16(txtSeatsAvailables.Text),
                                 State = "Posted"                                
