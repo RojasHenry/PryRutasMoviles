@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace PryRutasMoviles.Helpers
 {
@@ -8,27 +6,32 @@ namespace PryRutasMoviles.Helpers
     {
         public static long GetCurrentDateTime()
         {
+
             return Convert.ToInt64($"{DateTime.Now.Year}" +
-                $"{DateTime.Now.Month}" +
-                $"{DateTime.Now.Day}" +
-                $"{DateTime.Now.Hour}" +
-                $"{DateTime.Now.Minute}" +
-                $"{DateTime.Now.Second}");
+                $"{DateTime.Now.Month.ToString().PadLeft(2, '0')}" +
+                $"{DateTime.Now.Day.ToString().PadLeft(2, '0')}" +
+                $"{DateTime.Now.Hour.ToString().PadLeft(2, '0')}" +
+                $"{DateTime.Now.Minute.ToString().PadLeft(2, '0')}");
         }
+
         public static long SetMeetingDate(string meetingTime)
         {
+            var meetingTimeSplit = meetingTime.Split(':');
             return Convert.ToInt64($"{DateTime.Now.Year}" +
-                $"{DateTime.Now.Month}" +
-                $"{DateTime.Now.Day}" +
-                $"{meetingTime.Replace(":", string.Empty)}");
+                $"{DateTime.Now.Month.ToString().PadLeft(2, '0')}" +
+                $"{DateTime.Now.Day.ToString().PadLeft(2, '0')}" +
+                $"{meetingTimeSplit[0]}" +
+                $"{meetingTimeSplit[1]}");
         }
 
         public static string FormatMeetingDate(string meetingTime) 
         {
+            var meetingTimeSplit = meetingTime.Split(':');
             return $"{DateTime.Now.Year}/" +
-                $"{DateTime.Now.Month}/" +
-                $"{DateTime.Now.Day} " +
-                $"{meetingTime}";
+                $"{DateTime.Now.Month.ToString().PadLeft(2, '0')}/" +
+                $"{DateTime.Now.Day.ToString().PadLeft(2, '0')} " +
+                $"{meetingTimeSplit[0]}:" +
+                $"{meetingTimeSplit[1]}";
         }
 
     }

@@ -11,7 +11,7 @@ namespace PryRutasMoviles.Pages.TabsPage
     public partial class TripWaitingRoomPage : ContentPage
     {
         private static Stopwatch stopWatch = new Stopwatch();
-        private const int defaultTimespan = 20;
+        private const int defaultTimespan = 10;
 
         private ObservableCollection<User> _passengersList;
         public Trip Trip { get; set; }
@@ -60,10 +60,13 @@ namespace PryRutasMoviles.Pages.TabsPage
             {
                 using (TripRepository tripRepository = new TripRepository())
                 {
-                    var tripInDB = await tripRepository.GetTripById(trip.TripId);
                     _passengersList = new ObservableCollection<User>();
-                    if (tripInDB.Passengers == null)
+                    var tripInDB = await tripRepository.GetTripById(trip.TripId);
+                    if (tripInDB.Passengers == null) 
+                    {
+                        passengersListView.ItemsSource = _passengersList;
                         return;
+                    }                        
 
                     tripInDB.Passengers
                         .Where(p => p.State)

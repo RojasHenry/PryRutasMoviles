@@ -1,6 +1,7 @@
 ﻿using PryRutasMoviles.Interfaces;
 using PryRutasMoviles.Models;
 using PryRutasMoviles.Pages.TabsPage;
+using System;
 using Xamarin.Forms;
 
 namespace PryRutasMoviles.Pages
@@ -8,6 +9,7 @@ namespace PryRutasMoviles.Pages
     public partial class PassengerTabbedPage : TabbedPage
     {
         private User _user;
+        ILoginSocialNetworks serviceLogin = DependencyService.Get<ILoginSocialNetworks>();
         public PassengerTabbedPage(User user)
         {
             InitializeComponent();
@@ -23,12 +25,12 @@ namespace PryRutasMoviles.Pages
             Children.Add(tripsPassenger);            
         }
 
-        private void ToolbarItem_Clicked(object sender, System.EventArgs e)
+        private void ToolbarItem_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new ProfileUserPage(_user));
         }
 
-        async void ToolbarItem_Clicked_1(System.Object sender, System.EventArgs e)
+        async void ToolbarItem_Clicked_1(object sender, EventArgs e)
         {
             serviceLogin.Logout();
             serviceLogin.DeleteCredentials();

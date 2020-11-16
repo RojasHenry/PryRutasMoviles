@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.Threading.Tasks;
 using AiForms.Dialogs;
 using PryRutasMoviles.Models;
@@ -13,16 +14,37 @@ namespace PryRutasMoviles.Pages.TabsPage
 {
     public partial class OffersTripPage : ContentPage
     {
-        readonly ObservableCollection<Trip> tripOfferList = new ObservableCollection<Trip>();
+        private static Stopwatch stopWatch = new Stopwatch();
+        private const int defaultTimespan = 5;
+        private ObservableCollection<Trip> _tripOfferList;
         private readonly User _user;
 
         public OffersTripPage(User user)
         {
             InitializeComponent();
-            OfferTrip.ItemsSource = tripOfferList;
             _user = user;
-            GetTripsOffered();
+            ThreadGetTripsOffered();
             GetPassengerCurrentTrip();
+        }
+
+        void ThreadGetTripsOffered()
+        {
+            // Thread of query to new posted trips
+            if (!stopWatch.IsRunning)
+                stopWatch.Start();
+            
+            Device.StartTimer(new TimeSpan(0, 0, 1), () =>
+            {
+                if (stopWatch.IsRunning && stopWatch.Elapsed.Seconds >= defaultTimespan)
+                {
+                    Device.BeginInvokeOnMainThread(() => {
+                        GetTripsOffered();
+                    });
+
+                    stopWatch.Restart();
+                }
+                return true;
+            });
         }
 
         private async void GetPassengerCurrentTrip()
@@ -51,9 +73,10 @@ namespace PryRutasMoviles.Pages.TabsPage
             {
                 using (TripRepository tripRepository = new TripRepository())
                 {
-                    tripOfferList.Clear();
+                    _tripOfferList = new ObservableCollection<Trip>();
                     List<Trip> list = await tripRepository.GetTripsOffered();
-                    list.ForEach(trip => tripOfferList.Add(trip));
+                    list.ForEach(trip => _tripOfferList.Add(trip));
+                    OfferTrip.ItemsSource = _tripOfferList;
                 }
             }
             catch(Exception e)

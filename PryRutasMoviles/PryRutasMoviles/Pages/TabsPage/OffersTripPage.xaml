@@ -4,7 +4,6 @@
              x:Class="PryRutasMoviles.Pages.TabsPage.OffersTripPage" >
     
     <ListView  x:Name="OfferTrip" 
-               ItemsSource="{Binding tripOfferList}" 
                HasUnevenRows="True"
                IsPullToRefreshEnabled="true"
                Refreshing="OfferTrip_Refreshing"
