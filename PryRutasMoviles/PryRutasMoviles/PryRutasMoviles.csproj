@@ -21,6 +21,7 @@
 
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
     <PackageReference Include="Plugin.FacebookClient" Version="2.2.1" />
+    <PackageReference Include="AiForms.Dialogs" Version="1.0.10" />
   </ItemGroup>
 
   <ItemGroup>
@@ -96,5 +97,6 @@
     <Folder Include="Interfaces\" />
     <Folder Include="Pages\" />
     <Folder Include="Pages\TabsPage\" />
+    <Folder Include="Pages\Dialog\" />
   </ItemGroup>
 </Project>

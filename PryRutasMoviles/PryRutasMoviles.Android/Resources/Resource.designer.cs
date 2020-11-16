@@ -25,6 +25,2698 @@ namespace PryRutasMoviles.Droid
 		
 		public static void UpdateIdValues()
 		{
+			global::AiForms.Dialogs.Resource.Animation.abc_fade_in = global::PryRutasMoviles.Droid.Resource.Animation.abc_fade_in;
+			global::AiForms.Dialogs.Resource.Animation.abc_fade_out = global::PryRutasMoviles.Droid.Resource.Animation.abc_fade_out;
+			global::AiForms.Dialogs.Resource.Animation.abc_grow_fade_in_from_bottom = global::PryRutasMoviles.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
+			global::AiForms.Dialogs.Resource.Animation.abc_popup_enter = global::PryRutasMoviles.Droid.Resource.Animation.abc_popup_enter;
+			global::AiForms.Dialogs.Resource.Animation.abc_popup_exit = global::PryRutasMoviles.Droid.Resource.Animation.abc_popup_exit;
+			global::AiForms.Dialogs.Resource.Animation.abc_shrink_fade_out_from_bottom = global::PryRutasMoviles.Droid.Resource.Animation.abc_shrink_fade_out_from_bottom;
+			global::AiForms.Dialogs.Resource.Animation.abc_slide_in_bottom = global::PryRutasMoviles.Droid.Resource.Animation.abc_slide_in_bottom;
+			global::AiForms.Dialogs.Resource.Animation.abc_slide_in_top = global::PryRutasMoviles.Droid.Resource.Animation.abc_slide_in_top;
+			global::AiForms.Dialogs.Resource.Animation.abc_slide_out_bottom = global::PryRutasMoviles.Droid.Resource.Animation.abc_slide_out_bottom;
+			global::AiForms.Dialogs.Resource.Animation.abc_slide_out_top = global::PryRutasMoviles.Droid.Resource.Animation.abc_slide_out_top;
+			global::AiForms.Dialogs.Resource.Animation.abc_tooltip_enter = global::PryRutasMoviles.Droid.Resource.Animation.abc_tooltip_enter;
+			global::AiForms.Dialogs.Resource.Animation.abc_tooltip_exit = global::PryRutasMoviles.Droid.Resource.Animation.abc_tooltip_exit;
+			global::AiForms.Dialogs.Resource.Animation.btn_checkbox_to_checked_box_inner_merged_animation = global::PryRutasMoviles.Droid.Resource.Animation.btn_checkbox_to_checked_box_inner_merged_animation;
+			global::AiForms.Dialogs.Resource.Animation.btn_checkbox_to_checked_box_outer_merged_animation = global::PryRutasMoviles.Droid.Resource.Animation.btn_checkbox_to_checked_box_outer_merged_animation;
+			global::AiForms.Dialogs.Resource.Animation.btn_checkbox_to_checked_icon_null_animation = global::PryRutasMoviles.Droid.Resource.Animation.btn_checkbox_to_checked_icon_null_animation;
+			global::AiForms.Dialogs.Resource.Animation.btn_checkbox_to_unchecked_box_inner_merged_animation = global::PryRutasMoviles.Droid.Resource.Animation.btn_checkbox_to_unchecked_box_inner_merged_animation;
+			global::AiForms.Dialogs.Resource.Animation.btn_checkbox_to_unchecked_check_path_merged_animation = global::PryRutasMoviles.Droid.Resource.Animation.btn_checkbox_to_unchecked_check_path_merged_animation;
+			global::AiForms.Dialogs.Resource.Animation.btn_checkbox_to_unchecked_icon_null_animation = global::PryRutasMoviles.Droid.Resource.Animation.btn_checkbox_to_unchecked_icon_null_animation;
+			global::AiForms.Dialogs.Resource.Animation.btn_radio_to_off_mtrl_dot_group_animation = global::PryRutasMoviles.Droid.Resource.Animation.btn_radio_to_off_mtrl_dot_group_animation;
+			global::AiForms.Dialogs.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_animation = global::PryRutasMoviles.Droid.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_animation;
+			global::AiForms.Dialogs.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_path_animation = global::PryRutasMoviles.Droid.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_path_animation;
+			global::AiForms.Dialogs.Resource.Animation.btn_radio_to_on_mtrl_dot_group_animation = global::PryRutasMoviles.Droid.Resource.Animation.btn_radio_to_on_mtrl_dot_group_animation;
+			global::AiForms.Dialogs.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_animation = global::PryRutasMoviles.Droid.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_animation;
+			global::AiForms.Dialogs.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_path_animation = global::PryRutasMoviles.Droid.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_path_animation;
+			global::AiForms.Dialogs.Resource.Animation.design_bottom_sheet_slide_in = global::PryRutasMoviles.Droid.Resource.Animation.design_bottom_sheet_slide_in;
+			global::AiForms.Dialogs.Resource.Animation.design_bottom_sheet_slide_out = global::PryRutasMoviles.Droid.Resource.Animation.design_bottom_sheet_slide_out;
+			global::AiForms.Dialogs.Resource.Animation.design_snackbar_in = global::PryRutasMoviles.Droid.Resource.Animation.design_snackbar_in;
+			global::AiForms.Dialogs.Resource.Animation.design_snackbar_out = global::PryRutasMoviles.Droid.Resource.Animation.design_snackbar_out;
+			global::AiForms.Dialogs.Resource.Animation.EnterFromLeft = global::PryRutasMoviles.Droid.Resource.Animation.EnterFromLeft;
+			global::AiForms.Dialogs.Resource.Animation.EnterFromRight = global::PryRutasMoviles.Droid.Resource.Animation.EnterFromRight;
+			global::AiForms.Dialogs.Resource.Animation.ExitToLeft = global::PryRutasMoviles.Droid.Resource.Animation.ExitToLeft;
+			global::AiForms.Dialogs.Resource.Animation.ExitToRight = global::PryRutasMoviles.Droid.Resource.Animation.ExitToRight;
+			global::AiForms.Dialogs.Resource.Animation.extra_dialog_enter = global::PryRutasMoviles.Droid.Resource.Animation.extra_dialog_enter;
+			global::AiForms.Dialogs.Resource.Animation.extra_dialog_exit = global::PryRutasMoviles.Droid.Resource.Animation.extra_dialog_exit;
+			global::AiForms.Dialogs.Resource.Animator.design_appbar_state_list_animator = global::PryRutasMoviles.Droid.Resource.Animator.design_appbar_state_list_animator;
+			global::AiForms.Dialogs.Resource.Animator.design_fab_hide_motion_spec = global::PryRutasMoviles.Droid.Resource.Animator.design_fab_hide_motion_spec;
+			global::AiForms.Dialogs.Resource.Animator.design_fab_show_motion_spec = global::PryRutasMoviles.Droid.Resource.Animator.design_fab_show_motion_spec;
+			global::AiForms.Dialogs.Resource.Animator.mtrl_btn_state_list_anim = global::PryRutasMoviles.Droid.Resource.Animator.mtrl_btn_state_list_anim;
+			global::AiForms.Dialogs.Resource.Animator.mtrl_btn_unelevated_state_list_anim = global::PryRutasMoviles.Droid.Resource.Animator.mtrl_btn_unelevated_state_list_anim;
+			global::AiForms.Dialogs.Resource.Animator.mtrl_chip_state_list_anim = global::PryRutasMoviles.Droid.Resource.Animator.mtrl_chip_state_list_anim;
+			global::AiForms.Dialogs.Resource.Animator.mtrl_fab_hide_motion_spec = global::PryRutasMoviles.Droid.Resource.Animator.mtrl_fab_hide_motion_spec;
+			global::AiForms.Dialogs.Resource.Animator.mtrl_fab_show_motion_spec = global::PryRutasMoviles.Droid.Resource.Animator.mtrl_fab_show_motion_spec;
+			global::AiForms.Dialogs.Resource.Animator.mtrl_fab_transformation_sheet_collapse_spec = global::PryRutasMoviles.Droid.Resource.Animator.mtrl_fab_transformation_sheet_collapse_spec;
+			global::AiForms.Dialogs.Resource.Animator.mtrl_fab_transformation_sheet_expand_spec = global::PryRutasMoviles.Droid.Resource.Animator.mtrl_fab_transformation_sheet_expand_spec;
+			global::AiForms.Dialogs.Resource.Attribute.actionBarDivider = global::PryRutasMoviles.Droid.Resource.Attribute.actionBarDivider;
+			global::AiForms.Dialogs.Resource.Attribute.actionBarItemBackground = global::PryRutasMoviles.Droid.Resource.Attribute.actionBarItemBackground;
+			global::AiForms.Dialogs.Resource.Attribute.actionBarPopupTheme = global::PryRutasMoviles.Droid.Resource.Attribute.actionBarPopupTheme;
+			global::AiForms.Dialogs.Resource.Attribute.actionBarSize = global::PryRutasMoviles.Droid.Resource.Attribute.actionBarSize;
+			global::AiForms.Dialogs.Resource.Attribute.actionBarSplitStyle = global::PryRutasMoviles.Droid.Resource.Attribute.actionBarSplitStyle;
+			global::AiForms.Dialogs.Resource.Attribute.actionBarStyle = global::PryRutasMoviles.Droid.Resource.Attribute.actionBarStyle;
+			global::AiForms.Dialogs.Resource.Attribute.actionBarTabBarStyle = global::PryRutasMoviles.Droid.Resource.Attribute.actionBarTabBarStyle;
+			global::AiForms.Dialogs.Resource.Attribute.actionBarTabStyle = global::PryRutasMoviles.Droid.Resource.Attribute.actionBarTabStyle;
+			global::AiForms.Dialogs.Resource.Attribute.actionBarTabTextStyle = global::PryRutasMoviles.Droid.Resource.Attribute.actionBarTabTextStyle;
+			global::AiForms.Dialogs.Resource.Attribute.actionBarTheme = global::PryRutasMoviles.Droid.Resource.Attribute.actionBarTheme;
+			global::AiForms.Dialogs.Resource.Attribute.actionBarWidgetTheme = global::PryRutasMoviles.Droid.Resource.Attribute.actionBarWidgetTheme;
+			global::AiForms.Dialogs.Resource.Attribute.actionButtonStyle = global::PryRutasMoviles.Droid.Resource.Attribute.actionButtonStyle;
+			global::AiForms.Dialogs.Resource.Attribute.actionDropDownStyle = global::PryRutasMoviles.Droid.Resource.Attribute.actionDropDownStyle;
+			global::AiForms.Dialogs.Resource.Attribute.actionLayout = global::PryRutasMoviles.Droid.Resource.Attribute.actionLayout;
+			global::AiForms.Dialogs.Resource.Attribute.actionMenuTextAppearance = global::PryRutasMoviles.Droid.Resource.Attribute.actionMenuTextAppearance;
+			global::AiForms.Dialogs.Resource.Attribute.actionMenuTextColor = global::PryRutasMoviles.Droid.Resource.Attribute.actionMenuTextColor;
+			global::AiForms.Dialogs.Resource.Attribute.actionModeBackground = global::PryRutasMoviles.Droid.Resource.Attribute.actionModeBackground;
+			global::AiForms.Dialogs.Resource.Attribute.actionModeCloseButtonStyle = global::PryRutasMoviles.Droid.Resource.Attribute.actionModeCloseButtonStyle;
+			global::AiForms.Dialogs.Resource.Attribute.actionModeCloseDrawable = global::PryRutasMoviles.Droid.Resource.Attribute.actionModeCloseDrawable;
+			global::AiForms.Dialogs.Resource.Attribute.actionModeCopyDrawable = global::PryRutasMoviles.Droid.Resource.Attribute.actionModeCopyDrawable;
+			global::AiForms.Dialogs.Resource.Attribute.actionModeCutDrawable = global::PryRutasMoviles.Droid.Resource.Attribute.actionModeCutDrawable;
+			global::AiForms.Dialogs.Resource.Attribute.actionModeFindDrawable = global::PryRutasMoviles.Droid.Resource.Attribute.actionModeFindDrawable;
+			global::AiForms.Dialogs.Resource.Attribute.actionModePasteDrawable = global::PryRutasMoviles.Droid.Resource.Attribute.actionModePasteDrawable;
+			global::AiForms.Dialogs.Resource.Attribute.actionModePopupWindowStyle = global::PryRutasMoviles.Droid.Resource.Attribute.actionModePopupWindowStyle;
+			global::AiForms.Dialogs.Resource.Attribute.actionModeSelectAllDrawable = global::PryRutasMoviles.Droid.Resource.Attribute.actionModeSelectAllDrawable;
+			global::AiForms.Dialogs.Resource.Attribute.actionModeShareDrawable = global::PryRutasMoviles.Droid.Resource.Attribute.actionModeShareDrawable;
+			global::AiForms.Dialogs.Resource.Attribute.actionModeSplitBackground = global::PryRutasMoviles.Droid.Resource.Attribute.actionModeSplitBackground;
+			global::AiForms.Dialogs.Resource.Attribute.actionModeStyle = global::PryRutasMoviles.Droid.Resource.Attribute.actionModeStyle;
+			global::AiForms.Dialogs.Resource.Attribute.actionModeWebSearchDrawable = global::PryRutasMoviles.Droid.Resource.Attribute.actionModeWebSearchDrawable;
+			global::AiForms.Dialogs.Resource.Attribute.actionOverflowButtonStyle = global::PryRutasMoviles.Droid.Resource.Attribute.actionOverflowButtonStyle;
+			global::AiForms.Dialogs.Resource.Attribute.actionOverflowMenuStyle = global::PryRutasMoviles.Droid.Resource.Attribute.actionOverflowMenuStyle;
+			global::AiForms.Dialogs.Resource.Attribute.actionProviderClass = global::PryRutasMoviles.Droid.Resource.Attribute.actionProviderClass;
+			global::AiForms.Dialogs.Resource.Attribute.actionViewClass = global::PryRutasMoviles.Droid.Resource.Attribute.actionViewClass;
+			global::AiForms.Dialogs.Resource.Attribute.activityChooserViewStyle = global::PryRutasMoviles.Droid.Resource.Attribute.activityChooserViewStyle;
+			global::AiForms.Dialogs.Resource.Attribute.alertDialogButtonGroupStyle = global::PryRutasMoviles.Droid.Resource.Attribute.alertDialogButtonGroupStyle;
+			global::AiForms.Dialogs.Resource.Attribute.alertDialogCenterButtons = global::PryRutasMoviles.Droid.Resource.Attribute.alertDialogCenterButtons;
+			global::AiForms.Dialogs.Resource.Attribute.alertDialogStyle = global::PryRutasMoviles.Droid.Resource.Attribute.alertDialogStyle;
+			global::AiForms.Dialogs.Resource.Attribute.alertDialogTheme = global::PryRutasMoviles.Droid.Resource.Attribute.alertDialogTheme;
+			global::AiForms.Dialogs.Resource.Attribute.allowStacking = global::PryRutasMoviles.Droid.Resource.Attribute.allowStacking;
+			global::AiForms.Dialogs.Resource.Attribute.alpha = global::PryRutasMoviles.Droid.Resource.Attribute.alpha;
+			global::AiForms.Dialogs.Resource.Attribute.alphabeticModifiers = global::PryRutasMoviles.Droid.Resource.Attribute.alphabeticModifiers;
+			global::AiForms.Dialogs.Resource.Attribute.arrowHeadLength = global::PryRutasMoviles.Droid.Resource.Attribute.arrowHeadLength;
+			global::AiForms.Dialogs.Resource.Attribute.arrowShaftLength = global::PryRutasMoviles.Droid.Resource.Attribute.arrowShaftLength;
+			global::AiForms.Dialogs.Resource.Attribute.autoCompleteTextViewStyle = global::PryRutasMoviles.Droid.Resource.Attribute.autoCompleteTextViewStyle;
+			global::AiForms.Dialogs.Resource.Attribute.autoSizeMaxTextSize = global::PryRutasMoviles.Droid.Resource.Attribute.autoSizeMaxTextSize;
+			global::AiForms.Dialogs.Resource.Attribute.autoSizeMinTextSize = global::PryRutasMoviles.Droid.Resource.Attribute.autoSizeMinTextSize;
+			global::AiForms.Dialogs.Resource.Attribute.autoSizePresetSizes = global::PryRutasMoviles.Droid.Resource.Attribute.autoSizePresetSizes;
+			global::AiForms.Dialogs.Resource.Attribute.autoSizeStepGranularity = global::PryRutasMoviles.Droid.Resource.Attribute.autoSizeStepGranularity;
+			global::AiForms.Dialogs.Resource.Attribute.autoSizeTextType = global::PryRutasMoviles.Droid.Resource.Attribute.autoSizeTextType;
+			global::AiForms.Dialogs.Resource.Attribute.background = global::PryRutasMoviles.Droid.Resource.Attribute.background;
+			global::AiForms.Dialogs.Resource.Attribute.backgroundSplit = global::PryRutasMoviles.Droid.Resource.Attribute.backgroundSplit;
+			global::AiForms.Dialogs.Resource.Attribute.backgroundStacked = global::PryRutasMoviles.Droid.Resource.Attribute.backgroundStacked;
+			global::AiForms.Dialogs.Resource.Attribute.backgroundTint = global::PryRutasMoviles.Droid.Resource.Attribute.backgroundTint;
+			global::AiForms.Dialogs.Resource.Attribute.backgroundTintMode = global::PryRutasMoviles.Droid.Resource.Attribute.backgroundTintMode;
+			global::AiForms.Dialogs.Resource.Attribute.barLength = global::PryRutasMoviles.Droid.Resource.Attribute.barLength;
+			global::AiForms.Dialogs.Resource.Attribute.behavior_autoHide = global::PryRutasMoviles.Droid.Resource.Attribute.behavior_autoHide;
+			global::AiForms.Dialogs.Resource.Attribute.behavior_fitToContents = global::PryRutasMoviles.Droid.Resource.Attribute.behavior_fitToContents;
+			global::AiForms.Dialogs.Resource.Attribute.behavior_hideable = global::PryRutasMoviles.Droid.Resource.Attribute.behavior_hideable;
+			global::AiForms.Dialogs.Resource.Attribute.behavior_overlapTop = global::PryRutasMoviles.Droid.Resource.Attribute.behavior_overlapTop;
+			global::AiForms.Dialogs.Resource.Attribute.behavior_peekHeight = global::PryRutasMoviles.Droid.Resource.Attribute.behavior_peekHeight;
+			global::AiForms.Dialogs.Resource.Attribute.behavior_skipCollapsed = global::PryRutasMoviles.Droid.Resource.Attribute.behavior_skipCollapsed;
+			global::AiForms.Dialogs.Resource.Attribute.borderlessButtonStyle = global::PryRutasMoviles.Droid.Resource.Attribute.borderlessButtonStyle;
+			global::AiForms.Dialogs.Resource.Attribute.borderWidth = global::PryRutasMoviles.Droid.Resource.Attribute.borderWidth;
+			global::AiForms.Dialogs.Resource.Attribute.bottomAppBarStyle = global::PryRutasMoviles.Droid.Resource.Attribute.bottomAppBarStyle;
+			global::AiForms.Dialogs.Resource.Attribute.bottomNavigationStyle = global::PryRutasMoviles.Droid.Resource.Attribute.bottomNavigationStyle;
+			global::AiForms.Dialogs.Resource.Attribute.bottomSheetDialogTheme = global::PryRutasMoviles.Droid.Resource.Attribute.bottomSheetDialogTheme;
+			global::AiForms.Dialogs.Resource.Attribute.bottomSheetStyle = global::PryRutasMoviles.Droid.Resource.Attribute.bottomSheetStyle;
+			global::AiForms.Dialogs.Resource.Attribute.boxBackgroundColor = global::PryRutasMoviles.Droid.Resource.Attribute.boxBackgroundColor;
+			global::AiForms.Dialogs.Resource.Attribute.boxBackgroundMode = global::PryRutasMoviles.Droid.Resource.Attribute.boxBackgroundMode;
+			global::AiForms.Dialogs.Resource.Attribute.boxCollapsedPaddingTop = global::PryRutasMoviles.Droid.Resource.Attribute.boxCollapsedPaddingTop;
+			global::AiForms.Dialogs.Resource.Attribute.boxCornerRadiusBottomEnd = global::PryRutasMoviles.Droid.Resource.Attribute.boxCornerRadiusBottomEnd;
+			global::AiForms.Dialogs.Resource.Attribute.boxCornerRadiusBottomStart = global::PryRutasMoviles.Droid.Resource.Attribute.boxCornerRadiusBottomStart;
+			global::AiForms.Dialogs.Resource.Attribute.boxCornerRadiusTopEnd = global::PryRutasMoviles.Droid.Resource.Attribute.boxCornerRadiusTopEnd;
+			global::AiForms.Dialogs.Resource.Attribute.boxCornerRadiusTopStart = global::PryRutasMoviles.Droid.Resource.Attribute.boxCornerRadiusTopStart;
+			global::AiForms.Dialogs.Resource.Attribute.boxStrokeColor = global::PryRutasMoviles.Droid.Resource.Attribute.boxStrokeColor;
+			global::AiForms.Dialogs.Resource.Attribute.boxStrokeWidth = global::PryRutasMoviles.Droid.Resource.Attribute.boxStrokeWidth;
+			global::AiForms.Dialogs.Resource.Attribute.buttonBarButtonStyle = global::PryRutasMoviles.Droid.Resource.Attribute.buttonBarButtonStyle;
+			global::AiForms.Dialogs.Resource.Attribute.buttonBarNegativeButtonStyle = global::PryRutasMoviles.Droid.Resource.Attribute.buttonBarNegativeButtonStyle;
+			global::AiForms.Dialogs.Resource.Attribute.buttonBarNeutralButtonStyle = global::PryRutasMoviles.Droid.Resource.Attribute.buttonBarNeutralButtonStyle;
+			global::AiForms.Dialogs.Resource.Attribute.buttonBarPositiveButtonStyle = global::PryRutasMoviles.Droid.Resource.Attribute.buttonBarPositiveButtonStyle;
+			global::AiForms.Dialogs.Resource.Attribute.buttonBarStyle = global::PryRutasMoviles.Droid.Resource.Attribute.buttonBarStyle;
+			global::AiForms.Dialogs.Resource.Attribute.buttonCompat = global::PryRutasMoviles.Droid.Resource.Attribute.buttonCompat;
+			global::AiForms.Dialogs.Resource.Attribute.buttonGravity = global::PryRutasMoviles.Droid.Resource.Attribute.buttonGravity;
+			global::AiForms.Dialogs.Resource.Attribute.buttonIconDimen = global::PryRutasMoviles.Droid.Resource.Attribute.buttonIconDimen;
+			global::AiForms.Dialogs.Resource.Attribute.buttonPanelSideLayout = global::PryRutasMoviles.Droid.Resource.Attribute.buttonPanelSideLayout;
+			global::AiForms.Dialogs.Resource.Attribute.buttonStyle = global::PryRutasMoviles.Droid.Resource.Attribute.buttonStyle;
+			global::AiForms.Dialogs.Resource.Attribute.buttonStyleSmall = global::PryRutasMoviles.Droid.Resource.Attribute.buttonStyleSmall;
+			global::AiForms.Dialogs.Resource.Attribute.buttonTint = global::PryRutasMoviles.Droid.Resource.Attribute.buttonTint;
+			global::AiForms.Dialogs.Resource.Attribute.buttonTintMode = global::PryRutasMoviles.Droid.Resource.Attribute.buttonTintMode;
+			global::AiForms.Dialogs.Resource.Attribute.cardBackgroundColor = global::PryRutasMoviles.Droid.Resource.Attribute.cardBackgroundColor;
+			global::AiForms.Dialogs.Resource.Attribute.cardCornerRadius = global::PryRutasMoviles.Droid.Resource.Attribute.cardCornerRadius;
+			global::AiForms.Dialogs.Resource.Attribute.cardElevation = global::PryRutasMoviles.Droid.Resource.Attribute.cardElevation;
+			global::AiForms.Dialogs.Resource.Attribute.cardMaxElevation = global::PryRutasMoviles.Droid.Resource.Attribute.cardMaxElevation;
+			global::AiForms.Dialogs.Resource.Attribute.cardPreventCornerOverlap = global::PryRutasMoviles.Droid.Resource.Attribute.cardPreventCornerOverlap;
+			global::AiForms.Dialogs.Resource.Attribute.cardUseCompatPadding = global::PryRutasMoviles.Droid.Resource.Attribute.cardUseCompatPadding;
+			global::AiForms.Dialogs.Resource.Attribute.cardViewStyle = global::PryRutasMoviles.Droid.Resource.Attribute.cardViewStyle;
+			global::AiForms.Dialogs.Resource.Attribute.checkboxStyle = global::PryRutasMoviles.Droid.Resource.Attribute.checkboxStyle;
+			global::AiForms.Dialogs.Resource.Attribute.checkedChip = global::PryRutasMoviles.Droid.Resource.Attribute.checkedChip;
+			global::AiForms.Dialogs.Resource.Attribute.checkedIcon = global::PryRutasMoviles.Droid.Resource.Attribute.checkedIcon;
+			global::AiForms.Dialogs.Resource.Attribute.checkedIconEnabled = global::PryRutasMoviles.Droid.Resource.Attribute.checkedIconEnabled;
+			global::AiForms.Dialogs.Resource.Attribute.checkedIconVisible = global::PryRutasMoviles.Droid.Resource.Attribute.checkedIconVisible;
+			global::AiForms.Dialogs.Resource.Attribute.checkedTextViewStyle = global::PryRutasMoviles.Droid.Resource.Attribute.checkedTextViewStyle;
+			global::AiForms.Dialogs.Resource.Attribute.chipBackgroundColor = global::PryRutasMoviles.Droid.Resource.Attribute.chipBackgroundColor;
+			global::AiForms.Dialogs.Resource.Attribute.chipCornerRadius = global::PryRutasMoviles.Droid.Resource.Attribute.chipCornerRadius;
+			global::AiForms.Dialogs.Resource.Attribute.chipEndPadding = global::PryRutasMoviles.Droid.Resource.Attribute.chipEndPadding;
+			global::AiForms.Dialogs.Resource.Attribute.chipGroupStyle = global::PryRutasMoviles.Droid.Resource.Attribute.chipGroupStyle;
+			global::AiForms.Dialogs.Resource.Attribute.chipIcon = global::PryRutasMoviles.Droid.Resource.Attribute.chipIcon;
+			global::AiForms.Dialogs.Resource.Attribute.chipIconEnabled = global::PryRutasMoviles.Droid.Resource.Attribute.chipIconEnabled;
+			global::AiForms.Dialogs.Resource.Attribute.chipIconSize = global::PryRutasMoviles.Droid.Resource.Attribute.chipIconSize;
+			global::AiForms.Dialogs.Resource.Attribute.chipIconTint = global::PryRutasMoviles.Droid.Resource.Attribute.chipIconTint;
+			global::AiForms.Dialogs.Resource.Attribute.chipIconVisible = global::PryRutasMoviles.Droid.Resource.Attribute.chipIconVisible;
+			global::AiForms.Dialogs.Resource.Attribute.chipMinHeight = global::PryRutasMoviles.Droid.Resource.Attribute.chipMinHeight;
+			global::AiForms.Dialogs.Resource.Attribute.chipSpacing = global::PryRutasMoviles.Droid.Resource.Attribute.chipSpacing;
+			global::AiForms.Dialogs.Resource.Attribute.chipSpacingHorizontal = global::PryRutasMoviles.Droid.Resource.Attribute.chipSpacingHorizontal;
+			global::AiForms.Dialogs.Resource.Attribute.chipSpacingVertical = global::PryRutasMoviles.Droid.Resource.Attribute.chipSpacingVertical;
+			global::AiForms.Dialogs.Resource.Attribute.chipStandaloneStyle = global::PryRutasMoviles.Droid.Resource.Attribute.chipStandaloneStyle;
+			global::AiForms.Dialogs.Resource.Attribute.chipStartPadding = global::PryRutasMoviles.Droid.Resource.Attribute.chipStartPadding;
+			global::AiForms.Dialogs.Resource.Attribute.chipStrokeColor = global::PryRutasMoviles.Droid.Resource.Attribute.chipStrokeColor;
+			global::AiForms.Dialogs.Resource.Attribute.chipStrokeWidth = global::PryRutasMoviles.Droid.Resource.Attribute.chipStrokeWidth;
+			global::AiForms.Dialogs.Resource.Attribute.chipStyle = global::PryRutasMoviles.Droid.Resource.Attribute.chipStyle;
+			global::AiForms.Dialogs.Resource.Attribute.closeIcon = global::PryRutasMoviles.Droid.Resource.Attribute.closeIcon;
+			global::AiForms.Dialogs.Resource.Attribute.closeIconEnabled = global::PryRutasMoviles.Droid.Resource.Attribute.closeIconEnabled;
+			global::AiForms.Dialogs.Resource.Attribute.closeIconEndPadding = global::PryRutasMoviles.Droid.Resource.Attribute.closeIconEndPadding;
+			global::AiForms.Dialogs.Resource.Attribute.closeIconSize = global::PryRutasMoviles.Droid.Resource.Attribute.closeIconSize;
+			global::AiForms.Dialogs.Resource.Attribute.closeIconStartPadding = global::PryRutasMoviles.Droid.Resource.Attribute.closeIconStartPadding;
+			global::AiForms.Dialogs.Resource.Attribute.closeIconTint = global::PryRutasMoviles.Droid.Resource.Attribute.closeIconTint;
+			global::AiForms.Dialogs.Resource.Attribute.closeIconVisible = global::PryRutasMoviles.Droid.Resource.Attribute.closeIconVisible;
+			global::AiForms.Dialogs.Resource.Attribute.closeItemLayout = global::PryRutasMoviles.Droid.Resource.Attribute.closeItemLayout;
+			global::AiForms.Dialogs.Resource.Attribute.collapseContentDescription = global::PryRutasMoviles.Droid.Resource.Attribute.collapseContentDescription;
+			global::AiForms.Dialogs.Resource.Attribute.collapsedTitleGravity = global::PryRutasMoviles.Droid.Resource.Attribute.collapsedTitleGravity;
+			global::AiForms.Dialogs.Resource.Attribute.collapsedTitleTextAppearance = global::PryRutasMoviles.Droid.Resource.Attribute.collapsedTitleTextAppearance;
+			global::AiForms.Dialogs.Resource.Attribute.collapseIcon = global::PryRutasMoviles.Droid.Resource.Attribute.collapseIcon;
+			global::AiForms.Dialogs.Resource.Attribute.color = global::PryRutasMoviles.Droid.Resource.Attribute.color;
+			global::AiForms.Dialogs.Resource.Attribute.colorAccent = global::PryRutasMoviles.Droid.Resource.Attribute.colorAccent;
+			global::AiForms.Dialogs.Resource.Attribute.colorBackgroundFloating = global::PryRutasMoviles.Droid.Resource.Attribute.colorBackgroundFloating;
+			global::AiForms.Dialogs.Resource.Attribute.colorButtonNormal = global::PryRutasMoviles.Droid.Resource.Attribute.colorButtonNormal;
+			global::AiForms.Dialogs.Resource.Attribute.colorControlActivated = global::PryRutasMoviles.Droid.Resource.Attribute.colorControlActivated;
+			global::AiForms.Dialogs.Resource.Attribute.colorControlHighlight = global::PryRutasMoviles.Droid.Resource.Attribute.colorControlHighlight;
+			global::AiForms.Dialogs.Resource.Attribute.colorControlNormal = global::PryRutasMoviles.Droid.Resource.Attribute.colorControlNormal;
+			global::AiForms.Dialogs.Resource.Attribute.colorError = global::PryRutasMoviles.Droid.Resource.Attribute.colorError;
+			global::AiForms.Dialogs.Resource.Attribute.colorPrimary = global::PryRutasMoviles.Droid.Resource.Attribute.colorPrimary;
+			global::AiForms.Dialogs.Resource.Attribute.colorPrimaryDark = global::PryRutasMoviles.Droid.Resource.Attribute.colorPrimaryDark;
+			global::AiForms.Dialogs.Resource.Attribute.colorSecondary = global::PryRutasMoviles.Droid.Resource.Attribute.colorSecondary;
+			global::AiForms.Dialogs.Resource.Attribute.colorSwitchThumbNormal = global::PryRutasMoviles.Droid.Resource.Attribute.colorSwitchThumbNormal;
+			global::AiForms.Dialogs.Resource.Attribute.commitIcon = global::PryRutasMoviles.Droid.Resource.Attribute.commitIcon;
+			global::AiForms.Dialogs.Resource.Attribute.contentDescription = global::PryRutasMoviles.Droid.Resource.Attribute.contentDescription;
+			global::AiForms.Dialogs.Resource.Attribute.contentInsetEnd = global::PryRutasMoviles.Droid.Resource.Attribute.contentInsetEnd;
+			global::AiForms.Dialogs.Resource.Attribute.contentInsetEndWithActions = global::PryRutasMoviles.Droid.Resource.Attribute.contentInsetEndWithActions;
+			global::AiForms.Dialogs.Resource.Attribute.contentInsetLeft = global::PryRutasMoviles.Droid.Resource.Attribute.contentInsetLeft;
+			global::AiForms.Dialogs.Resource.Attribute.contentInsetRight = global::PryRutasMoviles.Droid.Resource.Attribute.contentInsetRight;
+			global::AiForms.Dialogs.Resource.Attribute.contentInsetStart = global::PryRutasMoviles.Droid.Resource.Attribute.contentInsetStart;
+			global::AiForms.Dialogs.Resource.Attribute.contentInsetStartWithNavigation = global::PryRutasMoviles.Droid.Resource.Attribute.contentInsetStartWithNavigation;
+			global::AiForms.Dialogs.Resource.Attribute.contentPadding = global::PryRutasMoviles.Droid.Resource.Attribute.contentPadding;
+			global::AiForms.Dialogs.Resource.Attribute.contentPaddingBottom = global::PryRutasMoviles.Droid.Resource.Attribute.contentPaddingBottom;
+			global::AiForms.Dialogs.Resource.Attribute.contentPaddingLeft = global::PryRutasMoviles.Droid.Resource.Attribute.contentPaddingLeft;
+			global::AiForms.Dialogs.Resource.Attribute.contentPaddingRight = global::PryRutasMoviles.Droid.Resource.Attribute.contentPaddingRight;
+			global::AiForms.Dialogs.Resource.Attribute.contentPaddingTop = global::PryRutasMoviles.Droid.Resource.Attribute.contentPaddingTop;
+			global::AiForms.Dialogs.Resource.Attribute.contentScrim = global::PryRutasMoviles.Droid.Resource.Attribute.contentScrim;
+			global::AiForms.Dialogs.Resource.Attribute.controlBackground = global::PryRutasMoviles.Droid.Resource.Attribute.controlBackground;
+			global::AiForms.Dialogs.Resource.Attribute.coordinatorLayoutStyle = global::PryRutasMoviles.Droid.Resource.Attribute.coordinatorLayoutStyle;
+			global::AiForms.Dialogs.Resource.Attribute.cornerRadius = global::PryRutasMoviles.Droid.Resource.Attribute.cornerRadius;
+			global::AiForms.Dialogs.Resource.Attribute.counterEnabled = global::PryRutasMoviles.Droid.Resource.Attribute.counterEnabled;
+			global::AiForms.Dialogs.Resource.Attribute.counterMaxLength = global::PryRutasMoviles.Droid.Resource.Attribute.counterMaxLength;
+			global::AiForms.Dialogs.Resource.Attribute.counterOverflowTextAppearance = global::PryRutasMoviles.Droid.Resource.Attribute.counterOverflowTextAppearance;
+			global::AiForms.Dialogs.Resource.Attribute.counterTextAppearance = global::PryRutasMoviles.Droid.Resource.Attribute.counterTextAppearance;
+			global::AiForms.Dialogs.Resource.Attribute.customNavigationLayout = global::PryRutasMoviles.Droid.Resource.Attribute.customNavigationLayout;
+			global::AiForms.Dialogs.Resource.Attribute.defaultQueryHint = global::PryRutasMoviles.Droid.Resource.Attribute.defaultQueryHint;
+			global::AiForms.Dialogs.Resource.Attribute.dialogCornerRadius = global::PryRutasMoviles.Droid.Resource.Attribute.dialogCornerRadius;
+			global::AiForms.Dialogs.Resource.Attribute.dialogPreferredPadding = global::PryRutasMoviles.Droid.Resource.Attribute.dialogPreferredPadding;
+			global::AiForms.Dialogs.Resource.Attribute.dialogTheme = global::PryRutasMoviles.Droid.Resource.Attribute.dialogTheme;
+			global::AiForms.Dialogs.Resource.Attribute.displayOptions = global::PryRutasMoviles.Droid.Resource.Attribute.displayOptions;
+			global::AiForms.Dialogs.Resource.Attribute.divider = global::PryRutasMoviles.Droid.Resource.Attribute.divider;
+			global::AiForms.Dialogs.Resource.Attribute.dividerHorizontal = global::PryRutasMoviles.Droid.Resource.Attribute.dividerHorizontal;
+			global::AiForms.Dialogs.Resource.Attribute.dividerPadding = global::PryRutasMoviles.Droid.Resource.Attribute.dividerPadding;
+			global::AiForms.Dialogs.Resource.Attribute.dividerVertical = global::PryRutasMoviles.Droid.Resource.Attribute.dividerVertical;
+			global::AiForms.Dialogs.Resource.Attribute.drawableBottomCompat = global::PryRutasMoviles.Droid.Resource.Attribute.drawableBottomCompat;
+			global::AiForms.Dialogs.Resource.Attribute.drawableEndCompat = global::PryRutasMoviles.Droid.Resource.Attribute.drawableEndCompat;
+			global::AiForms.Dialogs.Resource.Attribute.drawableLeftCompat = global::PryRutasMoviles.Droid.Resource.Attribute.drawableLeftCompat;
+			global::AiForms.Dialogs.Resource.Attribute.drawableRightCompat = global::PryRutasMoviles.Droid.Resource.Attribute.drawableRightCompat;
+			global::AiForms.Dialogs.Resource.Attribute.drawableSize = global::PryRutasMoviles.Droid.Resource.Attribute.drawableSize;
+			global::AiForms.Dialogs.Resource.Attribute.drawableStartCompat = global::PryRutasMoviles.Droid.Resource.Attribute.drawableStartCompat;
+			global::AiForms.Dialogs.Resource.Attribute.drawableTint = global::PryRutasMoviles.Droid.Resource.Attribute.drawableTint;
+			global::AiForms.Dialogs.Resource.Attribute.drawableTintMode = global::PryRutasMoviles.Droid.Resource.Attribute.drawableTintMode;
+			global::AiForms.Dialogs.Resource.Attribute.drawableTopCompat = global::PryRutasMoviles.Droid.Resource.Attribute.drawableTopCompat;
+			global::AiForms.Dialogs.Resource.Attribute.drawerArrowStyle = global::PryRutasMoviles.Droid.Resource.Attribute.drawerArrowStyle;
+			global::AiForms.Dialogs.Resource.Attribute.dropdownListPreferredItemHeight = global::PryRutasMoviles.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
+			global::AiForms.Dialogs.Resource.Attribute.dropDownListViewStyle = global::PryRutasMoviles.Droid.Resource.Attribute.dropDownListViewStyle;
+			global::AiForms.Dialogs.Resource.Attribute.editTextBackground = global::PryRutasMoviles.Droid.Resource.Attribute.editTextBackground;
+			global::AiForms.Dialogs.Resource.Attribute.editTextColor = global::PryRutasMoviles.Droid.Resource.Attribute.editTextColor;
+			global::AiForms.Dialogs.Resource.Attribute.editTextStyle = global::PryRutasMoviles.Droid.Resource.Attribute.editTextStyle;
+			global::AiForms.Dialogs.Resource.Attribute.elevation = global::PryRutasMoviles.Droid.Resource.Attribute.elevation;
+			global::AiForms.Dialogs.Resource.Attribute.enforceMaterialTheme = global::PryRutasMoviles.Droid.Resource.Attribute.enforceMaterialTheme;
+			global::AiForms.Dialogs.Resource.Attribute.enforceTextAppearance = global::PryRutasMoviles.Droid.Resource.Attribute.enforceTextAppearance;
+			global::AiForms.Dialogs.Resource.Attribute.errorEnabled = global::PryRutasMoviles.Droid.Resource.Attribute.errorEnabled;
+			global::AiForms.Dialogs.Resource.Attribute.errorTextAppearance = global::PryRutasMoviles.Droid.Resource.Attribute.errorTextAppearance;
+			global::AiForms.Dialogs.Resource.Attribute.expandActivityOverflowButtonDrawable = global::PryRutasMoviles.Droid.Resource.Attribute.expandActivityOverflowButtonDrawable;
+			global::AiForms.Dialogs.Resource.Attribute.expanded = global::PryRutasMoviles.Droid.Resource.Attribute.expanded;
+			global::AiForms.Dialogs.Resource.Attribute.expandedTitleGravity = global::PryRutasMoviles.Droid.Resource.Attribute.expandedTitleGravity;
+			global::AiForms.Dialogs.Resource.Attribute.expandedTitleMargin = global::PryRutasMoviles.Droid.Resource.Attribute.expandedTitleMargin;
+			global::AiForms.Dialogs.Resource.Attribute.expandedTitleMarginBottom = global::PryRutasMoviles.Droid.Resource.Attribute.expandedTitleMarginBottom;
+			global::AiForms.Dialogs.Resource.Attribute.expandedTitleMarginEnd = global::PryRutasMoviles.Droid.Resource.Attribute.expandedTitleMarginEnd;
+			global::AiForms.Dialogs.Resource.Attribute.expandedTitleMarginStart = global::PryRutasMoviles.Droid.Resource.Attribute.expandedTitleMarginStart;
+			global::AiForms.Dialogs.Resource.Attribute.expandedTitleMarginTop = global::PryRutasMoviles.Droid.Resource.Attribute.expandedTitleMarginTop;
+			global::AiForms.Dialogs.Resource.Attribute.expandedTitleTextAppearance = global::PryRutasMoviles.Droid.Resource.Attribute.expandedTitleTextAppearance;
+			global::AiForms.Dialogs.Resource.Attribute.fabAlignmentMode = global::PryRutasMoviles.Droid.Resource.Attribute.fabAlignmentMode;
+			global::AiForms.Dialogs.Resource.Attribute.fabCradleMargin = global::PryRutasMoviles.Droid.Resource.Attribute.fabCradleMargin;
+			global::AiForms.Dialogs.Resource.Attribute.fabCradleRoundedCornerRadius = global::PryRutasMoviles.Droid.Resource.Attribute.fabCradleRoundedCornerRadius;
+			global::AiForms.Dialogs.Resource.Attribute.fabCradleVerticalOffset = global::PryRutasMoviles.Droid.Resource.Attribute.fabCradleVerticalOffset;
+			global::AiForms.Dialogs.Resource.Attribute.fabCustomSize = global::PryRutasMoviles.Droid.Resource.Attribute.fabCustomSize;
+			global::AiForms.Dialogs.Resource.Attribute.fabSize = global::PryRutasMoviles.Droid.Resource.Attribute.fabSize;
+			global::AiForms.Dialogs.Resource.Attribute.fastScrollEnabled = global::PryRutasMoviles.Droid.Resource.Attribute.fastScrollEnabled;
+			global::AiForms.Dialogs.Resource.Attribute.fastScrollHorizontalThumbDrawable = global::PryRutasMoviles.Droid.Resource.Attribute.fastScrollHorizontalThumbDrawable;
+			global::AiForms.Dialogs.Resource.Attribute.fastScrollHorizontalTrackDrawable = global::PryRutasMoviles.Droid.Resource.Attribute.fastScrollHorizontalTrackDrawable;
+			global::AiForms.Dialogs.Resource.Attribute.fastScrollVerticalThumbDrawable = global::PryRutasMoviles.Droid.Resource.Attribute.fastScrollVerticalThumbDrawable;
+			global::AiForms.Dialogs.Resource.Attribute.fastScrollVerticalTrackDrawable = global::PryRutasMoviles.Droid.Resource.Attribute.fastScrollVerticalTrackDrawable;
+			global::AiForms.Dialogs.Resource.Attribute.firstBaselineToTopHeight = global::PryRutasMoviles.Droid.Resource.Attribute.firstBaselineToTopHeight;
+			global::AiForms.Dialogs.Resource.Attribute.floatingActionButtonStyle = global::PryRutasMoviles.Droid.Resource.Attribute.floatingActionButtonStyle;
+			global::AiForms.Dialogs.Resource.Attribute.font = global::PryRutasMoviles.Droid.Resource.Attribute.font;
+			global::AiForms.Dialogs.Resource.Attribute.fontFamily = global::PryRutasMoviles.Droid.Resource.Attribute.fontFamily;
+			global::AiForms.Dialogs.Resource.Attribute.fontProviderAuthority = global::PryRutasMoviles.Droid.Resource.Attribute.fontProviderAuthority;
+			global::AiForms.Dialogs.Resource.Attribute.fontProviderCerts = global::PryRutasMoviles.Droid.Resource.Attribute.fontProviderCerts;
+			global::AiForms.Dialogs.Resource.Attribute.fontProviderFetchStrategy = global::PryRutasMoviles.Droid.Resource.Attribute.fontProviderFetchStrategy;
+			global::AiForms.Dialogs.Resource.Attribute.fontProviderFetchTimeout = global::PryRutasMoviles.Droid.Resource.Attribute.fontProviderFetchTimeout;
+			global::AiForms.Dialogs.Resource.Attribute.fontProviderPackage = global::PryRutasMoviles.Droid.Resource.Attribute.fontProviderPackage;
+			global::AiForms.Dialogs.Resource.Attribute.fontProviderQuery = global::PryRutasMoviles.Droid.Resource.Attribute.fontProviderQuery;
+			global::AiForms.Dialogs.Resource.Attribute.fontStyle = global::PryRutasMoviles.Droid.Resource.Attribute.fontStyle;
+			global::AiForms.Dialogs.Resource.Attribute.fontVariationSettings = global::PryRutasMoviles.Droid.Resource.Attribute.fontVariationSettings;
+			global::AiForms.Dialogs.Resource.Attribute.fontWeight = global::PryRutasMoviles.Droid.Resource.Attribute.fontWeight;
+			global::AiForms.Dialogs.Resource.Attribute.foregroundInsidePadding = global::PryRutasMoviles.Droid.Resource.Attribute.foregroundInsidePadding;
+			global::AiForms.Dialogs.Resource.Attribute.gapBetweenBars = global::PryRutasMoviles.Droid.Resource.Attribute.gapBetweenBars;
+			global::AiForms.Dialogs.Resource.Attribute.goIcon = global::PryRutasMoviles.Droid.Resource.Attribute.goIcon;
+			global::AiForms.Dialogs.Resource.Attribute.headerLayout = global::PryRutasMoviles.Droid.Resource.Attribute.headerLayout;
+			global::AiForms.Dialogs.Resource.Attribute.height = global::PryRutasMoviles.Droid.Resource.Attribute.height;
+			global::AiForms.Dialogs.Resource.Attribute.helperText = global::PryRutasMoviles.Droid.Resource.Attribute.helperText;
+			global::AiForms.Dialogs.Resource.Attribute.helperTextEnabled = global::PryRutasMoviles.Droid.Resource.Attribute.helperTextEnabled;
+			global::AiForms.Dialogs.Resource.Attribute.helperTextTextAppearance = global::PryRutasMoviles.Droid.Resource.Attribute.helperTextTextAppearance;
+			global::AiForms.Dialogs.Resource.Attribute.hideMotionSpec = global::PryRutasMoviles.Droid.Resource.Attribute.hideMotionSpec;
+			global::AiForms.Dialogs.Resource.Attribute.hideOnContentScroll = global::PryRutasMoviles.Droid.Resource.Attribute.hideOnContentScroll;
+			global::AiForms.Dialogs.Resource.Attribute.hideOnScroll = global::PryRutasMoviles.Droid.Resource.Attribute.hideOnScroll;
+			global::AiForms.Dialogs.Resource.Attribute.hintAnimationEnabled = global::PryRutasMoviles.Droid.Resource.Attribute.hintAnimationEnabled;
+			global::AiForms.Dialogs.Resource.Attribute.hintEnabled = global::PryRutasMoviles.Droid.Resource.Attribute.hintEnabled;
+			global::AiForms.Dialogs.Resource.Attribute.hintTextAppearance = global::PryRutasMoviles.Droid.Resource.Attribute.hintTextAppearance;
+			global::AiForms.Dialogs.Resource.Attribute.homeAsUpIndicator = global::PryRutasMoviles.Droid.Resource.Attribute.homeAsUpIndicator;
+			global::AiForms.Dialogs.Resource.Attribute.homeLayout = global::PryRutasMoviles.Droid.Resource.Attribute.homeLayout;
+			global::AiForms.Dialogs.Resource.Attribute.hoveredFocusedTranslationZ = global::PryRutasMoviles.Droid.Resource.Attribute.hoveredFocusedTranslationZ;
+			global::AiForms.Dialogs.Resource.Attribute.icon = global::PryRutasMoviles.Droid.Resource.Attribute.icon;
+			global::AiForms.Dialogs.Resource.Attribute.iconEndPadding = global::PryRutasMoviles.Droid.Resource.Attribute.iconEndPadding;
+			global::AiForms.Dialogs.Resource.Attribute.iconGravity = global::PryRutasMoviles.Droid.Resource.Attribute.iconGravity;
+			global::AiForms.Dialogs.Resource.Attribute.iconifiedByDefault = global::PryRutasMoviles.Droid.Resource.Attribute.iconifiedByDefault;
+			global::AiForms.Dialogs.Resource.Attribute.iconPadding = global::PryRutasMoviles.Droid.Resource.Attribute.iconPadding;
+			global::AiForms.Dialogs.Resource.Attribute.iconSize = global::PryRutasMoviles.Droid.Resource.Attribute.iconSize;
+			global::AiForms.Dialogs.Resource.Attribute.iconStartPadding = global::PryRutasMoviles.Droid.Resource.Attribute.iconStartPadding;
+			global::AiForms.Dialogs.Resource.Attribute.iconTint = global::PryRutasMoviles.Droid.Resource.Attribute.iconTint;
+			global::AiForms.Dialogs.Resource.Attribute.iconTintMode = global::PryRutasMoviles.Droid.Resource.Attribute.iconTintMode;
+			global::AiForms.Dialogs.Resource.Attribute.imageButtonStyle = global::PryRutasMoviles.Droid.Resource.Attribute.imageButtonStyle;
+			global::AiForms.Dialogs.Resource.Attribute.indeterminateProgressStyle = global::PryRutasMoviles.Droid.Resource.Attribute.indeterminateProgressStyle;
+			global::AiForms.Dialogs.Resource.Attribute.initialActivityCount = global::PryRutasMoviles.Droid.Resource.Attribute.initialActivityCount;
+			global::AiForms.Dialogs.Resource.Attribute.insetForeground = global::PryRutasMoviles.Droid.Resource.Attribute.insetForeground;
+			global::AiForms.Dialogs.Resource.Attribute.isLightTheme = global::PryRutasMoviles.Droid.Resource.Attribute.isLightTheme;
+			global::AiForms.Dialogs.Resource.Attribute.itemBackground = global::PryRutasMoviles.Droid.Resource.Attribute.itemBackground;
+			global::AiForms.Dialogs.Resource.Attribute.itemHorizontalPadding = global::PryRutasMoviles.Droid.Resource.Attribute.itemHorizontalPadding;
+			global::AiForms.Dialogs.Resource.Attribute.itemHorizontalTranslationEnabled = global::PryRutasMoviles.Droid.Resource.Attribute.itemHorizontalTranslationEnabled;
+			global::AiForms.Dialogs.Resource.Attribute.itemIconPadding = global::PryRutasMoviles.Droid.Resource.Attribute.itemIconPadding;
+			global::AiForms.Dialogs.Resource.Attribute.itemIconSize = global::PryRutasMoviles.Droid.Resource.Attribute.itemIconSize;
+			global::AiForms.Dialogs.Resource.Attribute.itemIconTint = global::PryRutasMoviles.Droid.Resource.Attribute.itemIconTint;
+			global::AiForms.Dialogs.Resource.Attribute.itemPadding = global::PryRutasMoviles.Droid.Resource.Attribute.itemPadding;
+			global::AiForms.Dialogs.Resource.Attribute.itemSpacing = global::PryRutasMoviles.Droid.Resource.Attribute.itemSpacing;
+			global::AiForms.Dialogs.Resource.Attribute.itemTextAppearance = global::PryRutasMoviles.Droid.Resource.Attribute.itemTextAppearance;
+			global::AiForms.Dialogs.Resource.Attribute.itemTextAppearanceActive = global::PryRutasMoviles.Droid.Resource.Attribute.itemTextAppearanceActive;
+			global::AiForms.Dialogs.Resource.Attribute.itemTextAppearanceInactive = global::PryRutasMoviles.Droid.Resource.Attribute.itemTextAppearanceInactive;
+			global::AiForms.Dialogs.Resource.Attribute.itemTextColor = global::PryRutasMoviles.Droid.Resource.Attribute.itemTextColor;
+			global::AiForms.Dialogs.Resource.Attribute.keylines = global::PryRutasMoviles.Droid.Resource.Attribute.keylines;
+			global::AiForms.Dialogs.Resource.Attribute.labelVisibilityMode = global::PryRutasMoviles.Droid.Resource.Attribute.labelVisibilityMode;
+			global::AiForms.Dialogs.Resource.Attribute.lastBaselineToBottomHeight = global::PryRutasMoviles.Droid.Resource.Attribute.lastBaselineToBottomHeight;
+			global::AiForms.Dialogs.Resource.Attribute.layout = global::PryRutasMoviles.Droid.Resource.Attribute.layout;
+			global::AiForms.Dialogs.Resource.Attribute.layoutManager = global::PryRutasMoviles.Droid.Resource.Attribute.layoutManager;
+			global::AiForms.Dialogs.Resource.Attribute.layout_anchor = global::PryRutasMoviles.Droid.Resource.Attribute.layout_anchor;
+			global::AiForms.Dialogs.Resource.Attribute.layout_anchorGravity = global::PryRutasMoviles.Droid.Resource.Attribute.layout_anchorGravity;
+			global::AiForms.Dialogs.Resource.Attribute.layout_behavior = global::PryRutasMoviles.Droid.Resource.Attribute.layout_behavior;
+			global::AiForms.Dialogs.Resource.Attribute.layout_collapseMode = global::PryRutasMoviles.Droid.Resource.Attribute.layout_collapseMode;
+			global::AiForms.Dialogs.Resource.Attribute.layout_collapseParallaxMultiplier = global::PryRutasMoviles.Droid.Resource.Attribute.layout_collapseParallaxMultiplier;
+			global::AiForms.Dialogs.Resource.Attribute.layout_dodgeInsetEdges = global::PryRutasMoviles.Droid.Resource.Attribute.layout_dodgeInsetEdges;
+			global::AiForms.Dialogs.Resource.Attribute.layout_insetEdge = global::PryRutasMoviles.Droid.Resource.Attribute.layout_insetEdge;
+			global::AiForms.Dialogs.Resource.Attribute.layout_keyline = global::PryRutasMoviles.Droid.Resource.Attribute.layout_keyline;
+			global::AiForms.Dialogs.Resource.Attribute.layout_scrollFlags = global::PryRutasMoviles.Droid.Resource.Attribute.layout_scrollFlags;
+			global::AiForms.Dialogs.Resource.Attribute.layout_scrollInterpolator = global::PryRutasMoviles.Droid.Resource.Attribute.layout_scrollInterpolator;
+			global::AiForms.Dialogs.Resource.Attribute.liftOnScroll = global::PryRutasMoviles.Droid.Resource.Attribute.liftOnScroll;
+			global::AiForms.Dialogs.Resource.Attribute.lineHeight = global::PryRutasMoviles.Droid.Resource.Attribute.lineHeight;
+			global::AiForms.Dialogs.Resource.Attribute.lineSpacing = global::PryRutasMoviles.Droid.Resource.Attribute.lineSpacing;
+			global::AiForms.Dialogs.Resource.Attribute.listChoiceBackgroundIndicator = global::PryRutasMoviles.Droid.Resource.Attribute.listChoiceBackgroundIndicator;
+			global::AiForms.Dialogs.Resource.Attribute.listChoiceIndicatorMultipleAnimated = global::PryRutasMoviles.Droid.Resource.Attribute.listChoiceIndicatorMultipleAnimated;
+			global::AiForms.Dialogs.Resource.Attribute.listChoiceIndicatorSingleAnimated = global::PryRutasMoviles.Droid.Resource.Attribute.listChoiceIndicatorSingleAnimated;
+			global::AiForms.Dialogs.Resource.Attribute.listDividerAlertDialog = global::PryRutasMoviles.Droid.Resource.Attribute.listDividerAlertDialog;
+			global::AiForms.Dialogs.Resource.Attribute.listItemLayout = global::PryRutasMoviles.Droid.Resource.Attribute.listItemLayout;
+			global::AiForms.Dialogs.Resource.Attribute.listLayout = global::PryRutasMoviles.Droid.Resource.Attribute.listLayout;
+			global::AiForms.Dialogs.Resource.Attribute.listMenuViewStyle = global::PryRutasMoviles.Droid.Resource.Attribute.listMenuViewStyle;
+			global::AiForms.Dialogs.Resource.Attribute.listPopupWindowStyle = global::PryRutasMoviles.Droid.Resource.Attribute.listPopupWindowStyle;
+			global::AiForms.Dialogs.Resource.Attribute.listPreferredItemHeight = global::PryRutasMoviles.Droid.Resource.Attribute.listPreferredItemHeight;
+			global::AiForms.Dialogs.Resource.Attribute.listPreferredItemHeightLarge = global::PryRutasMoviles.Droid.Resource.Attribute.listPreferredItemHeightLarge;
+			global::AiForms.Dialogs.Resource.Attribute.listPreferredItemHeightSmall = global::PryRutasMoviles.Droid.Resource.Attribute.listPreferredItemHeightSmall;
+			global::AiForms.Dialogs.Resource.Attribute.listPreferredItemPaddingEnd = global::PryRutasMoviles.Droid.Resource.Attribute.listPreferredItemPaddingEnd;
+			global::AiForms.Dialogs.Resource.Attribute.listPreferredItemPaddingLeft = global::PryRutasMoviles.Droid.Resource.Attribute.listPreferredItemPaddingLeft;
+			global::AiForms.Dialogs.Resource.Attribute.listPreferredItemPaddingRight = global::PryRutasMoviles.Droid.Resource.Attribute.listPreferredItemPaddingRight;
+			global::AiForms.Dialogs.Resource.Attribute.listPreferredItemPaddingStart = global::PryRutasMoviles.Droid.Resource.Attribute.listPreferredItemPaddingStart;
+			global::AiForms.Dialogs.Resource.Attribute.logo = global::PryRutasMoviles.Droid.Resource.Attribute.logo;
+			global::AiForms.Dialogs.Resource.Attribute.logoDescription = global::PryRutasMoviles.Droid.Resource.Attribute.logoDescription;
+			global::AiForms.Dialogs.Resource.Attribute.materialButtonStyle = global::PryRutasMoviles.Droid.Resource.Attribute.materialButtonStyle;
+			global::AiForms.Dialogs.Resource.Attribute.materialCardViewStyle = global::PryRutasMoviles.Droid.Resource.Attribute.materialCardViewStyle;
+			global::AiForms.Dialogs.Resource.Attribute.maxActionInlineWidth = global::PryRutasMoviles.Droid.Resource.Attribute.maxActionInlineWidth;
+			global::AiForms.Dialogs.Resource.Attribute.maxButtonHeight = global::PryRutasMoviles.Droid.Resource.Attribute.maxButtonHeight;
+			global::AiForms.Dialogs.Resource.Attribute.maxImageSize = global::PryRutasMoviles.Droid.Resource.Attribute.maxImageSize;
+			global::AiForms.Dialogs.Resource.Attribute.measureWithLargestChild = global::PryRutasMoviles.Droid.Resource.Attribute.measureWithLargestChild;
+			global::AiForms.Dialogs.Resource.Attribute.menu = global::PryRutasMoviles.Droid.Resource.Attribute.menu;
+			global::AiForms.Dialogs.Resource.Attribute.multiChoiceItemLayout = global::PryRutasMoviles.Droid.Resource.Attribute.multiChoiceItemLayout;
+			global::AiForms.Dialogs.Resource.Attribute.navigationContentDescription = global::PryRutasMoviles.Droid.Resource.Attribute.navigationContentDescription;
+			global::AiForms.Dialogs.Resource.Attribute.navigationIcon = global::PryRutasMoviles.Droid.Resource.Attribute.navigationIcon;
+			global::AiForms.Dialogs.Resource.Attribute.navigationMode = global::PryRutasMoviles.Droid.Resource.Attribute.navigationMode;
+			global::AiForms.Dialogs.Resource.Attribute.navigationViewStyle = global::PryRutasMoviles.Droid.Resource.Attribute.navigationViewStyle;
+			global::AiForms.Dialogs.Resource.Attribute.numericModifiers = global::PryRutasMoviles.Droid.Resource.Attribute.numericModifiers;
+			global::AiForms.Dialogs.Resource.Attribute.overlapAnchor = global::PryRutasMoviles.Droid.Resource.Attribute.overlapAnchor;
+			global::AiForms.Dialogs.Resource.Attribute.paddingBottomNoButtons = global::PryRutasMoviles.Droid.Resource.Attribute.paddingBottomNoButtons;
+			global::AiForms.Dialogs.Resource.Attribute.paddingEnd = global::PryRutasMoviles.Droid.Resource.Attribute.paddingEnd;
+			global::AiForms.Dialogs.Resource.Attribute.paddingStart = global::PryRutasMoviles.Droid.Resource.Attribute.paddingStart;
+			global::AiForms.Dialogs.Resource.Attribute.paddingTopNoTitle = global::PryRutasMoviles.Droid.Resource.Attribute.paddingTopNoTitle;
+			global::AiForms.Dialogs.Resource.Attribute.panelBackground = global::PryRutasMoviles.Droid.Resource.Attribute.panelBackground;
+			global::AiForms.Dialogs.Resource.Attribute.panelMenuListTheme = global::PryRutasMoviles.Droid.Resource.Attribute.panelMenuListTheme;
+			global::AiForms.Dialogs.Resource.Attribute.panelMenuListWidth = global::PryRutasMoviles.Droid.Resource.Attribute.panelMenuListWidth;
+			global::AiForms.Dialogs.Resource.Attribute.passwordToggleContentDescription = global::PryRutasMoviles.Droid.Resource.Attribute.passwordToggleContentDescription;
+			global::AiForms.Dialogs.Resource.Attribute.passwordToggleDrawable = global::PryRutasMoviles.Droid.Resource.Attribute.passwordToggleDrawable;
+			global::AiForms.Dialogs.Resource.Attribute.passwordToggleEnabled = global::PryRutasMoviles.Droid.Resource.Attribute.passwordToggleEnabled;
+			global::AiForms.Dialogs.Resource.Attribute.passwordToggleTint = global::PryRutasMoviles.Droid.Resource.Attribute.passwordToggleTint;
+			global::AiForms.Dialogs.Resource.Attribute.passwordToggleTintMode = global::PryRutasMoviles.Droid.Resource.Attribute.passwordToggleTintMode;
+			global::AiForms.Dialogs.Resource.Attribute.popupMenuStyle = global::PryRutasMoviles.Droid.Resource.Attribute.popupMenuStyle;
+			global::AiForms.Dialogs.Resource.Attribute.popupTheme = global::PryRutasMoviles.Droid.Resource.Attribute.popupTheme;
+			global::AiForms.Dialogs.Resource.Attribute.popupWindowStyle = global::PryRutasMoviles.Droid.Resource.Attribute.popupWindowStyle;
+			global::AiForms.Dialogs.Resource.Attribute.preserveIconSpacing = global::PryRutasMoviles.Droid.Resource.Attribute.preserveIconSpacing;
+			global::AiForms.Dialogs.Resource.Attribute.pressedTranslationZ = global::PryRutasMoviles.Droid.Resource.Attribute.pressedTranslationZ;
+			global::AiForms.Dialogs.Resource.Attribute.progressBarPadding = global::PryRutasMoviles.Droid.Resource.Attribute.progressBarPadding;
+			global::AiForms.Dialogs.Resource.Attribute.progressBarStyle = global::PryRutasMoviles.Droid.Resource.Attribute.progressBarStyle;
+			global::AiForms.Dialogs.Resource.Attribute.queryBackground = global::PryRutasMoviles.Droid.Resource.Attribute.queryBackground;
+			global::AiForms.Dialogs.Resource.Attribute.queryHint = global::PryRutasMoviles.Droid.Resource.Attribute.queryHint;
+			global::AiForms.Dialogs.Resource.Attribute.radioButtonStyle = global::PryRutasMoviles.Droid.Resource.Attribute.radioButtonStyle;
+			global::AiForms.Dialogs.Resource.Attribute.ratingBarStyle = global::PryRutasMoviles.Droid.Resource.Attribute.ratingBarStyle;
+			global::AiForms.Dialogs.Resource.Attribute.ratingBarStyleIndicator = global::PryRutasMoviles.Droid.Resource.Attribute.ratingBarStyleIndicator;
+			global::AiForms.Dialogs.Resource.Attribute.ratingBarStyleSmall = global::PryRutasMoviles.Droid.Resource.Attribute.ratingBarStyleSmall;
+			global::AiForms.Dialogs.Resource.Attribute.recyclerViewStyle = global::PryRutasMoviles.Droid.Resource.Attribute.recyclerViewStyle;
+			global::AiForms.Dialogs.Resource.Attribute.reverseLayout = global::PryRutasMoviles.Droid.Resource.Attribute.reverseLayout;
+			global::AiForms.Dialogs.Resource.Attribute.rippleColor = global::PryRutasMoviles.Droid.Resource.Attribute.rippleColor;
+			global::AiForms.Dialogs.Resource.Attribute.scrimAnimationDuration = global::PryRutasMoviles.Droid.Resource.Attribute.scrimAnimationDuration;
+			global::AiForms.Dialogs.Resource.Attribute.scrimBackground = global::PryRutasMoviles.Droid.Resource.Attribute.scrimBackground;
+			global::AiForms.Dialogs.Resource.Attribute.scrimVisibleHeightTrigger = global::PryRutasMoviles.Droid.Resource.Attribute.scrimVisibleHeightTrigger;
+			global::AiForms.Dialogs.Resource.Attribute.searchHintIcon = global::PryRutasMoviles.Droid.Resource.Attribute.searchHintIcon;
+			global::AiForms.Dialogs.Resource.Attribute.searchIcon = global::PryRutasMoviles.Droid.Resource.Attribute.searchIcon;
+			global::AiForms.Dialogs.Resource.Attribute.searchViewStyle = global::PryRutasMoviles.Droid.Resource.Attribute.searchViewStyle;
+			global::AiForms.Dialogs.Resource.Attribute.seekBarStyle = global::PryRutasMoviles.Droid.Resource.Attribute.seekBarStyle;
+			global::AiForms.Dialogs.Resource.Attribute.selectableItemBackground = global::PryRutasMoviles.Droid.Resource.Attribute.selectableItemBackground;
+			global::AiForms.Dialogs.Resource.Attribute.selectableItemBackgroundBorderless = global::PryRutasMoviles.Droid.Resource.Attribute.selectableItemBackgroundBorderless;
+			global::AiForms.Dialogs.Resource.Attribute.showAsAction = global::PryRutasMoviles.Droid.Resource.Attribute.showAsAction;
+			global::AiForms.Dialogs.Resource.Attribute.showDividers = global::PryRutasMoviles.Droid.Resource.Attribute.showDividers;
+			global::AiForms.Dialogs.Resource.Attribute.showMotionSpec = global::PryRutasMoviles.Droid.Resource.Attribute.showMotionSpec;
+			global::AiForms.Dialogs.Resource.Attribute.showText = global::PryRutasMoviles.Droid.Resource.Attribute.showText;
+			global::AiForms.Dialogs.Resource.Attribute.showTitle = global::PryRutasMoviles.Droid.Resource.Attribute.showTitle;
+			global::AiForms.Dialogs.Resource.Attribute.singleChoiceItemLayout = global::PryRutasMoviles.Droid.Resource.Attribute.singleChoiceItemLayout;
+			global::AiForms.Dialogs.Resource.Attribute.singleLine = global::PryRutasMoviles.Droid.Resource.Attribute.singleLine;
+			global::AiForms.Dialogs.Resource.Attribute.singleSelection = global::PryRutasMoviles.Droid.Resource.Attribute.singleSelection;
+			global::AiForms.Dialogs.Resource.Attribute.snackbarButtonStyle = global::PryRutasMoviles.Droid.Resource.Attribute.snackbarButtonStyle;
+			global::AiForms.Dialogs.Resource.Attribute.snackbarStyle = global::PryRutasMoviles.Droid.Resource.Attribute.snackbarStyle;
+			global::AiForms.Dialogs.Resource.Attribute.spanCount = global::PryRutasMoviles.Droid.Resource.Attribute.spanCount;
+			global::AiForms.Dialogs.Resource.Attribute.spinBars = global::PryRutasMoviles.Droid.Resource.Attribute.spinBars;
+			global::AiForms.Dialogs.Resource.Attribute.spinnerDropDownItemStyle = global::PryRutasMoviles.Droid.Resource.Attribute.spinnerDropDownItemStyle;
+			global::AiForms.Dialogs.Resource.Attribute.spinnerStyle = global::PryRutasMoviles.Droid.Resource.Attribute.spinnerStyle;
+			global::AiForms.Dialogs.Resource.Attribute.splitTrack = global::PryRutasMoviles.Droid.Resource.Attribute.splitTrack;
+			global::AiForms.Dialogs.Resource.Attribute.srcCompat = global::PryRutasMoviles.Droid.Resource.Attribute.srcCompat;
+			global::AiForms.Dialogs.Resource.Attribute.stackFromEnd = global::PryRutasMoviles.Droid.Resource.Attribute.stackFromEnd;
+			global::AiForms.Dialogs.Resource.Attribute.state_above_anchor = global::PryRutasMoviles.Droid.Resource.Attribute.state_above_anchor;
+			global::AiForms.Dialogs.Resource.Attribute.state_collapsed = global::PryRutasMoviles.Droid.Resource.Attribute.state_collapsed;
+			global::AiForms.Dialogs.Resource.Attribute.state_collapsible = global::PryRutasMoviles.Droid.Resource.Attribute.state_collapsible;
+			global::AiForms.Dialogs.Resource.Attribute.state_liftable = global::PryRutasMoviles.Droid.Resource.Attribute.state_liftable;
+			global::AiForms.Dialogs.Resource.Attribute.state_lifted = global::PryRutasMoviles.Droid.Resource.Attribute.state_lifted;
+			global::AiForms.Dialogs.Resource.Attribute.statusBarBackground = global::PryRutasMoviles.Droid.Resource.Attribute.statusBarBackground;
+			global::AiForms.Dialogs.Resource.Attribute.statusBarScrim = global::PryRutasMoviles.Droid.Resource.Attribute.statusBarScrim;
+			global::AiForms.Dialogs.Resource.Attribute.strokeColor = global::PryRutasMoviles.Droid.Resource.Attribute.strokeColor;
+			global::AiForms.Dialogs.Resource.Attribute.strokeWidth = global::PryRutasMoviles.Droid.Resource.Attribute.strokeWidth;
+			global::AiForms.Dialogs.Resource.Attribute.subMenuArrow = global::PryRutasMoviles.Droid.Resource.Attribute.subMenuArrow;
+			global::AiForms.Dialogs.Resource.Attribute.submitBackground = global::PryRutasMoviles.Droid.Resource.Attribute.submitBackground;
+			global::AiForms.Dialogs.Resource.Attribute.subtitle = global::PryRutasMoviles.Droid.Resource.Attribute.subtitle;
+			global::AiForms.Dialogs.Resource.Attribute.subtitleTextAppearance = global::PryRutasMoviles.Droid.Resource.Attribute.subtitleTextAppearance;
+			global::AiForms.Dialogs.Resource.Attribute.subtitleTextColor = global::PryRutasMoviles.Droid.Resource.Attribute.subtitleTextColor;
+			global::AiForms.Dialogs.Resource.Attribute.subtitleTextStyle = global::PryRutasMoviles.Droid.Resource.Attribute.subtitleTextStyle;
+			global::AiForms.Dialogs.Resource.Attribute.suggestionRowLayout = global::PryRutasMoviles.Droid.Resource.Attribute.suggestionRowLayout;
+			global::AiForms.Dialogs.Resource.Attribute.switchMinWidth = global::PryRutasMoviles.Droid.Resource.Attribute.switchMinWidth;
+			global::AiForms.Dialogs.Resource.Attribute.switchPadding = global::PryRutasMoviles.Droid.Resource.Attribute.switchPadding;
+			global::AiForms.Dialogs.Resource.Attribute.switchStyle = global::PryRutasMoviles.Droid.Resource.Attribute.switchStyle;
+			global::AiForms.Dialogs.Resource.Attribute.switchTextAppearance = global::PryRutasMoviles.Droid.Resource.Attribute.switchTextAppearance;
+			global::AiForms.Dialogs.Resource.Attribute.tabBackground = global::PryRutasMoviles.Droid.Resource.Attribute.tabBackground;
+			global::AiForms.Dialogs.Resource.Attribute.tabContentStart = global::PryRutasMoviles.Droid.Resource.Attribute.tabContentStart;
+			global::AiForms.Dialogs.Resource.Attribute.tabGravity = global::PryRutasMoviles.Droid.Resource.Attribute.tabGravity;
+			global::AiForms.Dialogs.Resource.Attribute.tabIconTint = global::PryRutasMoviles.Droid.Resource.Attribute.tabIconTint;
+			global::AiForms.Dialogs.Resource.Attribute.tabIconTintMode = global::PryRutasMoviles.Droid.Resource.Attribute.tabIconTintMode;
+			global::AiForms.Dialogs.Resource.Attribute.tabIndicator = global::PryRutasMoviles.Droid.Resource.Attribute.tabIndicator;
+			global::AiForms.Dialogs.Resource.Attribute.tabIndicatorAnimationDuration = global::PryRutasMoviles.Droid.Resource.Attribute.tabIndicatorAnimationDuration;
+			global::AiForms.Dialogs.Resource.Attribute.tabIndicatorColor = global::PryRutasMoviles.Droid.Resource.Attribute.tabIndicatorColor;
+			global::AiForms.Dialogs.Resource.Attribute.tabIndicatorFullWidth = global::PryRutasMoviles.Droid.Resource.Attribute.tabIndicatorFullWidth;
+			global::AiForms.Dialogs.Resource.Attribute.tabIndicatorGravity = global::PryRutasMoviles.Droid.Resource.Attribute.tabIndicatorGravity;
+			global::AiForms.Dialogs.Resource.Attribute.tabIndicatorHeight = global::PryRutasMoviles.Droid.Resource.Attribute.tabIndicatorHeight;
+			global::AiForms.Dialogs.Resource.Attribute.tabInlineLabel = global::PryRutasMoviles.Droid.Resource.Attribute.tabInlineLabel;
+			global::AiForms.Dialogs.Resource.Attribute.tabMaxWidth = global::PryRutasMoviles.Droid.Resource.Attribute.tabMaxWidth;
+			global::AiForms.Dialogs.Resource.Attribute.tabMinWidth = global::PryRutasMoviles.Droid.Resource.Attribute.tabMinWidth;
+			global::AiForms.Dialogs.Resource.Attribute.tabMode = global::PryRutasMoviles.Droid.Resource.Attribute.tabMode;
+			global::AiForms.Dialogs.Resource.Attribute.tabPadding = global::PryRutasMoviles.Droid.Resource.Attribute.tabPadding;
+			global::AiForms.Dialogs.Resource.Attribute.tabPaddingBottom = global::PryRutasMoviles.Droid.Resource.Attribute.tabPaddingBottom;
+			global::AiForms.Dialogs.Resource.Attribute.tabPaddingEnd = global::PryRutasMoviles.Droid.Resource.Attribute.tabPaddingEnd;
+			global::AiForms.Dialogs.Resource.Attribute.tabPaddingStart = global::PryRutasMoviles.Droid.Resource.Attribute.tabPaddingStart;
+			global::AiForms.Dialogs.Resource.Attribute.tabPaddingTop = global::PryRutasMoviles.Droid.Resource.Attribute.tabPaddingTop;
+			global::AiForms.Dialogs.Resource.Attribute.tabRippleColor = global::PryRutasMoviles.Droid.Resource.Attribute.tabRippleColor;
+			global::AiForms.Dialogs.Resource.Attribute.tabSelectedTextColor = global::PryRutasMoviles.Droid.Resource.Attribute.tabSelectedTextColor;
+			global::AiForms.Dialogs.Resource.Attribute.tabStyle = global::PryRutasMoviles.Droid.Resource.Attribute.tabStyle;
+			global::AiForms.Dialogs.Resource.Attribute.tabTextAppearance = global::PryRutasMoviles.Droid.Resource.Attribute.tabTextAppearance;
+			global::AiForms.Dialogs.Resource.Attribute.tabTextColor = global::PryRutasMoviles.Droid.Resource.Attribute.tabTextColor;
+			global::AiForms.Dialogs.Resource.Attribute.tabUnboundedRipple = global::PryRutasMoviles.Droid.Resource.Attribute.tabUnboundedRipple;
+			global::AiForms.Dialogs.Resource.Attribute.textAllCaps = global::PryRutasMoviles.Droid.Resource.Attribute.textAllCaps;
+			global::AiForms.Dialogs.Resource.Attribute.textAppearanceBody1 = global::PryRutasMoviles.Droid.Resource.Attribute.textAppearanceBody1;
+			global::AiForms.Dialogs.Resource.Attribute.textAppearanceBody2 = global::PryRutasMoviles.Droid.Resource.Attribute.textAppearanceBody2;
+			global::AiForms.Dialogs.Resource.Attribute.textAppearanceButton = global::PryRutasMoviles.Droid.Resource.Attribute.textAppearanceButton;
+			global::AiForms.Dialogs.Resource.Attribute.textAppearanceCaption = global::PryRutasMoviles.Droid.Resource.Attribute.textAppearanceCaption;
+			global::AiForms.Dialogs.Resource.Attribute.textAppearanceHeadline1 = global::PryRutasMoviles.Droid.Resource.Attribute.textAppearanceHeadline1;
+			global::AiForms.Dialogs.Resource.Attribute.textAppearanceHeadline2 = global::PryRutasMoviles.Droid.Resource.Attribute.textAppearanceHeadline2;
+			global::AiForms.Dialogs.Resource.Attribute.textAppearanceHeadline3 = global::PryRutasMoviles.Droid.Resource.Attribute.textAppearanceHeadline3;
+			global::AiForms.Dialogs.Resource.Attribute.textAppearanceHeadline4 = global::PryRutasMoviles.Droid.Resource.Attribute.textAppearanceHeadline4;
+			global::AiForms.Dialogs.Resource.Attribute.textAppearanceHeadline5 = global::PryRutasMoviles.Droid.Resource.Attribute.textAppearanceHeadline5;
+			global::AiForms.Dialogs.Resource.Attribute.textAppearanceHeadline6 = global::PryRutasMoviles.Droid.Resource.Attribute.textAppearanceHeadline6;
+			global::AiForms.Dialogs.Resource.Attribute.textAppearanceLargePopupMenu = global::PryRutasMoviles.Droid.Resource.Attribute.textAppearanceLargePopupMenu;
+			global::AiForms.Dialogs.Resource.Attribute.textAppearanceListItem = global::PryRutasMoviles.Droid.Resource.Attribute.textAppearanceListItem;
+			global::AiForms.Dialogs.Resource.Attribute.textAppearanceListItemSecondary = global::PryRutasMoviles.Droid.Resource.Attribute.textAppearanceListItemSecondary;
+			global::AiForms.Dialogs.Resource.Attribute.textAppearanceListItemSmall = global::PryRutasMoviles.Droid.Resource.Attribute.textAppearanceListItemSmall;
+			global::AiForms.Dialogs.Resource.Attribute.textAppearanceOverline = global::PryRutasMoviles.Droid.Resource.Attribute.textAppearanceOverline;
+			global::AiForms.Dialogs.Resource.Attribute.textAppearancePopupMenuHeader = global::PryRutasMoviles.Droid.Resource.Attribute.textAppearancePopupMenuHeader;
+			global::AiForms.Dialogs.Resource.Attribute.textAppearanceSearchResultSubtitle = global::PryRutasMoviles.Droid.Resource.Attribute.textAppearanceSearchResultSubtitle;
+			global::AiForms.Dialogs.Resource.Attribute.textAppearanceSearchResultTitle = global::PryRutasMoviles.Droid.Resource.Attribute.textAppearanceSearchResultTitle;
+			global::AiForms.Dialogs.Resource.Attribute.textAppearanceSmallPopupMenu = global::PryRutasMoviles.Droid.Resource.Attribute.textAppearanceSmallPopupMenu;
+			global::AiForms.Dialogs.Resource.Attribute.textAppearanceSubtitle1 = global::PryRutasMoviles.Droid.Resource.Attribute.textAppearanceSubtitle1;
+			global::AiForms.Dialogs.Resource.Attribute.textAppearanceSubtitle2 = global::PryRutasMoviles.Droid.Resource.Attribute.textAppearanceSubtitle2;
+			global::AiForms.Dialogs.Resource.Attribute.textColorAlertDialogListItem = global::PryRutasMoviles.Droid.Resource.Attribute.textColorAlertDialogListItem;
+			global::AiForms.Dialogs.Resource.Attribute.textColorSearchUrl = global::PryRutasMoviles.Droid.Resource.Attribute.textColorSearchUrl;
+			global::AiForms.Dialogs.Resource.Attribute.textEndPadding = global::PryRutasMoviles.Droid.Resource.Attribute.textEndPadding;
+			global::AiForms.Dialogs.Resource.Attribute.textInputStyle = global::PryRutasMoviles.Droid.Resource.Attribute.textInputStyle;
+			global::AiForms.Dialogs.Resource.Attribute.textLocale = global::PryRutasMoviles.Droid.Resource.Attribute.textLocale;
+			global::AiForms.Dialogs.Resource.Attribute.textStartPadding = global::PryRutasMoviles.Droid.Resource.Attribute.textStartPadding;
+			global::AiForms.Dialogs.Resource.Attribute.theme = global::PryRutasMoviles.Droid.Resource.Attribute.theme;
+			global::AiForms.Dialogs.Resource.Attribute.thickness = global::PryRutasMoviles.Droid.Resource.Attribute.thickness;
+			global::AiForms.Dialogs.Resource.Attribute.thumbTextPadding = global::PryRutasMoviles.Droid.Resource.Attribute.thumbTextPadding;
+			global::AiForms.Dialogs.Resource.Attribute.thumbTint = global::PryRutasMoviles.Droid.Resource.Attribute.thumbTint;
+			global::AiForms.Dialogs.Resource.Attribute.thumbTintMode = global::PryRutasMoviles.Droid.Resource.Attribute.thumbTintMode;
+			global::AiForms.Dialogs.Resource.Attribute.tickMark = global::PryRutasMoviles.Droid.Resource.Attribute.tickMark;
+			global::AiForms.Dialogs.Resource.Attribute.tickMarkTint = global::PryRutasMoviles.Droid.Resource.Attribute.tickMarkTint;
+			global::AiForms.Dialogs.Resource.Attribute.tickMarkTintMode = global::PryRutasMoviles.Droid.Resource.Attribute.tickMarkTintMode;
+			global::AiForms.Dialogs.Resource.Attribute.tint = global::PryRutasMoviles.Droid.Resource.Attribute.tint;
+			global::AiForms.Dialogs.Resource.Attribute.tintMode = global::PryRutasMoviles.Droid.Resource.Attribute.tintMode;
+			global::AiForms.Dialogs.Resource.Attribute.title = global::PryRutasMoviles.Droid.Resource.Attribute.title;
+			global::AiForms.Dialogs.Resource.Attribute.titleEnabled = global::PryRutasMoviles.Droid.Resource.Attribute.titleEnabled;
+			global::AiForms.Dialogs.Resource.Attribute.titleMargin = global::PryRutasMoviles.Droid.Resource.Attribute.titleMargin;
+			global::AiForms.Dialogs.Resource.Attribute.titleMarginBottom = global::PryRutasMoviles.Droid.Resource.Attribute.titleMarginBottom;
+			global::AiForms.Dialogs.Resource.Attribute.titleMarginEnd = global::PryRutasMoviles.Droid.Resource.Attribute.titleMarginEnd;
+			global::AiForms.Dialogs.Resource.Attribute.titleMargins = global::PryRutasMoviles.Droid.Resource.Attribute.titleMargins;
+			global::AiForms.Dialogs.Resource.Attribute.titleMarginStart = global::PryRutasMoviles.Droid.Resource.Attribute.titleMarginStart;
+			global::AiForms.Dialogs.Resource.Attribute.titleMarginTop = global::PryRutasMoviles.Droid.Resource.Attribute.titleMarginTop;
+			global::AiForms.Dialogs.Resource.Attribute.titleTextAppearance = global::PryRutasMoviles.Droid.Resource.Attribute.titleTextAppearance;
+			global::AiForms.Dialogs.Resource.Attribute.titleTextColor = global::PryRutasMoviles.Droid.Resource.Attribute.titleTextColor;
+			global::AiForms.Dialogs.Resource.Attribute.titleTextStyle = global::PryRutasMoviles.Droid.Resource.Attribute.titleTextStyle;
+			global::AiForms.Dialogs.Resource.Attribute.toolbarId = global::PryRutasMoviles.Droid.Resource.Attribute.toolbarId;
+			global::AiForms.Dialogs.Resource.Attribute.toolbarNavigationButtonStyle = global::PryRutasMoviles.Droid.Resource.Attribute.toolbarNavigationButtonStyle;
+			global::AiForms.Dialogs.Resource.Attribute.toolbarStyle = global::PryRutasMoviles.Droid.Resource.Attribute.toolbarStyle;
+			global::AiForms.Dialogs.Resource.Attribute.tooltipForegroundColor = global::PryRutasMoviles.Droid.Resource.Attribute.tooltipForegroundColor;
+			global::AiForms.Dialogs.Resource.Attribute.tooltipFrameBackground = global::PryRutasMoviles.Droid.Resource.Attribute.tooltipFrameBackground;
+			global::AiForms.Dialogs.Resource.Attribute.tooltipText = global::PryRutasMoviles.Droid.Resource.Attribute.tooltipText;
+			global::AiForms.Dialogs.Resource.Attribute.track = global::PryRutasMoviles.Droid.Resource.Attribute.track;
+			global::AiForms.Dialogs.Resource.Attribute.trackTint = global::PryRutasMoviles.Droid.Resource.Attribute.trackTint;
+			global::AiForms.Dialogs.Resource.Attribute.trackTintMode = global::PryRutasMoviles.Droid.Resource.Attribute.trackTintMode;
+			global::AiForms.Dialogs.Resource.Attribute.ttcIndex = global::PryRutasMoviles.Droid.Resource.Attribute.ttcIndex;
+			global::AiForms.Dialogs.Resource.Attribute.useCompatPadding = global::PryRutasMoviles.Droid.Resource.Attribute.useCompatPadding;
+			global::AiForms.Dialogs.Resource.Attribute.viewInflaterClass = global::PryRutasMoviles.Droid.Resource.Attribute.viewInflaterClass;
+			global::AiForms.Dialogs.Resource.Attribute.voiceIcon = global::PryRutasMoviles.Droid.Resource.Attribute.voiceIcon;
+			global::AiForms.Dialogs.Resource.Attribute.windowActionBar = global::PryRutasMoviles.Droid.Resource.Attribute.windowActionBar;
+			global::AiForms.Dialogs.Resource.Attribute.windowActionBarOverlay = global::PryRutasMoviles.Droid.Resource.Attribute.windowActionBarOverlay;
+			global::AiForms.Dialogs.Resource.Attribute.windowActionModeOverlay = global::PryRutasMoviles.Droid.Resource.Attribute.windowActionModeOverlay;
+			global::AiForms.Dialogs.Resource.Attribute.windowFixedHeightMajor = global::PryRutasMoviles.Droid.Resource.Attribute.windowFixedHeightMajor;
+			global::AiForms.Dialogs.Resource.Attribute.windowFixedHeightMinor = global::PryRutasMoviles.Droid.Resource.Attribute.windowFixedHeightMinor;
+			global::AiForms.Dialogs.Resource.Attribute.windowFixedWidthMajor = global::PryRutasMoviles.Droid.Resource.Attribute.windowFixedWidthMajor;
+			global::AiForms.Dialogs.Resource.Attribute.windowFixedWidthMinor = global::PryRutasMoviles.Droid.Resource.Attribute.windowFixedWidthMinor;
+			global::AiForms.Dialogs.Resource.Attribute.windowMinWidthMajor = global::PryRutasMoviles.Droid.Resource.Attribute.windowMinWidthMajor;
+			global::AiForms.Dialogs.Resource.Attribute.windowMinWidthMinor = global::PryRutasMoviles.Droid.Resource.Attribute.windowMinWidthMinor;
+			global::AiForms.Dialogs.Resource.Attribute.windowNoTitle = global::PryRutasMoviles.Droid.Resource.Attribute.windowNoTitle;
+			global::AiForms.Dialogs.Resource.Boolean.abc_action_bar_embed_tabs = global::PryRutasMoviles.Droid.Resource.Boolean.abc_action_bar_embed_tabs;
+			global::AiForms.Dialogs.Resource.Boolean.abc_allow_stacked_button_bar = global::PryRutasMoviles.Droid.Resource.Boolean.abc_allow_stacked_button_bar;
+			global::AiForms.Dialogs.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::PryRutasMoviles.Droid.Resource.Boolean.abc_config_actionMenuItemAllCaps;
+			global::AiForms.Dialogs.Resource.Boolean.mtrl_btn_textappearance_all_caps = global::PryRutasMoviles.Droid.Resource.Boolean.mtrl_btn_textappearance_all_caps;
+			global::AiForms.Dialogs.Resource.Color.abc_background_cache_hint_selector_material_dark = global::PryRutasMoviles.Droid.Resource.Color.abc_background_cache_hint_selector_material_dark;
+			global::AiForms.Dialogs.Resource.Color.abc_background_cache_hint_selector_material_light = global::PryRutasMoviles.Droid.Resource.Color.abc_background_cache_hint_selector_material_light;
+			global::AiForms.Dialogs.Resource.Color.abc_btn_colored_borderless_text_material = global::PryRutasMoviles.Droid.Resource.Color.abc_btn_colored_borderless_text_material;
+			global::AiForms.Dialogs.Resource.Color.abc_btn_colored_text_material = global::PryRutasMoviles.Droid.Resource.Color.abc_btn_colored_text_material;
+			global::AiForms.Dialogs.Resource.Color.abc_color_highlight_material = global::PryRutasMoviles.Droid.Resource.Color.abc_color_highlight_material;
+			global::AiForms.Dialogs.Resource.Color.abc_hint_foreground_material_dark = global::PryRutasMoviles.Droid.Resource.Color.abc_hint_foreground_material_dark;
+			global::AiForms.Dialogs.Resource.Color.abc_hint_foreground_material_light = global::PryRutasMoviles.Droid.Resource.Color.abc_hint_foreground_material_light;
+			global::AiForms.Dialogs.Resource.Color.abc_input_method_navigation_guard = global::PryRutasMoviles.Droid.Resource.Color.abc_input_method_navigation_guard;
+			global::AiForms.Dialogs.Resource.Color.abc_primary_text_disable_only_material_dark = global::PryRutasMoviles.Droid.Resource.Color.abc_primary_text_disable_only_material_dark;
+			global::AiForms.Dialogs.Resource.Color.abc_primary_text_disable_only_material_light = global::PryRutasMoviles.Droid.Resource.Color.abc_primary_text_disable_only_material_light;
+			global::AiForms.Dialogs.Resource.Color.abc_primary_text_material_dark = global::PryRutasMoviles.Droid.Resource.Color.abc_primary_text_material_dark;
+			global::AiForms.Dialogs.Resource.Color.abc_primary_text_material_light = global::PryRutasMoviles.Droid.Resource.Color.abc_primary_text_material_light;
+			global::AiForms.Dialogs.Resource.Color.abc_search_url_text = global::PryRutasMoviles.Droid.Resource.Color.abc_search_url_text;
+			global::AiForms.Dialogs.Resource.Color.abc_search_url_text_normal = global::PryRutasMoviles.Droid.Resource.Color.abc_search_url_text_normal;
+			global::AiForms.Dialogs.Resource.Color.abc_search_url_text_pressed = global::PryRutasMoviles.Droid.Resource.Color.abc_search_url_text_pressed;
+			global::AiForms.Dialogs.Resource.Color.abc_search_url_text_selected = global::PryRutasMoviles.Droid.Resource.Color.abc_search_url_text_selected;
+			global::AiForms.Dialogs.Resource.Color.abc_secondary_text_material_dark = global::PryRutasMoviles.Droid.Resource.Color.abc_secondary_text_material_dark;
+			global::AiForms.Dialogs.Resource.Color.abc_secondary_text_material_light = global::PryRutasMoviles.Droid.Resource.Color.abc_secondary_text_material_light;
+			global::AiForms.Dialogs.Resource.Color.abc_tint_btn_checkable = global::PryRutasMoviles.Droid.Resource.Color.abc_tint_btn_checkable;
+			global::AiForms.Dialogs.Resource.Color.abc_tint_default = global::PryRutasMoviles.Droid.Resource.Color.abc_tint_default;
+			global::AiForms.Dialogs.Resource.Color.abc_tint_edittext = global::PryRutasMoviles.Droid.Resource.Color.abc_tint_edittext;
+			global::AiForms.Dialogs.Resource.Color.abc_tint_seek_thumb = global::PryRutasMoviles.Droid.Resource.Color.abc_tint_seek_thumb;
+			global::AiForms.Dialogs.Resource.Color.abc_tint_spinner = global::PryRutasMoviles.Droid.Resource.Color.abc_tint_spinner;
+			global::AiForms.Dialogs.Resource.Color.abc_tint_switch_track = global::PryRutasMoviles.Droid.Resource.Color.abc_tint_switch_track;
+			global::AiForms.Dialogs.Resource.Color.accent_material_dark = global::PryRutasMoviles.Droid.Resource.Color.accent_material_dark;
+			global::AiForms.Dialogs.Resource.Color.accent_material_light = global::PryRutasMoviles.Droid.Resource.Color.accent_material_light;
+			global::AiForms.Dialogs.Resource.Color.background_floating_material_dark = global::PryRutasMoviles.Droid.Resource.Color.background_floating_material_dark;
+			global::AiForms.Dialogs.Resource.Color.background_floating_material_light = global::PryRutasMoviles.Droid.Resource.Color.background_floating_material_light;
+			global::AiForms.Dialogs.Resource.Color.background_material_dark = global::PryRutasMoviles.Droid.Resource.Color.background_material_dark;
+			global::AiForms.Dialogs.Resource.Color.background_material_light = global::PryRutasMoviles.Droid.Resource.Color.background_material_light;
+			global::AiForms.Dialogs.Resource.Color.bright_foreground_disabled_material_dark = global::PryRutasMoviles.Droid.Resource.Color.bright_foreground_disabled_material_dark;
+			global::AiForms.Dialogs.Resource.Color.bright_foreground_disabled_material_light = global::PryRutasMoviles.Droid.Resource.Color.bright_foreground_disabled_material_light;
+			global::AiForms.Dialogs.Resource.Color.bright_foreground_inverse_material_dark = global::PryRutasMoviles.Droid.Resource.Color.bright_foreground_inverse_material_dark;
+			global::AiForms.Dialogs.Resource.Color.bright_foreground_inverse_material_light = global::PryRutasMoviles.Droid.Resource.Color.bright_foreground_inverse_material_light;
+			global::AiForms.Dialogs.Resource.Color.bright_foreground_material_dark = global::PryRutasMoviles.Droid.Resource.Color.bright_foreground_material_dark;
+			global::AiForms.Dialogs.Resource.Color.bright_foreground_material_light = global::PryRutasMoviles.Droid.Resource.Color.bright_foreground_material_light;
+			global::AiForms.Dialogs.Resource.Color.browser_actions_bg_grey = global::PryRutasMoviles.Droid.Resource.Color.browser_actions_bg_grey;
+			global::AiForms.Dialogs.Resource.Color.browser_actions_divider_color = global::PryRutasMoviles.Droid.Resource.Color.browser_actions_divider_color;
+			global::AiForms.Dialogs.Resource.Color.browser_actions_text_color = global::PryRutasMoviles.Droid.Resource.Color.browser_actions_text_color;
+			global::AiForms.Dialogs.Resource.Color.browser_actions_title_color = global::PryRutasMoviles.Droid.Resource.Color.browser_actions_title_color;
+			global::AiForms.Dialogs.Resource.Color.button_material_dark = global::PryRutasMoviles.Droid.Resource.Color.button_material_dark;
+			global::AiForms.Dialogs.Resource.Color.button_material_light = global::PryRutasMoviles.Droid.Resource.Color.button_material_light;
+			global::AiForms.Dialogs.Resource.Color.cardview_dark_background = global::PryRutasMoviles.Droid.Resource.Color.cardview_dark_background;
+			global::AiForms.Dialogs.Resource.Color.cardview_light_background = global::PryRutasMoviles.Droid.Resource.Color.cardview_light_background;
+			global::AiForms.Dialogs.Resource.Color.cardview_shadow_end_color = global::PryRutasMoviles.Droid.Resource.Color.cardview_shadow_end_color;
+			global::AiForms.Dialogs.Resource.Color.cardview_shadow_start_color = global::PryRutasMoviles.Droid.Resource.Color.cardview_shadow_start_color;
+			global::AiForms.Dialogs.Resource.Color.design_bottom_navigation_shadow_color = global::PryRutasMoviles.Droid.Resource.Color.design_bottom_navigation_shadow_color;
+			global::AiForms.Dialogs.Resource.Color.design_default_color_primary = global::PryRutasMoviles.Droid.Resource.Color.design_default_color_primary;
+			global::AiForms.Dialogs.Resource.Color.design_default_color_primary_dark = global::PryRutasMoviles.Droid.Resource.Color.design_default_color_primary_dark;
+			global::AiForms.Dialogs.Resource.Color.design_error = global::PryRutasMoviles.Droid.Resource.Color.design_error;
+			global::AiForms.Dialogs.Resource.Color.design_fab_shadow_end_color = global::PryRutasMoviles.Droid.Resource.Color.design_fab_shadow_end_color;
+			global::AiForms.Dialogs.Resource.Color.design_fab_shadow_mid_color = global::PryRutasMoviles.Droid.Resource.Color.design_fab_shadow_mid_color;
+			global::AiForms.Dialogs.Resource.Color.design_fab_shadow_start_color = global::PryRutasMoviles.Droid.Resource.Color.design_fab_shadow_start_color;
+			global::AiForms.Dialogs.Resource.Color.design_fab_stroke_end_inner_color = global::PryRutasMoviles.Droid.Resource.Color.design_fab_stroke_end_inner_color;
+			global::AiForms.Dialogs.Resource.Color.design_fab_stroke_end_outer_color = global::PryRutasMoviles.Droid.Resource.Color.design_fab_stroke_end_outer_color;
+			global::AiForms.Dialogs.Resource.Color.design_fab_stroke_top_inner_color = global::PryRutasMoviles.Droid.Resource.Color.design_fab_stroke_top_inner_color;
+			global::AiForms.Dialogs.Resource.Color.design_fab_stroke_top_outer_color = global::PryRutasMoviles.Droid.Resource.Color.design_fab_stroke_top_outer_color;
+			global::AiForms.Dialogs.Resource.Color.design_snackbar_background_color = global::PryRutasMoviles.Droid.Resource.Color.design_snackbar_background_color;
+			global::AiForms.Dialogs.Resource.Color.design_tint_password_toggle = global::PryRutasMoviles.Droid.Resource.Color.design_tint_password_toggle;
+			global::AiForms.Dialogs.Resource.Color.dim_foreground_disabled_material_dark = global::PryRutasMoviles.Droid.Resource.Color.dim_foreground_disabled_material_dark;
+			global::AiForms.Dialogs.Resource.Color.dim_foreground_disabled_material_light = global::PryRutasMoviles.Droid.Resource.Color.dim_foreground_disabled_material_light;
+			global::AiForms.Dialogs.Resource.Color.dim_foreground_material_dark = global::PryRutasMoviles.Droid.Resource.Color.dim_foreground_material_dark;
+			global::AiForms.Dialogs.Resource.Color.dim_foreground_material_light = global::PryRutasMoviles.Droid.Resource.Color.dim_foreground_material_light;
+			global::AiForms.Dialogs.Resource.Color.error_color_material_dark = global::PryRutasMoviles.Droid.Resource.Color.error_color_material_dark;
+			global::AiForms.Dialogs.Resource.Color.error_color_material_light = global::PryRutasMoviles.Droid.Resource.Color.error_color_material_light;
+			global::AiForms.Dialogs.Resource.Color.foreground_material_dark = global::PryRutasMoviles.Droid.Resource.Color.foreground_material_dark;
+			global::AiForms.Dialogs.Resource.Color.foreground_material_light = global::PryRutasMoviles.Droid.Resource.Color.foreground_material_light;
+			global::AiForms.Dialogs.Resource.Color.highlighted_text_material_dark = global::PryRutasMoviles.Droid.Resource.Color.highlighted_text_material_dark;
+			global::AiForms.Dialogs.Resource.Color.highlighted_text_material_light = global::PryRutasMoviles.Droid.Resource.Color.highlighted_text_material_light;
+			global::AiForms.Dialogs.Resource.Color.material_blue_grey_800 = global::PryRutasMoviles.Droid.Resource.Color.material_blue_grey_800;
+			global::AiForms.Dialogs.Resource.Color.material_blue_grey_900 = global::PryRutasMoviles.Droid.Resource.Color.material_blue_grey_900;
+			global::AiForms.Dialogs.Resource.Color.material_blue_grey_950 = global::PryRutasMoviles.Droid.Resource.Color.material_blue_grey_950;
+			global::AiForms.Dialogs.Resource.Color.material_deep_teal_200 = global::PryRutasMoviles.Droid.Resource.Color.material_deep_teal_200;
+			global::AiForms.Dialogs.Resource.Color.material_deep_teal_500 = global::PryRutasMoviles.Droid.Resource.Color.material_deep_teal_500;
+			global::AiForms.Dialogs.Resource.Color.material_grey_100 = global::PryRutasMoviles.Droid.Resource.Color.material_grey_100;
+			global::AiForms.Dialogs.Resource.Color.material_grey_300 = global::PryRutasMoviles.Droid.Resource.Color.material_grey_300;
+			global::AiForms.Dialogs.Resource.Color.material_grey_50 = global::PryRutasMoviles.Droid.Resource.Color.material_grey_50;
+			global::AiForms.Dialogs.Resource.Color.material_grey_600 = global::PryRutasMoviles.Droid.Resource.Color.material_grey_600;
+			global::AiForms.Dialogs.Resource.Color.material_grey_800 = global::PryRutasMoviles.Droid.Resource.Color.material_grey_800;
+			global::AiForms.Dialogs.Resource.Color.material_grey_850 = global::PryRutasMoviles.Droid.Resource.Color.material_grey_850;
+			global::AiForms.Dialogs.Resource.Color.material_grey_900 = global::PryRutasMoviles.Droid.Resource.Color.material_grey_900;
+			global::AiForms.Dialogs.Resource.Color.mtrl_bottom_nav_colored_item_tint = global::PryRutasMoviles.Droid.Resource.Color.mtrl_bottom_nav_colored_item_tint;
+			global::AiForms.Dialogs.Resource.Color.mtrl_bottom_nav_item_tint = global::PryRutasMoviles.Droid.Resource.Color.mtrl_bottom_nav_item_tint;
+			global::AiForms.Dialogs.Resource.Color.mtrl_btn_bg_color_disabled = global::PryRutasMoviles.Droid.Resource.Color.mtrl_btn_bg_color_disabled;
+			global::AiForms.Dialogs.Resource.Color.mtrl_btn_bg_color_selector = global::PryRutasMoviles.Droid.Resource.Color.mtrl_btn_bg_color_selector;
+			global::AiForms.Dialogs.Resource.Color.mtrl_btn_ripple_color = global::PryRutasMoviles.Droid.Resource.Color.mtrl_btn_ripple_color;
+			global::AiForms.Dialogs.Resource.Color.mtrl_btn_stroke_color_selector = global::PryRutasMoviles.Droid.Resource.Color.mtrl_btn_stroke_color_selector;
+			global::AiForms.Dialogs.Resource.Color.mtrl_btn_text_btn_ripple_color = global::PryRutasMoviles.Droid.Resource.Color.mtrl_btn_text_btn_ripple_color;
+			global::AiForms.Dialogs.Resource.Color.mtrl_btn_text_color_disabled = global::PryRutasMoviles.Droid.Resource.Color.mtrl_btn_text_color_disabled;
+			global::AiForms.Dialogs.Resource.Color.mtrl_btn_text_color_selector = global::PryRutasMoviles.Droid.Resource.Color.mtrl_btn_text_color_selector;
+			global::AiForms.Dialogs.Resource.Color.mtrl_btn_transparent_bg_color = global::PryRutasMoviles.Droid.Resource.Color.mtrl_btn_transparent_bg_color;
+			global::AiForms.Dialogs.Resource.Color.mtrl_chip_background_color = global::PryRutasMoviles.Droid.Resource.Color.mtrl_chip_background_color;
+			global::AiForms.Dialogs.Resource.Color.mtrl_chip_close_icon_tint = global::PryRutasMoviles.Droid.Resource.Color.mtrl_chip_close_icon_tint;
+			global::AiForms.Dialogs.Resource.Color.mtrl_chip_ripple_color = global::PryRutasMoviles.Droid.Resource.Color.mtrl_chip_ripple_color;
+			global::AiForms.Dialogs.Resource.Color.mtrl_chip_text_color = global::PryRutasMoviles.Droid.Resource.Color.mtrl_chip_text_color;
+			global::AiForms.Dialogs.Resource.Color.mtrl_fab_ripple_color = global::PryRutasMoviles.Droid.Resource.Color.mtrl_fab_ripple_color;
+			global::AiForms.Dialogs.Resource.Color.mtrl_scrim_color = global::PryRutasMoviles.Droid.Resource.Color.mtrl_scrim_color;
+			global::AiForms.Dialogs.Resource.Color.mtrl_tabs_colored_ripple_color = global::PryRutasMoviles.Droid.Resource.Color.mtrl_tabs_colored_ripple_color;
+			global::AiForms.Dialogs.Resource.Color.mtrl_tabs_icon_color_selector = global::PryRutasMoviles.Droid.Resource.Color.mtrl_tabs_icon_color_selector;
+			global::AiForms.Dialogs.Resource.Color.mtrl_tabs_icon_color_selector_colored = global::PryRutasMoviles.Droid.Resource.Color.mtrl_tabs_icon_color_selector_colored;
+			global::AiForms.Dialogs.Resource.Color.mtrl_tabs_legacy_text_color_selector = global::PryRutasMoviles.Droid.Resource.Color.mtrl_tabs_legacy_text_color_selector;
+			global::AiForms.Dialogs.Resource.Color.mtrl_tabs_ripple_color = global::PryRutasMoviles.Droid.Resource.Color.mtrl_tabs_ripple_color;
+			global::AiForms.Dialogs.Resource.Color.mtrl_textinput_default_box_stroke_color = global::PryRutasMoviles.Droid.Resource.Color.mtrl_textinput_default_box_stroke_color;
+			global::AiForms.Dialogs.Resource.Color.mtrl_textinput_disabled_color = global::PryRutasMoviles.Droid.Resource.Color.mtrl_textinput_disabled_color;
+			global::AiForms.Dialogs.Resource.Color.mtrl_textinput_filled_box_default_background_color = global::PryRutasMoviles.Droid.Resource.Color.mtrl_textinput_filled_box_default_background_color;
+			global::AiForms.Dialogs.Resource.Color.mtrl_textinput_hovered_box_stroke_color = global::PryRutasMoviles.Droid.Resource.Color.mtrl_textinput_hovered_box_stroke_color;
+			global::AiForms.Dialogs.Resource.Color.mtrl_text_btn_text_color_selector = global::PryRutasMoviles.Droid.Resource.Color.mtrl_text_btn_text_color_selector;
+			global::AiForms.Dialogs.Resource.Color.notification_action_color_filter = global::PryRutasMoviles.Droid.Resource.Color.notification_action_color_filter;
+			global::AiForms.Dialogs.Resource.Color.notification_icon_bg_color = global::PryRutasMoviles.Droid.Resource.Color.notification_icon_bg_color;
+			global::AiForms.Dialogs.Resource.Color.notification_material_background_media_default_color = global::PryRutasMoviles.Droid.Resource.Color.notification_material_background_media_default_color;
+			global::AiForms.Dialogs.Resource.Color.primary_dark_material_dark = global::PryRutasMoviles.Droid.Resource.Color.primary_dark_material_dark;
+			global::AiForms.Dialogs.Resource.Color.primary_dark_material_light = global::PryRutasMoviles.Droid.Resource.Color.primary_dark_material_light;
+			global::AiForms.Dialogs.Resource.Color.primary_material_dark = global::PryRutasMoviles.Droid.Resource.Color.primary_material_dark;
+			global::AiForms.Dialogs.Resource.Color.primary_material_light = global::PryRutasMoviles.Droid.Resource.Color.primary_material_light;
+			global::AiForms.Dialogs.Resource.Color.primary_text_default_material_dark = global::PryRutasMoviles.Droid.Resource.Color.primary_text_default_material_dark;
+			global::AiForms.Dialogs.Resource.Color.primary_text_default_material_light = global::PryRutasMoviles.Droid.Resource.Color.primary_text_default_material_light;
+			global::AiForms.Dialogs.Resource.Color.primary_text_disabled_material_dark = global::PryRutasMoviles.Droid.Resource.Color.primary_text_disabled_material_dark;
+			global::AiForms.Dialogs.Resource.Color.primary_text_disabled_material_light = global::PryRutasMoviles.Droid.Resource.Color.primary_text_disabled_material_light;
+			global::AiForms.Dialogs.Resource.Color.ripple_material_dark = global::PryRutasMoviles.Droid.Resource.Color.ripple_material_dark;
+			global::AiForms.Dialogs.Resource.Color.ripple_material_light = global::PryRutasMoviles.Droid.Resource.Color.ripple_material_light;
+			global::AiForms.Dialogs.Resource.Color.secondary_text_default_material_dark = global::PryRutasMoviles.Droid.Resource.Color.secondary_text_default_material_dark;
+			global::AiForms.Dialogs.Resource.Color.secondary_text_default_material_light = global::PryRutasMoviles.Droid.Resource.Color.secondary_text_default_material_light;
+			global::AiForms.Dialogs.Resource.Color.secondary_text_disabled_material_dark = global::PryRutasMoviles.Droid.Resource.Color.secondary_text_disabled_material_dark;
+			global::AiForms.Dialogs.Resource.Color.secondary_text_disabled_material_light = global::PryRutasMoviles.Droid.Resource.Color.secondary_text_disabled_material_light;
+			global::AiForms.Dialogs.Resource.Color.switch_thumb_disabled_material_dark = global::PryRutasMoviles.Droid.Resource.Color.switch_thumb_disabled_material_dark;
+			global::AiForms.Dialogs.Resource.Color.switch_thumb_disabled_material_light = global::PryRutasMoviles.Droid.Resource.Color.switch_thumb_disabled_material_light;
+			global::AiForms.Dialogs.Resource.Color.switch_thumb_material_dark = global::PryRutasMoviles.Droid.Resource.Color.switch_thumb_material_dark;
+			global::AiForms.Dialogs.Resource.Color.switch_thumb_material_light = global::PryRutasMoviles.Droid.Resource.Color.switch_thumb_material_light;
+			global::AiForms.Dialogs.Resource.Color.switch_thumb_normal_material_dark = global::PryRutasMoviles.Droid.Resource.Color.switch_thumb_normal_material_dark;
+			global::AiForms.Dialogs.Resource.Color.switch_thumb_normal_material_light = global::PryRutasMoviles.Droid.Resource.Color.switch_thumb_normal_material_light;
+			global::AiForms.Dialogs.Resource.Color.tooltip_background_dark = global::PryRutasMoviles.Droid.Resource.Color.tooltip_background_dark;
+			global::AiForms.Dialogs.Resource.Color.tooltip_background_light = global::PryRutasMoviles.Droid.Resource.Color.tooltip_background_light;
+			global::AiForms.Dialogs.Resource.Dimension.abc_action_bar_content_inset_material = global::PryRutasMoviles.Droid.Resource.Dimension.abc_action_bar_content_inset_material;
+			global::AiForms.Dialogs.Resource.Dimension.abc_action_bar_content_inset_with_nav = global::PryRutasMoviles.Droid.Resource.Dimension.abc_action_bar_content_inset_with_nav;
+			global::AiForms.Dialogs.Resource.Dimension.abc_action_bar_default_height_material = global::PryRutasMoviles.Droid.Resource.Dimension.abc_action_bar_default_height_material;
+			global::AiForms.Dialogs.Resource.Dimension.abc_action_bar_default_padding_end_material = global::PryRutasMoviles.Droid.Resource.Dimension.abc_action_bar_default_padding_end_material;
+			global::AiForms.Dialogs.Resource.Dimension.abc_action_bar_default_padding_start_material = global::PryRutasMoviles.Droid.Resource.Dimension.abc_action_bar_default_padding_start_material;
+			global::AiForms.Dialogs.Resource.Dimension.abc_action_bar_elevation_material = global::PryRutasMoviles.Droid.Resource.Dimension.abc_action_bar_elevation_material;
+			global::AiForms.Dialogs.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::PryRutasMoviles.Droid.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
+			global::AiForms.Dialogs.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::PryRutasMoviles.Droid.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
+			global::AiForms.Dialogs.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::PryRutasMoviles.Droid.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
+			global::AiForms.Dialogs.Resource.Dimension.abc_action_bar_stacked_max_height = global::PryRutasMoviles.Droid.Resource.Dimension.abc_action_bar_stacked_max_height;
+			global::AiForms.Dialogs.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::PryRutasMoviles.Droid.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
+			global::AiForms.Dialogs.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::PryRutasMoviles.Droid.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
+			global::AiForms.Dialogs.Resource.Dimension.abc_action_bar_subtitle_top_margin_material = global::PryRutasMoviles.Droid.Resource.Dimension.abc_action_bar_subtitle_top_margin_material;
+			global::AiForms.Dialogs.Resource.Dimension.abc_action_button_min_height_material = global::PryRutasMoviles.Droid.Resource.Dimension.abc_action_button_min_height_material;
+			global::AiForms.Dialogs.Resource.Dimension.abc_action_button_min_width_material = global::PryRutasMoviles.Droid.Resource.Dimension.abc_action_button_min_width_material;
+			global::AiForms.Dialogs.Resource.Dimension.abc_action_button_min_width_overflow_material = global::PryRutasMoviles.Droid.Resource.Dimension.abc_action_button_min_width_overflow_material;
+			global::AiForms.Dialogs.Resource.Dimension.abc_alert_dialog_button_bar_height = global::PryRutasMoviles.Droid.Resource.Dimension.abc_alert_dialog_button_bar_height;
+			global::AiForms.Dialogs.Resource.Dimension.abc_alert_dialog_button_dimen = global::PryRutasMoviles.Droid.Resource.Dimension.abc_alert_dialog_button_dimen;
+			global::AiForms.Dialogs.Resource.Dimension.abc_button_inset_horizontal_material = global::PryRutasMoviles.Droid.Resource.Dimension.abc_button_inset_horizontal_material;
+			global::AiForms.Dialogs.Resource.Dimension.abc_button_inset_vertical_material = global::PryRutasMoviles.Droid.Resource.Dimension.abc_button_inset_vertical_material;
+			global::AiForms.Dialogs.Resource.Dimension.abc_button_padding_horizontal_material = global::PryRutasMoviles.Droid.Resource.Dimension.abc_button_padding_horizontal_material;
+			global::AiForms.Dialogs.Resource.Dimension.abc_button_padding_vertical_material = global::PryRutasMoviles.Droid.Resource.Dimension.abc_button_padding_vertical_material;
+			global::AiForms.Dialogs.Resource.Dimension.abc_cascading_menus_min_smallest_width = global::PryRutasMoviles.Droid.Resource.Dimension.abc_cascading_menus_min_smallest_width;
+			global::AiForms.Dialogs.Resource.Dimension.abc_config_prefDialogWidth = global::PryRutasMoviles.Droid.Resource.Dimension.abc_config_prefDialogWidth;
+			global::AiForms.Dialogs.Resource.Dimension.abc_control_corner_material = global::PryRutasMoviles.Droid.Resource.Dimension.abc_control_corner_material;
+			global::AiForms.Dialogs.Resource.Dimension.abc_control_inset_material = global::PryRutasMoviles.Droid.Resource.Dimension.abc_control_inset_material;
+			global::AiForms.Dialogs.Resource.Dimension.abc_control_padding_material = global::PryRutasMoviles.Droid.Resource.Dimension.abc_control_padding_material;
+			global::AiForms.Dialogs.Resource.Dimension.abc_dialog_corner_radius_material = global::PryRutasMoviles.Droid.Resource.Dimension.abc_dialog_corner_radius_material;
+			global::AiForms.Dialogs.Resource.Dimension.abc_dialog_fixed_height_major = global::PryRutasMoviles.Droid.Resource.Dimension.abc_dialog_fixed_height_major;
+			global::AiForms.Dialogs.Resource.Dimension.abc_dialog_fixed_height_minor = global::PryRutasMoviles.Droid.Resource.Dimension.abc_dialog_fixed_height_minor;
+			global::AiForms.Dialogs.Resource.Dimension.abc_dialog_fixed_width_major = global::PryRutasMoviles.Droid.Resource.Dimension.abc_dialog_fixed_width_major;
+			global::AiForms.Dialogs.Resource.Dimension.abc_dialog_fixed_width_minor = global::PryRutasMoviles.Droid.Resource.Dimension.abc_dialog_fixed_width_minor;
+			global::AiForms.Dialogs.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons = global::PryRutasMoviles.Droid.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons;
+			global::AiForms.Dialogs.Resource.Dimension.abc_dialog_list_padding_top_no_title = global::PryRutasMoviles.Droid.Resource.Dimension.abc_dialog_list_padding_top_no_title;
+			global::AiForms.Dialogs.Resource.Dimension.abc_dialog_min_width_major = global::PryRutasMoviles.Droid.Resource.Dimension.abc_dialog_min_width_major;
+			global::AiForms.Dialogs.Resource.Dimension.abc_dialog_min_width_minor = global::PryRutasMoviles.Droid.Resource.Dimension.abc_dialog_min_width_minor;
+			global::AiForms.Dialogs.Resource.Dimension.abc_dialog_padding_material = global::PryRutasMoviles.Droid.Resource.Dimension.abc_dialog_padding_material;
+			global::AiForms.Dialogs.Resource.Dimension.abc_dialog_padding_top_material = global::PryRutasMoviles.Droid.Resource.Dimension.abc_dialog_padding_top_material;
+			global::AiForms.Dialogs.Resource.Dimension.abc_dialog_title_divider_material = global::PryRutasMoviles.Droid.Resource.Dimension.abc_dialog_title_divider_material;
+			global::AiForms.Dialogs.Resource.Dimension.abc_disabled_alpha_material_dark = global::PryRutasMoviles.Droid.Resource.Dimension.abc_disabled_alpha_material_dark;
+			global::AiForms.Dialogs.Resource.Dimension.abc_disabled_alpha_material_light = global::PryRutasMoviles.Droid.Resource.Dimension.abc_disabled_alpha_material_light;
+			global::AiForms.Dialogs.Resource.Dimension.abc_dropdownitem_icon_width = global::PryRutasMoviles.Droid.Resource.Dimension.abc_dropdownitem_icon_width;
+			global::AiForms.Dialogs.Resource.Dimension.abc_dropdownitem_text_padding_left = global::PryRutasMoviles.Droid.Resource.Dimension.abc_dropdownitem_text_padding_left;
+			global::AiForms.Dialogs.Resource.Dimension.abc_dropdownitem_text_padding_right = global::PryRutasMoviles.Droid.Resource.Dimension.abc_dropdownitem_text_padding_right;
+			global::AiForms.Dialogs.Resource.Dimension.abc_edit_text_inset_bottom_material = global::PryRutasMoviles.Droid.Resource.Dimension.abc_edit_text_inset_bottom_material;
+			global::AiForms.Dialogs.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::PryRutasMoviles.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material;
+			global::AiForms.Dialogs.Resource.Dimension.abc_edit_text_inset_top_material = global::PryRutasMoviles.Droid.Resource.Dimension.abc_edit_text_inset_top_material;
+			global::AiForms.Dialogs.Resource.Dimension.abc_floating_window_z = global::PryRutasMoviles.Droid.Resource.Dimension.abc_floating_window_z;
+			global::AiForms.Dialogs.Resource.Dimension.abc_list_item_height_large_material = global::PryRutasMoviles.Droid.Resource.Dimension.abc_list_item_height_large_material;
+			global::AiForms.Dialogs.Resource.Dimension.abc_list_item_height_material = global::PryRutasMoviles.Droid.Resource.Dimension.abc_list_item_height_material;
+			global::AiForms.Dialogs.Resource.Dimension.abc_list_item_height_small_material = global::PryRutasMoviles.Droid.Resource.Dimension.abc_list_item_height_small_material;
+			global::AiForms.Dialogs.Resource.Dimension.abc_list_item_padding_horizontal_material = global::PryRutasMoviles.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material;
+			global::AiForms.Dialogs.Resource.Dimension.abc_panel_menu_list_width = global::PryRutasMoviles.Droid.Resource.Dimension.abc_panel_menu_list_width;
+			global::AiForms.Dialogs.Resource.Dimension.abc_progress_bar_height_material = global::PryRutasMoviles.Droid.Resource.Dimension.abc_progress_bar_height_material;
+			global::AiForms.Dialogs.Resource.Dimension.abc_search_view_preferred_height = global::PryRutasMoviles.Droid.Resource.Dimension.abc_search_view_preferred_height;
+			global::AiForms.Dialogs.Resource.Dimension.abc_search_view_preferred_width = global::PryRutasMoviles.Droid.Resource.Dimension.abc_search_view_preferred_width;
+			global::AiForms.Dialogs.Resource.Dimension.abc_seekbar_track_background_height_material = global::PryRutasMoviles.Droid.Resource.Dimension.abc_seekbar_track_background_height_material;
+			global::AiForms.Dialogs.Resource.Dimension.abc_seekbar_track_progress_height_material = global::PryRutasMoviles.Droid.Resource.Dimension.abc_seekbar_track_progress_height_material;
+			global::AiForms.Dialogs.Resource.Dimension.abc_select_dialog_padding_start_material = global::PryRutasMoviles.Droid.Resource.Dimension.abc_select_dialog_padding_start_material;
+			global::AiForms.Dialogs.Resource.Dimension.abc_switch_padding = global::PryRutasMoviles.Droid.Resource.Dimension.abc_switch_padding;
+			global::AiForms.Dialogs.Resource.Dimension.abc_text_size_body_1_material = global::PryRutasMoviles.Droid.Resource.Dimension.abc_text_size_body_1_material;
+			global::AiForms.Dialogs.Resource.Dimension.abc_text_size_body_2_material = global::PryRutasMoviles.Droid.Resource.Dimension.abc_text_size_body_2_material;
+			global::AiForms.Dialogs.Resource.Dimension.abc_text_size_button_material = global::PryRutasMoviles.Droid.Resource.Dimension.abc_text_size_button_material;
+			global::AiForms.Dialogs.Resource.Dimension.abc_text_size_caption_material = global::PryRutasMoviles.Droid.Resource.Dimension.abc_text_size_caption_material;
+			global::AiForms.Dialogs.Resource.Dimension.abc_text_size_display_1_material = global::PryRutasMoviles.Droid.Resource.Dimension.abc_text_size_display_1_material;
+			global::AiForms.Dialogs.Resource.Dimension.abc_text_size_display_2_material = global::PryRutasMoviles.Droid.Resource.Dimension.abc_text_size_display_2_material;
+			global::AiForms.Dialogs.Resource.Dimension.abc_text_size_display_3_material = global::PryRutasMoviles.Droid.Resource.Dimension.abc_text_size_display_3_material;
+			global::AiForms.Dialogs.Resource.Dimension.abc_text_size_display_4_material = global::PryRutasMoviles.Droid.Resource.Dimension.abc_text_size_display_4_material;
+			global::AiForms.Dialogs.Resource.Dimension.abc_text_size_headline_material = global::PryRutasMoviles.Droid.Resource.Dimension.abc_text_size_headline_material;
+			global::AiForms.Dialogs.Resource.Dimension.abc_text_size_large_material = global::PryRutasMoviles.Droid.Resource.Dimension.abc_text_size_large_material;
+			global::AiForms.Dialogs.Resource.Dimension.abc_text_size_medium_material = global::PryRutasMoviles.Droid.Resource.Dimension.abc_text_size_medium_material;
+			global::AiForms.Dialogs.Resource.Dimension.abc_text_size_menu_header_material = global::PryRutasMoviles.Droid.Resource.Dimension.abc_text_size_menu_header_material;
+			global::AiForms.Dialogs.Resource.Dimension.abc_text_size_menu_material = global::PryRutasMoviles.Droid.Resource.Dimension.abc_text_size_menu_material;
+			global::AiForms.Dialogs.Resource.Dimension.abc_text_size_small_material = global::PryRutasMoviles.Droid.Resource.Dimension.abc_text_size_small_material;
+			global::AiForms.Dialogs.Resource.Dimension.abc_text_size_subhead_material = global::PryRutasMoviles.Droid.Resource.Dimension.abc_text_size_subhead_material;
+			global::AiForms.Dialogs.Resource.Dimension.abc_text_size_subtitle_material_toolbar = global::PryRutasMoviles.Droid.Resource.Dimension.abc_text_size_subtitle_material_toolbar;
+			global::AiForms.Dialogs.Resource.Dimension.abc_text_size_title_material = global::PryRutasMoviles.Droid.Resource.Dimension.abc_text_size_title_material;
+			global::AiForms.Dialogs.Resource.Dimension.abc_text_size_title_material_toolbar = global::PryRutasMoviles.Droid.Resource.Dimension.abc_text_size_title_material_toolbar;
+			global::AiForms.Dialogs.Resource.Dimension.browser_actions_context_menu_max_width = global::PryRutasMoviles.Droid.Resource.Dimension.browser_actions_context_menu_max_width;
+			global::AiForms.Dialogs.Resource.Dimension.browser_actions_context_menu_min_padding = global::PryRutasMoviles.Droid.Resource.Dimension.browser_actions_context_menu_min_padding;
+			global::AiForms.Dialogs.Resource.Dimension.cardview_compat_inset_shadow = global::PryRutasMoviles.Droid.Resource.Dimension.cardview_compat_inset_shadow;
+			global::AiForms.Dialogs.Resource.Dimension.cardview_default_elevation = global::PryRutasMoviles.Droid.Resource.Dimension.cardview_default_elevation;
+			global::AiForms.Dialogs.Resource.Dimension.cardview_default_radius = global::PryRutasMoviles.Droid.Resource.Dimension.cardview_default_radius;
+			global::AiForms.Dialogs.Resource.Dimension.compat_button_inset_horizontal_material = global::PryRutasMoviles.Droid.Resource.Dimension.compat_button_inset_horizontal_material;
+			global::AiForms.Dialogs.Resource.Dimension.compat_button_inset_vertical_material = global::PryRutasMoviles.Droid.Resource.Dimension.compat_button_inset_vertical_material;
+			global::AiForms.Dialogs.Resource.Dimension.compat_button_padding_horizontal_material = global::PryRutasMoviles.Droid.Resource.Dimension.compat_button_padding_horizontal_material;
+			global::AiForms.Dialogs.Resource.Dimension.compat_button_padding_vertical_material = global::PryRutasMoviles.Droid.Resource.Dimension.compat_button_padding_vertical_material;
+			global::AiForms.Dialogs.Resource.Dimension.compat_control_corner_material = global::PryRutasMoviles.Droid.Resource.Dimension.compat_control_corner_material;
+			global::AiForms.Dialogs.Resource.Dimension.compat_notification_large_icon_max_height = global::PryRutasMoviles.Droid.Resource.Dimension.compat_notification_large_icon_max_height;
+			global::AiForms.Dialogs.Resource.Dimension.compat_notification_large_icon_max_width = global::PryRutasMoviles.Droid.Resource.Dimension.compat_notification_large_icon_max_width;
+			global::AiForms.Dialogs.Resource.Dimension.design_appbar_elevation = global::PryRutasMoviles.Droid.Resource.Dimension.design_appbar_elevation;
+			global::AiForms.Dialogs.Resource.Dimension.design_bottom_navigation_active_item_max_width = global::PryRutasMoviles.Droid.Resource.Dimension.design_bottom_navigation_active_item_max_width;
+			global::AiForms.Dialogs.Resource.Dimension.design_bottom_navigation_active_item_min_width = global::PryRutasMoviles.Droid.Resource.Dimension.design_bottom_navigation_active_item_min_width;
+			global::AiForms.Dialogs.Resource.Dimension.design_bottom_navigation_active_text_size = global::PryRutasMoviles.Droid.Resource.Dimension.design_bottom_navigation_active_text_size;
+			global::AiForms.Dialogs.Resource.Dimension.design_bottom_navigation_elevation = global::PryRutasMoviles.Droid.Resource.Dimension.design_bottom_navigation_elevation;
+			global::AiForms.Dialogs.Resource.Dimension.design_bottom_navigation_height = global::PryRutasMoviles.Droid.Resource.Dimension.design_bottom_navigation_height;
+			global::AiForms.Dialogs.Resource.Dimension.design_bottom_navigation_icon_size = global::PryRutasMoviles.Droid.Resource.Dimension.design_bottom_navigation_icon_size;
+			global::AiForms.Dialogs.Resource.Dimension.design_bottom_navigation_item_max_width = global::PryRutasMoviles.Droid.Resource.Dimension.design_bottom_navigation_item_max_width;
+			global::AiForms.Dialogs.Resource.Dimension.design_bottom_navigation_item_min_width = global::PryRutasMoviles.Droid.Resource.Dimension.design_bottom_navigation_item_min_width;
+			global::AiForms.Dialogs.Resource.Dimension.design_bottom_navigation_margin = global::PryRutasMoviles.Droid.Resource.Dimension.design_bottom_navigation_margin;
+			global::AiForms.Dialogs.Resource.Dimension.design_bottom_navigation_shadow_height = global::PryRutasMoviles.Droid.Resource.Dimension.design_bottom_navigation_shadow_height;
+			global::AiForms.Dialogs.Resource.Dimension.design_bottom_navigation_text_size = global::PryRutasMoviles.Droid.Resource.Dimension.design_bottom_navigation_text_size;
+			global::AiForms.Dialogs.Resource.Dimension.design_bottom_sheet_modal_elevation = global::PryRutasMoviles.Droid.Resource.Dimension.design_bottom_sheet_modal_elevation;
+			global::AiForms.Dialogs.Resource.Dimension.design_bottom_sheet_peek_height_min = global::PryRutasMoviles.Droid.Resource.Dimension.design_bottom_sheet_peek_height_min;
+			global::AiForms.Dialogs.Resource.Dimension.design_fab_border_width = global::PryRutasMoviles.Droid.Resource.Dimension.design_fab_border_width;
+			global::AiForms.Dialogs.Resource.Dimension.design_fab_elevation = global::PryRutasMoviles.Droid.Resource.Dimension.design_fab_elevation;
+			global::AiForms.Dialogs.Resource.Dimension.design_fab_image_size = global::PryRutasMoviles.Droid.Resource.Dimension.design_fab_image_size;
+			global::AiForms.Dialogs.Resource.Dimension.design_fab_size_mini = global::PryRutasMoviles.Droid.Resource.Dimension.design_fab_size_mini;
+			global::AiForms.Dialogs.Resource.Dimension.design_fab_size_normal = global::PryRutasMoviles.Droid.Resource.Dimension.design_fab_size_normal;
+			global::AiForms.Dialogs.Resource.Dimension.design_fab_translation_z_hovered_focused = global::PryRutasMoviles.Droid.Resource.Dimension.design_fab_translation_z_hovered_focused;
+			global::AiForms.Dialogs.Resource.Dimension.design_fab_translation_z_pressed = global::PryRutasMoviles.Droid.Resource.Dimension.design_fab_translation_z_pressed;
+			global::AiForms.Dialogs.Resource.Dimension.design_navigation_elevation = global::PryRutasMoviles.Droid.Resource.Dimension.design_navigation_elevation;
+			global::AiForms.Dialogs.Resource.Dimension.design_navigation_icon_padding = global::PryRutasMoviles.Droid.Resource.Dimension.design_navigation_icon_padding;
+			global::AiForms.Dialogs.Resource.Dimension.design_navigation_icon_size = global::PryRutasMoviles.Droid.Resource.Dimension.design_navigation_icon_size;
+			global::AiForms.Dialogs.Resource.Dimension.design_navigation_item_horizontal_padding = global::PryRutasMoviles.Droid.Resource.Dimension.design_navigation_item_horizontal_padding;
+			global::AiForms.Dialogs.Resource.Dimension.design_navigation_item_icon_padding = global::PryRutasMoviles.Droid.Resource.Dimension.design_navigation_item_icon_padding;
+			global::AiForms.Dialogs.Resource.Dimension.design_navigation_max_width = global::PryRutasMoviles.Droid.Resource.Dimension.design_navigation_max_width;
+			global::AiForms.Dialogs.Resource.Dimension.design_navigation_padding_bottom = global::PryRutasMoviles.Droid.Resource.Dimension.design_navigation_padding_bottom;
+			global::AiForms.Dialogs.Resource.Dimension.design_navigation_separator_vertical_padding = global::PryRutasMoviles.Droid.Resource.Dimension.design_navigation_separator_vertical_padding;
+			global::AiForms.Dialogs.Resource.Dimension.design_snackbar_action_inline_max_width = global::PryRutasMoviles.Droid.Resource.Dimension.design_snackbar_action_inline_max_width;
+			global::AiForms.Dialogs.Resource.Dimension.design_snackbar_background_corner_radius = global::PryRutasMoviles.Droid.Resource.Dimension.design_snackbar_background_corner_radius;
+			global::AiForms.Dialogs.Resource.Dimension.design_snackbar_elevation = global::PryRutasMoviles.Droid.Resource.Dimension.design_snackbar_elevation;
+			global::AiForms.Dialogs.Resource.Dimension.design_snackbar_extra_spacing_horizontal = global::PryRutasMoviles.Droid.Resource.Dimension.design_snackbar_extra_spacing_horizontal;
+			global::AiForms.Dialogs.Resource.Dimension.design_snackbar_max_width = global::PryRutasMoviles.Droid.Resource.Dimension.design_snackbar_max_width;
+			global::AiForms.Dialogs.Resource.Dimension.design_snackbar_min_width = global::PryRutasMoviles.Droid.Resource.Dimension.design_snackbar_min_width;
+			global::AiForms.Dialogs.Resource.Dimension.design_snackbar_padding_horizontal = global::PryRutasMoviles.Droid.Resource.Dimension.design_snackbar_padding_horizontal;
+			global::AiForms.Dialogs.Resource.Dimension.design_snackbar_padding_vertical = global::PryRutasMoviles.Droid.Resource.Dimension.design_snackbar_padding_vertical;
+			global::AiForms.Dialogs.Resource.Dimension.design_snackbar_padding_vertical_2lines = global::PryRutasMoviles.Droid.Resource.Dimension.design_snackbar_padding_vertical_2lines;
+			global::AiForms.Dialogs.Resource.Dimension.design_snackbar_text_size = global::PryRutasMoviles.Droid.Resource.Dimension.design_snackbar_text_size;
+			global::AiForms.Dialogs.Resource.Dimension.design_tab_max_width = global::PryRutasMoviles.Droid.Resource.Dimension.design_tab_max_width;
+			global::AiForms.Dialogs.Resource.Dimension.design_tab_scrollable_min_width = global::PryRutasMoviles.Droid.Resource.Dimension.design_tab_scrollable_min_width;
+			global::AiForms.Dialogs.Resource.Dimension.design_tab_text_size = global::PryRutasMoviles.Droid.Resource.Dimension.design_tab_text_size;
+			global::AiForms.Dialogs.Resource.Dimension.design_tab_text_size_2line = global::PryRutasMoviles.Droid.Resource.Dimension.design_tab_text_size_2line;
+			global::AiForms.Dialogs.Resource.Dimension.design_textinput_caption_translate_y = global::PryRutasMoviles.Droid.Resource.Dimension.design_textinput_caption_translate_y;
+			global::AiForms.Dialogs.Resource.Dimension.disabled_alpha_material_dark = global::PryRutasMoviles.Droid.Resource.Dimension.disabled_alpha_material_dark;
+			global::AiForms.Dialogs.Resource.Dimension.disabled_alpha_material_light = global::PryRutasMoviles.Droid.Resource.Dimension.disabled_alpha_material_light;
+			global::AiForms.Dialogs.Resource.Dimension.fastscroll_default_thickness = global::PryRutasMoviles.Droid.Resource.Dimension.fastscroll_default_thickness;
+			global::AiForms.Dialogs.Resource.Dimension.fastscroll_margin = global::PryRutasMoviles.Droid.Resource.Dimension.fastscroll_margin;
+			global::AiForms.Dialogs.Resource.Dimension.fastscroll_minimum_range = global::PryRutasMoviles.Droid.Resource.Dimension.fastscroll_minimum_range;
+			global::AiForms.Dialogs.Resource.Dimension.highlight_alpha_material_colored = global::PryRutasMoviles.Droid.Resource.Dimension.highlight_alpha_material_colored;
+			global::AiForms.Dialogs.Resource.Dimension.highlight_alpha_material_dark = global::PryRutasMoviles.Droid.Resource.Dimension.highlight_alpha_material_dark;
+			global::AiForms.Dialogs.Resource.Dimension.highlight_alpha_material_light = global::PryRutasMoviles.Droid.Resource.Dimension.highlight_alpha_material_light;
+			global::AiForms.Dialogs.Resource.Dimension.hint_alpha_material_dark = global::PryRutasMoviles.Droid.Resource.Dimension.hint_alpha_material_dark;
+			global::AiForms.Dialogs.Resource.Dimension.hint_alpha_material_light = global::PryRutasMoviles.Droid.Resource.Dimension.hint_alpha_material_light;
+			global::AiForms.Dialogs.Resource.Dimension.hint_pressed_alpha_material_dark = global::PryRutasMoviles.Droid.Resource.Dimension.hint_pressed_alpha_material_dark;
+			global::AiForms.Dialogs.Resource.Dimension.hint_pressed_alpha_material_light = global::PryRutasMoviles.Droid.Resource.Dimension.hint_pressed_alpha_material_light;
+			global::AiForms.Dialogs.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame = global::PryRutasMoviles.Droid.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame;
+			global::AiForms.Dialogs.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity = global::PryRutasMoviles.Droid.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity;
+			global::AiForms.Dialogs.Resource.Dimension.item_touch_helper_swipe_escape_velocity = global::PryRutasMoviles.Droid.Resource.Dimension.item_touch_helper_swipe_escape_velocity;
+			global::AiForms.Dialogs.Resource.Dimension.mtrl_bottomappbar_fabOffsetEndMode = global::PryRutasMoviles.Droid.Resource.Dimension.mtrl_bottomappbar_fabOffsetEndMode;
+			global::AiForms.Dialogs.Resource.Dimension.mtrl_bottomappbar_fab_cradle_margin = global::PryRutasMoviles.Droid.Resource.Dimension.mtrl_bottomappbar_fab_cradle_margin;
+			global::AiForms.Dialogs.Resource.Dimension.mtrl_bottomappbar_fab_cradle_rounded_corner_radius = global::PryRutasMoviles.Droid.Resource.Dimension.mtrl_bottomappbar_fab_cradle_rounded_corner_radius;
+			global::AiForms.Dialogs.Resource.Dimension.mtrl_bottomappbar_fab_cradle_vertical_offset = global::PryRutasMoviles.Droid.Resource.Dimension.mtrl_bottomappbar_fab_cradle_vertical_offset;
+			global::AiForms.Dialogs.Resource.Dimension.mtrl_bottomappbar_height = global::PryRutasMoviles.Droid.Resource.Dimension.mtrl_bottomappbar_height;
+			global::AiForms.Dialogs.Resource.Dimension.mtrl_btn_corner_radius = global::PryRutasMoviles.Droid.Resource.Dimension.mtrl_btn_corner_radius;
+			global::AiForms.Dialogs.Resource.Dimension.mtrl_btn_dialog_btn_min_width = global::PryRutasMoviles.Droid.Resource.Dimension.mtrl_btn_dialog_btn_min_width;
+			global::AiForms.Dialogs.Resource.Dimension.mtrl_btn_disabled_elevation = global::PryRutasMoviles.Droid.Resource.Dimension.mtrl_btn_disabled_elevation;
+			global::AiForms.Dialogs.Resource.Dimension.mtrl_btn_disabled_z = global::PryRutasMoviles.Droid.Resource.Dimension.mtrl_btn_disabled_z;
+			global::AiForms.Dialogs.Resource.Dimension.mtrl_btn_elevation = global::PryRutasMoviles.Droid.Resource.Dimension.mtrl_btn_elevation;
+			global::AiForms.Dialogs.Resource.Dimension.mtrl_btn_focused_z = global::PryRutasMoviles.Droid.Resource.Dimension.mtrl_btn_focused_z;
+			global::AiForms.Dialogs.Resource.Dimension.mtrl_btn_hovered_z = global::PryRutasMoviles.Droid.Resource.Dimension.mtrl_btn_hovered_z;
+			global::AiForms.Dialogs.Resource.Dimension.mtrl_btn_icon_btn_padding_left = global::PryRutasMoviles.Droid.Resource.Dimension.mtrl_btn_icon_btn_padding_left;
+			global::AiForms.Dialogs.Resource.Dimension.mtrl_btn_icon_padding = global::PryRutasMoviles.Droid.Resource.Dimension.mtrl_btn_icon_padding;
+			global::AiForms.Dialogs.Resource.Dimension.mtrl_btn_inset = global::PryRutasMoviles.Droid.Resource.Dimension.mtrl_btn_inset;
+			global::AiForms.Dialogs.Resource.Dimension.mtrl_btn_letter_spacing = global::PryRutasMoviles.Droid.Resource.Dimension.mtrl_btn_letter_spacing;
+			global::AiForms.Dialogs.Resource.Dimension.mtrl_btn_padding_bottom = global::PryRutasMoviles.Droid.Resource.Dimension.mtrl_btn_padding_bottom;
+			global::AiForms.Dialogs.Resource.Dimension.mtrl_btn_padding_left = global::PryRutasMoviles.Droid.Resource.Dimension.mtrl_btn_padding_left;
+			global::AiForms.Dialogs.Resource.Dimension.mtrl_btn_padding_right = global::PryRutasMoviles.Droid.Resource.Dimension.mtrl_btn_padding_right;
+			global::AiForms.Dialogs.Resource.Dimension.mtrl_btn_padding_top = global::PryRutasMoviles.Droid.Resource.Dimension.mtrl_btn_padding_top;
+			global::AiForms.Dialogs.Resource.Dimension.mtrl_btn_pressed_z = global::PryRutasMoviles.Droid.Resource.Dimension.mtrl_btn_pressed_z;
+			global::AiForms.Dialogs.Resource.Dimension.mtrl_btn_stroke_size = global::PryRutasMoviles.Droid.Resource.Dimension.mtrl_btn_stroke_size;
+			global::AiForms.Dialogs.Resource.Dimension.mtrl_btn_text_btn_icon_padding = global::PryRutasMoviles.Droid.Resource.Dimension.mtrl_btn_text_btn_icon_padding;
+			global::AiForms.Dialogs.Resource.Dimension.mtrl_btn_text_btn_padding_left = global::PryRutasMoviles.Droid.Resource.Dimension.mtrl_btn_text_btn_padding_left;
+			global::AiForms.Dialogs.Resource.Dimension.mtrl_btn_text_btn_padding_right = global::PryRutasMoviles.Droid.Resource.Dimension.mtrl_btn_text_btn_padding_right;
+			global::AiForms.Dialogs.Resource.Dimension.mtrl_btn_text_size = global::PryRutasMoviles.Droid.Resource.Dimension.mtrl_btn_text_size;
+			global::AiForms.Dialogs.Resource.Dimension.mtrl_btn_z = global::PryRutasMoviles.Droid.Resource.Dimension.mtrl_btn_z;
+			global::AiForms.Dialogs.Resource.Dimension.mtrl_card_elevation = global::PryRutasMoviles.Droid.Resource.Dimension.mtrl_card_elevation;
+			global::AiForms.Dialogs.Resource.Dimension.mtrl_card_spacing = global::PryRutasMoviles.Droid.Resource.Dimension.mtrl_card_spacing;
+			global::AiForms.Dialogs.Resource.Dimension.mtrl_chip_pressed_translation_z = global::PryRutasMoviles.Droid.Resource.Dimension.mtrl_chip_pressed_translation_z;
+			global::AiForms.Dialogs.Resource.Dimension.mtrl_chip_text_size = global::PryRutasMoviles.Droid.Resource.Dimension.mtrl_chip_text_size;
+			global::AiForms.Dialogs.Resource.Dimension.mtrl_fab_elevation = global::PryRutasMoviles.Droid.Resource.Dimension.mtrl_fab_elevation;
+			global::AiForms.Dialogs.Resource.Dimension.mtrl_fab_translation_z_hovered_focused = global::PryRutasMoviles.Droid.Resource.Dimension.mtrl_fab_translation_z_hovered_focused;
+			global::AiForms.Dialogs.Resource.Dimension.mtrl_fab_translation_z_pressed = global::PryRutasMoviles.Droid.Resource.Dimension.mtrl_fab_translation_z_pressed;
+			global::AiForms.Dialogs.Resource.Dimension.mtrl_navigation_elevation = global::PryRutasMoviles.Droid.Resource.Dimension.mtrl_navigation_elevation;
+			global::AiForms.Dialogs.Resource.Dimension.mtrl_navigation_item_horizontal_padding = global::PryRutasMoviles.Droid.Resource.Dimension.mtrl_navigation_item_horizontal_padding;
+			global::AiForms.Dialogs.Resource.Dimension.mtrl_navigation_item_icon_padding = global::PryRutasMoviles.Droid.Resource.Dimension.mtrl_navigation_item_icon_padding;
+			global::AiForms.Dialogs.Resource.Dimension.mtrl_snackbar_background_corner_radius = global::PryRutasMoviles.Droid.Resource.Dimension.mtrl_snackbar_background_corner_radius;
+			global::AiForms.Dialogs.Resource.Dimension.mtrl_snackbar_margin = global::PryRutasMoviles.Droid.Resource.Dimension.mtrl_snackbar_margin;
+			global::AiForms.Dialogs.Resource.Dimension.mtrl_textinput_box_bottom_offset = global::PryRutasMoviles.Droid.Resource.Dimension.mtrl_textinput_box_bottom_offset;
+			global::AiForms.Dialogs.Resource.Dimension.mtrl_textinput_box_corner_radius_medium = global::PryRutasMoviles.Droid.Resource.Dimension.mtrl_textinput_box_corner_radius_medium;
+			global::AiForms.Dialogs.Resource.Dimension.mtrl_textinput_box_corner_radius_small = global::PryRutasMoviles.Droid.Resource.Dimension.mtrl_textinput_box_corner_radius_small;
+			global::AiForms.Dialogs.Resource.Dimension.mtrl_textinput_box_label_cutout_padding = global::PryRutasMoviles.Droid.Resource.Dimension.mtrl_textinput_box_label_cutout_padding;
+			global::AiForms.Dialogs.Resource.Dimension.mtrl_textinput_box_padding_end = global::PryRutasMoviles.Droid.Resource.Dimension.mtrl_textinput_box_padding_end;
+			global::AiForms.Dialogs.Resource.Dimension.mtrl_textinput_box_stroke_width_default = global::PryRutasMoviles.Droid.Resource.Dimension.mtrl_textinput_box_stroke_width_default;
+			global::AiForms.Dialogs.Resource.Dimension.mtrl_textinput_box_stroke_width_focused = global::PryRutasMoviles.Droid.Resource.Dimension.mtrl_textinput_box_stroke_width_focused;
+			global::AiForms.Dialogs.Resource.Dimension.mtrl_textinput_outline_box_expanded_padding = global::PryRutasMoviles.Droid.Resource.Dimension.mtrl_textinput_outline_box_expanded_padding;
+			global::AiForms.Dialogs.Resource.Dimension.mtrl_toolbar_default_height = global::PryRutasMoviles.Droid.Resource.Dimension.mtrl_toolbar_default_height;
+			global::AiForms.Dialogs.Resource.Dimension.notification_action_icon_size = global::PryRutasMoviles.Droid.Resource.Dimension.notification_action_icon_size;
+			global::AiForms.Dialogs.Resource.Dimension.notification_action_text_size = global::PryRutasMoviles.Droid.Resource.Dimension.notification_action_text_size;
+			global::AiForms.Dialogs.Resource.Dimension.notification_big_circle_margin = global::PryRutasMoviles.Droid.Resource.Dimension.notification_big_circle_margin;
+			global::AiForms.Dialogs.Resource.Dimension.notification_content_margin_start = global::PryRutasMoviles.Droid.Resource.Dimension.notification_content_margin_start;
+			global::AiForms.Dialogs.Resource.Dimension.notification_large_icon_height = global::PryRutasMoviles.Droid.Resource.Dimension.notification_large_icon_height;
+			global::AiForms.Dialogs.Resource.Dimension.notification_large_icon_width = global::PryRutasMoviles.Droid.Resource.Dimension.notification_large_icon_width;
+			global::AiForms.Dialogs.Resource.Dimension.notification_main_column_padding_top = global::PryRutasMoviles.Droid.Resource.Dimension.notification_main_column_padding_top;
+			global::AiForms.Dialogs.Resource.Dimension.notification_media_narrow_margin = global::PryRutasMoviles.Droid.Resource.Dimension.notification_media_narrow_margin;
+			global::AiForms.Dialogs.Resource.Dimension.notification_right_icon_size = global::PryRutasMoviles.Droid.Resource.Dimension.notification_right_icon_size;
+			global::AiForms.Dialogs.Resource.Dimension.notification_right_side_padding_top = global::PryRutasMoviles.Droid.Resource.Dimension.notification_right_side_padding_top;
+			global::AiForms.Dialogs.Resource.Dimension.notification_small_icon_background_padding = global::PryRutasMoviles.Droid.Resource.Dimension.notification_small_icon_background_padding;
+			global::AiForms.Dialogs.Resource.Dimension.notification_small_icon_size_as_large = global::PryRutasMoviles.Droid.Resource.Dimension.notification_small_icon_size_as_large;
+			global::AiForms.Dialogs.Resource.Dimension.notification_subtext_size = global::PryRutasMoviles.Droid.Resource.Dimension.notification_subtext_size;
+			global::AiForms.Dialogs.Resource.Dimension.notification_top_pad = global::PryRutasMoviles.Droid.Resource.Dimension.notification_top_pad;
+			global::AiForms.Dialogs.Resource.Dimension.notification_top_pad_large_text = global::PryRutasMoviles.Droid.Resource.Dimension.notification_top_pad_large_text;
+			global::AiForms.Dialogs.Resource.Dimension.subtitle_corner_radius = global::PryRutasMoviles.Droid.Resource.Dimension.subtitle_corner_radius;
+			global::AiForms.Dialogs.Resource.Dimension.subtitle_outline_width = global::PryRutasMoviles.Droid.Resource.Dimension.subtitle_outline_width;
+			global::AiForms.Dialogs.Resource.Dimension.subtitle_shadow_offset = global::PryRutasMoviles.Droid.Resource.Dimension.subtitle_shadow_offset;
+			global::AiForms.Dialogs.Resource.Dimension.subtitle_shadow_radius = global::PryRutasMoviles.Droid.Resource.Dimension.subtitle_shadow_radius;
+			global::AiForms.Dialogs.Resource.Dimension.tooltip_corner_radius = global::PryRutasMoviles.Droid.Resource.Dimension.tooltip_corner_radius;
+			global::AiForms.Dialogs.Resource.Dimension.tooltip_horizontal_padding = global::PryRutasMoviles.Droid.Resource.Dimension.tooltip_horizontal_padding;
+			global::AiForms.Dialogs.Resource.Dimension.tooltip_margin = global::PryRutasMoviles.Droid.Resource.Dimension.tooltip_margin;
+			global::AiForms.Dialogs.Resource.Dimension.tooltip_precise_anchor_extra_offset = global::PryRutasMoviles.Droid.Resource.Dimension.tooltip_precise_anchor_extra_offset;
+			global::AiForms.Dialogs.Resource.Dimension.tooltip_precise_anchor_threshold = global::PryRutasMoviles.Droid.Resource.Dimension.tooltip_precise_anchor_threshold;
+			global::AiForms.Dialogs.Resource.Dimension.tooltip_vertical_padding = global::PryRutasMoviles.Droid.Resource.Dimension.tooltip_vertical_padding;
+			global::AiForms.Dialogs.Resource.Dimension.tooltip_y_offset_non_touch = global::PryRutasMoviles.Droid.Resource.Dimension.tooltip_y_offset_non_touch;
+			global::AiForms.Dialogs.Resource.Dimension.tooltip_y_offset_touch = global::PryRutasMoviles.Droid.Resource.Dimension.tooltip_y_offset_touch;
+			global::AiForms.Dialogs.Resource.Drawable.abc_ab_share_pack_mtrl_alpha = global::PryRutasMoviles.Droid.Resource.Drawable.abc_ab_share_pack_mtrl_alpha;
+			global::AiForms.Dialogs.Resource.Drawable.abc_action_bar_item_background_material = global::PryRutasMoviles.Droid.Resource.Drawable.abc_action_bar_item_background_material;
+			global::AiForms.Dialogs.Resource.Drawable.abc_btn_borderless_material = global::PryRutasMoviles.Droid.Resource.Drawable.abc_btn_borderless_material;
+			global::AiForms.Dialogs.Resource.Drawable.abc_btn_check_material = global::PryRutasMoviles.Droid.Resource.Drawable.abc_btn_check_material;
+			global::AiForms.Dialogs.Resource.Drawable.abc_btn_check_material_anim = global::PryRutasMoviles.Droid.Resource.Drawable.abc_btn_check_material_anim;
+			global::AiForms.Dialogs.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::PryRutasMoviles.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
+			global::AiForms.Dialogs.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::PryRutasMoviles.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
+			global::AiForms.Dialogs.Resource.Drawable.abc_btn_colored_material = global::PryRutasMoviles.Droid.Resource.Drawable.abc_btn_colored_material;
+			global::AiForms.Dialogs.Resource.Drawable.abc_btn_default_mtrl_shape = global::PryRutasMoviles.Droid.Resource.Drawable.abc_btn_default_mtrl_shape;
+			global::AiForms.Dialogs.Resource.Drawable.abc_btn_radio_material = global::PryRutasMoviles.Droid.Resource.Drawable.abc_btn_radio_material;
+			global::AiForms.Dialogs.Resource.Drawable.abc_btn_radio_material_anim = global::PryRutasMoviles.Droid.Resource.Drawable.abc_btn_radio_material_anim;
+			global::AiForms.Dialogs.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::PryRutasMoviles.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
+			global::AiForms.Dialogs.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::PryRutasMoviles.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
+			global::AiForms.Dialogs.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::PryRutasMoviles.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
+			global::AiForms.Dialogs.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012 = global::PryRutasMoviles.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012;
+			global::AiForms.Dialogs.Resource.Drawable.abc_cab_background_internal_bg = global::PryRutasMoviles.Droid.Resource.Drawable.abc_cab_background_internal_bg;
+			global::AiForms.Dialogs.Resource.Drawable.abc_cab_background_top_material = global::PryRutasMoviles.Droid.Resource.Drawable.abc_cab_background_top_material;
+			global::AiForms.Dialogs.Resource.Drawable.abc_cab_background_top_mtrl_alpha = global::PryRutasMoviles.Droid.Resource.Drawable.abc_cab_background_top_mtrl_alpha;
+			global::AiForms.Dialogs.Resource.Drawable.abc_control_background_material = global::PryRutasMoviles.Droid.Resource.Drawable.abc_control_background_material;
+			global::AiForms.Dialogs.Resource.Drawable.abc_dialog_material_background = global::PryRutasMoviles.Droid.Resource.Drawable.abc_dialog_material_background;
+			global::AiForms.Dialogs.Resource.Drawable.abc_edit_text_material = global::PryRutasMoviles.Droid.Resource.Drawable.abc_edit_text_material;
+			global::AiForms.Dialogs.Resource.Drawable.abc_ic_ab_back_material = global::PryRutasMoviles.Droid.Resource.Drawable.abc_ic_ab_back_material;
+			global::AiForms.Dialogs.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp = global::PryRutasMoviles.Droid.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp;
+			global::AiForms.Dialogs.Resource.Drawable.abc_ic_clear_material = global::PryRutasMoviles.Droid.Resource.Drawable.abc_ic_clear_material;
+			global::AiForms.Dialogs.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha = global::PryRutasMoviles.Droid.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha;
+			global::AiForms.Dialogs.Resource.Drawable.abc_ic_go_search_api_material = global::PryRutasMoviles.Droid.Resource.Drawable.abc_ic_go_search_api_material;
+			global::AiForms.Dialogs.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha = global::PryRutasMoviles.Droid.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha;
+			global::AiForms.Dialogs.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha = global::PryRutasMoviles.Droid.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha;
+			global::AiForms.Dialogs.Resource.Drawable.abc_ic_menu_overflow_material = global::PryRutasMoviles.Droid.Resource.Drawable.abc_ic_menu_overflow_material;
+			global::AiForms.Dialogs.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha = global::PryRutasMoviles.Droid.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha;
+			global::AiForms.Dialogs.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha = global::PryRutasMoviles.Droid.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha;
+			global::AiForms.Dialogs.Resource.Drawable.abc_ic_menu_share_mtrl_alpha = global::PryRutasMoviles.Droid.Resource.Drawable.abc_ic_menu_share_mtrl_alpha;
+			global::AiForms.Dialogs.Resource.Drawable.abc_ic_search_api_material = global::PryRutasMoviles.Droid.Resource.Drawable.abc_ic_search_api_material;
+			global::AiForms.Dialogs.Resource.Drawable.abc_ic_star_black_16dp = global::PryRutasMoviles.Droid.Resource.Drawable.abc_ic_star_black_16dp;
+			global::AiForms.Dialogs.Resource.Drawable.abc_ic_star_black_36dp = global::PryRutasMoviles.Droid.Resource.Drawable.abc_ic_star_black_36dp;
+			global::AiForms.Dialogs.Resource.Drawable.abc_ic_star_black_48dp = global::PryRutasMoviles.Droid.Resource.Drawable.abc_ic_star_black_48dp;
+			global::AiForms.Dialogs.Resource.Drawable.abc_ic_star_half_black_16dp = global::PryRutasMoviles.Droid.Resource.Drawable.abc_ic_star_half_black_16dp;
+			global::AiForms.Dialogs.Resource.Drawable.abc_ic_star_half_black_36dp = global::PryRutasMoviles.Droid.Resource.Drawable.abc_ic_star_half_black_36dp;
+			global::AiForms.Dialogs.Resource.Drawable.abc_ic_star_half_black_48dp = global::PryRutasMoviles.Droid.Resource.Drawable.abc_ic_star_half_black_48dp;
+			global::AiForms.Dialogs.Resource.Drawable.abc_ic_voice_search_api_material = global::PryRutasMoviles.Droid.Resource.Drawable.abc_ic_voice_search_api_material;
+			global::AiForms.Dialogs.Resource.Drawable.abc_item_background_holo_dark = global::PryRutasMoviles.Droid.Resource.Drawable.abc_item_background_holo_dark;
+			global::AiForms.Dialogs.Resource.Drawable.abc_item_background_holo_light = global::PryRutasMoviles.Droid.Resource.Drawable.abc_item_background_holo_light;
+			global::AiForms.Dialogs.Resource.Drawable.abc_list_divider_material = global::PryRutasMoviles.Droid.Resource.Drawable.abc_list_divider_material;
+			global::AiForms.Dialogs.Resource.Drawable.abc_list_divider_mtrl_alpha = global::PryRutasMoviles.Droid.Resource.Drawable.abc_list_divider_mtrl_alpha;
+			global::AiForms.Dialogs.Resource.Drawable.abc_list_focused_holo = global::PryRutasMoviles.Droid.Resource.Drawable.abc_list_focused_holo;
+			global::AiForms.Dialogs.Resource.Drawable.abc_list_longpressed_holo = global::PryRutasMoviles.Droid.Resource.Drawable.abc_list_longpressed_holo;
+			global::AiForms.Dialogs.Resource.Drawable.abc_list_pressed_holo_dark = global::PryRutasMoviles.Droid.Resource.Drawable.abc_list_pressed_holo_dark;
+			global::AiForms.Dialogs.Resource.Drawable.abc_list_pressed_holo_light = global::PryRutasMoviles.Droid.Resource.Drawable.abc_list_pressed_holo_light;
+			global::AiForms.Dialogs.Resource.Drawable.abc_list_selector_background_transition_holo_dark = global::PryRutasMoviles.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_dark;
+			global::AiForms.Dialogs.Resource.Drawable.abc_list_selector_background_transition_holo_light = global::PryRutasMoviles.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_light;
+			global::AiForms.Dialogs.Resource.Drawable.abc_list_selector_disabled_holo_dark = global::PryRutasMoviles.Droid.Resource.Drawable.abc_list_selector_disabled_holo_dark;
+			global::AiForms.Dialogs.Resource.Drawable.abc_list_selector_disabled_holo_light = global::PryRutasMoviles.Droid.Resource.Drawable.abc_list_selector_disabled_holo_light;
+			global::AiForms.Dialogs.Resource.Drawable.abc_list_selector_holo_dark = global::PryRutasMoviles.Droid.Resource.Drawable.abc_list_selector_holo_dark;
+			global::AiForms.Dialogs.Resource.Drawable.abc_list_selector_holo_light = global::PryRutasMoviles.Droid.Resource.Drawable.abc_list_selector_holo_light;
+			global::AiForms.Dialogs.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult = global::PryRutasMoviles.Droid.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult;
+			global::AiForms.Dialogs.Resource.Drawable.abc_popup_background_mtrl_mult = global::PryRutasMoviles.Droid.Resource.Drawable.abc_popup_background_mtrl_mult;
+			global::AiForms.Dialogs.Resource.Drawable.abc_ratingbar_indicator_material = global::PryRutasMoviles.Droid.Resource.Drawable.abc_ratingbar_indicator_material;
+			global::AiForms.Dialogs.Resource.Drawable.abc_ratingbar_material = global::PryRutasMoviles.Droid.Resource.Drawable.abc_ratingbar_material;
+			global::AiForms.Dialogs.Resource.Drawable.abc_ratingbar_small_material = global::PryRutasMoviles.Droid.Resource.Drawable.abc_ratingbar_small_material;
+			global::AiForms.Dialogs.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha = global::PryRutasMoviles.Droid.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha;
+			global::AiForms.Dialogs.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000 = global::PryRutasMoviles.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000;
+			global::AiForms.Dialogs.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005 = global::PryRutasMoviles.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005;
+			global::AiForms.Dialogs.Resource.Drawable.abc_scrubber_primary_mtrl_alpha = global::PryRutasMoviles.Droid.Resource.Drawable.abc_scrubber_primary_mtrl_alpha;
+			global::AiForms.Dialogs.Resource.Drawable.abc_scrubber_track_mtrl_alpha = global::PryRutasMoviles.Droid.Resource.Drawable.abc_scrubber_track_mtrl_alpha;
+			global::AiForms.Dialogs.Resource.Drawable.abc_seekbar_thumb_material = global::PryRutasMoviles.Droid.Resource.Drawable.abc_seekbar_thumb_material;
+			global::AiForms.Dialogs.Resource.Drawable.abc_seekbar_tick_mark_material = global::PryRutasMoviles.Droid.Resource.Drawable.abc_seekbar_tick_mark_material;
+			global::AiForms.Dialogs.Resource.Drawable.abc_seekbar_track_material = global::PryRutasMoviles.Droid.Resource.Drawable.abc_seekbar_track_material;
+			global::AiForms.Dialogs.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::PryRutasMoviles.Droid.Resource.Drawable.abc_spinner_mtrl_am_alpha;
+			global::AiForms.Dialogs.Resource.Drawable.abc_spinner_textfield_background_material = global::PryRutasMoviles.Droid.Resource.Drawable.abc_spinner_textfield_background_material;
+			global::AiForms.Dialogs.Resource.Drawable.abc_switch_thumb_material = global::PryRutasMoviles.Droid.Resource.Drawable.abc_switch_thumb_material;
+			global::AiForms.Dialogs.Resource.Drawable.abc_switch_track_mtrl_alpha = global::PryRutasMoviles.Droid.Resource.Drawable.abc_switch_track_mtrl_alpha;
+			global::AiForms.Dialogs.Resource.Drawable.abc_tab_indicator_material = global::PryRutasMoviles.Droid.Resource.Drawable.abc_tab_indicator_material;
+			global::AiForms.Dialogs.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::PryRutasMoviles.Droid.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
+			global::AiForms.Dialogs.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::PryRutasMoviles.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
+			global::AiForms.Dialogs.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::PryRutasMoviles.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha;
+			global::AiForms.Dialogs.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::PryRutasMoviles.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
+			global::AiForms.Dialogs.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::PryRutasMoviles.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
+			global::AiForms.Dialogs.Resource.Drawable.abc_textfield_search_material = global::PryRutasMoviles.Droid.Resource.Drawable.abc_textfield_search_material;
+			global::AiForms.Dialogs.Resource.Drawable.abc_text_cursor_material = global::PryRutasMoviles.Droid.Resource.Drawable.abc_text_cursor_material;
+			global::AiForms.Dialogs.Resource.Drawable.abc_text_select_handle_left_mtrl_dark = global::PryRutasMoviles.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_dark;
+			global::AiForms.Dialogs.Resource.Drawable.abc_text_select_handle_left_mtrl_light = global::PryRutasMoviles.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_light;
+			global::AiForms.Dialogs.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark = global::PryRutasMoviles.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark;
+			global::AiForms.Dialogs.Resource.Drawable.abc_text_select_handle_middle_mtrl_light = global::PryRutasMoviles.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_light;
+			global::AiForms.Dialogs.Resource.Drawable.abc_text_select_handle_right_mtrl_dark = global::PryRutasMoviles.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_dark;
+			global::AiForms.Dialogs.Resource.Drawable.abc_text_select_handle_right_mtrl_light = global::PryRutasMoviles.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_light;
+			global::AiForms.Dialogs.Resource.Drawable.abc_vector_test = global::PryRutasMoviles.Droid.Resource.Drawable.abc_vector_test;
+			global::AiForms.Dialogs.Resource.Drawable.avd_hide_password = global::PryRutasMoviles.Droid.Resource.Drawable.avd_hide_password;
+			global::AiForms.Dialogs.Resource.Drawable.avd_show_password = global::PryRutasMoviles.Droid.Resource.Drawable.avd_show_password;
+			global::AiForms.Dialogs.Resource.Drawable.btn_checkbox_checked_mtrl = global::PryRutasMoviles.Droid.Resource.Drawable.btn_checkbox_checked_mtrl;
+			global::AiForms.Dialogs.Resource.Drawable.btn_checkbox_checked_to_unchecked_mtrl_animation = global::PryRutasMoviles.Droid.Resource.Drawable.btn_checkbox_checked_to_unchecked_mtrl_animation;
+			global::AiForms.Dialogs.Resource.Drawable.btn_checkbox_unchecked_mtrl = global::PryRutasMoviles.Droid.Resource.Drawable.btn_checkbox_unchecked_mtrl;
+			global::AiForms.Dialogs.Resource.Drawable.btn_checkbox_unchecked_to_checked_mtrl_animation = global::PryRutasMoviles.Droid.Resource.Drawable.btn_checkbox_unchecked_to_checked_mtrl_animation;
+			global::AiForms.Dialogs.Resource.Drawable.btn_radio_off_mtrl = global::PryRutasMoviles.Droid.Resource.Drawable.btn_radio_off_mtrl;
+			global::AiForms.Dialogs.Resource.Drawable.btn_radio_off_to_on_mtrl_animation = global::PryRutasMoviles.Droid.Resource.Drawable.btn_radio_off_to_on_mtrl_animation;
+			global::AiForms.Dialogs.Resource.Drawable.btn_radio_on_mtrl = global::PryRutasMoviles.Droid.Resource.Drawable.btn_radio_on_mtrl;
+			global::AiForms.Dialogs.Resource.Drawable.btn_radio_on_to_off_mtrl_animation = global::PryRutasMoviles.Droid.Resource.Drawable.btn_radio_on_to_off_mtrl_animation;
+			global::AiForms.Dialogs.Resource.Drawable.design_bottom_navigation_item_background = global::PryRutasMoviles.Droid.Resource.Drawable.design_bottom_navigation_item_background;
+			global::AiForms.Dialogs.Resource.Drawable.design_fab_background = global::PryRutasMoviles.Droid.Resource.Drawable.design_fab_background;
+			global::AiForms.Dialogs.Resource.Drawable.design_ic_visibility = global::PryRutasMoviles.Droid.Resource.Drawable.design_ic_visibility;
+			global::AiForms.Dialogs.Resource.Drawable.design_ic_visibility_off = global::PryRutasMoviles.Droid.Resource.Drawable.design_ic_visibility_off;
+			global::AiForms.Dialogs.Resource.Drawable.design_password_eye = global::PryRutasMoviles.Droid.Resource.Drawable.design_password_eye;
+			global::AiForms.Dialogs.Resource.Drawable.design_snackbar_background = global::PryRutasMoviles.Droid.Resource.Drawable.design_snackbar_background;
+			global::AiForms.Dialogs.Resource.Drawable.ic_mtrl_chip_checked_black = global::PryRutasMoviles.Droid.Resource.Drawable.ic_mtrl_chip_checked_black;
+			global::AiForms.Dialogs.Resource.Drawable.ic_mtrl_chip_checked_circle = global::PryRutasMoviles.Droid.Resource.Drawable.ic_mtrl_chip_checked_circle;
+			global::AiForms.Dialogs.Resource.Drawable.ic_mtrl_chip_close_circle = global::PryRutasMoviles.Droid.Resource.Drawable.ic_mtrl_chip_close_circle;
+			global::AiForms.Dialogs.Resource.Drawable.mtrl_snackbar_background = global::PryRutasMoviles.Droid.Resource.Drawable.mtrl_snackbar_background;
+			global::AiForms.Dialogs.Resource.Drawable.mtrl_tabs_default_indicator = global::PryRutasMoviles.Droid.Resource.Drawable.mtrl_tabs_default_indicator;
+			global::AiForms.Dialogs.Resource.Drawable.navigation_empty_icon = global::PryRutasMoviles.Droid.Resource.Drawable.navigation_empty_icon;
+			global::AiForms.Dialogs.Resource.Drawable.notification_action_background = global::PryRutasMoviles.Droid.Resource.Drawable.notification_action_background;
+			global::AiForms.Dialogs.Resource.Drawable.notification_bg = global::PryRutasMoviles.Droid.Resource.Drawable.notification_bg;
+			global::AiForms.Dialogs.Resource.Drawable.notification_bg_low = global::PryRutasMoviles.Droid.Resource.Drawable.notification_bg_low;
+			global::AiForms.Dialogs.Resource.Drawable.notification_bg_low_normal = global::PryRutasMoviles.Droid.Resource.Drawable.notification_bg_low_normal;
+			global::AiForms.Dialogs.Resource.Drawable.notification_bg_low_pressed = global::PryRutasMoviles.Droid.Resource.Drawable.notification_bg_low_pressed;
+			global::AiForms.Dialogs.Resource.Drawable.notification_bg_normal = global::PryRutasMoviles.Droid.Resource.Drawable.notification_bg_normal;
+			global::AiForms.Dialogs.Resource.Drawable.notification_bg_normal_pressed = global::PryRutasMoviles.Droid.Resource.Drawable.notification_bg_normal_pressed;
+			global::AiForms.Dialogs.Resource.Drawable.notification_icon_background = global::PryRutasMoviles.Droid.Resource.Drawable.notification_icon_background;
+			global::AiForms.Dialogs.Resource.Drawable.notification_template_icon_bg = global::PryRutasMoviles.Droid.Resource.Drawable.notification_template_icon_bg;
+			global::AiForms.Dialogs.Resource.Drawable.notification_template_icon_low_bg = global::PryRutasMoviles.Droid.Resource.Drawable.notification_template_icon_low_bg;
+			global::AiForms.Dialogs.Resource.Drawable.notification_tile_bg = global::PryRutasMoviles.Droid.Resource.Drawable.notification_tile_bg;
+			global::AiForms.Dialogs.Resource.Drawable.notify_panel_notification_icon_bg = global::PryRutasMoviles.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
+			global::AiForms.Dialogs.Resource.Drawable.tooltip_frame_dark = global::PryRutasMoviles.Droid.Resource.Drawable.tooltip_frame_dark;
+			global::AiForms.Dialogs.Resource.Drawable.tooltip_frame_light = global::PryRutasMoviles.Droid.Resource.Drawable.tooltip_frame_light;
+			global::AiForms.Dialogs.Resource.Id.accessibility_action_clickable_span = global::PryRutasMoviles.Droid.Resource.Id.accessibility_action_clickable_span;
+			global::AiForms.Dialogs.Resource.Id.accessibility_custom_action_0 = global::PryRutasMoviles.Droid.Resource.Id.accessibility_custom_action_0;
+			global::AiForms.Dialogs.Resource.Id.accessibility_custom_action_1 = global::PryRutasMoviles.Droid.Resource.Id.accessibility_custom_action_1;
+			global::AiForms.Dialogs.Resource.Id.accessibility_custom_action_10 = global::PryRutasMoviles.Droid.Resource.Id.accessibility_custom_action_10;
+			global::AiForms.Dialogs.Resource.Id.accessibility_custom_action_11 = global::PryRutasMoviles.Droid.Resource.Id.accessibility_custom_action_11;
+			global::AiForms.Dialogs.Resource.Id.accessibility_custom_action_12 = global::PryRutasMoviles.Droid.Resource.Id.accessibility_custom_action_12;
+			global::AiForms.Dialogs.Resource.Id.accessibility_custom_action_13 = global::PryRutasMoviles.Droid.Resource.Id.accessibility_custom_action_13;
+			global::AiForms.Dialogs.Resource.Id.accessibility_custom_action_14 = global::PryRutasMoviles.Droid.Resource.Id.accessibility_custom_action_14;
+			global::AiForms.Dialogs.Resource.Id.accessibility_custom_action_15 = global::PryRutasMoviles.Droid.Resource.Id.accessibility_custom_action_15;
+			global::AiForms.Dialogs.Resource.Id.accessibility_custom_action_16 = global::PryRutasMoviles.Droid.Resource.Id.accessibility_custom_action_16;
+			global::AiForms.Dialogs.Resource.Id.accessibility_custom_action_17 = global::PryRutasMoviles.Droid.Resource.Id.accessibility_custom_action_17;
+			global::AiForms.Dialogs.Resource.Id.accessibility_custom_action_18 = global::PryRutasMoviles.Droid.Resource.Id.accessibility_custom_action_18;
+			global::AiForms.Dialogs.Resource.Id.accessibility_custom_action_19 = global::PryRutasMoviles.Droid.Resource.Id.accessibility_custom_action_19;
+			global::AiForms.Dialogs.Resource.Id.accessibility_custom_action_2 = global::PryRutasMoviles.Droid.Resource.Id.accessibility_custom_action_2;
+			global::AiForms.Dialogs.Resource.Id.accessibility_custom_action_20 = global::PryRutasMoviles.Droid.Resource.Id.accessibility_custom_action_20;
+			global::AiForms.Dialogs.Resource.Id.accessibility_custom_action_21 = global::PryRutasMoviles.Droid.Resource.Id.accessibility_custom_action_21;
+			global::AiForms.Dialogs.Resource.Id.accessibility_custom_action_22 = global::PryRutasMoviles.Droid.Resource.Id.accessibility_custom_action_22;
+			global::AiForms.Dialogs.Resource.Id.accessibility_custom_action_23 = global::PryRutasMoviles.Droid.Resource.Id.accessibility_custom_action_23;
+			global::AiForms.Dialogs.Resource.Id.accessibility_custom_action_24 = global::PryRutasMoviles.Droid.Resource.Id.accessibility_custom_action_24;
+			global::AiForms.Dialogs.Resource.Id.accessibility_custom_action_25 = global::PryRutasMoviles.Droid.Resource.Id.accessibility_custom_action_25;
+			global::AiForms.Dialogs.Resource.Id.accessibility_custom_action_26 = global::PryRutasMoviles.Droid.Resource.Id.accessibility_custom_action_26;
+			global::AiForms.Dialogs.Resource.Id.accessibility_custom_action_27 = global::PryRutasMoviles.Droid.Resource.Id.accessibility_custom_action_27;
+			global::AiForms.Dialogs.Resource.Id.accessibility_custom_action_28 = global::PryRutasMoviles.Droid.Resource.Id.accessibility_custom_action_28;
+			global::AiForms.Dialogs.Resource.Id.accessibility_custom_action_29 = global::PryRutasMoviles.Droid.Resource.Id.accessibility_custom_action_29;
+			global::AiForms.Dialogs.Resource.Id.accessibility_custom_action_3 = global::PryRutasMoviles.Droid.Resource.Id.accessibility_custom_action_3;
+			global::AiForms.Dialogs.Resource.Id.accessibility_custom_action_30 = global::PryRutasMoviles.Droid.Resource.Id.accessibility_custom_action_30;
+			global::AiForms.Dialogs.Resource.Id.accessibility_custom_action_31 = global::PryRutasMoviles.Droid.Resource.Id.accessibility_custom_action_31;
+			global::AiForms.Dialogs.Resource.Id.accessibility_custom_action_4 = global::PryRutasMoviles.Droid.Resource.Id.accessibility_custom_action_4;
+			global::AiForms.Dialogs.Resource.Id.accessibility_custom_action_5 = global::PryRutasMoviles.Droid.Resource.Id.accessibility_custom_action_5;
+			global::AiForms.Dialogs.Resource.Id.accessibility_custom_action_6 = global::PryRutasMoviles.Droid.Resource.Id.accessibility_custom_action_6;
+			global::AiForms.Dialogs.Resource.Id.accessibility_custom_action_7 = global::PryRutasMoviles.Droid.Resource.Id.accessibility_custom_action_7;
+			global::AiForms.Dialogs.Resource.Id.accessibility_custom_action_8 = global::PryRutasMoviles.Droid.Resource.Id.accessibility_custom_action_8;
+			global::AiForms.Dialogs.Resource.Id.accessibility_custom_action_9 = global::PryRutasMoviles.Droid.Resource.Id.accessibility_custom_action_9;
+			global::AiForms.Dialogs.Resource.Id.action0 = global::PryRutasMoviles.Droid.Resource.Id.action0;
+			global::AiForms.Dialogs.Resource.Id.actions = global::PryRutasMoviles.Droid.Resource.Id.actions;
+			global::AiForms.Dialogs.Resource.Id.action_bar = global::PryRutasMoviles.Droid.Resource.Id.action_bar;
+			global::AiForms.Dialogs.Resource.Id.action_bar_activity_content = global::PryRutasMoviles.Droid.Resource.Id.action_bar_activity_content;
+			global::AiForms.Dialogs.Resource.Id.action_bar_container = global::PryRutasMoviles.Droid.Resource.Id.action_bar_container;
+			global::AiForms.Dialogs.Resource.Id.action_bar_root = global::PryRutasMoviles.Droid.Resource.Id.action_bar_root;
+			global::AiForms.Dialogs.Resource.Id.action_bar_spinner = global::PryRutasMoviles.Droid.Resource.Id.action_bar_spinner;
+			global::AiForms.Dialogs.Resource.Id.action_bar_subtitle = global::PryRutasMoviles.Droid.Resource.Id.action_bar_subtitle;
+			global::AiForms.Dialogs.Resource.Id.action_bar_title = global::PryRutasMoviles.Droid.Resource.Id.action_bar_title;
+			global::AiForms.Dialogs.Resource.Id.action_container = global::PryRutasMoviles.Droid.Resource.Id.action_container;
+			global::AiForms.Dialogs.Resource.Id.action_context_bar = global::PryRutasMoviles.Droid.Resource.Id.action_context_bar;
+			global::AiForms.Dialogs.Resource.Id.action_divider = global::PryRutasMoviles.Droid.Resource.Id.action_divider;
+			global::AiForms.Dialogs.Resource.Id.action_image = global::PryRutasMoviles.Droid.Resource.Id.action_image;
+			global::AiForms.Dialogs.Resource.Id.action_menu_divider = global::PryRutasMoviles.Droid.Resource.Id.action_menu_divider;
+			global::AiForms.Dialogs.Resource.Id.action_menu_presenter = global::PryRutasMoviles.Droid.Resource.Id.action_menu_presenter;
+			global::AiForms.Dialogs.Resource.Id.action_mode_bar = global::PryRutasMoviles.Droid.Resource.Id.action_mode_bar;
+			global::AiForms.Dialogs.Resource.Id.action_mode_bar_stub = global::PryRutasMoviles.Droid.Resource.Id.action_mode_bar_stub;
+			global::AiForms.Dialogs.Resource.Id.action_mode_close_button = global::PryRutasMoviles.Droid.Resource.Id.action_mode_close_button;
+			global::AiForms.Dialogs.Resource.Id.action_text = global::PryRutasMoviles.Droid.Resource.Id.action_text;
+			global::AiForms.Dialogs.Resource.Id.activity_chooser_view_content = global::PryRutasMoviles.Droid.Resource.Id.activity_chooser_view_content;
+			global::AiForms.Dialogs.Resource.Id.add = global::PryRutasMoviles.Droid.Resource.Id.add;
+			global::AiForms.Dialogs.Resource.Id.alertTitle = global::PryRutasMoviles.Droid.Resource.Id.alertTitle;
+			global::AiForms.Dialogs.Resource.Id.all = global::PryRutasMoviles.Droid.Resource.Id.all;
+			global::AiForms.Dialogs.Resource.Id.ALT = global::PryRutasMoviles.Droid.Resource.Id.ALT;
+			global::AiForms.Dialogs.Resource.Id.always = global::PryRutasMoviles.Droid.Resource.Id.always;
+			global::AiForms.Dialogs.Resource.Id.async = global::PryRutasMoviles.Droid.Resource.Id.async;
+			global::AiForms.Dialogs.Resource.Id.auto = global::PryRutasMoviles.Droid.Resource.Id.auto;
+			global::AiForms.Dialogs.Resource.Id.beginning = global::PryRutasMoviles.Droid.Resource.Id.beginning;
+			global::AiForms.Dialogs.Resource.Id.blocking = global::PryRutasMoviles.Droid.Resource.Id.blocking;
+			global::AiForms.Dialogs.Resource.Id.bottom = global::PryRutasMoviles.Droid.Resource.Id.bottom;
+			global::AiForms.Dialogs.Resource.Id.bottomtab_navarea = global::PryRutasMoviles.Droid.Resource.Id.bottomtab_navarea;
+			global::AiForms.Dialogs.Resource.Id.bottomtab_tabbar = global::PryRutasMoviles.Droid.Resource.Id.bottomtab_tabbar;
+			global::AiForms.Dialogs.Resource.Id.browser_actions_header_text = global::PryRutasMoviles.Droid.Resource.Id.browser_actions_header_text;
+			global::AiForms.Dialogs.Resource.Id.browser_actions_menu_items = global::PryRutasMoviles.Droid.Resource.Id.browser_actions_menu_items;
+			global::AiForms.Dialogs.Resource.Id.browser_actions_menu_item_icon = global::PryRutasMoviles.Droid.Resource.Id.browser_actions_menu_item_icon;
+			global::AiForms.Dialogs.Resource.Id.browser_actions_menu_item_text = global::PryRutasMoviles.Droid.Resource.Id.browser_actions_menu_item_text;
+			global::AiForms.Dialogs.Resource.Id.browser_actions_menu_view = global::PryRutasMoviles.Droid.Resource.Id.browser_actions_menu_view;
+			global::AiForms.Dialogs.Resource.Id.buttonPanel = global::PryRutasMoviles.Droid.Resource.Id.buttonPanel;
+			global::AiForms.Dialogs.Resource.Id.cancel_action = global::PryRutasMoviles.Droid.Resource.Id.cancel_action;
+			global::AiForms.Dialogs.Resource.Id.center = global::PryRutasMoviles.Droid.Resource.Id.center;
+			global::AiForms.Dialogs.Resource.Id.center_horizontal = global::PryRutasMoviles.Droid.Resource.Id.center_horizontal;
+			global::AiForms.Dialogs.Resource.Id.center_vertical = global::PryRutasMoviles.Droid.Resource.Id.center_vertical;
+			global::AiForms.Dialogs.Resource.Id.checkbox = global::PryRutasMoviles.Droid.Resource.Id.checkbox;
+			global::AiForms.Dialogs.Resource.Id.@checked = global::PryRutasMoviles.Droid.Resource.Id.@checked;
+			global::AiForms.Dialogs.Resource.Id.chronometer = global::PryRutasMoviles.Droid.Resource.Id.chronometer;
+			global::AiForms.Dialogs.Resource.Id.clip_horizontal = global::PryRutasMoviles.Droid.Resource.Id.clip_horizontal;
+			global::AiForms.Dialogs.Resource.Id.clip_vertical = global::PryRutasMoviles.Droid.Resource.Id.clip_vertical;
+			global::AiForms.Dialogs.Resource.Id.collapseActionView = global::PryRutasMoviles.Droid.Resource.Id.collapseActionView;
+			global::AiForms.Dialogs.Resource.Id.container = global::PryRutasMoviles.Droid.Resource.Id.container;
+			global::AiForms.Dialogs.Resource.Id.content = global::PryRutasMoviles.Droid.Resource.Id.content;
+			global::AiForms.Dialogs.Resource.Id.contentPanel = global::PryRutasMoviles.Droid.Resource.Id.contentPanel;
+			global::AiForms.Dialogs.Resource.Id.coordinator = global::PryRutasMoviles.Droid.Resource.Id.coordinator;
+			global::AiForms.Dialogs.Resource.Id.CTRL = global::PryRutasMoviles.Droid.Resource.Id.CTRL;
+			global::AiForms.Dialogs.Resource.Id.custom = global::PryRutasMoviles.Droid.Resource.Id.custom;
+			global::AiForms.Dialogs.Resource.Id.customPanel = global::PryRutasMoviles.Droid.Resource.Id.customPanel;
+			global::AiForms.Dialogs.Resource.Id.decor_content_parent = global::PryRutasMoviles.Droid.Resource.Id.decor_content_parent;
+			global::AiForms.Dialogs.Resource.Id.default_activity_button = global::PryRutasMoviles.Droid.Resource.Id.default_activity_button;
+			global::AiForms.Dialogs.Resource.Id.design_bottom_sheet = global::PryRutasMoviles.Droid.Resource.Id.design_bottom_sheet;
+			global::AiForms.Dialogs.Resource.Id.design_menu_item_action_area = global::PryRutasMoviles.Droid.Resource.Id.design_menu_item_action_area;
+			global::AiForms.Dialogs.Resource.Id.design_menu_item_action_area_stub = global::PryRutasMoviles.Droid.Resource.Id.design_menu_item_action_area_stub;
+			global::AiForms.Dialogs.Resource.Id.design_menu_item_text = global::PryRutasMoviles.Droid.Resource.Id.design_menu_item_text;
+			global::AiForms.Dialogs.Resource.Id.design_navigation_view = global::PryRutasMoviles.Droid.Resource.Id.design_navigation_view;
+			global::AiForms.Dialogs.Resource.Id.dialog_button = global::PryRutasMoviles.Droid.Resource.Id.dialog_button;
+			global::AiForms.Dialogs.Resource.Id.disableHome = global::PryRutasMoviles.Droid.Resource.Id.disableHome;
+			global::AiForms.Dialogs.Resource.Id.edit_query = global::PryRutasMoviles.Droid.Resource.Id.edit_query;
+			global::AiForms.Dialogs.Resource.Id.end = global::PryRutasMoviles.Droid.Resource.Id.end;
+			global::AiForms.Dialogs.Resource.Id.end_padder = global::PryRutasMoviles.Droid.Resource.Id.end_padder;
+			global::AiForms.Dialogs.Resource.Id.enterAlways = global::PryRutasMoviles.Droid.Resource.Id.enterAlways;
+			global::AiForms.Dialogs.Resource.Id.enterAlwaysCollapsed = global::PryRutasMoviles.Droid.Resource.Id.enterAlwaysCollapsed;
+			global::AiForms.Dialogs.Resource.Id.exitUntilCollapsed = global::PryRutasMoviles.Droid.Resource.Id.exitUntilCollapsed;
+			global::AiForms.Dialogs.Resource.Id.expanded_menu = global::PryRutasMoviles.Droid.Resource.Id.expanded_menu;
+			global::AiForms.Dialogs.Resource.Id.expand_activities_button = global::PryRutasMoviles.Droid.Resource.Id.expand_activities_button;
+			global::AiForms.Dialogs.Resource.Id.fill = global::PryRutasMoviles.Droid.Resource.Id.fill;
+			global::AiForms.Dialogs.Resource.Id.filled = global::PryRutasMoviles.Droid.Resource.Id.filled;
+			global::AiForms.Dialogs.Resource.Id.fill_horizontal = global::PryRutasMoviles.Droid.Resource.Id.fill_horizontal;
+			global::AiForms.Dialogs.Resource.Id.fill_vertical = global::PryRutasMoviles.Droid.Resource.Id.fill_vertical;
+			global::AiForms.Dialogs.Resource.Id.@fixed = global::PryRutasMoviles.Droid.Resource.Id.@fixed;
+			global::AiForms.Dialogs.Resource.Id.flyoutcontent_appbar = global::PryRutasMoviles.Droid.Resource.Id.flyoutcontent_appbar;
+			global::AiForms.Dialogs.Resource.Id.flyoutcontent_recycler = global::PryRutasMoviles.Droid.Resource.Id.flyoutcontent_recycler;
+			global::AiForms.Dialogs.Resource.Id.forever = global::PryRutasMoviles.Droid.Resource.Id.forever;
+			global::AiForms.Dialogs.Resource.Id.FUNCTION = global::PryRutasMoviles.Droid.Resource.Id.FUNCTION;
+			global::AiForms.Dialogs.Resource.Id.ghost_view = global::PryRutasMoviles.Droid.Resource.Id.ghost_view;
+			global::AiForms.Dialogs.Resource.Id.ghost_view_holder = global::PryRutasMoviles.Droid.Resource.Id.ghost_view_holder;
+			global::AiForms.Dialogs.Resource.Id.group_divider = global::PryRutasMoviles.Droid.Resource.Id.group_divider;
+			global::AiForms.Dialogs.Resource.Id.home = global::PryRutasMoviles.Droid.Resource.Id.home;
+			global::AiForms.Dialogs.Resource.Id.homeAsUp = global::PryRutasMoviles.Droid.Resource.Id.homeAsUp;
+			global::AiForms.Dialogs.Resource.Id.icon = global::PryRutasMoviles.Droid.Resource.Id.icon;
+			global::AiForms.Dialogs.Resource.Id.icon_group = global::PryRutasMoviles.Droid.Resource.Id.icon_group;
+			global::AiForms.Dialogs.Resource.Id.ifRoom = global::PryRutasMoviles.Droid.Resource.Id.ifRoom;
+			global::AiForms.Dialogs.Resource.Id.image = global::PryRutasMoviles.Droid.Resource.Id.image;
+			global::AiForms.Dialogs.Resource.Id.info = global::PryRutasMoviles.Droid.Resource.Id.info;
+			global::AiForms.Dialogs.Resource.Id.italic = global::PryRutasMoviles.Droid.Resource.Id.italic;
+			global::AiForms.Dialogs.Resource.Id.item_touch_helper_previous_elevation = global::PryRutasMoviles.Droid.Resource.Id.item_touch_helper_previous_elevation;
+			global::AiForms.Dialogs.Resource.Id.labeled = global::PryRutasMoviles.Droid.Resource.Id.labeled;
+			global::AiForms.Dialogs.Resource.Id.largeLabel = global::PryRutasMoviles.Droid.Resource.Id.largeLabel;
+			global::AiForms.Dialogs.Resource.Id.left = global::PryRutasMoviles.Droid.Resource.Id.left;
+			global::AiForms.Dialogs.Resource.Id.line1 = global::PryRutasMoviles.Droid.Resource.Id.line1;
+			global::AiForms.Dialogs.Resource.Id.line3 = global::PryRutasMoviles.Droid.Resource.Id.line3;
+			global::AiForms.Dialogs.Resource.Id.listMode = global::PryRutasMoviles.Droid.Resource.Id.listMode;
+			global::AiForms.Dialogs.Resource.Id.list_item = global::PryRutasMoviles.Droid.Resource.Id.list_item;
+			global::AiForms.Dialogs.Resource.Id.loading_message = global::PryRutasMoviles.Droid.Resource.Id.loading_message;
+			global::AiForms.Dialogs.Resource.Id.main_appbar = global::PryRutasMoviles.Droid.Resource.Id.main_appbar;
+			global::AiForms.Dialogs.Resource.Id.main_tablayout = global::PryRutasMoviles.Droid.Resource.Id.main_tablayout;
+			global::AiForms.Dialogs.Resource.Id.main_toolbar = global::PryRutasMoviles.Droid.Resource.Id.main_toolbar;
+			global::AiForms.Dialogs.Resource.Id.main_viewpager = global::PryRutasMoviles.Droid.Resource.Id.main_viewpager;
+			global::AiForms.Dialogs.Resource.Id.masked = global::PryRutasMoviles.Droid.Resource.Id.masked;
+			global::AiForms.Dialogs.Resource.Id.media_actions = global::PryRutasMoviles.Droid.Resource.Id.media_actions;
+			global::AiForms.Dialogs.Resource.Id.message = global::PryRutasMoviles.Droid.Resource.Id.message;
+			global::AiForms.Dialogs.Resource.Id.META = global::PryRutasMoviles.Droid.Resource.Id.META;
+			global::AiForms.Dialogs.Resource.Id.middle = global::PryRutasMoviles.Droid.Resource.Id.middle;
+			global::AiForms.Dialogs.Resource.Id.mini = global::PryRutasMoviles.Droid.Resource.Id.mini;
+			global::AiForms.Dialogs.Resource.Id.mtrl_child_content_container = global::PryRutasMoviles.Droid.Resource.Id.mtrl_child_content_container;
+			global::AiForms.Dialogs.Resource.Id.mtrl_internal_children_alpha_tag = global::PryRutasMoviles.Droid.Resource.Id.mtrl_internal_children_alpha_tag;
+			global::AiForms.Dialogs.Resource.Id.multiply = global::PryRutasMoviles.Droid.Resource.Id.multiply;
+			global::AiForms.Dialogs.Resource.Id.navigation_header_container = global::PryRutasMoviles.Droid.Resource.Id.navigation_header_container;
+			global::AiForms.Dialogs.Resource.Id.never = global::PryRutasMoviles.Droid.Resource.Id.never;
+			global::AiForms.Dialogs.Resource.Id.none = global::PryRutasMoviles.Droid.Resource.Id.none;
+			global::AiForms.Dialogs.Resource.Id.normal = global::PryRutasMoviles.Droid.Resource.Id.normal;
+			global::AiForms.Dialogs.Resource.Id.notification_background = global::PryRutasMoviles.Droid.Resource.Id.notification_background;
+			global::AiForms.Dialogs.Resource.Id.notification_main_column = global::PryRutasMoviles.Droid.Resource.Id.notification_main_column;
+			global::AiForms.Dialogs.Resource.Id.notification_main_column_container = global::PryRutasMoviles.Droid.Resource.Id.notification_main_column_container;
+			global::AiForms.Dialogs.Resource.Id.off = global::PryRutasMoviles.Droid.Resource.Id.off;
+			global::AiForms.Dialogs.Resource.Id.on = global::PryRutasMoviles.Droid.Resource.Id.on;
+			global::AiForms.Dialogs.Resource.Id.outline = global::PryRutasMoviles.Droid.Resource.Id.outline;
+			global::AiForms.Dialogs.Resource.Id.parallax = global::PryRutasMoviles.Droid.Resource.Id.parallax;
+			global::AiForms.Dialogs.Resource.Id.parentPanel = global::PryRutasMoviles.Droid.Resource.Id.parentPanel;
+			global::AiForms.Dialogs.Resource.Id.parent_matrix = global::PryRutasMoviles.Droid.Resource.Id.parent_matrix;
+			global::AiForms.Dialogs.Resource.Id.pin = global::PryRutasMoviles.Droid.Resource.Id.pin;
+			global::AiForms.Dialogs.Resource.Id.progress = global::PryRutasMoviles.Droid.Resource.Id.progress;
+			global::AiForms.Dialogs.Resource.Id.progress_circular = global::PryRutasMoviles.Droid.Resource.Id.progress_circular;
+			global::AiForms.Dialogs.Resource.Id.progress_horizontal = global::PryRutasMoviles.Droid.Resource.Id.progress_horizontal;
+			global::AiForms.Dialogs.Resource.Id.radio = global::PryRutasMoviles.Droid.Resource.Id.radio;
+			global::AiForms.Dialogs.Resource.Id.right = global::PryRutasMoviles.Droid.Resource.Id.right;
+			global::AiForms.Dialogs.Resource.Id.right_icon = global::PryRutasMoviles.Droid.Resource.Id.right_icon;
+			global::AiForms.Dialogs.Resource.Id.right_side = global::PryRutasMoviles.Droid.Resource.Id.right_side;
+			global::AiForms.Dialogs.Resource.Id.save_non_transition_alpha = global::PryRutasMoviles.Droid.Resource.Id.save_non_transition_alpha;
+			global::AiForms.Dialogs.Resource.Id.save_overlay_view = global::PryRutasMoviles.Droid.Resource.Id.save_overlay_view;
+			global::AiForms.Dialogs.Resource.Id.screen = global::PryRutasMoviles.Droid.Resource.Id.screen;
+			global::AiForms.Dialogs.Resource.Id.scroll = global::PryRutasMoviles.Droid.Resource.Id.scroll;
+			global::AiForms.Dialogs.Resource.Id.scrollable = global::PryRutasMoviles.Droid.Resource.Id.scrollable;
+			global::AiForms.Dialogs.Resource.Id.scrollIndicatorDown = global::PryRutasMoviles.Droid.Resource.Id.scrollIndicatorDown;
+			global::AiForms.Dialogs.Resource.Id.scrollIndicatorUp = global::PryRutasMoviles.Droid.Resource.Id.scrollIndicatorUp;
+			global::AiForms.Dialogs.Resource.Id.scrollView = global::PryRutasMoviles.Droid.Resource.Id.scrollView;
+			global::AiForms.Dialogs.Resource.Id.search_badge = global::PryRutasMoviles.Droid.Resource.Id.search_badge;
+			global::AiForms.Dialogs.Resource.Id.search_bar = global::PryRutasMoviles.Droid.Resource.Id.search_bar;
+			global::AiForms.Dialogs.Resource.Id.search_button = global::PryRutasMoviles.Droid.Resource.Id.search_button;
+			global::AiForms.Dialogs.Resource.Id.search_close_btn = global::PryRutasMoviles.Droid.Resource.Id.search_close_btn;
+			global::AiForms.Dialogs.Resource.Id.search_edit_frame = global::PryRutasMoviles.Droid.Resource.Id.search_edit_frame;
+			global::AiForms.Dialogs.Resource.Id.search_go_btn = global::PryRutasMoviles.Droid.Resource.Id.search_go_btn;
+			global::AiForms.Dialogs.Resource.Id.search_mag_icon = global::PryRutasMoviles.Droid.Resource.Id.search_mag_icon;
+			global::AiForms.Dialogs.Resource.Id.search_plate = global::PryRutasMoviles.Droid.Resource.Id.search_plate;
+			global::AiForms.Dialogs.Resource.Id.search_src_text = global::PryRutasMoviles.Droid.Resource.Id.search_src_text;
+			global::AiForms.Dialogs.Resource.Id.search_voice_btn = global::PryRutasMoviles.Droid.Resource.Id.search_voice_btn;
+			global::AiForms.Dialogs.Resource.Id.selected = global::PryRutasMoviles.Droid.Resource.Id.selected;
+			global::AiForms.Dialogs.Resource.Id.select_dialog_listview = global::PryRutasMoviles.Droid.Resource.Id.select_dialog_listview;
+			global::AiForms.Dialogs.Resource.Id.shellcontent_appbar = global::PryRutasMoviles.Droid.Resource.Id.shellcontent_appbar;
+			global::AiForms.Dialogs.Resource.Id.shellcontent_toolbar = global::PryRutasMoviles.Droid.Resource.Id.shellcontent_toolbar;
+			global::AiForms.Dialogs.Resource.Id.SHIFT = global::PryRutasMoviles.Droid.Resource.Id.SHIFT;
+			global::AiForms.Dialogs.Resource.Id.shortcut = global::PryRutasMoviles.Droid.Resource.Id.shortcut;
+			global::AiForms.Dialogs.Resource.Id.showCustom = global::PryRutasMoviles.Droid.Resource.Id.showCustom;
+			global::AiForms.Dialogs.Resource.Id.showHome = global::PryRutasMoviles.Droid.Resource.Id.showHome;
+			global::AiForms.Dialogs.Resource.Id.showTitle = global::PryRutasMoviles.Droid.Resource.Id.showTitle;
+			global::AiForms.Dialogs.Resource.Id.sliding_tabs = global::PryRutasMoviles.Droid.Resource.Id.sliding_tabs;
+			global::AiForms.Dialogs.Resource.Id.smallLabel = global::PryRutasMoviles.Droid.Resource.Id.smallLabel;
+			global::AiForms.Dialogs.Resource.Id.snackbar_action = global::PryRutasMoviles.Droid.Resource.Id.snackbar_action;
+			global::AiForms.Dialogs.Resource.Id.snackbar_text = global::PryRutasMoviles.Droid.Resource.Id.snackbar_text;
+			global::AiForms.Dialogs.Resource.Id.snap = global::PryRutasMoviles.Droid.Resource.Id.snap;
+			global::AiForms.Dialogs.Resource.Id.snapMargins = global::PryRutasMoviles.Droid.Resource.Id.snapMargins;
+			global::AiForms.Dialogs.Resource.Id.spacer = global::PryRutasMoviles.Droid.Resource.Id.spacer;
+			global::AiForms.Dialogs.Resource.Id.split_action_bar = global::PryRutasMoviles.Droid.Resource.Id.split_action_bar;
+			global::AiForms.Dialogs.Resource.Id.src_atop = global::PryRutasMoviles.Droid.Resource.Id.src_atop;
+			global::AiForms.Dialogs.Resource.Id.src_in = global::PryRutasMoviles.Droid.Resource.Id.src_in;
+			global::AiForms.Dialogs.Resource.Id.src_over = global::PryRutasMoviles.Droid.Resource.Id.src_over;
+			global::AiForms.Dialogs.Resource.Id.start = global::PryRutasMoviles.Droid.Resource.Id.start;
+			global::AiForms.Dialogs.Resource.Id.status_bar_latest_event_content = global::PryRutasMoviles.Droid.Resource.Id.status_bar_latest_event_content;
+			global::AiForms.Dialogs.Resource.Id.stretch = global::PryRutasMoviles.Droid.Resource.Id.stretch;
+			global::AiForms.Dialogs.Resource.Id.submenuarrow = global::PryRutasMoviles.Droid.Resource.Id.submenuarrow;
+			global::AiForms.Dialogs.Resource.Id.submit_area = global::PryRutasMoviles.Droid.Resource.Id.submit_area;
+			global::AiForms.Dialogs.Resource.Id.SYM = global::PryRutasMoviles.Droid.Resource.Id.SYM;
+			global::AiForms.Dialogs.Resource.Id.tabMode = global::PryRutasMoviles.Droid.Resource.Id.tabMode;
+			global::AiForms.Dialogs.Resource.Id.tag_accessibility_actions = global::PryRutasMoviles.Droid.Resource.Id.tag_accessibility_actions;
+			global::AiForms.Dialogs.Resource.Id.tag_accessibility_clickable_spans = global::PryRutasMoviles.Droid.Resource.Id.tag_accessibility_clickable_spans;
+			global::AiForms.Dialogs.Resource.Id.tag_accessibility_heading = global::PryRutasMoviles.Droid.Resource.Id.tag_accessibility_heading;
+			global::AiForms.Dialogs.Resource.Id.tag_accessibility_pane_title = global::PryRutasMoviles.Droid.Resource.Id.tag_accessibility_pane_title;
+			global::AiForms.Dialogs.Resource.Id.tag_screen_reader_focusable = global::PryRutasMoviles.Droid.Resource.Id.tag_screen_reader_focusable;
+			global::AiForms.Dialogs.Resource.Id.tag_transition_group = global::PryRutasMoviles.Droid.Resource.Id.tag_transition_group;
+			global::AiForms.Dialogs.Resource.Id.tag_unhandled_key_event_manager = global::PryRutasMoviles.Droid.Resource.Id.tag_unhandled_key_event_manager;
+			global::AiForms.Dialogs.Resource.Id.tag_unhandled_key_listeners = global::PryRutasMoviles.Droid.Resource.Id.tag_unhandled_key_listeners;
+			global::AiForms.Dialogs.Resource.Id.text = global::PryRutasMoviles.Droid.Resource.Id.text;
+			global::AiForms.Dialogs.Resource.Id.text2 = global::PryRutasMoviles.Droid.Resource.Id.text2;
+			global::AiForms.Dialogs.Resource.Id.textinput_counter = global::PryRutasMoviles.Droid.Resource.Id.textinput_counter;
+			global::AiForms.Dialogs.Resource.Id.textinput_error = global::PryRutasMoviles.Droid.Resource.Id.textinput_error;
+			global::AiForms.Dialogs.Resource.Id.textinput_helper_text = global::PryRutasMoviles.Droid.Resource.Id.textinput_helper_text;
+			global::AiForms.Dialogs.Resource.Id.textSpacerNoButtons = global::PryRutasMoviles.Droid.Resource.Id.textSpacerNoButtons;
+			global::AiForms.Dialogs.Resource.Id.textSpacerNoTitle = global::PryRutasMoviles.Droid.Resource.Id.textSpacerNoTitle;
+			global::AiForms.Dialogs.Resource.Id.textStart = global::PryRutasMoviles.Droid.Resource.Id.textStart;
+			global::AiForms.Dialogs.Resource.Id.text_input_password_toggle = global::PryRutasMoviles.Droid.Resource.Id.text_input_password_toggle;
+			global::AiForms.Dialogs.Resource.Id.time = global::PryRutasMoviles.Droid.Resource.Id.time;
+			global::AiForms.Dialogs.Resource.Id.title = global::PryRutasMoviles.Droid.Resource.Id.title;
+			global::AiForms.Dialogs.Resource.Id.titleDividerNoCustom = global::PryRutasMoviles.Droid.Resource.Id.titleDividerNoCustom;
+			global::AiForms.Dialogs.Resource.Id.title_template = global::PryRutasMoviles.Droid.Resource.Id.title_template;
+			global::AiForms.Dialogs.Resource.Id.toolbar = global::PryRutasMoviles.Droid.Resource.Id.toolbar;
+			global::AiForms.Dialogs.Resource.Id.top = global::PryRutasMoviles.Droid.Resource.Id.top;
+			global::AiForms.Dialogs.Resource.Id.topPanel = global::PryRutasMoviles.Droid.Resource.Id.topPanel;
+			global::AiForms.Dialogs.Resource.Id.touch_outside = global::PryRutasMoviles.Droid.Resource.Id.touch_outside;
+			global::AiForms.Dialogs.Resource.Id.transition_current_scene = global::PryRutasMoviles.Droid.Resource.Id.transition_current_scene;
+			global::AiForms.Dialogs.Resource.Id.transition_layout_save = global::PryRutasMoviles.Droid.Resource.Id.transition_layout_save;
+			global::AiForms.Dialogs.Resource.Id.transition_position = global::PryRutasMoviles.Droid.Resource.Id.transition_position;
+			global::AiForms.Dialogs.Resource.Id.transition_scene_layoutid_cache = global::PryRutasMoviles.Droid.Resource.Id.transition_scene_layoutid_cache;
+			global::AiForms.Dialogs.Resource.Id.transition_transform = global::PryRutasMoviles.Droid.Resource.Id.transition_transform;
+			global::AiForms.Dialogs.Resource.Id.@unchecked = global::PryRutasMoviles.Droid.Resource.Id.@unchecked;
+			global::AiForms.Dialogs.Resource.Id.uniform = global::PryRutasMoviles.Droid.Resource.Id.uniform;
+			global::AiForms.Dialogs.Resource.Id.unlabeled = global::PryRutasMoviles.Droid.Resource.Id.unlabeled;
+			global::AiForms.Dialogs.Resource.Id.up = global::PryRutasMoviles.Droid.Resource.Id.up;
+			global::AiForms.Dialogs.Resource.Id.useLogo = global::PryRutasMoviles.Droid.Resource.Id.useLogo;
+			global::AiForms.Dialogs.Resource.Id.view_offset_helper = global::PryRutasMoviles.Droid.Resource.Id.view_offset_helper;
+			global::AiForms.Dialogs.Resource.Id.visible = global::PryRutasMoviles.Droid.Resource.Id.visible;
+			global::AiForms.Dialogs.Resource.Id.withText = global::PryRutasMoviles.Droid.Resource.Id.withText;
+			global::AiForms.Dialogs.Resource.Id.wrap_content = global::PryRutasMoviles.Droid.Resource.Id.wrap_content;
+			global::AiForms.Dialogs.Resource.Integer.abc_config_activityDefaultDur = global::PryRutasMoviles.Droid.Resource.Integer.abc_config_activityDefaultDur;
+			global::AiForms.Dialogs.Resource.Integer.abc_config_activityShortDur = global::PryRutasMoviles.Droid.Resource.Integer.abc_config_activityShortDur;
+			global::AiForms.Dialogs.Resource.Integer.app_bar_elevation_anim_duration = global::PryRutasMoviles.Droid.Resource.Integer.app_bar_elevation_anim_duration;
+			global::AiForms.Dialogs.Resource.Integer.bottom_sheet_slide_duration = global::PryRutasMoviles.Droid.Resource.Integer.bottom_sheet_slide_duration;
+			global::AiForms.Dialogs.Resource.Integer.cancel_button_image_alpha = global::PryRutasMoviles.Droid.Resource.Integer.cancel_button_image_alpha;
+			global::AiForms.Dialogs.Resource.Integer.config_tooltipAnimTime = global::PryRutasMoviles.Droid.Resource.Integer.config_tooltipAnimTime;
+			global::AiForms.Dialogs.Resource.Integer.design_snackbar_text_max_lines = global::PryRutasMoviles.Droid.Resource.Integer.design_snackbar_text_max_lines;
+			global::AiForms.Dialogs.Resource.Integer.design_tab_indicator_anim_duration_ms = global::PryRutasMoviles.Droid.Resource.Integer.design_tab_indicator_anim_duration_ms;
+			global::AiForms.Dialogs.Resource.Integer.hide_password_duration = global::PryRutasMoviles.Droid.Resource.Integer.hide_password_duration;
+			global::AiForms.Dialogs.Resource.Integer.mtrl_btn_anim_delay_ms = global::PryRutasMoviles.Droid.Resource.Integer.mtrl_btn_anim_delay_ms;
+			global::AiForms.Dialogs.Resource.Integer.mtrl_btn_anim_duration_ms = global::PryRutasMoviles.Droid.Resource.Integer.mtrl_btn_anim_duration_ms;
+			global::AiForms.Dialogs.Resource.Integer.mtrl_chip_anim_duration = global::PryRutasMoviles.Droid.Resource.Integer.mtrl_chip_anim_duration;
+			global::AiForms.Dialogs.Resource.Integer.mtrl_tab_indicator_anim_duration_ms = global::PryRutasMoviles.Droid.Resource.Integer.mtrl_tab_indicator_anim_duration_ms;
+			global::AiForms.Dialogs.Resource.Integer.show_password_duration = global::PryRutasMoviles.Droid.Resource.Integer.show_password_duration;
+			global::AiForms.Dialogs.Resource.Integer.status_bar_notification_info_maxnum = global::PryRutasMoviles.Droid.Resource.Integer.status_bar_notification_info_maxnum;
+			global::AiForms.Dialogs.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_0 = global::PryRutasMoviles.Droid.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_0;
+			global::AiForms.Dialogs.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_1 = global::PryRutasMoviles.Droid.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_1;
+			global::AiForms.Dialogs.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_0 = global::PryRutasMoviles.Droid.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_0;
+			global::AiForms.Dialogs.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_1 = global::PryRutasMoviles.Droid.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_1;
+			global::AiForms.Dialogs.Resource.Interpolator.btn_radio_to_off_mtrl_animation_interpolator_0 = global::PryRutasMoviles.Droid.Resource.Interpolator.btn_radio_to_off_mtrl_animation_interpolator_0;
+			global::AiForms.Dialogs.Resource.Interpolator.btn_radio_to_on_mtrl_animation_interpolator_0 = global::PryRutasMoviles.Droid.Resource.Interpolator.btn_radio_to_on_mtrl_animation_interpolator_0;
+			global::AiForms.Dialogs.Resource.Interpolator.fast_out_slow_in = global::PryRutasMoviles.Droid.Resource.Interpolator.fast_out_slow_in;
+			global::AiForms.Dialogs.Resource.Interpolator.mtrl_fast_out_linear_in = global::PryRutasMoviles.Droid.Resource.Interpolator.mtrl_fast_out_linear_in;
+			global::AiForms.Dialogs.Resource.Interpolator.mtrl_fast_out_slow_in = global::PryRutasMoviles.Droid.Resource.Interpolator.mtrl_fast_out_slow_in;
+			global::AiForms.Dialogs.Resource.Interpolator.mtrl_linear = global::PryRutasMoviles.Droid.Resource.Interpolator.mtrl_linear;
+			global::AiForms.Dialogs.Resource.Interpolator.mtrl_linear_out_slow_in = global::PryRutasMoviles.Droid.Resource.Interpolator.mtrl_linear_out_slow_in;
+			global::AiForms.Dialogs.Resource.Layout.abc_action_bar_title_item = global::PryRutasMoviles.Droid.Resource.Layout.abc_action_bar_title_item;
+			global::AiForms.Dialogs.Resource.Layout.abc_action_bar_up_container = global::PryRutasMoviles.Droid.Resource.Layout.abc_action_bar_up_container;
+			global::AiForms.Dialogs.Resource.Layout.abc_action_menu_item_layout = global::PryRutasMoviles.Droid.Resource.Layout.abc_action_menu_item_layout;
+			global::AiForms.Dialogs.Resource.Layout.abc_action_menu_layout = global::PryRutasMoviles.Droid.Resource.Layout.abc_action_menu_layout;
+			global::AiForms.Dialogs.Resource.Layout.abc_action_mode_bar = global::PryRutasMoviles.Droid.Resource.Layout.abc_action_mode_bar;
+			global::AiForms.Dialogs.Resource.Layout.abc_action_mode_close_item_material = global::PryRutasMoviles.Droid.Resource.Layout.abc_action_mode_close_item_material;
+			global::AiForms.Dialogs.Resource.Layout.abc_activity_chooser_view = global::PryRutasMoviles.Droid.Resource.Layout.abc_activity_chooser_view;
+			global::AiForms.Dialogs.Resource.Layout.abc_activity_chooser_view_list_item = global::PryRutasMoviles.Droid.Resource.Layout.abc_activity_chooser_view_list_item;
+			global::AiForms.Dialogs.Resource.Layout.abc_alert_dialog_button_bar_material = global::PryRutasMoviles.Droid.Resource.Layout.abc_alert_dialog_button_bar_material;
+			global::AiForms.Dialogs.Resource.Layout.abc_alert_dialog_material = global::PryRutasMoviles.Droid.Resource.Layout.abc_alert_dialog_material;
+			global::AiForms.Dialogs.Resource.Layout.abc_alert_dialog_title_material = global::PryRutasMoviles.Droid.Resource.Layout.abc_alert_dialog_title_material;
+			global::AiForms.Dialogs.Resource.Layout.abc_cascading_menu_item_layout = global::PryRutasMoviles.Droid.Resource.Layout.abc_cascading_menu_item_layout;
+			global::AiForms.Dialogs.Resource.Layout.abc_dialog_title_material = global::PryRutasMoviles.Droid.Resource.Layout.abc_dialog_title_material;
+			global::AiForms.Dialogs.Resource.Layout.abc_expanded_menu_layout = global::PryRutasMoviles.Droid.Resource.Layout.abc_expanded_menu_layout;
+			global::AiForms.Dialogs.Resource.Layout.abc_list_menu_item_checkbox = global::PryRutasMoviles.Droid.Resource.Layout.abc_list_menu_item_checkbox;
+			global::AiForms.Dialogs.Resource.Layout.abc_list_menu_item_icon = global::PryRutasMoviles.Droid.Resource.Layout.abc_list_menu_item_icon;
+			global::AiForms.Dialogs.Resource.Layout.abc_list_menu_item_layout = global::PryRutasMoviles.Droid.Resource.Layout.abc_list_menu_item_layout;
+			global::AiForms.Dialogs.Resource.Layout.abc_list_menu_item_radio = global::PryRutasMoviles.Droid.Resource.Layout.abc_list_menu_item_radio;
+			global::AiForms.Dialogs.Resource.Layout.abc_popup_menu_header_item_layout = global::PryRutasMoviles.Droid.Resource.Layout.abc_popup_menu_header_item_layout;
+			global::AiForms.Dialogs.Resource.Layout.abc_popup_menu_item_layout = global::PryRutasMoviles.Droid.Resource.Layout.abc_popup_menu_item_layout;
+			global::AiForms.Dialogs.Resource.Layout.abc_screen_content_include = global::PryRutasMoviles.Droid.Resource.Layout.abc_screen_content_include;
+			global::AiForms.Dialogs.Resource.Layout.abc_screen_simple = global::PryRutasMoviles.Droid.Resource.Layout.abc_screen_simple;
+			global::AiForms.Dialogs.Resource.Layout.abc_screen_simple_overlay_action_mode = global::PryRutasMoviles.Droid.Resource.Layout.abc_screen_simple_overlay_action_mode;
+			global::AiForms.Dialogs.Resource.Layout.abc_screen_toolbar = global::PryRutasMoviles.Droid.Resource.Layout.abc_screen_toolbar;
+			global::AiForms.Dialogs.Resource.Layout.abc_search_dropdown_item_icons_2line = global::PryRutasMoviles.Droid.Resource.Layout.abc_search_dropdown_item_icons_2line;
+			global::AiForms.Dialogs.Resource.Layout.abc_search_view = global::PryRutasMoviles.Droid.Resource.Layout.abc_search_view;
+			global::AiForms.Dialogs.Resource.Layout.abc_select_dialog_material = global::PryRutasMoviles.Droid.Resource.Layout.abc_select_dialog_material;
+			global::AiForms.Dialogs.Resource.Layout.abc_tooltip = global::PryRutasMoviles.Droid.Resource.Layout.abc_tooltip;
+			global::AiForms.Dialogs.Resource.Layout.BottomTabLayout = global::PryRutasMoviles.Droid.Resource.Layout.BottomTabLayout;
+			global::AiForms.Dialogs.Resource.Layout.browser_actions_context_menu_page = global::PryRutasMoviles.Droid.Resource.Layout.browser_actions_context_menu_page;
+			global::AiForms.Dialogs.Resource.Layout.browser_actions_context_menu_row = global::PryRutasMoviles.Droid.Resource.Layout.browser_actions_context_menu_row;
+			global::AiForms.Dialogs.Resource.Layout.custom_dialog = global::PryRutasMoviles.Droid.Resource.Layout.custom_dialog;
+			global::AiForms.Dialogs.Resource.Layout.design_bottom_navigation_item = global::PryRutasMoviles.Droid.Resource.Layout.design_bottom_navigation_item;
+			global::AiForms.Dialogs.Resource.Layout.design_bottom_sheet_dialog = global::PryRutasMoviles.Droid.Resource.Layout.design_bottom_sheet_dialog;
+			global::AiForms.Dialogs.Resource.Layout.design_layout_snackbar = global::PryRutasMoviles.Droid.Resource.Layout.design_layout_snackbar;
+			global::AiForms.Dialogs.Resource.Layout.design_layout_snackbar_include = global::PryRutasMoviles.Droid.Resource.Layout.design_layout_snackbar_include;
+			global::AiForms.Dialogs.Resource.Layout.design_layout_tab_icon = global::PryRutasMoviles.Droid.Resource.Layout.design_layout_tab_icon;
+			global::AiForms.Dialogs.Resource.Layout.design_layout_tab_text = global::PryRutasMoviles.Droid.Resource.Layout.design_layout_tab_text;
+			global::AiForms.Dialogs.Resource.Layout.design_menu_item_action_area = global::PryRutasMoviles.Droid.Resource.Layout.design_menu_item_action_area;
+			global::AiForms.Dialogs.Resource.Layout.design_navigation_item = global::PryRutasMoviles.Droid.Resource.Layout.design_navigation_item;
+			global::AiForms.Dialogs.Resource.Layout.design_navigation_item_header = global::PryRutasMoviles.Droid.Resource.Layout.design_navigation_item_header;
+			global::AiForms.Dialogs.Resource.Layout.design_navigation_item_separator = global::PryRutasMoviles.Droid.Resource.Layout.design_navigation_item_separator;
+			global::AiForms.Dialogs.Resource.Layout.design_navigation_item_subheader = global::PryRutasMoviles.Droid.Resource.Layout.design_navigation_item_subheader;
+			global::AiForms.Dialogs.Resource.Layout.design_navigation_menu = global::PryRutasMoviles.Droid.Resource.Layout.design_navigation_menu;
+			global::AiForms.Dialogs.Resource.Layout.design_navigation_menu_item = global::PryRutasMoviles.Droid.Resource.Layout.design_navigation_menu_item;
+			global::AiForms.Dialogs.Resource.Layout.design_text_input_password_icon = global::PryRutasMoviles.Droid.Resource.Layout.design_text_input_password_icon;
+			global::AiForms.Dialogs.Resource.Layout.FlyoutContent = global::PryRutasMoviles.Droid.Resource.Layout.FlyoutContent;
+			global::AiForms.Dialogs.Resource.Layout.LoadingDialogLayout = global::PryRutasMoviles.Droid.Resource.Layout.LoadingDialogLayout;
+			global::AiForms.Dialogs.Resource.Layout.mtrl_layout_snackbar = global::PryRutasMoviles.Droid.Resource.Layout.mtrl_layout_snackbar;
+			global::AiForms.Dialogs.Resource.Layout.mtrl_layout_snackbar_include = global::PryRutasMoviles.Droid.Resource.Layout.mtrl_layout_snackbar_include;
+			global::AiForms.Dialogs.Resource.Layout.notification_action = global::PryRutasMoviles.Droid.Resource.Layout.notification_action;
+			global::AiForms.Dialogs.Resource.Layout.notification_action_tombstone = global::PryRutasMoviles.Droid.Resource.Layout.notification_action_tombstone;
+			global::AiForms.Dialogs.Resource.Layout.notification_media_action = global::PryRutasMoviles.Droid.Resource.Layout.notification_media_action;
+			global::AiForms.Dialogs.Resource.Layout.notification_media_cancel_action = global::PryRutasMoviles.Droid.Resource.Layout.notification_media_cancel_action;
+			global::AiForms.Dialogs.Resource.Layout.notification_template_big_media = global::PryRutasMoviles.Droid.Resource.Layout.notification_template_big_media;
+			global::AiForms.Dialogs.Resource.Layout.notification_template_big_media_custom = global::PryRutasMoviles.Droid.Resource.Layout.notification_template_big_media_custom;
+			global::AiForms.Dialogs.Resource.Layout.notification_template_big_media_narrow = global::PryRutasMoviles.Droid.Resource.Layout.notification_template_big_media_narrow;
+			global::AiForms.Dialogs.Resource.Layout.notification_template_big_media_narrow_custom = global::PryRutasMoviles.Droid.Resource.Layout.notification_template_big_media_narrow_custom;
+			global::AiForms.Dialogs.Resource.Layout.notification_template_custom_big = global::PryRutasMoviles.Droid.Resource.Layout.notification_template_custom_big;
+			global::AiForms.Dialogs.Resource.Layout.notification_template_icon_group = global::PryRutasMoviles.Droid.Resource.Layout.notification_template_icon_group;
+			global::AiForms.Dialogs.Resource.Layout.notification_template_lines_media = global::PryRutasMoviles.Droid.Resource.Layout.notification_template_lines_media;
+			global::AiForms.Dialogs.Resource.Layout.notification_template_media = global::PryRutasMoviles.Droid.Resource.Layout.notification_template_media;
+			global::AiForms.Dialogs.Resource.Layout.notification_template_media_custom = global::PryRutasMoviles.Droid.Resource.Layout.notification_template_media_custom;
+			global::AiForms.Dialogs.Resource.Layout.notification_template_part_chronometer = global::PryRutasMoviles.Droid.Resource.Layout.notification_template_part_chronometer;
+			global::AiForms.Dialogs.Resource.Layout.notification_template_part_time = global::PryRutasMoviles.Droid.Resource.Layout.notification_template_part_time;
+			global::AiForms.Dialogs.Resource.Layout.RootLayout = global::PryRutasMoviles.Droid.Resource.Layout.RootLayout;
+			global::AiForms.Dialogs.Resource.Layout.select_dialog_item_material = global::PryRutasMoviles.Droid.Resource.Layout.select_dialog_item_material;
+			global::AiForms.Dialogs.Resource.Layout.select_dialog_multichoice_material = global::PryRutasMoviles.Droid.Resource.Layout.select_dialog_multichoice_material;
+			global::AiForms.Dialogs.Resource.Layout.select_dialog_singlechoice_material = global::PryRutasMoviles.Droid.Resource.Layout.select_dialog_singlechoice_material;
+			global::AiForms.Dialogs.Resource.Layout.ShellContent = global::PryRutasMoviles.Droid.Resource.Layout.ShellContent;
+			global::AiForms.Dialogs.Resource.Layout.support_simple_spinner_dropdown_item = global::PryRutasMoviles.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
+			global::AiForms.Dialogs.Resource.Layout.Tabbar = global::PryRutasMoviles.Droid.Resource.Layout.Tabbar;
+			global::AiForms.Dialogs.Resource.Layout.Toolbar = global::PryRutasMoviles.Droid.Resource.Layout.Toolbar;
+			global::AiForms.Dialogs.Resource.String.abc_action_bar_home_description = global::PryRutasMoviles.Droid.Resource.String.abc_action_bar_home_description;
+			global::AiForms.Dialogs.Resource.String.abc_action_bar_up_description = global::PryRutasMoviles.Droid.Resource.String.abc_action_bar_up_description;
+			global::AiForms.Dialogs.Resource.String.abc_action_menu_overflow_description = global::PryRutasMoviles.Droid.Resource.String.abc_action_menu_overflow_description;
+			global::AiForms.Dialogs.Resource.String.abc_action_mode_done = global::PryRutasMoviles.Droid.Resource.String.abc_action_mode_done;
+			global::AiForms.Dialogs.Resource.String.abc_activitychooserview_choose_application = global::PryRutasMoviles.Droid.Resource.String.abc_activitychooserview_choose_application;
+			global::AiForms.Dialogs.Resource.String.abc_activity_chooser_view_see_all = global::PryRutasMoviles.Droid.Resource.String.abc_activity_chooser_view_see_all;
+			global::AiForms.Dialogs.Resource.String.abc_capital_off = global::PryRutasMoviles.Droid.Resource.String.abc_capital_off;
+			global::AiForms.Dialogs.Resource.String.abc_capital_on = global::PryRutasMoviles.Droid.Resource.String.abc_capital_on;
+			global::AiForms.Dialogs.Resource.String.abc_menu_alt_shortcut_label = global::PryRutasMoviles.Droid.Resource.String.abc_menu_alt_shortcut_label;
+			global::AiForms.Dialogs.Resource.String.abc_menu_ctrl_shortcut_label = global::PryRutasMoviles.Droid.Resource.String.abc_menu_ctrl_shortcut_label;
+			global::AiForms.Dialogs.Resource.String.abc_menu_delete_shortcut_label = global::PryRutasMoviles.Droid.Resource.String.abc_menu_delete_shortcut_label;
+			global::AiForms.Dialogs.Resource.String.abc_menu_enter_shortcut_label = global::PryRutasMoviles.Droid.Resource.String.abc_menu_enter_shortcut_label;
+			global::AiForms.Dialogs.Resource.String.abc_menu_function_shortcut_label = global::PryRutasMoviles.Droid.Resource.String.abc_menu_function_shortcut_label;
+			global::AiForms.Dialogs.Resource.String.abc_menu_meta_shortcut_label = global::PryRutasMoviles.Droid.Resource.String.abc_menu_meta_shortcut_label;
+			global::AiForms.Dialogs.Resource.String.abc_menu_shift_shortcut_label = global::PryRutasMoviles.Droid.Resource.String.abc_menu_shift_shortcut_label;
+			global::AiForms.Dialogs.Resource.String.abc_menu_space_shortcut_label = global::PryRutasMoviles.Droid.Resource.String.abc_menu_space_shortcut_label;
+			global::AiForms.Dialogs.Resource.String.abc_menu_sym_shortcut_label = global::PryRutasMoviles.Droid.Resource.String.abc_menu_sym_shortcut_label;
+			global::AiForms.Dialogs.Resource.String.abc_prepend_shortcut_label = global::PryRutasMoviles.Droid.Resource.String.abc_prepend_shortcut_label;
+			global::AiForms.Dialogs.Resource.String.abc_searchview_description_clear = global::PryRutasMoviles.Droid.Resource.String.abc_searchview_description_clear;
+			global::AiForms.Dialogs.Resource.String.abc_searchview_description_query = global::PryRutasMoviles.Droid.Resource.String.abc_searchview_description_query;
+			global::AiForms.Dialogs.Resource.String.abc_searchview_description_search = global::PryRutasMoviles.Droid.Resource.String.abc_searchview_description_search;
+			global::AiForms.Dialogs.Resource.String.abc_searchview_description_submit = global::PryRutasMoviles.Droid.Resource.String.abc_searchview_description_submit;
+			global::AiForms.Dialogs.Resource.String.abc_searchview_description_voice = global::PryRutasMoviles.Droid.Resource.String.abc_searchview_description_voice;
+			global::AiForms.Dialogs.Resource.String.abc_search_hint = global::PryRutasMoviles.Droid.Resource.String.abc_search_hint;
+			global::AiForms.Dialogs.Resource.String.abc_shareactionprovider_share_with = global::PryRutasMoviles.Droid.Resource.String.abc_shareactionprovider_share_with;
+			global::AiForms.Dialogs.Resource.String.abc_shareactionprovider_share_with_application = global::PryRutasMoviles.Droid.Resource.String.abc_shareactionprovider_share_with_application;
+			global::AiForms.Dialogs.Resource.String.abc_toolbar_collapse_description = global::PryRutasMoviles.Droid.Resource.String.abc_toolbar_collapse_description;
+			global::AiForms.Dialogs.Resource.String.appbar_scrolling_view_behavior = global::PryRutasMoviles.Droid.Resource.String.appbar_scrolling_view_behavior;
+			global::AiForms.Dialogs.Resource.String.bottom_sheet_behavior = global::PryRutasMoviles.Droid.Resource.String.bottom_sheet_behavior;
+			global::AiForms.Dialogs.Resource.String.character_counter_content_description = global::PryRutasMoviles.Droid.Resource.String.character_counter_content_description;
+			global::AiForms.Dialogs.Resource.String.character_counter_pattern = global::PryRutasMoviles.Droid.Resource.String.character_counter_pattern;
+			global::AiForms.Dialogs.Resource.String.fab_transformation_scrim_behavior = global::PryRutasMoviles.Droid.Resource.String.fab_transformation_scrim_behavior;
+			global::AiForms.Dialogs.Resource.String.fab_transformation_sheet_behavior = global::PryRutasMoviles.Droid.Resource.String.fab_transformation_sheet_behavior;
+			global::AiForms.Dialogs.Resource.String.hide_bottom_view_on_scroll_behavior = global::PryRutasMoviles.Droid.Resource.String.hide_bottom_view_on_scroll_behavior;
+			global::AiForms.Dialogs.Resource.String.library_name = global::PryRutasMoviles.Droid.Resource.String.library_name;
+			global::AiForms.Dialogs.Resource.String.mtrl_chip_close_icon_content_description = global::PryRutasMoviles.Droid.Resource.String.mtrl_chip_close_icon_content_description;
+			global::AiForms.Dialogs.Resource.String.password_toggle_content_description = global::PryRutasMoviles.Droid.Resource.String.password_toggle_content_description;
+			global::AiForms.Dialogs.Resource.String.path_password_eye = global::PryRutasMoviles.Droid.Resource.String.path_password_eye;
+			global::AiForms.Dialogs.Resource.String.path_password_eye_mask_strike_through = global::PryRutasMoviles.Droid.Resource.String.path_password_eye_mask_strike_through;
+			global::AiForms.Dialogs.Resource.String.path_password_eye_mask_visible = global::PryRutasMoviles.Droid.Resource.String.path_password_eye_mask_visible;
+			global::AiForms.Dialogs.Resource.String.path_password_strike_through = global::PryRutasMoviles.Droid.Resource.String.path_password_strike_through;
+			global::AiForms.Dialogs.Resource.String.search_menu_title = global::PryRutasMoviles.Droid.Resource.String.search_menu_title;
+			global::AiForms.Dialogs.Resource.String.status_bar_notification_info_overflow = global::PryRutasMoviles.Droid.Resource.String.status_bar_notification_info_overflow;
+			global::AiForms.Dialogs.Resource.Style.AlertDialog_AppCompat = global::PryRutasMoviles.Droid.Resource.Style.AlertDialog_AppCompat;
+			global::AiForms.Dialogs.Resource.Style.AlertDialog_AppCompat_Light = global::PryRutasMoviles.Droid.Resource.Style.AlertDialog_AppCompat_Light;
+			global::AiForms.Dialogs.Resource.Style.Animation_AppCompat_Dialog = global::PryRutasMoviles.Droid.Resource.Style.Animation_AppCompat_Dialog;
+			global::AiForms.Dialogs.Resource.Style.Animation_AppCompat_DropDownUp = global::PryRutasMoviles.Droid.Resource.Style.Animation_AppCompat_DropDownUp;
+			global::AiForms.Dialogs.Resource.Style.Animation_AppCompat_Tooltip = global::PryRutasMoviles.Droid.Resource.Style.Animation_AppCompat_Tooltip;
+			global::AiForms.Dialogs.Resource.Style.Animation_Design_BottomSheetDialog = global::PryRutasMoviles.Droid.Resource.Style.Animation_Design_BottomSheetDialog;
+			global::AiForms.Dialogs.Resource.Style.AppCompatDialogStyle = global::PryRutasMoviles.Droid.Resource.Style.AppCompatDialogStyle;
+			global::AiForms.Dialogs.Resource.Style.Base_AlertDialog_AppCompat = global::PryRutasMoviles.Droid.Resource.Style.Base_AlertDialog_AppCompat;
+			global::AiForms.Dialogs.Resource.Style.Base_AlertDialog_AppCompat_Light = global::PryRutasMoviles.Droid.Resource.Style.Base_AlertDialog_AppCompat_Light;
+			global::AiForms.Dialogs.Resource.Style.Base_Animation_AppCompat_Dialog = global::PryRutasMoviles.Droid.Resource.Style.Base_Animation_AppCompat_Dialog;
+			global::AiForms.Dialogs.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::PryRutasMoviles.Droid.Resource.Style.Base_Animation_AppCompat_DropDownUp;
+			global::AiForms.Dialogs.Resource.Style.Base_Animation_AppCompat_Tooltip = global::PryRutasMoviles.Droid.Resource.Style.Base_Animation_AppCompat_Tooltip;
+			global::AiForms.Dialogs.Resource.Style.Base_CardView = global::PryRutasMoviles.Droid.Resource.Style.Base_CardView;
+			global::AiForms.Dialogs.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::PryRutasMoviles.Droid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
+			global::AiForms.Dialogs.Resource.Style.Base_DialogWindowTitle_AppCompat = global::PryRutasMoviles.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat;
+			global::AiForms.Dialogs.Resource.Style.Base_TextAppearance_AppCompat = global::PryRutasMoviles.Droid.Resource.Style.Base_TextAppearance_AppCompat;
+			global::AiForms.Dialogs.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::PryRutasMoviles.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body1;
+			global::AiForms.Dialogs.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::PryRutasMoviles.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body2;
+			global::AiForms.Dialogs.Resource.Style.Base_TextAppearance_AppCompat_Button = global::PryRutasMoviles.Droid.Resource.Style.Base_TextAppearance_AppCompat_Button;
+			global::AiForms.Dialogs.Resource.Style.Base_TextAppearance_AppCompat_Caption = global::PryRutasMoviles.Droid.Resource.Style.Base_TextAppearance_AppCompat_Caption;
+			global::AiForms.Dialogs.Resource.Style.Base_TextAppearance_AppCompat_Display1 = global::PryRutasMoviles.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display1;
+			global::AiForms.Dialogs.Resource.Style.Base_TextAppearance_AppCompat_Display2 = global::PryRutasMoviles.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display2;
+			global::AiForms.Dialogs.Resource.Style.Base_TextAppearance_AppCompat_Display3 = global::PryRutasMoviles.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display3;
+			global::AiForms.Dialogs.Resource.Style.Base_TextAppearance_AppCompat_Display4 = global::PryRutasMoviles.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display4;
+			global::AiForms.Dialogs.Resource.Style.Base_TextAppearance_AppCompat_Headline = global::PryRutasMoviles.Droid.Resource.Style.Base_TextAppearance_AppCompat_Headline;
+			global::AiForms.Dialogs.Resource.Style.Base_TextAppearance_AppCompat_Inverse = global::PryRutasMoviles.Droid.Resource.Style.Base_TextAppearance_AppCompat_Inverse;
+			global::AiForms.Dialogs.Resource.Style.Base_TextAppearance_AppCompat_Large = global::PryRutasMoviles.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large;
+			global::AiForms.Dialogs.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse = global::PryRutasMoviles.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse;
+			global::AiForms.Dialogs.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::PryRutasMoviles.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::AiForms.Dialogs.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::PryRutasMoviles.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::AiForms.Dialogs.Resource.Style.Base_TextAppearance_AppCompat_Medium = global::PryRutasMoviles.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium;
+			global::AiForms.Dialogs.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse = global::PryRutasMoviles.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse;
+			global::AiForms.Dialogs.Resource.Style.Base_TextAppearance_AppCompat_Menu = global::PryRutasMoviles.Droid.Resource.Style.Base_TextAppearance_AppCompat_Menu;
+			global::AiForms.Dialogs.Resource.Style.Base_TextAppearance_AppCompat_SearchResult = global::PryRutasMoviles.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult;
+			global::AiForms.Dialogs.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle = global::PryRutasMoviles.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::AiForms.Dialogs.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title = global::PryRutasMoviles.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title;
+			global::AiForms.Dialogs.Resource.Style.Base_TextAppearance_AppCompat_Small = global::PryRutasMoviles.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small;
+			global::AiForms.Dialogs.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse = global::PryRutasMoviles.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse;
+			global::AiForms.Dialogs.Resource.Style.Base_TextAppearance_AppCompat_Subhead = global::PryRutasMoviles.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead;
+			global::AiForms.Dialogs.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse = global::PryRutasMoviles.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse;
+			global::AiForms.Dialogs.Resource.Style.Base_TextAppearance_AppCompat_Title = global::PryRutasMoviles.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title;
+			global::AiForms.Dialogs.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse = global::PryRutasMoviles.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse;
+			global::AiForms.Dialogs.Resource.Style.Base_TextAppearance_AppCompat_Tooltip = global::PryRutasMoviles.Droid.Resource.Style.Base_TextAppearance_AppCompat_Tooltip;
+			global::AiForms.Dialogs.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = global::PryRutasMoviles.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::AiForms.Dialogs.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::PryRutasMoviles.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::AiForms.Dialogs.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::PryRutasMoviles.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::AiForms.Dialogs.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title = global::PryRutasMoviles.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::AiForms.Dialogs.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::PryRutasMoviles.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::AiForms.Dialogs.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::PryRutasMoviles.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::AiForms.Dialogs.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title = global::PryRutasMoviles.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::AiForms.Dialogs.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button = global::PryRutasMoviles.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button;
+			global::AiForms.Dialogs.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::PryRutasMoviles.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::AiForms.Dialogs.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored = global::PryRutasMoviles.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored;
+			global::AiForms.Dialogs.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse = global::PryRutasMoviles.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::AiForms.Dialogs.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem = global::PryRutasMoviles.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem;
+			global::AiForms.Dialogs.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header = global::PryRutasMoviles.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::AiForms.Dialogs.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = global::PryRutasMoviles.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::AiForms.Dialogs.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = global::PryRutasMoviles.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::AiForms.Dialogs.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch = global::PryRutasMoviles.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch;
+			global::AiForms.Dialogs.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::PryRutasMoviles.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::AiForms.Dialogs.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::PryRutasMoviles.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::AiForms.Dialogs.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::PryRutasMoviles.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::AiForms.Dialogs.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::PryRutasMoviles.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::AiForms.Dialogs.Resource.Style.Base_ThemeOverlay_AppCompat = global::PryRutasMoviles.Droid.Resource.Style.Base_ThemeOverlay_AppCompat;
+			global::AiForms.Dialogs.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::PryRutasMoviles.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
+			global::AiForms.Dialogs.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::PryRutasMoviles.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
+			global::AiForms.Dialogs.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar = global::PryRutasMoviles.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::AiForms.Dialogs.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog = global::PryRutasMoviles.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog;
+			global::AiForms.Dialogs.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert = global::PryRutasMoviles.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert;
+			global::AiForms.Dialogs.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::PryRutasMoviles.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
+			global::AiForms.Dialogs.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog = global::PryRutasMoviles.Droid.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog;
+			global::AiForms.Dialogs.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog_Alert = global::PryRutasMoviles.Droid.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog_Alert;
+			global::AiForms.Dialogs.Resource.Style.Base_Theme_AppCompat = global::PryRutasMoviles.Droid.Resource.Style.Base_Theme_AppCompat;
+			global::AiForms.Dialogs.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::PryRutasMoviles.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu;
+			global::AiForms.Dialogs.Resource.Style.Base_Theme_AppCompat_Dialog = global::PryRutasMoviles.Droid.Resource.Style.Base_Theme_AppCompat_Dialog;
+			global::AiForms.Dialogs.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::PryRutasMoviles.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
+			global::AiForms.Dialogs.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::PryRutasMoviles.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
+			global::AiForms.Dialogs.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::PryRutasMoviles.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
+			global::AiForms.Dialogs.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::PryRutasMoviles.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
+			global::AiForms.Dialogs.Resource.Style.Base_Theme_AppCompat_Light = global::PryRutasMoviles.Droid.Resource.Style.Base_Theme_AppCompat_Light;
+			global::AiForms.Dialogs.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::PryRutasMoviles.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
+			global::AiForms.Dialogs.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::PryRutasMoviles.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
+			global::AiForms.Dialogs.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::PryRutasMoviles.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
+			global::AiForms.Dialogs.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::PryRutasMoviles.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
+			global::AiForms.Dialogs.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::PryRutasMoviles.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
+			global::AiForms.Dialogs.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::PryRutasMoviles.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
+			global::AiForms.Dialogs.Resource.Style.Base_Theme_MaterialComponents = global::PryRutasMoviles.Droid.Resource.Style.Base_Theme_MaterialComponents;
+			global::AiForms.Dialogs.Resource.Style.Base_Theme_MaterialComponents_Bridge = global::PryRutasMoviles.Droid.Resource.Style.Base_Theme_MaterialComponents_Bridge;
+			global::AiForms.Dialogs.Resource.Style.Base_Theme_MaterialComponents_CompactMenu = global::PryRutasMoviles.Droid.Resource.Style.Base_Theme_MaterialComponents_CompactMenu;
+			global::AiForms.Dialogs.Resource.Style.Base_Theme_MaterialComponents_Dialog = global::PryRutasMoviles.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog;
+			global::AiForms.Dialogs.Resource.Style.Base_Theme_MaterialComponents_DialogWhenLarge = global::PryRutasMoviles.Droid.Resource.Style.Base_Theme_MaterialComponents_DialogWhenLarge;
+			global::AiForms.Dialogs.Resource.Style.Base_Theme_MaterialComponents_Dialog_Alert = global::PryRutasMoviles.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_Alert;
+			global::AiForms.Dialogs.Resource.Style.Base_Theme_MaterialComponents_Dialog_FixedSize = global::PryRutasMoviles.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_FixedSize;
+			global::AiForms.Dialogs.Resource.Style.Base_Theme_MaterialComponents_Dialog_MinWidth = global::PryRutasMoviles.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_MinWidth;
+			global::AiForms.Dialogs.Resource.Style.Base_Theme_MaterialComponents_Light = global::PryRutasMoviles.Droid.Resource.Style.Base_Theme_MaterialComponents_Light;
+			global::AiForms.Dialogs.Resource.Style.Base_Theme_MaterialComponents_Light_Bridge = global::PryRutasMoviles.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Bridge;
+			global::AiForms.Dialogs.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar = global::PryRutasMoviles.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar;
+			global::AiForms.Dialogs.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar_Bridge = global::PryRutasMoviles.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar_Bridge;
+			global::AiForms.Dialogs.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog = global::PryRutasMoviles.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog;
+			global::AiForms.Dialogs.Resource.Style.Base_Theme_MaterialComponents_Light_DialogWhenLarge = global::PryRutasMoviles.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DialogWhenLarge;
+			global::AiForms.Dialogs.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_Alert = global::PryRutasMoviles.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_Alert;
+			global::AiForms.Dialogs.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_FixedSize = global::PryRutasMoviles.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_FixedSize;
+			global::AiForms.Dialogs.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_MinWidth = global::PryRutasMoviles.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_MinWidth;
+			global::AiForms.Dialogs.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog = global::PryRutasMoviles.Droid.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog;
+			global::AiForms.Dialogs.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog_Alert = global::PryRutasMoviles.Droid.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog_Alert;
+			global::AiForms.Dialogs.Resource.Style.Base_V14_Theme_MaterialComponents = global::PryRutasMoviles.Droid.Resource.Style.Base_V14_Theme_MaterialComponents;
+			global::AiForms.Dialogs.Resource.Style.Base_V14_Theme_MaterialComponents_Bridge = global::PryRutasMoviles.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Bridge;
+			global::AiForms.Dialogs.Resource.Style.Base_V14_Theme_MaterialComponents_Dialog = global::PryRutasMoviles.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Dialog;
+			global::AiForms.Dialogs.Resource.Style.Base_V14_Theme_MaterialComponents_Light = global::PryRutasMoviles.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light;
+			global::AiForms.Dialogs.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Bridge = global::PryRutasMoviles.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Bridge;
+			global::AiForms.Dialogs.Resource.Style.Base_V14_Theme_MaterialComponents_Light_DarkActionBar_Bridge = global::PryRutasMoviles.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light_DarkActionBar_Bridge;
+			global::AiForms.Dialogs.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Dialog = global::PryRutasMoviles.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Dialog;
+			global::AiForms.Dialogs.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog = global::PryRutasMoviles.Droid.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog;
+			global::AiForms.Dialogs.Resource.Style.Base_V21_Theme_AppCompat = global::PryRutasMoviles.Droid.Resource.Style.Base_V21_Theme_AppCompat;
+			global::AiForms.Dialogs.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::PryRutasMoviles.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
+			global::AiForms.Dialogs.Resource.Style.Base_V21_Theme_AppCompat_Light = global::PryRutasMoviles.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light;
+			global::AiForms.Dialogs.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::PryRutasMoviles.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
+			global::AiForms.Dialogs.Resource.Style.Base_V22_Theme_AppCompat = global::PryRutasMoviles.Droid.Resource.Style.Base_V22_Theme_AppCompat;
+			global::AiForms.Dialogs.Resource.Style.Base_V22_Theme_AppCompat_Light = global::PryRutasMoviles.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light;
+			global::AiForms.Dialogs.Resource.Style.Base_V23_Theme_AppCompat = global::PryRutasMoviles.Droid.Resource.Style.Base_V23_Theme_AppCompat;
+			global::AiForms.Dialogs.Resource.Style.Base_V23_Theme_AppCompat_Light = global::PryRutasMoviles.Droid.Resource.Style.Base_V23_Theme_AppCompat_Light;
+			global::AiForms.Dialogs.Resource.Style.Base_V26_Theme_AppCompat = global::PryRutasMoviles.Droid.Resource.Style.Base_V26_Theme_AppCompat;
+			global::AiForms.Dialogs.Resource.Style.Base_V26_Theme_AppCompat_Light = global::PryRutasMoviles.Droid.Resource.Style.Base_V26_Theme_AppCompat_Light;
+			global::AiForms.Dialogs.Resource.Style.Base_V26_Widget_AppCompat_Toolbar = global::PryRutasMoviles.Droid.Resource.Style.Base_V26_Widget_AppCompat_Toolbar;
+			global::AiForms.Dialogs.Resource.Style.Base_V28_Theme_AppCompat = global::PryRutasMoviles.Droid.Resource.Style.Base_V28_Theme_AppCompat;
+			global::AiForms.Dialogs.Resource.Style.Base_V28_Theme_AppCompat_Light = global::PryRutasMoviles.Droid.Resource.Style.Base_V28_Theme_AppCompat_Light;
+			global::AiForms.Dialogs.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog = global::PryRutasMoviles.Droid.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog;
+			global::AiForms.Dialogs.Resource.Style.Base_V7_Theme_AppCompat = global::PryRutasMoviles.Droid.Resource.Style.Base_V7_Theme_AppCompat;
+			global::AiForms.Dialogs.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::PryRutasMoviles.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
+			global::AiForms.Dialogs.Resource.Style.Base_V7_Theme_AppCompat_Light = global::PryRutasMoviles.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light;
+			global::AiForms.Dialogs.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::PryRutasMoviles.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
+			global::AiForms.Dialogs.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::PryRutasMoviles.Droid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
+			global::AiForms.Dialogs.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::PryRutasMoviles.Droid.Resource.Style.Base_V7_Widget_AppCompat_EditText;
+			global::AiForms.Dialogs.Resource.Style.Base_V7_Widget_AppCompat_Toolbar = global::PryRutasMoviles.Droid.Resource.Style.Base_V7_Widget_AppCompat_Toolbar;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_ActionBar = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_ActionButton = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_ActionMode = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_ActionMode;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_Button = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_Button;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_Button_Colored;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_Button_Small = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_Button_Small;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_EditText = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_EditText;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_ImageButton = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_ImageButton;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_Light_ActionBar = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_ListMenuView = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_ListMenuView;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_ListPopupWindow = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_ListPopupWindow;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_ListView = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_ListView;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_ListView_DropDown = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_ListView_DropDown;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_ListView_Menu = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_ListView_Menu;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_PopupMenu = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_PopupWindow = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_PopupWindow;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_ProgressBar = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_RatingBar = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_RatingBar_Small = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Small;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_SearchView = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_SearchView;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_SeekBar = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_Spinner = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_Spinner;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_TextView = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_TextView;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_Toolbar = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_Design_TabLayout = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_Design_TabLayout;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_MaterialComponents_Chip = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_MaterialComponents_Chip;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_MaterialComponents_TextInputEditText = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_MaterialComponents_TextInputEditText;
+			global::AiForms.Dialogs.Resource.Style.Base_Widget_MaterialComponents_TextInputLayout = global::PryRutasMoviles.Droid.Resource.Style.Base_Widget_MaterialComponents_TextInputLayout;
+			global::AiForms.Dialogs.Resource.Style.CardView = global::PryRutasMoviles.Droid.Resource.Style.CardView;
+			global::AiForms.Dialogs.Resource.Style.CardView_Dark = global::PryRutasMoviles.Droid.Resource.Style.CardView_Dark;
+			global::AiForms.Dialogs.Resource.Style.CardView_Light = global::PryRutasMoviles.Droid.Resource.Style.CardView_Light;
+			global::AiForms.Dialogs.Resource.Style.ExtraDialogAnimSet = global::PryRutasMoviles.Droid.Resource.Style.ExtraDialogAnimSet;
+			global::AiForms.Dialogs.Resource.Style.MainTheme = global::PryRutasMoviles.Droid.Resource.Style.MainTheme;
+			global::AiForms.Dialogs.Resource.Style.MainTheme_Base = global::PryRutasMoviles.Droid.Resource.Style.MainTheme_Base;
+			global::AiForms.Dialogs.Resource.Style.NoDimDialogFragmentStyle = global::PryRutasMoviles.Droid.Resource.Style.NoDimDialogFragmentStyle;
+			global::AiForms.Dialogs.Resource.Style.Platform_AppCompat = global::PryRutasMoviles.Droid.Resource.Style.Platform_AppCompat;
+			global::AiForms.Dialogs.Resource.Style.Platform_AppCompat_Light = global::PryRutasMoviles.Droid.Resource.Style.Platform_AppCompat_Light;
+			global::AiForms.Dialogs.Resource.Style.Platform_MaterialComponents = global::PryRutasMoviles.Droid.Resource.Style.Platform_MaterialComponents;
+			global::AiForms.Dialogs.Resource.Style.Platform_MaterialComponents_Dialog = global::PryRutasMoviles.Droid.Resource.Style.Platform_MaterialComponents_Dialog;
+			global::AiForms.Dialogs.Resource.Style.Platform_MaterialComponents_Light = global::PryRutasMoviles.Droid.Resource.Style.Platform_MaterialComponents_Light;
+			global::AiForms.Dialogs.Resource.Style.Platform_MaterialComponents_Light_Dialog = global::PryRutasMoviles.Droid.Resource.Style.Platform_MaterialComponents_Light_Dialog;
+			global::AiForms.Dialogs.Resource.Style.Platform_ThemeOverlay_AppCompat = global::PryRutasMoviles.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat;
+			global::AiForms.Dialogs.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::PryRutasMoviles.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
+			global::AiForms.Dialogs.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::PryRutasMoviles.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
+			global::AiForms.Dialogs.Resource.Style.Platform_V21_AppCompat = global::PryRutasMoviles.Droid.Resource.Style.Platform_V21_AppCompat;
+			global::AiForms.Dialogs.Resource.Style.Platform_V21_AppCompat_Light = global::PryRutasMoviles.Droid.Resource.Style.Platform_V21_AppCompat_Light;
+			global::AiForms.Dialogs.Resource.Style.Platform_V25_AppCompat = global::PryRutasMoviles.Droid.Resource.Style.Platform_V25_AppCompat;
+			global::AiForms.Dialogs.Resource.Style.Platform_V25_AppCompat_Light = global::PryRutasMoviles.Droid.Resource.Style.Platform_V25_AppCompat_Light;
+			global::AiForms.Dialogs.Resource.Style.Platform_Widget_AppCompat_Spinner = global::PryRutasMoviles.Droid.Resource.Style.Platform_Widget_AppCompat_Spinner;
+			global::AiForms.Dialogs.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat = global::PryRutasMoviles.Droid.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat;
+			global::AiForms.Dialogs.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = global::PryRutasMoviles.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem;
+			global::AiForms.Dialogs.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon = global::PryRutasMoviles.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon;
+			global::AiForms.Dialogs.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem = global::PryRutasMoviles.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem;
+			global::AiForms.Dialogs.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = global::PryRutasMoviles.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup;
+			global::AiForms.Dialogs.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Shortcut = global::PryRutasMoviles.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Shortcut;
+			global::AiForms.Dialogs.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_SubmenuArrow = global::PryRutasMoviles.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_SubmenuArrow;
+			global::AiForms.Dialogs.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::PryRutasMoviles.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
+			global::AiForms.Dialogs.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Title = global::PryRutasMoviles.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Title;
+			global::AiForms.Dialogs.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::PryRutasMoviles.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
+			global::AiForms.Dialogs.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::PryRutasMoviles.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
+			global::AiForms.Dialogs.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::PryRutasMoviles.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
+			global::AiForms.Dialogs.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::PryRutasMoviles.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
+			global::AiForms.Dialogs.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::PryRutasMoviles.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
+			global::AiForms.Dialogs.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::PryRutasMoviles.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
+			global::AiForms.Dialogs.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::PryRutasMoviles.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
+			global::AiForms.Dialogs.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::PryRutasMoviles.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_AppCompat = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_AppCompat;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_AppCompat_Body1 = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_AppCompat_Body1;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_AppCompat_Body2 = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_AppCompat_Body2;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_AppCompat_Button = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_AppCompat_Button;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_AppCompat_Caption = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_AppCompat_Caption;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_AppCompat_Display1 = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_AppCompat_Display1;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_AppCompat_Display2 = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_AppCompat_Display2;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_AppCompat_Display3 = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_AppCompat_Display3;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_AppCompat_Display4 = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_AppCompat_Display4;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_AppCompat_Headline = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_AppCompat_Headline;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_AppCompat_Inverse = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_AppCompat_Inverse;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_AppCompat_Large = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_AppCompat_Large;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_AppCompat_Large_Inverse = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_AppCompat_Large_Inverse;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_AppCompat_Medium = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_AppCompat_Medium;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_AppCompat_Medium_Inverse = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_AppCompat_Medium_Inverse;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_AppCompat_Menu = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_AppCompat_Menu;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_AppCompat_SearchResult_Title = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Title;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_AppCompat_Small = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_AppCompat_Small;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_AppCompat_Small_Inverse = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_AppCompat_Small_Inverse;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_AppCompat_Subhead = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_AppCompat_Subhead;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_AppCompat_Title = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_AppCompat_Title;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_AppCompat_Title_Inverse = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_AppCompat_Title_Inverse;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_AppCompat_Tooltip = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_AppCompat_Tooltip;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_AppCompat_Widget_Button = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_AppCompat_Widget_Switch = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Switch;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_Compat_Notification = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_Compat_Notification;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_Compat_Notification_Info = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_Compat_Notification_Info;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_Compat_Notification_Info_Media = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_Compat_Notification_Info_Media;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_Compat_Notification_Line2 = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_Compat_Notification_Line2;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_Compat_Notification_Line2_Media = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_Compat_Notification_Line2_Media;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_Compat_Notification_Media = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_Compat_Notification_Media;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_Compat_Notification_Time = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_Compat_Notification_Time;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_Compat_Notification_Time_Media = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_Compat_Notification_Time_Media;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_Compat_Notification_Title = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_Compat_Notification_Title;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_Compat_Notification_Title_Media = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_Compat_Notification_Title_Media;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_Design_Counter = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_Design_Counter;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_Design_Counter_Overflow = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_Design_Counter_Overflow;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_Design_Error = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_Design_Error;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_Design_HelperText = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_Design_HelperText;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_Design_Hint = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_Design_Hint;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_Design_Snackbar_Message = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_Design_Snackbar_Message;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_Design_Tab = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_Design_Tab;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_MaterialComponents_Body1 = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_MaterialComponents_Body1;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_MaterialComponents_Body2 = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_MaterialComponents_Body2;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_MaterialComponents_Button = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_MaterialComponents_Button;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_MaterialComponents_Caption = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_MaterialComponents_Caption;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_MaterialComponents_Chip = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_MaterialComponents_Chip;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_MaterialComponents_Headline1 = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline1;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_MaterialComponents_Headline2 = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline2;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_MaterialComponents_Headline3 = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline3;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_MaterialComponents_Headline4 = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline4;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_MaterialComponents_Headline5 = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline5;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_MaterialComponents_Headline6 = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline6;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_MaterialComponents_Overline = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_MaterialComponents_Overline;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_MaterialComponents_Subtitle1 = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_MaterialComponents_Subtitle1;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_MaterialComponents_Subtitle2 = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_MaterialComponents_Subtitle2;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_MaterialComponents_Tab = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_MaterialComponents_Tab;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::AiForms.Dialogs.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::PryRutasMoviles.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::AiForms.Dialogs.Resource.Style.ThemeOverlay_AppCompat = global::PryRutasMoviles.Droid.Resource.Style.ThemeOverlay_AppCompat;
+			global::AiForms.Dialogs.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::PryRutasMoviles.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
+			global::AiForms.Dialogs.Resource.Style.ThemeOverlay_AppCompat_Dark = global::PryRutasMoviles.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
+			global::AiForms.Dialogs.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::PryRutasMoviles.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::AiForms.Dialogs.Resource.Style.ThemeOverlay_AppCompat_DayNight = global::PryRutasMoviles.Droid.Resource.Style.ThemeOverlay_AppCompat_DayNight;
+			global::AiForms.Dialogs.Resource.Style.ThemeOverlay_AppCompat_DayNight_ActionBar = global::PryRutasMoviles.Droid.Resource.Style.ThemeOverlay_AppCompat_DayNight_ActionBar;
+			global::AiForms.Dialogs.Resource.Style.ThemeOverlay_AppCompat_Dialog = global::PryRutasMoviles.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog;
+			global::AiForms.Dialogs.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert = global::PryRutasMoviles.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert;
+			global::AiForms.Dialogs.Resource.Style.ThemeOverlay_AppCompat_Light = global::PryRutasMoviles.Droid.Resource.Style.ThemeOverlay_AppCompat_Light;
+			global::AiForms.Dialogs.Resource.Style.ThemeOverlay_MaterialComponents = global::PryRutasMoviles.Droid.Resource.Style.ThemeOverlay_MaterialComponents;
+			global::AiForms.Dialogs.Resource.Style.ThemeOverlay_MaterialComponents_ActionBar = global::PryRutasMoviles.Droid.Resource.Style.ThemeOverlay_MaterialComponents_ActionBar;
+			global::AiForms.Dialogs.Resource.Style.ThemeOverlay_MaterialComponents_Dark = global::PryRutasMoviles.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Dark;
+			global::AiForms.Dialogs.Resource.Style.ThemeOverlay_MaterialComponents_Dark_ActionBar = global::PryRutasMoviles.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Dark_ActionBar;
+			global::AiForms.Dialogs.Resource.Style.ThemeOverlay_MaterialComponents_Dialog = global::PryRutasMoviles.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Dialog;
+			global::AiForms.Dialogs.Resource.Style.ThemeOverlay_MaterialComponents_Dialog_Alert = global::PryRutasMoviles.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Dialog_Alert;
+			global::AiForms.Dialogs.Resource.Style.ThemeOverlay_MaterialComponents_Light = global::PryRutasMoviles.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Light;
+			global::AiForms.Dialogs.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText = global::PryRutasMoviles.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText;
+			global::AiForms.Dialogs.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox = global::PryRutasMoviles.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox;
+			global::AiForms.Dialogs.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense = global::PryRutasMoviles.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense;
+			global::AiForms.Dialogs.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox = global::PryRutasMoviles.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox;
+			global::AiForms.Dialogs.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense = global::PryRutasMoviles.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense;
+			global::AiForms.Dialogs.Resource.Style.Theme_AppCompat = global::PryRutasMoviles.Droid.Resource.Style.Theme_AppCompat;
+			global::AiForms.Dialogs.Resource.Style.Theme_AppCompat_CompactMenu = global::PryRutasMoviles.Droid.Resource.Style.Theme_AppCompat_CompactMenu;
+			global::AiForms.Dialogs.Resource.Style.Theme_AppCompat_DayNight = global::PryRutasMoviles.Droid.Resource.Style.Theme_AppCompat_DayNight;
+			global::AiForms.Dialogs.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::PryRutasMoviles.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
+			global::AiForms.Dialogs.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::PryRutasMoviles.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog;
+			global::AiForms.Dialogs.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::PryRutasMoviles.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
+			global::AiForms.Dialogs.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::PryRutasMoviles.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
+			global::AiForms.Dialogs.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::PryRutasMoviles.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
+			global::AiForms.Dialogs.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::PryRutasMoviles.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
+			global::AiForms.Dialogs.Resource.Style.Theme_AppCompat_Dialog = global::PryRutasMoviles.Droid.Resource.Style.Theme_AppCompat_Dialog;
+			global::AiForms.Dialogs.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::PryRutasMoviles.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge;
+			global::AiForms.Dialogs.Resource.Style.Theme_AppCompat_Dialog_Alert = global::PryRutasMoviles.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert;
+			global::AiForms.Dialogs.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::PryRutasMoviles.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
+			global::AiForms.Dialogs.Resource.Style.Theme_AppCompat_Light = global::PryRutasMoviles.Droid.Resource.Style.Theme_AppCompat_Light;
+			global::AiForms.Dialogs.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::PryRutasMoviles.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
+			global::AiForms.Dialogs.Resource.Style.Theme_AppCompat_Light_Dialog = global::PryRutasMoviles.Droid.Resource.Style.Theme_AppCompat_Light_Dialog;
+			global::AiForms.Dialogs.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::PryRutasMoviles.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
+			global::AiForms.Dialogs.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::PryRutasMoviles.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
+			global::AiForms.Dialogs.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::PryRutasMoviles.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
+			global::AiForms.Dialogs.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::PryRutasMoviles.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar;
+			global::AiForms.Dialogs.Resource.Style.Theme_AppCompat_NoActionBar = global::PryRutasMoviles.Droid.Resource.Style.Theme_AppCompat_NoActionBar;
+			global::AiForms.Dialogs.Resource.Style.Theme_Design = global::PryRutasMoviles.Droid.Resource.Style.Theme_Design;
+			global::AiForms.Dialogs.Resource.Style.Theme_Design_BottomSheetDialog = global::PryRutasMoviles.Droid.Resource.Style.Theme_Design_BottomSheetDialog;
+			global::AiForms.Dialogs.Resource.Style.Theme_Design_Light = global::PryRutasMoviles.Droid.Resource.Style.Theme_Design_Light;
+			global::AiForms.Dialogs.Resource.Style.Theme_Design_Light_BottomSheetDialog = global::PryRutasMoviles.Droid.Resource.Style.Theme_Design_Light_BottomSheetDialog;
+			global::AiForms.Dialogs.Resource.Style.Theme_Design_Light_NoActionBar = global::PryRutasMoviles.Droid.Resource.Style.Theme_Design_Light_NoActionBar;
+			global::AiForms.Dialogs.Resource.Style.Theme_Design_NoActionBar = global::PryRutasMoviles.Droid.Resource.Style.Theme_Design_NoActionBar;
+			global::AiForms.Dialogs.Resource.Style.Theme_MaterialComponents = global::PryRutasMoviles.Droid.Resource.Style.Theme_MaterialComponents;
+			global::AiForms.Dialogs.Resource.Style.Theme_MaterialComponents_BottomSheetDialog = global::PryRutasMoviles.Droid.Resource.Style.Theme_MaterialComponents_BottomSheetDialog;
+			global::AiForms.Dialogs.Resource.Style.Theme_MaterialComponents_Bridge = global::PryRutasMoviles.Droid.Resource.Style.Theme_MaterialComponents_Bridge;
+			global::AiForms.Dialogs.Resource.Style.Theme_MaterialComponents_CompactMenu = global::PryRutasMoviles.Droid.Resource.Style.Theme_MaterialComponents_CompactMenu;
+			global::AiForms.Dialogs.Resource.Style.Theme_MaterialComponents_Dialog = global::PryRutasMoviles.Droid.Resource.Style.Theme_MaterialComponents_Dialog;
+			global::AiForms.Dialogs.Resource.Style.Theme_MaterialComponents_DialogWhenLarge = global::PryRutasMoviles.Droid.Resource.Style.Theme_MaterialComponents_DialogWhenLarge;
+			global::AiForms.Dialogs.Resource.Style.Theme_MaterialComponents_Dialog_Alert = global::PryRutasMoviles.Droid.Resource.Style.Theme_MaterialComponents_Dialog_Alert;
+			global::AiForms.Dialogs.Resource.Style.Theme_MaterialComponents_Dialog_MinWidth = global::PryRutasMoviles.Droid.Resource.Style.Theme_MaterialComponents_Dialog_MinWidth;
+			global::AiForms.Dialogs.Resource.Style.Theme_MaterialComponents_Light = global::PryRutasMoviles.Droid.Resource.Style.Theme_MaterialComponents_Light;
+			global::AiForms.Dialogs.Resource.Style.Theme_MaterialComponents_Light_BottomSheetDialog = global::PryRutasMoviles.Droid.Resource.Style.Theme_MaterialComponents_Light_BottomSheetDialog;
+			global::AiForms.Dialogs.Resource.Style.Theme_MaterialComponents_Light_Bridge = global::PryRutasMoviles.Droid.Resource.Style.Theme_MaterialComponents_Light_Bridge;
+			global::AiForms.Dialogs.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar = global::PryRutasMoviles.Droid.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar;
+			global::AiForms.Dialogs.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar_Bridge = global::PryRutasMoviles.Droid.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar_Bridge;
+			global::AiForms.Dialogs.Resource.Style.Theme_MaterialComponents_Light_Dialog = global::PryRutasMoviles.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog;
+			global::AiForms.Dialogs.Resource.Style.Theme_MaterialComponents_Light_DialogWhenLarge = global::PryRutasMoviles.Droid.Resource.Style.Theme_MaterialComponents_Light_DialogWhenLarge;
+			global::AiForms.Dialogs.Resource.Style.Theme_MaterialComponents_Light_Dialog_Alert = global::PryRutasMoviles.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog_Alert;
+			global::AiForms.Dialogs.Resource.Style.Theme_MaterialComponents_Light_Dialog_MinWidth = global::PryRutasMoviles.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog_MinWidth;
+			global::AiForms.Dialogs.Resource.Style.Theme_MaterialComponents_Light_NoActionBar = global::PryRutasMoviles.Droid.Resource.Style.Theme_MaterialComponents_Light_NoActionBar;
+			global::AiForms.Dialogs.Resource.Style.Theme_MaterialComponents_Light_NoActionBar_Bridge = global::PryRutasMoviles.Droid.Resource.Style.Theme_MaterialComponents_Light_NoActionBar_Bridge;
+			global::AiForms.Dialogs.Resource.Style.Theme_MaterialComponents_NoActionBar = global::PryRutasMoviles.Droid.Resource.Style.Theme_MaterialComponents_NoActionBar;
+			global::AiForms.Dialogs.Resource.Style.Theme_MaterialComponents_NoActionBar_Bridge = global::PryRutasMoviles.Droid.Resource.Style.Theme_MaterialComponents_NoActionBar_Bridge;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_ActionBar = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_ActionBar;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_ActionBar_Solid;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_ActionBar_TabText = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabText;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_ActionBar_TabView = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabView;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_ActionButton = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_ActionButton;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_ActionButton_CloseMode = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_ActionButton_CloseMode;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_ActionButton_Overflow = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_ActionButton_Overflow;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_ActionMode = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_ActionMode;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_ActivityChooserView = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_ActivityChooserView;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_Button = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_Button;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_ButtonBar = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_ButtonBar;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_Button_Borderless = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_Button_Borderless;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_Button_Colored = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_Button_Colored;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_Button_Small = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_Button_Small;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_DrawerArrowToggle = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_DrawerArrowToggle;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_DropDownItem_Spinner = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_DropDownItem_Spinner;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_EditText = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_EditText;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_ImageButton = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_ImageButton;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_Light_ActionBar = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_Light_ActionButton = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_Light_ActivityChooserView = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_Light_ActivityChooserView;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_Light_ListPopupWindow = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_Light_ListPopupWindow;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_Light_ListView_DropDown = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_Light_ListView_DropDown;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_Light_PopupMenu = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_Light_SearchView = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_Light_SearchView;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_ListMenuView = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_ListMenuView;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_ListPopupWindow = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_ListPopupWindow;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_ListView = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_ListView;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_ListView_DropDown = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_ListView_DropDown;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_ListView_Menu = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_ListView_Menu;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_PopupMenu = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_PopupMenu;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_PopupMenu_Overflow = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_PopupMenu_Overflow;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_PopupWindow = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_PopupWindow;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_ProgressBar = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_ProgressBar;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_RatingBar = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_RatingBar;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_RatingBar_Indicator = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_RatingBar_Indicator;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_RatingBar_Small = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_RatingBar_Small;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_SearchView = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_SearchView;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_SearchView_ActionBar = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_SearchView_ActionBar;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_SeekBar = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_SeekBar;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_SeekBar_Discrete = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_SeekBar_Discrete;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_Spinner = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_Spinner;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_TextView = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_TextView;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_Toolbar = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_Toolbar;
+			global::AiForms.Dialogs.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::PryRutasMoviles.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
+			global::AiForms.Dialogs.Resource.Style.Widget_Compat_NotificationActionContainer = global::PryRutasMoviles.Droid.Resource.Style.Widget_Compat_NotificationActionContainer;
+			global::AiForms.Dialogs.Resource.Style.Widget_Compat_NotificationActionText = global::PryRutasMoviles.Droid.Resource.Style.Widget_Compat_NotificationActionText;
+			global::AiForms.Dialogs.Resource.Style.Widget_Design_AppBarLayout = global::PryRutasMoviles.Droid.Resource.Style.Widget_Design_AppBarLayout;
+			global::AiForms.Dialogs.Resource.Style.Widget_Design_BottomNavigationView = global::PryRutasMoviles.Droid.Resource.Style.Widget_Design_BottomNavigationView;
+			global::AiForms.Dialogs.Resource.Style.Widget_Design_BottomSheet_Modal = global::PryRutasMoviles.Droid.Resource.Style.Widget_Design_BottomSheet_Modal;
+			global::AiForms.Dialogs.Resource.Style.Widget_Design_CollapsingToolbar = global::PryRutasMoviles.Droid.Resource.Style.Widget_Design_CollapsingToolbar;
+			global::AiForms.Dialogs.Resource.Style.Widget_Design_FloatingActionButton = global::PryRutasMoviles.Droid.Resource.Style.Widget_Design_FloatingActionButton;
+			global::AiForms.Dialogs.Resource.Style.Widget_Design_NavigationView = global::PryRutasMoviles.Droid.Resource.Style.Widget_Design_NavigationView;
+			global::AiForms.Dialogs.Resource.Style.Widget_Design_ScrimInsetsFrameLayout = global::PryRutasMoviles.Droid.Resource.Style.Widget_Design_ScrimInsetsFrameLayout;
+			global::AiForms.Dialogs.Resource.Style.Widget_Design_Snackbar = global::PryRutasMoviles.Droid.Resource.Style.Widget_Design_Snackbar;
+			global::AiForms.Dialogs.Resource.Style.Widget_Design_TabLayout = global::PryRutasMoviles.Droid.Resource.Style.Widget_Design_TabLayout;
+			global::AiForms.Dialogs.Resource.Style.Widget_Design_TextInputLayout = global::PryRutasMoviles.Droid.Resource.Style.Widget_Design_TextInputLayout;
+			global::AiForms.Dialogs.Resource.Style.Widget_MaterialComponents_BottomAppBar = global::PryRutasMoviles.Droid.Resource.Style.Widget_MaterialComponents_BottomAppBar;
+			global::AiForms.Dialogs.Resource.Style.Widget_MaterialComponents_BottomAppBar_Colored = global::PryRutasMoviles.Droid.Resource.Style.Widget_MaterialComponents_BottomAppBar_Colored;
+			global::AiForms.Dialogs.Resource.Style.Widget_MaterialComponents_BottomNavigationView = global::PryRutasMoviles.Droid.Resource.Style.Widget_MaterialComponents_BottomNavigationView;
+			global::AiForms.Dialogs.Resource.Style.Widget_MaterialComponents_BottomNavigationView_Colored = global::PryRutasMoviles.Droid.Resource.Style.Widget_MaterialComponents_BottomNavigationView_Colored;
+			global::AiForms.Dialogs.Resource.Style.Widget_MaterialComponents_BottomSheet_Modal = global::PryRutasMoviles.Droid.Resource.Style.Widget_MaterialComponents_BottomSheet_Modal;
+			global::AiForms.Dialogs.Resource.Style.Widget_MaterialComponents_Button = global::PryRutasMoviles.Droid.Resource.Style.Widget_MaterialComponents_Button;
+			global::AiForms.Dialogs.Resource.Style.Widget_MaterialComponents_Button_Icon = global::PryRutasMoviles.Droid.Resource.Style.Widget_MaterialComponents_Button_Icon;
+			global::AiForms.Dialogs.Resource.Style.Widget_MaterialComponents_Button_OutlinedButton = global::PryRutasMoviles.Droid.Resource.Style.Widget_MaterialComponents_Button_OutlinedButton;
+			global::AiForms.Dialogs.Resource.Style.Widget_MaterialComponents_Button_OutlinedButton_Icon = global::PryRutasMoviles.Droid.Resource.Style.Widget_MaterialComponents_Button_OutlinedButton_Icon;
+			global::AiForms.Dialogs.Resource.Style.Widget_MaterialComponents_Button_TextButton = global::PryRutasMoviles.Droid.Resource.Style.Widget_MaterialComponents_Button_TextButton;
+			global::AiForms.Dialogs.Resource.Style.Widget_MaterialComponents_Button_TextButton_Dialog = global::PryRutasMoviles.Droid.Resource.Style.Widget_MaterialComponents_Button_TextButton_Dialog;
+			global::AiForms.Dialogs.Resource.Style.Widget_MaterialComponents_Button_TextButton_Dialog_Icon = global::PryRutasMoviles.Droid.Resource.Style.Widget_MaterialComponents_Button_TextButton_Dialog_Icon;
+			global::AiForms.Dialogs.Resource.Style.Widget_MaterialComponents_Button_TextButton_Icon = global::PryRutasMoviles.Droid.Resource.Style.Widget_MaterialComponents_Button_TextButton_Icon;
+			global::AiForms.Dialogs.Resource.Style.Widget_MaterialComponents_Button_UnelevatedButton = global::PryRutasMoviles.Droid.Resource.Style.Widget_MaterialComponents_Button_UnelevatedButton;
+			global::AiForms.Dialogs.Resource.Style.Widget_MaterialComponents_Button_UnelevatedButton_Icon = global::PryRutasMoviles.Droid.Resource.Style.Widget_MaterialComponents_Button_UnelevatedButton_Icon;
+			global::AiForms.Dialogs.Resource.Style.Widget_MaterialComponents_CardView = global::PryRutasMoviles.Droid.Resource.Style.Widget_MaterialComponents_CardView;
+			global::AiForms.Dialogs.Resource.Style.Widget_MaterialComponents_ChipGroup = global::PryRutasMoviles.Droid.Resource.Style.Widget_MaterialComponents_ChipGroup;
+			global::AiForms.Dialogs.Resource.Style.Widget_MaterialComponents_Chip_Action = global::PryRutasMoviles.Droid.Resource.Style.Widget_MaterialComponents_Chip_Action;
+			global::AiForms.Dialogs.Resource.Style.Widget_MaterialComponents_Chip_Choice = global::PryRutasMoviles.Droid.Resource.Style.Widget_MaterialComponents_Chip_Choice;
+			global::AiForms.Dialogs.Resource.Style.Widget_MaterialComponents_Chip_Entry = global::PryRutasMoviles.Droid.Resource.Style.Widget_MaterialComponents_Chip_Entry;
+			global::AiForms.Dialogs.Resource.Style.Widget_MaterialComponents_Chip_Filter = global::PryRutasMoviles.Droid.Resource.Style.Widget_MaterialComponents_Chip_Filter;
+			global::AiForms.Dialogs.Resource.Style.Widget_MaterialComponents_FloatingActionButton = global::PryRutasMoviles.Droid.Resource.Style.Widget_MaterialComponents_FloatingActionButton;
+			global::AiForms.Dialogs.Resource.Style.Widget_MaterialComponents_NavigationView = global::PryRutasMoviles.Droid.Resource.Style.Widget_MaterialComponents_NavigationView;
+			global::AiForms.Dialogs.Resource.Style.Widget_MaterialComponents_Snackbar = global::PryRutasMoviles.Droid.Resource.Style.Widget_MaterialComponents_Snackbar;
+			global::AiForms.Dialogs.Resource.Style.Widget_MaterialComponents_Snackbar_FullWidth = global::PryRutasMoviles.Droid.Resource.Style.Widget_MaterialComponents_Snackbar_FullWidth;
+			global::AiForms.Dialogs.Resource.Style.Widget_MaterialComponents_TabLayout = global::PryRutasMoviles.Droid.Resource.Style.Widget_MaterialComponents_TabLayout;
+			global::AiForms.Dialogs.Resource.Style.Widget_MaterialComponents_TabLayout_Colored = global::PryRutasMoviles.Droid.Resource.Style.Widget_MaterialComponents_TabLayout_Colored;
+			global::AiForms.Dialogs.Resource.Style.Widget_MaterialComponents_TextInputEditText_FilledBox = global::PryRutasMoviles.Droid.Resource.Style.Widget_MaterialComponents_TextInputEditText_FilledBox;
+			global::AiForms.Dialogs.Resource.Style.Widget_MaterialComponents_TextInputEditText_FilledBox_Dense = global::PryRutasMoviles.Droid.Resource.Style.Widget_MaterialComponents_TextInputEditText_FilledBox_Dense;
+			global::AiForms.Dialogs.Resource.Style.Widget_MaterialComponents_TextInputEditText_OutlinedBox = global::PryRutasMoviles.Droid.Resource.Style.Widget_MaterialComponents_TextInputEditText_OutlinedBox;
+			global::AiForms.Dialogs.Resource.Style.Widget_MaterialComponents_TextInputEditText_OutlinedBox_Dense = global::PryRutasMoviles.Droid.Resource.Style.Widget_MaterialComponents_TextInputEditText_OutlinedBox_Dense;
+			global::AiForms.Dialogs.Resource.Style.Widget_MaterialComponents_TextInputLayout_FilledBox = global::PryRutasMoviles.Droid.Resource.Style.Widget_MaterialComponents_TextInputLayout_FilledBox;
+			global::AiForms.Dialogs.Resource.Style.Widget_MaterialComponents_TextInputLayout_FilledBox_Dense = global::PryRutasMoviles.Droid.Resource.Style.Widget_MaterialComponents_TextInputLayout_FilledBox_Dense;
+			global::AiForms.Dialogs.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox = global::PryRutasMoviles.Droid.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox;
+			global::AiForms.Dialogs.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense = global::PryRutasMoviles.Droid.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense;
+			global::AiForms.Dialogs.Resource.Style.Widget_MaterialComponents_Toolbar = global::PryRutasMoviles.Droid.Resource.Style.Widget_MaterialComponents_Toolbar;
+			global::AiForms.Dialogs.Resource.Style.Widget_Support_CoordinatorLayout = global::PryRutasMoviles.Droid.Resource.Style.Widget_Support_CoordinatorLayout;
+			global::AiForms.Dialogs.Resource.Styleable.ActionBar = global::PryRutasMoviles.Droid.Resource.Styleable.ActionBar;
+			global::AiForms.Dialogs.Resource.Styleable.ActionBarLayout = global::PryRutasMoviles.Droid.Resource.Styleable.ActionBarLayout;
+			global::AiForms.Dialogs.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::PryRutasMoviles.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity;
+			global::AiForms.Dialogs.Resource.Styleable.ActionBar_background = global::PryRutasMoviles.Droid.Resource.Styleable.ActionBar_background;
+			global::AiForms.Dialogs.Resource.Styleable.ActionBar_backgroundSplit = global::PryRutasMoviles.Droid.Resource.Styleable.ActionBar_backgroundSplit;
+			global::AiForms.Dialogs.Resource.Styleable.ActionBar_backgroundStacked = global::PryRutasMoviles.Droid.Resource.Styleable.ActionBar_backgroundStacked;
+			global::AiForms.Dialogs.Resource.Styleable.ActionBar_contentInsetEnd = global::PryRutasMoviles.Droid.Resource.Styleable.ActionBar_contentInsetEnd;
+			global::AiForms.Dialogs.Resource.Styleable.ActionBar_contentInsetEndWithActions = global::PryRutasMoviles.Droid.Resource.Styleable.ActionBar_contentInsetEndWithActions;
+			global::AiForms.Dialogs.Resource.Styleable.ActionBar_contentInsetLeft = global::PryRutasMoviles.Droid.Resource.Styleable.ActionBar_contentInsetLeft;
+			global::AiForms.Dialogs.Resource.Styleable.ActionBar_contentInsetRight = global::PryRutasMoviles.Droid.Resource.Styleable.ActionBar_contentInsetRight;
+			global::AiForms.Dialogs.Resource.Styleable.ActionBar_contentInsetStart = global::PryRutasMoviles.Droid.Resource.Styleable.ActionBar_contentInsetStart;
+			global::AiForms.Dialogs.Resource.Styleable.ActionBar_contentInsetStartWithNavigation = global::PryRutasMoviles.Droid.Resource.Styleable.ActionBar_contentInsetStartWithNavigation;
+			global::AiForms.Dialogs.Resource.Styleable.ActionBar_customNavigationLayout = global::PryRutasMoviles.Droid.Resource.Styleable.ActionBar_customNavigationLayout;
+			global::AiForms.Dialogs.Resource.Styleable.ActionBar_displayOptions = global::PryRutasMoviles.Droid.Resource.Styleable.ActionBar_displayOptions;
+			global::AiForms.Dialogs.Resource.Styleable.ActionBar_divider = global::PryRutasMoviles.Droid.Resource.Styleable.ActionBar_divider;
+			global::AiForms.Dialogs.Resource.Styleable.ActionBar_elevation = global::PryRutasMoviles.Droid.Resource.Styleable.ActionBar_elevation;
+			global::AiForms.Dialogs.Resource.Styleable.ActionBar_height = global::PryRutasMoviles.Droid.Resource.Styleable.ActionBar_height;
+			global::AiForms.Dialogs.Resource.Styleable.ActionBar_hideOnContentScroll = global::PryRutasMoviles.Droid.Resource.Styleable.ActionBar_hideOnContentScroll;
+			global::AiForms.Dialogs.Resource.Styleable.ActionBar_homeAsUpIndicator = global::PryRutasMoviles.Droid.Resource.Styleable.ActionBar_homeAsUpIndicator;
+			global::AiForms.Dialogs.Resource.Styleable.ActionBar_homeLayout = global::PryRutasMoviles.Droid.Resource.Styleable.ActionBar_homeLayout;
+			global::AiForms.Dialogs.Resource.Styleable.ActionBar_icon = global::PryRutasMoviles.Droid.Resource.Styleable.ActionBar_icon;
+			global::AiForms.Dialogs.Resource.Styleable.ActionBar_indeterminateProgressStyle = global::PryRutasMoviles.Droid.Resource.Styleable.ActionBar_indeterminateProgressStyle;
+			global::AiForms.Dialogs.Resource.Styleable.ActionBar_itemPadding = global::PryRutasMoviles.Droid.Resource.Styleable.ActionBar_itemPadding;
+			global::AiForms.Dialogs.Resource.Styleable.ActionBar_logo = global::PryRutasMoviles.Droid.Resource.Styleable.ActionBar_logo;
+			global::AiForms.Dialogs.Resource.Styleable.ActionBar_navigationMode = global::PryRutasMoviles.Droid.Resource.Styleable.ActionBar_navigationMode;
+			global::AiForms.Dialogs.Resource.Styleable.ActionBar_popupTheme = global::PryRutasMoviles.Droid.Resource.Styleable.ActionBar_popupTheme;
+			global::AiForms.Dialogs.Resource.Styleable.ActionBar_progressBarPadding = global::PryRutasMoviles.Droid.Resource.Styleable.ActionBar_progressBarPadding;
+			global::AiForms.Dialogs.Resource.Styleable.ActionBar_progressBarStyle = global::PryRutasMoviles.Droid.Resource.Styleable.ActionBar_progressBarStyle;
+			global::AiForms.Dialogs.Resource.Styleable.ActionBar_subtitle = global::PryRutasMoviles.Droid.Resource.Styleable.ActionBar_subtitle;
+			global::AiForms.Dialogs.Resource.Styleable.ActionBar_subtitleTextStyle = global::PryRutasMoviles.Droid.Resource.Styleable.ActionBar_subtitleTextStyle;
+			global::AiForms.Dialogs.Resource.Styleable.ActionBar_title = global::PryRutasMoviles.Droid.Resource.Styleable.ActionBar_title;
+			global::AiForms.Dialogs.Resource.Styleable.ActionBar_titleTextStyle = global::PryRutasMoviles.Droid.Resource.Styleable.ActionBar_titleTextStyle;
+			global::AiForms.Dialogs.Resource.Styleable.ActionMenuItemView = global::PryRutasMoviles.Droid.Resource.Styleable.ActionMenuItemView;
+			global::AiForms.Dialogs.Resource.Styleable.ActionMenuItemView_android_minWidth = global::PryRutasMoviles.Droid.Resource.Styleable.ActionMenuItemView_android_minWidth;
+			global::AiForms.Dialogs.Resource.Styleable.ActionMenuView = global::PryRutasMoviles.Droid.Resource.Styleable.ActionMenuView;
+			global::AiForms.Dialogs.Resource.Styleable.ActionMode = global::PryRutasMoviles.Droid.Resource.Styleable.ActionMode;
+			global::AiForms.Dialogs.Resource.Styleable.ActionMode_background = global::PryRutasMoviles.Droid.Resource.Styleable.ActionMode_background;
+			global::AiForms.Dialogs.Resource.Styleable.ActionMode_backgroundSplit = global::PryRutasMoviles.Droid.Resource.Styleable.ActionMode_backgroundSplit;
+			global::AiForms.Dialogs.Resource.Styleable.ActionMode_closeItemLayout = global::PryRutasMoviles.Droid.Resource.Styleable.ActionMode_closeItemLayout;
+			global::AiForms.Dialogs.Resource.Styleable.ActionMode_height = global::PryRutasMoviles.Droid.Resource.Styleable.ActionMode_height;
+			global::AiForms.Dialogs.Resource.Styleable.ActionMode_subtitleTextStyle = global::PryRutasMoviles.Droid.Resource.Styleable.ActionMode_subtitleTextStyle;
+			global::AiForms.Dialogs.Resource.Styleable.ActionMode_titleTextStyle = global::PryRutasMoviles.Droid.Resource.Styleable.ActionMode_titleTextStyle;
+			global::AiForms.Dialogs.Resource.Styleable.ActivityChooserView = global::PryRutasMoviles.Droid.Resource.Styleable.ActivityChooserView;
+			global::AiForms.Dialogs.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable = global::PryRutasMoviles.Droid.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable;
+			global::AiForms.Dialogs.Resource.Styleable.ActivityChooserView_initialActivityCount = global::PryRutasMoviles.Droid.Resource.Styleable.ActivityChooserView_initialActivityCount;
+			global::AiForms.Dialogs.Resource.Styleable.AlertDialog = global::PryRutasMoviles.Droid.Resource.Styleable.AlertDialog;
+			global::AiForms.Dialogs.Resource.Styleable.AlertDialog_android_layout = global::PryRutasMoviles.Droid.Resource.Styleable.AlertDialog_android_layout;
+			global::AiForms.Dialogs.Resource.Styleable.AlertDialog_buttonIconDimen = global::PryRutasMoviles.Droid.Resource.Styleable.AlertDialog_buttonIconDimen;
+			global::AiForms.Dialogs.Resource.Styleable.AlertDialog_buttonPanelSideLayout = global::PryRutasMoviles.Droid.Resource.Styleable.AlertDialog_buttonPanelSideLayout;
+			global::AiForms.Dialogs.Resource.Styleable.AlertDialog_listItemLayout = global::PryRutasMoviles.Droid.Resource.Styleable.AlertDialog_listItemLayout;
+			global::AiForms.Dialogs.Resource.Styleable.AlertDialog_listLayout = global::PryRutasMoviles.Droid.Resource.Styleable.AlertDialog_listLayout;
+			global::AiForms.Dialogs.Resource.Styleable.AlertDialog_multiChoiceItemLayout = global::PryRutasMoviles.Droid.Resource.Styleable.AlertDialog_multiChoiceItemLayout;
+			global::AiForms.Dialogs.Resource.Styleable.AlertDialog_showTitle = global::PryRutasMoviles.Droid.Resource.Styleable.AlertDialog_showTitle;
+			global::AiForms.Dialogs.Resource.Styleable.AlertDialog_singleChoiceItemLayout = global::PryRutasMoviles.Droid.Resource.Styleable.AlertDialog_singleChoiceItemLayout;
+			global::AiForms.Dialogs.Resource.Styleable.AnimatedStateListDrawableCompat = global::PryRutasMoviles.Droid.Resource.Styleable.AnimatedStateListDrawableCompat;
+			global::AiForms.Dialogs.Resource.Styleable.AnimatedStateListDrawableCompat_android_constantSize = global::PryRutasMoviles.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_constantSize;
+			global::AiForms.Dialogs.Resource.Styleable.AnimatedStateListDrawableCompat_android_dither = global::PryRutasMoviles.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_dither;
+			global::AiForms.Dialogs.Resource.Styleable.AnimatedStateListDrawableCompat_android_enterFadeDuration = global::PryRutasMoviles.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_enterFadeDuration;
+			global::AiForms.Dialogs.Resource.Styleable.AnimatedStateListDrawableCompat_android_exitFadeDuration = global::PryRutasMoviles.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_exitFadeDuration;
+			global::AiForms.Dialogs.Resource.Styleable.AnimatedStateListDrawableCompat_android_variablePadding = global::PryRutasMoviles.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_variablePadding;
+			global::AiForms.Dialogs.Resource.Styleable.AnimatedStateListDrawableCompat_android_visible = global::PryRutasMoviles.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_visible;
+			global::AiForms.Dialogs.Resource.Styleable.AnimatedStateListDrawableItem = global::PryRutasMoviles.Droid.Resource.Styleable.AnimatedStateListDrawableItem;
+			global::AiForms.Dialogs.Resource.Styleable.AnimatedStateListDrawableItem_android_drawable = global::PryRutasMoviles.Droid.Resource.Styleable.AnimatedStateListDrawableItem_android_drawable;
+			global::AiForms.Dialogs.Resource.Styleable.AnimatedStateListDrawableItem_android_id = global::PryRutasMoviles.Droid.Resource.Styleable.AnimatedStateListDrawableItem_android_id;
+			global::AiForms.Dialogs.Resource.Styleable.AnimatedStateListDrawableTransition = global::PryRutasMoviles.Droid.Resource.Styleable.AnimatedStateListDrawableTransition;
+			global::AiForms.Dialogs.Resource.Styleable.AnimatedStateListDrawableTransition_android_drawable = global::PryRutasMoviles.Droid.Resource.Styleable.AnimatedStateListDrawableTransition_android_drawable;
+			global::AiForms.Dialogs.Resource.Styleable.AnimatedStateListDrawableTransition_android_fromId = global::PryRutasMoviles.Droid.Resource.Styleable.AnimatedStateListDrawableTransition_android_fromId;
+			global::AiForms.Dialogs.Resource.Styleable.AnimatedStateListDrawableTransition_android_reversible = global::PryRutasMoviles.Droid.Resource.Styleable.AnimatedStateListDrawableTransition_android_reversible;
+			global::AiForms.Dialogs.Resource.Styleable.AnimatedStateListDrawableTransition_android_toId = global::PryRutasMoviles.Droid.Resource.Styleable.AnimatedStateListDrawableTransition_android_toId;
+			global::AiForms.Dialogs.Resource.Styleable.AppBarLayout = global::PryRutasMoviles.Droid.Resource.Styleable.AppBarLayout;
+			global::AiForms.Dialogs.Resource.Styleable.AppBarLayoutStates = global::PryRutasMoviles.Droid.Resource.Styleable.AppBarLayoutStates;
+			global::AiForms.Dialogs.Resource.Styleable.AppBarLayoutStates_state_collapsed = global::PryRutasMoviles.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsed;
+			global::AiForms.Dialogs.Resource.Styleable.AppBarLayoutStates_state_collapsible = global::PryRutasMoviles.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsible;
+			global::AiForms.Dialogs.Resource.Styleable.AppBarLayoutStates_state_liftable = global::PryRutasMoviles.Droid.Resource.Styleable.AppBarLayoutStates_state_liftable;
+			global::AiForms.Dialogs.Resource.Styleable.AppBarLayoutStates_state_lifted = global::PryRutasMoviles.Droid.Resource.Styleable.AppBarLayoutStates_state_lifted;
+			global::AiForms.Dialogs.Resource.Styleable.AppBarLayout_android_background = global::PryRutasMoviles.Droid.Resource.Styleable.AppBarLayout_android_background;
+			global::AiForms.Dialogs.Resource.Styleable.AppBarLayout_android_keyboardNavigationCluster = global::PryRutasMoviles.Droid.Resource.Styleable.AppBarLayout_android_keyboardNavigationCluster;
+			global::AiForms.Dialogs.Resource.Styleable.AppBarLayout_android_touchscreenBlocksFocus = global::PryRutasMoviles.Droid.Resource.Styleable.AppBarLayout_android_touchscreenBlocksFocus;
+			global::AiForms.Dialogs.Resource.Styleable.AppBarLayout_elevation = global::PryRutasMoviles.Droid.Resource.Styleable.AppBarLayout_elevation;
+			global::AiForms.Dialogs.Resource.Styleable.AppBarLayout_expanded = global::PryRutasMoviles.Droid.Resource.Styleable.AppBarLayout_expanded;
+			global::AiForms.Dialogs.Resource.Styleable.AppBarLayout_Layout = global::PryRutasMoviles.Droid.Resource.Styleable.AppBarLayout_Layout;
+			global::AiForms.Dialogs.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags = global::PryRutasMoviles.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags;
+			global::AiForms.Dialogs.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator = global::PryRutasMoviles.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator;
+			global::AiForms.Dialogs.Resource.Styleable.AppBarLayout_liftOnScroll = global::PryRutasMoviles.Droid.Resource.Styleable.AppBarLayout_liftOnScroll;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatImageView = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatImageView;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatImageView_android_src = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatImageView_android_src;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatImageView_srcCompat = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatImageView_srcCompat;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatImageView_tint = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatImageView_tint;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatImageView_tintMode = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatImageView_tintMode;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatSeekBar = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatSeekBar;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatSeekBar_android_thumb = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatSeekBar_android_thumb;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatSeekBar_tickMark = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatSeekBar_tickMark;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatSeekBar_tickMarkTint = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTint;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTextHelper = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTextHelper;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTextHelper_android_drawableBottom = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableBottom;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTextHelper_android_drawableEnd = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableEnd;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTextHelper_android_drawableLeft = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableLeft;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTextHelper_android_drawableRight = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableRight;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTextHelper_android_drawableStart = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableStart;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTextHelper_android_drawableTop = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableTop;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTextHelper_android_textAppearance = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTextHelper_android_textAppearance;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTextView = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTextView;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTextView_android_textAppearance = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTextView_android_textAppearance;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTextView_autoSizeMaxTextSize = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTextView_autoSizeMaxTextSize;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTextView_autoSizeMinTextSize = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTextView_autoSizeMinTextSize;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTextView_autoSizePresetSizes = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTextView_autoSizePresetSizes;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTextView_autoSizeTextType = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTextView_autoSizeTextType;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTextView_drawableBottomCompat = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTextView_drawableBottomCompat;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTextView_drawableEndCompat = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTextView_drawableEndCompat;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTextView_drawableLeftCompat = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTextView_drawableLeftCompat;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTextView_drawableRightCompat = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTextView_drawableRightCompat;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTextView_drawableStartCompat = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTextView_drawableStartCompat;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTextView_drawableTint = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTextView_drawableTint;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTextView_drawableTintMode = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTextView_drawableTintMode;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTextView_drawableTopCompat = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTextView_drawableTopCompat;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTextView_firstBaselineToTopHeight = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTextView_firstBaselineToTopHeight;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTextView_fontFamily = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTextView_fontFamily;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTextView_fontVariationSettings = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTextView_fontVariationSettings;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTextView_lastBaselineToBottomHeight = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTextView_lastBaselineToBottomHeight;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTextView_lineHeight = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTextView_lineHeight;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTextView_textAllCaps = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTextView_textAllCaps;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTextView_textLocale = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTextView_textLocale;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_actionBarDivider = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_actionBarPopupTheme = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_actionBarPopupTheme;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_actionBarSize = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_actionBarSize;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_actionBarSplitStyle = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_actionBarSplitStyle;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_actionBarStyle = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_actionBarStyle;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_actionBarTabStyle = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_actionBarTabStyle;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_actionBarTheme = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_actionBarTheme;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_actionButtonStyle = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_actionButtonStyle;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_actionDropDownStyle = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_actionDropDownStyle;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_actionMenuTextColor = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextColor;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_actionModeBackground = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_actionModeBackground;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_actionModeCutDrawable = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_actionModeCutDrawable;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_actionModeFindDrawable = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_actionModeFindDrawable;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_actionModePasteDrawable = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_actionModePasteDrawable;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_actionModeShareDrawable = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_actionModeShareDrawable;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_actionModeSplitBackground = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_actionModeSplitBackground;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_actionModeStyle = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_actionModeStyle;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_activityChooserViewStyle = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_activityChooserViewStyle;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_alertDialogStyle = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_alertDialogStyle;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_alertDialogTheme = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_alertDialogTheme;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_android_windowIsFloating = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_android_windowIsFloating;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_borderlessButtonStyle = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_borderlessButtonStyle;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_buttonBarStyle = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_buttonBarStyle;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_buttonStyle = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_buttonStyle;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_buttonStyleSmall = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_buttonStyleSmall;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_checkboxStyle = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_checkboxStyle;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_checkedTextViewStyle = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_checkedTextViewStyle;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_colorAccent = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_colorAccent;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_colorBackgroundFloating = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_colorBackgroundFloating;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_colorButtonNormal = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_colorButtonNormal;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_colorControlActivated = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_colorControlActivated;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_colorControlHighlight = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_colorControlHighlight;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_colorControlNormal = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_colorControlNormal;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_colorError = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_colorError;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_colorPrimary = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_colorPrimary;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_colorPrimaryDark = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_colorPrimaryDark;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_controlBackground = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_controlBackground;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_dialogCornerRadius = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_dialogCornerRadius;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_dialogPreferredPadding = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_dialogPreferredPadding;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_dialogTheme = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_dialogTheme;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_dividerHorizontal = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_dividerHorizontal;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_dividerVertical = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_dividerVertical;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_editTextBackground = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_editTextBackground;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_editTextColor = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_editTextColor;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_editTextStyle = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_editTextStyle;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_listChoiceIndicatorMultipleAnimated = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_listChoiceIndicatorMultipleAnimated;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_listChoiceIndicatorSingleAnimated = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_listChoiceIndicatorSingleAnimated;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_listMenuViewStyle = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_listMenuViewStyle;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingEnd = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingEnd;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingStart = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingStart;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_panelBackground = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_panelBackground;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_popupMenuStyle = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_popupMenuStyle;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_popupWindowStyle = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_popupWindowStyle;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_radioButtonStyle = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_radioButtonStyle;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_ratingBarStyle = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyle;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_searchViewStyle = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_searchViewStyle;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_seekBarStyle = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_seekBarStyle;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_selectableItemBackground = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackground;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_spinnerStyle = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_spinnerStyle;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_switchStyle = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_switchStyle;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_textAppearanceListItem = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItem;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_textColorSearchUrl = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_textColorSearchUrl;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_toolbarStyle = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_toolbarStyle;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_tooltipForegroundColor = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_tooltipForegroundColor;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_tooltipFrameBackground = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_tooltipFrameBackground;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_viewInflaterClass = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_viewInflaterClass;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_windowActionBar = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_windowActionBar;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_windowActionBarOverlay = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_windowActionBarOverlay;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_windowActionModeOverlay = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_windowActionModeOverlay;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_windowMinWidthMajor = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMajor;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_windowMinWidthMinor = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMinor;
+			global::AiForms.Dialogs.Resource.Styleable.AppCompatTheme_windowNoTitle = global::PryRutasMoviles.Droid.Resource.Styleable.AppCompatTheme_windowNoTitle;
+			global::AiForms.Dialogs.Resource.Styleable.BottomAppBar = global::PryRutasMoviles.Droid.Resource.Styleable.BottomAppBar;
+			global::AiForms.Dialogs.Resource.Styleable.BottomAppBar_backgroundTint = global::PryRutasMoviles.Droid.Resource.Styleable.BottomAppBar_backgroundTint;
+			global::AiForms.Dialogs.Resource.Styleable.BottomAppBar_fabAlignmentMode = global::PryRutasMoviles.Droid.Resource.Styleable.BottomAppBar_fabAlignmentMode;
+			global::AiForms.Dialogs.Resource.Styleable.BottomAppBar_fabCradleMargin = global::PryRutasMoviles.Droid.Resource.Styleable.BottomAppBar_fabCradleMargin;
+			global::AiForms.Dialogs.Resource.Styleable.BottomAppBar_fabCradleRoundedCornerRadius = global::PryRutasMoviles.Droid.Resource.Styleable.BottomAppBar_fabCradleRoundedCornerRadius;
+			global::AiForms.Dialogs.Resource.Styleable.BottomAppBar_fabCradleVerticalOffset = global::PryRutasMoviles.Droid.Resource.Styleable.BottomAppBar_fabCradleVerticalOffset;
+			global::AiForms.Dialogs.Resource.Styleable.BottomAppBar_hideOnScroll = global::PryRutasMoviles.Droid.Resource.Styleable.BottomAppBar_hideOnScroll;
+			global::AiForms.Dialogs.Resource.Styleable.BottomNavigationView = global::PryRutasMoviles.Droid.Resource.Styleable.BottomNavigationView;
+			global::AiForms.Dialogs.Resource.Styleable.BottomNavigationView_elevation = global::PryRutasMoviles.Droid.Resource.Styleable.BottomNavigationView_elevation;
+			global::AiForms.Dialogs.Resource.Styleable.BottomNavigationView_itemBackground = global::PryRutasMoviles.Droid.Resource.Styleable.BottomNavigationView_itemBackground;
+			global::AiForms.Dialogs.Resource.Styleable.BottomNavigationView_itemHorizontalTranslationEnabled = global::PryRutasMoviles.Droid.Resource.Styleable.BottomNavigationView_itemHorizontalTranslationEnabled;
+			global::AiForms.Dialogs.Resource.Styleable.BottomNavigationView_itemIconSize = global::PryRutasMoviles.Droid.Resource.Styleable.BottomNavigationView_itemIconSize;
+			global::AiForms.Dialogs.Resource.Styleable.BottomNavigationView_itemIconTint = global::PryRutasMoviles.Droid.Resource.Styleable.BottomNavigationView_itemIconTint;
+			global::AiForms.Dialogs.Resource.Styleable.BottomNavigationView_itemTextAppearanceActive = global::PryRutasMoviles.Droid.Resource.Styleable.BottomNavigationView_itemTextAppearanceActive;
+			global::AiForms.Dialogs.Resource.Styleable.BottomNavigationView_itemTextAppearanceInactive = global::PryRutasMoviles.Droid.Resource.Styleable.BottomNavigationView_itemTextAppearanceInactive;
+			global::AiForms.Dialogs.Resource.Styleable.BottomNavigationView_itemTextColor = global::PryRutasMoviles.Droid.Resource.Styleable.BottomNavigationView_itemTextColor;
+			global::AiForms.Dialogs.Resource.Styleable.BottomNavigationView_labelVisibilityMode = global::PryRutasMoviles.Droid.Resource.Styleable.BottomNavigationView_labelVisibilityMode;
+			global::AiForms.Dialogs.Resource.Styleable.BottomNavigationView_menu = global::PryRutasMoviles.Droid.Resource.Styleable.BottomNavigationView_menu;
+			global::AiForms.Dialogs.Resource.Styleable.BottomSheetBehavior_Layout = global::PryRutasMoviles.Droid.Resource.Styleable.BottomSheetBehavior_Layout;
+			global::AiForms.Dialogs.Resource.Styleable.BottomSheetBehavior_Layout_behavior_fitToContents = global::PryRutasMoviles.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_fitToContents;
+			global::AiForms.Dialogs.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable = global::PryRutasMoviles.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable;
+			global::AiForms.Dialogs.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight = global::PryRutasMoviles.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight;
+			global::AiForms.Dialogs.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed = global::PryRutasMoviles.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed;
+			global::AiForms.Dialogs.Resource.Styleable.ButtonBarLayout = global::PryRutasMoviles.Droid.Resource.Styleable.ButtonBarLayout;
+			global::AiForms.Dialogs.Resource.Styleable.ButtonBarLayout_allowStacking = global::PryRutasMoviles.Droid.Resource.Styleable.ButtonBarLayout_allowStacking;
+			global::AiForms.Dialogs.Resource.Styleable.CardView = global::PryRutasMoviles.Droid.Resource.Styleable.CardView;
+			global::AiForms.Dialogs.Resource.Styleable.CardView_android_minHeight = global::PryRutasMoviles.Droid.Resource.Styleable.CardView_android_minHeight;
+			global::AiForms.Dialogs.Resource.Styleable.CardView_android_minWidth = global::PryRutasMoviles.Droid.Resource.Styleable.CardView_android_minWidth;
+			global::AiForms.Dialogs.Resource.Styleable.CardView_cardBackgroundColor = global::PryRutasMoviles.Droid.Resource.Styleable.CardView_cardBackgroundColor;
+			global::AiForms.Dialogs.Resource.Styleable.CardView_cardCornerRadius = global::PryRutasMoviles.Droid.Resource.Styleable.CardView_cardCornerRadius;
+			global::AiForms.Dialogs.Resource.Styleable.CardView_cardElevation = global::PryRutasMoviles.Droid.Resource.Styleable.CardView_cardElevation;
+			global::AiForms.Dialogs.Resource.Styleable.CardView_cardMaxElevation = global::PryRutasMoviles.Droid.Resource.Styleable.CardView_cardMaxElevation;
+			global::AiForms.Dialogs.Resource.Styleable.CardView_cardPreventCornerOverlap = global::PryRutasMoviles.Droid.Resource.Styleable.CardView_cardPreventCornerOverlap;
+			global::AiForms.Dialogs.Resource.Styleable.CardView_cardUseCompatPadding = global::PryRutasMoviles.Droid.Resource.Styleable.CardView_cardUseCompatPadding;
+			global::AiForms.Dialogs.Resource.Styleable.CardView_contentPadding = global::PryRutasMoviles.Droid.Resource.Styleable.CardView_contentPadding;
+			global::AiForms.Dialogs.Resource.Styleable.CardView_contentPaddingBottom = global::PryRutasMoviles.Droid.Resource.Styleable.CardView_contentPaddingBottom;
+			global::AiForms.Dialogs.Resource.Styleable.CardView_contentPaddingLeft = global::PryRutasMoviles.Droid.Resource.Styleable.CardView_contentPaddingLeft;
+			global::AiForms.Dialogs.Resource.Styleable.CardView_contentPaddingRight = global::PryRutasMoviles.Droid.Resource.Styleable.CardView_contentPaddingRight;
+			global::AiForms.Dialogs.Resource.Styleable.CardView_contentPaddingTop = global::PryRutasMoviles.Droid.Resource.Styleable.CardView_contentPaddingTop;
+			global::AiForms.Dialogs.Resource.Styleable.Chip = global::PryRutasMoviles.Droid.Resource.Styleable.Chip;
+			global::AiForms.Dialogs.Resource.Styleable.ChipGroup = global::PryRutasMoviles.Droid.Resource.Styleable.ChipGroup;
+			global::AiForms.Dialogs.Resource.Styleable.ChipGroup_checkedChip = global::PryRutasMoviles.Droid.Resource.Styleable.ChipGroup_checkedChip;
+			global::AiForms.Dialogs.Resource.Styleable.ChipGroup_chipSpacing = global::PryRutasMoviles.Droid.Resource.Styleable.ChipGroup_chipSpacing;
+			global::AiForms.Dialogs.Resource.Styleable.ChipGroup_chipSpacingHorizontal = global::PryRutasMoviles.Droid.Resource.Styleable.ChipGroup_chipSpacingHorizontal;
+			global::AiForms.Dialogs.Resource.Styleable.ChipGroup_chipSpacingVertical = global::PryRutasMoviles.Droid.Resource.Styleable.ChipGroup_chipSpacingVertical;
+			global::AiForms.Dialogs.Resource.Styleable.ChipGroup_singleLine = global::PryRutasMoviles.Droid.Resource.Styleable.ChipGroup_singleLine;
+			global::AiForms.Dialogs.Resource.Styleable.ChipGroup_singleSelection = global::PryRutasMoviles.Droid.Resource.Styleable.ChipGroup_singleSelection;
+			global::AiForms.Dialogs.Resource.Styleable.Chip_android_checkable = global::PryRutasMoviles.Droid.Resource.Styleable.Chip_android_checkable;
+			global::AiForms.Dialogs.Resource.Styleable.Chip_android_ellipsize = global::PryRutasMoviles.Droid.Resource.Styleable.Chip_android_ellipsize;
+			global::AiForms.Dialogs.Resource.Styleable.Chip_android_maxWidth = global::PryRutasMoviles.Droid.Resource.Styleable.Chip_android_maxWidth;
+			global::AiForms.Dialogs.Resource.Styleable.Chip_android_text = global::PryRutasMoviles.Droid.Resource.Styleable.Chip_android_text;
+			global::AiForms.Dialogs.Resource.Styleable.Chip_android_textAppearance = global::PryRutasMoviles.Droid.Resource.Styleable.Chip_android_textAppearance;
+			global::AiForms.Dialogs.Resource.Styleable.Chip_checkedIcon = global::PryRutasMoviles.Droid.Resource.Styleable.Chip_checkedIcon;
+			global::AiForms.Dialogs.Resource.Styleable.Chip_checkedIconEnabled = global::PryRutasMoviles.Droid.Resource.Styleable.Chip_checkedIconEnabled;
+			global::AiForms.Dialogs.Resource.Styleable.Chip_checkedIconVisible = global::PryRutasMoviles.Droid.Resource.Styleable.Chip_checkedIconVisible;
+			global::AiForms.Dialogs.Resource.Styleable.Chip_chipBackgroundColor = global::PryRutasMoviles.Droid.Resource.Styleable.Chip_chipBackgroundColor;
+			global::AiForms.Dialogs.Resource.Styleable.Chip_chipCornerRadius = global::PryRutasMoviles.Droid.Resource.Styleable.Chip_chipCornerRadius;
+			global::AiForms.Dialogs.Resource.Styleable.Chip_chipEndPadding = global::PryRutasMoviles.Droid.Resource.Styleable.Chip_chipEndPadding;
+			global::AiForms.Dialogs.Resource.Styleable.Chip_chipIcon = global::PryRutasMoviles.Droid.Resource.Styleable.Chip_chipIcon;
+			global::AiForms.Dialogs.Resource.Styleable.Chip_chipIconEnabled = global::PryRutasMoviles.Droid.Resource.Styleable.Chip_chipIconEnabled;
+			global::AiForms.Dialogs.Resource.Styleable.Chip_chipIconSize = global::PryRutasMoviles.Droid.Resource.Styleable.Chip_chipIconSize;
+			global::AiForms.Dialogs.Resource.Styleable.Chip_chipIconTint = global::PryRutasMoviles.Droid.Resource.Styleable.Chip_chipIconTint;
+			global::AiForms.Dialogs.Resource.Styleable.Chip_chipIconVisible = global::PryRutasMoviles.Droid.Resource.Styleable.Chip_chipIconVisible;
+			global::AiForms.Dialogs.Resource.Styleable.Chip_chipMinHeight = global::PryRutasMoviles.Droid.Resource.Styleable.Chip_chipMinHeight;
+			global::AiForms.Dialogs.Resource.Styleable.Chip_chipStartPadding = global::PryRutasMoviles.Droid.Resource.Styleable.Chip_chipStartPadding;
+			global::AiForms.Dialogs.Resource.Styleable.Chip_chipStrokeColor = global::PryRutasMoviles.Droid.Resource.Styleable.Chip_chipStrokeColor;
+			global::AiForms.Dialogs.Resource.Styleable.Chip_chipStrokeWidth = global::PryRutasMoviles.Droid.Resource.Styleable.Chip_chipStrokeWidth;
+			global::AiForms.Dialogs.Resource.Styleable.Chip_closeIcon = global::PryRutasMoviles.Droid.Resource.Styleable.Chip_closeIcon;
+			global::AiForms.Dialogs.Resource.Styleable.Chip_closeIconEnabled = global::PryRutasMoviles.Droid.Resource.Styleable.Chip_closeIconEnabled;
+			global::AiForms.Dialogs.Resource.Styleable.Chip_closeIconEndPadding = global::PryRutasMoviles.Droid.Resource.Styleable.Chip_closeIconEndPadding;
+			global::AiForms.Dialogs.Resource.Styleable.Chip_closeIconSize = global::PryRutasMoviles.Droid.Resource.Styleable.Chip_closeIconSize;
+			global::AiForms.Dialogs.Resource.Styleable.Chip_closeIconStartPadding = global::PryRutasMoviles.Droid.Resource.Styleable.Chip_closeIconStartPadding;
+			global::AiForms.Dialogs.Resource.Styleable.Chip_closeIconTint = global::PryRutasMoviles.Droid.Resource.Styleable.Chip_closeIconTint;
+			global::AiForms.Dialogs.Resource.Styleable.Chip_closeIconVisible = global::PryRutasMoviles.Droid.Resource.Styleable.Chip_closeIconVisible;
+			global::AiForms.Dialogs.Resource.Styleable.Chip_hideMotionSpec = global::PryRutasMoviles.Droid.Resource.Styleable.Chip_hideMotionSpec;
+			global::AiForms.Dialogs.Resource.Styleable.Chip_iconEndPadding = global::PryRutasMoviles.Droid.Resource.Styleable.Chip_iconEndPadding;
+			global::AiForms.Dialogs.Resource.Styleable.Chip_iconStartPadding = global::PryRutasMoviles.Droid.Resource.Styleable.Chip_iconStartPadding;
+			global::AiForms.Dialogs.Resource.Styleable.Chip_rippleColor = global::PryRutasMoviles.Droid.Resource.Styleable.Chip_rippleColor;
+			global::AiForms.Dialogs.Resource.Styleable.Chip_showMotionSpec = global::PryRutasMoviles.Droid.Resource.Styleable.Chip_showMotionSpec;
+			global::AiForms.Dialogs.Resource.Styleable.Chip_textEndPadding = global::PryRutasMoviles.Droid.Resource.Styleable.Chip_textEndPadding;
+			global::AiForms.Dialogs.Resource.Styleable.Chip_textStartPadding = global::PryRutasMoviles.Droid.Resource.Styleable.Chip_textStartPadding;
+			global::AiForms.Dialogs.Resource.Styleable.CollapsingToolbarLayout = global::PryRutasMoviles.Droid.Resource.Styleable.CollapsingToolbarLayout;
+			global::AiForms.Dialogs.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity = global::PryRutasMoviles.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity;
+			global::AiForms.Dialogs.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance = global::PryRutasMoviles.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance;
+			global::AiForms.Dialogs.Resource.Styleable.CollapsingToolbarLayout_contentScrim = global::PryRutasMoviles.Droid.Resource.Styleable.CollapsingToolbarLayout_contentScrim;
+			global::AiForms.Dialogs.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity = global::PryRutasMoviles.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity;
+			global::AiForms.Dialogs.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin = global::PryRutasMoviles.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin;
+			global::AiForms.Dialogs.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom = global::PryRutasMoviles.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom;
+			global::AiForms.Dialogs.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd = global::PryRutasMoviles.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd;
+			global::AiForms.Dialogs.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart = global::PryRutasMoviles.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart;
+			global::AiForms.Dialogs.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop = global::PryRutasMoviles.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop;
+			global::AiForms.Dialogs.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance = global::PryRutasMoviles.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance;
+			global::AiForms.Dialogs.Resource.Styleable.CollapsingToolbarLayout_Layout = global::PryRutasMoviles.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout;
+			global::AiForms.Dialogs.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode = global::PryRutasMoviles.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode;
+			global::AiForms.Dialogs.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier = global::PryRutasMoviles.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier;
+			global::AiForms.Dialogs.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration = global::PryRutasMoviles.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration;
+			global::AiForms.Dialogs.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger = global::PryRutasMoviles.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger;
+			global::AiForms.Dialogs.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim = global::PryRutasMoviles.Droid.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim;
+			global::AiForms.Dialogs.Resource.Styleable.CollapsingToolbarLayout_title = global::PryRutasMoviles.Droid.Resource.Styleable.CollapsingToolbarLayout_title;
+			global::AiForms.Dialogs.Resource.Styleable.CollapsingToolbarLayout_titleEnabled = global::PryRutasMoviles.Droid.Resource.Styleable.CollapsingToolbarLayout_titleEnabled;
+			global::AiForms.Dialogs.Resource.Styleable.CollapsingToolbarLayout_toolbarId = global::PryRutasMoviles.Droid.Resource.Styleable.CollapsingToolbarLayout_toolbarId;
+			global::AiForms.Dialogs.Resource.Styleable.ColorStateListItem = global::PryRutasMoviles.Droid.Resource.Styleable.ColorStateListItem;
+			global::AiForms.Dialogs.Resource.Styleable.ColorStateListItem_alpha = global::PryRutasMoviles.Droid.Resource.Styleable.ColorStateListItem_alpha;
+			global::AiForms.Dialogs.Resource.Styleable.ColorStateListItem_android_alpha = global::PryRutasMoviles.Droid.Resource.Styleable.ColorStateListItem_android_alpha;
+			global::AiForms.Dialogs.Resource.Styleable.ColorStateListItem_android_color = global::PryRutasMoviles.Droid.Resource.Styleable.ColorStateListItem_android_color;
+			global::AiForms.Dialogs.Resource.Styleable.CompoundButton = global::PryRutasMoviles.Droid.Resource.Styleable.CompoundButton;
+			global::AiForms.Dialogs.Resource.Styleable.CompoundButton_android_button = global::PryRutasMoviles.Droid.Resource.Styleable.CompoundButton_android_button;
+			global::AiForms.Dialogs.Resource.Styleable.CompoundButton_buttonCompat = global::PryRutasMoviles.Droid.Resource.Styleable.CompoundButton_buttonCompat;
+			global::AiForms.Dialogs.Resource.Styleable.CompoundButton_buttonTint = global::PryRutasMoviles.Droid.Resource.Styleable.CompoundButton_buttonTint;
+			global::AiForms.Dialogs.Resource.Styleable.CompoundButton_buttonTintMode = global::PryRutasMoviles.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
+			global::AiForms.Dialogs.Resource.Styleable.CoordinatorLayout = global::PryRutasMoviles.Droid.Resource.Styleable.CoordinatorLayout;
+			global::AiForms.Dialogs.Resource.Styleable.CoordinatorLayout_keylines = global::PryRutasMoviles.Droid.Resource.Styleable.CoordinatorLayout_keylines;
+			global::AiForms.Dialogs.Resource.Styleable.CoordinatorLayout_Layout = global::PryRutasMoviles.Droid.Resource.Styleable.CoordinatorLayout_Layout;
+			global::AiForms.Dialogs.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity = global::PryRutasMoviles.Droid.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity;
+			global::AiForms.Dialogs.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor = global::PryRutasMoviles.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor;
+			global::AiForms.Dialogs.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity = global::PryRutasMoviles.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity;
+			global::AiForms.Dialogs.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior = global::PryRutasMoviles.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior;
+			global::AiForms.Dialogs.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges = global::PryRutasMoviles.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges;
+			global::AiForms.Dialogs.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge = global::PryRutasMoviles.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge;
+			global::AiForms.Dialogs.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline = global::PryRutasMoviles.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline;
+			global::AiForms.Dialogs.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::PryRutasMoviles.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
+			global::AiForms.Dialogs.Resource.Styleable.DesignTheme = global::PryRutasMoviles.Droid.Resource.Styleable.DesignTheme;
+			global::AiForms.Dialogs.Resource.Styleable.DesignTheme_bottomSheetDialogTheme = global::PryRutasMoviles.Droid.Resource.Styleable.DesignTheme_bottomSheetDialogTheme;
+			global::AiForms.Dialogs.Resource.Styleable.DesignTheme_bottomSheetStyle = global::PryRutasMoviles.Droid.Resource.Styleable.DesignTheme_bottomSheetStyle;
+			global::AiForms.Dialogs.Resource.Styleable.DrawerArrowToggle = global::PryRutasMoviles.Droid.Resource.Styleable.DrawerArrowToggle;
+			global::AiForms.Dialogs.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::PryRutasMoviles.Droid.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
+			global::AiForms.Dialogs.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::PryRutasMoviles.Droid.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
+			global::AiForms.Dialogs.Resource.Styleable.DrawerArrowToggle_barLength = global::PryRutasMoviles.Droid.Resource.Styleable.DrawerArrowToggle_barLength;
+			global::AiForms.Dialogs.Resource.Styleable.DrawerArrowToggle_color = global::PryRutasMoviles.Droid.Resource.Styleable.DrawerArrowToggle_color;
+			global::AiForms.Dialogs.Resource.Styleable.DrawerArrowToggle_drawableSize = global::PryRutasMoviles.Droid.Resource.Styleable.DrawerArrowToggle_drawableSize;
+			global::AiForms.Dialogs.Resource.Styleable.DrawerArrowToggle_gapBetweenBars = global::PryRutasMoviles.Droid.Resource.Styleable.DrawerArrowToggle_gapBetweenBars;
+			global::AiForms.Dialogs.Resource.Styleable.DrawerArrowToggle_spinBars = global::PryRutasMoviles.Droid.Resource.Styleable.DrawerArrowToggle_spinBars;
+			global::AiForms.Dialogs.Resource.Styleable.DrawerArrowToggle_thickness = global::PryRutasMoviles.Droid.Resource.Styleable.DrawerArrowToggle_thickness;
+			global::AiForms.Dialogs.Resource.Styleable.FloatingActionButton = global::PryRutasMoviles.Droid.Resource.Styleable.FloatingActionButton;
+			global::AiForms.Dialogs.Resource.Styleable.FloatingActionButton_backgroundTint = global::PryRutasMoviles.Droid.Resource.Styleable.FloatingActionButton_backgroundTint;
+			global::AiForms.Dialogs.Resource.Styleable.FloatingActionButton_backgroundTintMode = global::PryRutasMoviles.Droid.Resource.Styleable.FloatingActionButton_backgroundTintMode;
+			global::AiForms.Dialogs.Resource.Styleable.FloatingActionButton_Behavior_Layout = global::PryRutasMoviles.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout;
+			global::AiForms.Dialogs.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide = global::PryRutasMoviles.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide;
+			global::AiForms.Dialogs.Resource.Styleable.FloatingActionButton_borderWidth = global::PryRutasMoviles.Droid.Resource.Styleable.FloatingActionButton_borderWidth;
+			global::AiForms.Dialogs.Resource.Styleable.FloatingActionButton_elevation = global::PryRutasMoviles.Droid.Resource.Styleable.FloatingActionButton_elevation;
+			global::AiForms.Dialogs.Resource.Styleable.FloatingActionButton_fabCustomSize = global::PryRutasMoviles.Droid.Resource.Styleable.FloatingActionButton_fabCustomSize;
+			global::AiForms.Dialogs.Resource.Styleable.FloatingActionButton_fabSize = global::PryRutasMoviles.Droid.Resource.Styleable.FloatingActionButton_fabSize;
+			global::AiForms.Dialogs.Resource.Styleable.FloatingActionButton_hideMotionSpec = global::PryRutasMoviles.Droid.Resource.Styleable.FloatingActionButton_hideMotionSpec;
+			global::AiForms.Dialogs.Resource.Styleable.FloatingActionButton_hoveredFocusedTranslationZ = global::PryRutasMoviles.Droid.Resource.Styleable.FloatingActionButton_hoveredFocusedTranslationZ;
+			global::AiForms.Dialogs.Resource.Styleable.FloatingActionButton_maxImageSize = global::PryRutasMoviles.Droid.Resource.Styleable.FloatingActionButton_maxImageSize;
+			global::AiForms.Dialogs.Resource.Styleable.FloatingActionButton_pressedTranslationZ = global::PryRutasMoviles.Droid.Resource.Styleable.FloatingActionButton_pressedTranslationZ;
+			global::AiForms.Dialogs.Resource.Styleable.FloatingActionButton_rippleColor = global::PryRutasMoviles.Droid.Resource.Styleable.FloatingActionButton_rippleColor;
+			global::AiForms.Dialogs.Resource.Styleable.FloatingActionButton_showMotionSpec = global::PryRutasMoviles.Droid.Resource.Styleable.FloatingActionButton_showMotionSpec;
+			global::AiForms.Dialogs.Resource.Styleable.FloatingActionButton_useCompatPadding = global::PryRutasMoviles.Droid.Resource.Styleable.FloatingActionButton_useCompatPadding;
+			global::AiForms.Dialogs.Resource.Styleable.FlowLayout = global::PryRutasMoviles.Droid.Resource.Styleable.FlowLayout;
+			global::AiForms.Dialogs.Resource.Styleable.FlowLayout_itemSpacing = global::PryRutasMoviles.Droid.Resource.Styleable.FlowLayout_itemSpacing;
+			global::AiForms.Dialogs.Resource.Styleable.FlowLayout_lineSpacing = global::PryRutasMoviles.Droid.Resource.Styleable.FlowLayout_lineSpacing;
+			global::AiForms.Dialogs.Resource.Styleable.FontFamily = global::PryRutasMoviles.Droid.Resource.Styleable.FontFamily;
+			global::AiForms.Dialogs.Resource.Styleable.FontFamilyFont = global::PryRutasMoviles.Droid.Resource.Styleable.FontFamilyFont;
+			global::AiForms.Dialogs.Resource.Styleable.FontFamilyFont_android_font = global::PryRutasMoviles.Droid.Resource.Styleable.FontFamilyFont_android_font;
+			global::AiForms.Dialogs.Resource.Styleable.FontFamilyFont_android_fontStyle = global::PryRutasMoviles.Droid.Resource.Styleable.FontFamilyFont_android_fontStyle;
+			global::AiForms.Dialogs.Resource.Styleable.FontFamilyFont_android_fontVariationSettings = global::PryRutasMoviles.Droid.Resource.Styleable.FontFamilyFont_android_fontVariationSettings;
+			global::AiForms.Dialogs.Resource.Styleable.FontFamilyFont_android_fontWeight = global::PryRutasMoviles.Droid.Resource.Styleable.FontFamilyFont_android_fontWeight;
+			global::AiForms.Dialogs.Resource.Styleable.FontFamilyFont_android_ttcIndex = global::PryRutasMoviles.Droid.Resource.Styleable.FontFamilyFont_android_ttcIndex;
+			global::AiForms.Dialogs.Resource.Styleable.FontFamilyFont_font = global::PryRutasMoviles.Droid.Resource.Styleable.FontFamilyFont_font;
+			global::AiForms.Dialogs.Resource.Styleable.FontFamilyFont_fontStyle = global::PryRutasMoviles.Droid.Resource.Styleable.FontFamilyFont_fontStyle;
+			global::AiForms.Dialogs.Resource.Styleable.FontFamilyFont_fontVariationSettings = global::PryRutasMoviles.Droid.Resource.Styleable.FontFamilyFont_fontVariationSettings;
+			global::AiForms.Dialogs.Resource.Styleable.FontFamilyFont_fontWeight = global::PryRutasMoviles.Droid.Resource.Styleable.FontFamilyFont_fontWeight;
+			global::AiForms.Dialogs.Resource.Styleable.FontFamilyFont_ttcIndex = global::PryRutasMoviles.Droid.Resource.Styleable.FontFamilyFont_ttcIndex;
+			global::AiForms.Dialogs.Resource.Styleable.FontFamily_fontProviderAuthority = global::PryRutasMoviles.Droid.Resource.Styleable.FontFamily_fontProviderAuthority;
+			global::AiForms.Dialogs.Resource.Styleable.FontFamily_fontProviderCerts = global::PryRutasMoviles.Droid.Resource.Styleable.FontFamily_fontProviderCerts;
+			global::AiForms.Dialogs.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::PryRutasMoviles.Droid.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
+			global::AiForms.Dialogs.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::PryRutasMoviles.Droid.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
+			global::AiForms.Dialogs.Resource.Styleable.FontFamily_fontProviderPackage = global::PryRutasMoviles.Droid.Resource.Styleable.FontFamily_fontProviderPackage;
+			global::AiForms.Dialogs.Resource.Styleable.FontFamily_fontProviderQuery = global::PryRutasMoviles.Droid.Resource.Styleable.FontFamily_fontProviderQuery;
+			global::AiForms.Dialogs.Resource.Styleable.ForegroundLinearLayout = global::PryRutasMoviles.Droid.Resource.Styleable.ForegroundLinearLayout;
+			global::AiForms.Dialogs.Resource.Styleable.ForegroundLinearLayout_android_foreground = global::PryRutasMoviles.Droid.Resource.Styleable.ForegroundLinearLayout_android_foreground;
+			global::AiForms.Dialogs.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity = global::PryRutasMoviles.Droid.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity;
+			global::AiForms.Dialogs.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding = global::PryRutasMoviles.Droid.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding;
+			global::AiForms.Dialogs.Resource.Styleable.GradientColor = global::PryRutasMoviles.Droid.Resource.Styleable.GradientColor;
+			global::AiForms.Dialogs.Resource.Styleable.GradientColorItem = global::PryRutasMoviles.Droid.Resource.Styleable.GradientColorItem;
+			global::AiForms.Dialogs.Resource.Styleable.GradientColorItem_android_color = global::PryRutasMoviles.Droid.Resource.Styleable.GradientColorItem_android_color;
+			global::AiForms.Dialogs.Resource.Styleable.GradientColorItem_android_offset = global::PryRutasMoviles.Droid.Resource.Styleable.GradientColorItem_android_offset;
+			global::AiForms.Dialogs.Resource.Styleable.GradientColor_android_centerColor = global::PryRutasMoviles.Droid.Resource.Styleable.GradientColor_android_centerColor;
+			global::AiForms.Dialogs.Resource.Styleable.GradientColor_android_centerX = global::PryRutasMoviles.Droid.Resource.Styleable.GradientColor_android_centerX;
+			global::AiForms.Dialogs.Resource.Styleable.GradientColor_android_centerY = global::PryRutasMoviles.Droid.Resource.Styleable.GradientColor_android_centerY;
+			global::AiForms.Dialogs.Resource.Styleable.GradientColor_android_endColor = global::PryRutasMoviles.Droid.Resource.Styleable.GradientColor_android_endColor;
+			global::AiForms.Dialogs.Resource.Styleable.GradientColor_android_endX = global::PryRutasMoviles.Droid.Resource.Styleable.GradientColor_android_endX;
+			global::AiForms.Dialogs.Resource.Styleable.GradientColor_android_endY = global::PryRutasMoviles.Droid.Resource.Styleable.GradientColor_android_endY;
+			global::AiForms.Dialogs.Resource.Styleable.GradientColor_android_gradientRadius = global::PryRutasMoviles.Droid.Resource.Styleable.GradientColor_android_gradientRadius;
+			global::AiForms.Dialogs.Resource.Styleable.GradientColor_android_startColor = global::PryRutasMoviles.Droid.Resource.Styleable.GradientColor_android_startColor;
+			global::AiForms.Dialogs.Resource.Styleable.GradientColor_android_startX = global::PryRutasMoviles.Droid.Resource.Styleable.GradientColor_android_startX;
+			global::AiForms.Dialogs.Resource.Styleable.GradientColor_android_startY = global::PryRutasMoviles.Droid.Resource.Styleable.GradientColor_android_startY;
+			global::AiForms.Dialogs.Resource.Styleable.GradientColor_android_tileMode = global::PryRutasMoviles.Droid.Resource.Styleable.GradientColor_android_tileMode;
+			global::AiForms.Dialogs.Resource.Styleable.GradientColor_android_type = global::PryRutasMoviles.Droid.Resource.Styleable.GradientColor_android_type;
+			global::AiForms.Dialogs.Resource.Styleable.LinearLayoutCompat = global::PryRutasMoviles.Droid.Resource.Styleable.LinearLayoutCompat;
+			global::AiForms.Dialogs.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::PryRutasMoviles.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
+			global::AiForms.Dialogs.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::PryRutasMoviles.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
+			global::AiForms.Dialogs.Resource.Styleable.LinearLayoutCompat_android_gravity = global::PryRutasMoviles.Droid.Resource.Styleable.LinearLayoutCompat_android_gravity;
+			global::AiForms.Dialogs.Resource.Styleable.LinearLayoutCompat_android_orientation = global::PryRutasMoviles.Droid.Resource.Styleable.LinearLayoutCompat_android_orientation;
+			global::AiForms.Dialogs.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::PryRutasMoviles.Droid.Resource.Styleable.LinearLayoutCompat_android_weightSum;
+			global::AiForms.Dialogs.Resource.Styleable.LinearLayoutCompat_divider = global::PryRutasMoviles.Droid.Resource.Styleable.LinearLayoutCompat_divider;
+			global::AiForms.Dialogs.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::PryRutasMoviles.Droid.Resource.Styleable.LinearLayoutCompat_dividerPadding;
+			global::AiForms.Dialogs.Resource.Styleable.LinearLayoutCompat_Layout = global::PryRutasMoviles.Droid.Resource.Styleable.LinearLayoutCompat_Layout;
+			global::AiForms.Dialogs.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::PryRutasMoviles.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
+			global::AiForms.Dialogs.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::PryRutasMoviles.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
+			global::AiForms.Dialogs.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::PryRutasMoviles.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
+			global::AiForms.Dialogs.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::PryRutasMoviles.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
+			global::AiForms.Dialogs.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::PryRutasMoviles.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
+			global::AiForms.Dialogs.Resource.Styleable.LinearLayoutCompat_showDividers = global::PryRutasMoviles.Droid.Resource.Styleable.LinearLayoutCompat_showDividers;
+			global::AiForms.Dialogs.Resource.Styleable.ListPopupWindow = global::PryRutasMoviles.Droid.Resource.Styleable.ListPopupWindow;
+			global::AiForms.Dialogs.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::PryRutasMoviles.Droid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
+			global::AiForms.Dialogs.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::PryRutasMoviles.Droid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
+			global::AiForms.Dialogs.Resource.Styleable.MaterialButton = global::PryRutasMoviles.Droid.Resource.Styleable.MaterialButton;
+			global::AiForms.Dialogs.Resource.Styleable.MaterialButton_android_insetBottom = global::PryRutasMoviles.Droid.Resource.Styleable.MaterialButton_android_insetBottom;
+			global::AiForms.Dialogs.Resource.Styleable.MaterialButton_android_insetLeft = global::PryRutasMoviles.Droid.Resource.Styleable.MaterialButton_android_insetLeft;
+			global::AiForms.Dialogs.Resource.Styleable.MaterialButton_android_insetRight = global::PryRutasMoviles.Droid.Resource.Styleable.MaterialButton_android_insetRight;
+			global::AiForms.Dialogs.Resource.Styleable.MaterialButton_android_insetTop = global::PryRutasMoviles.Droid.Resource.Styleable.MaterialButton_android_insetTop;
+			global::AiForms.Dialogs.Resource.Styleable.MaterialButton_backgroundTint = global::PryRutasMoviles.Droid.Resource.Styleable.MaterialButton_backgroundTint;
+			global::AiForms.Dialogs.Resource.Styleable.MaterialButton_backgroundTintMode = global::PryRutasMoviles.Droid.Resource.Styleable.MaterialButton_backgroundTintMode;
+			global::AiForms.Dialogs.Resource.Styleable.MaterialButton_cornerRadius = global::PryRutasMoviles.Droid.Resource.Styleable.MaterialButton_cornerRadius;
+			global::AiForms.Dialogs.Resource.Styleable.MaterialButton_icon = global::PryRutasMoviles.Droid.Resource.Styleable.MaterialButton_icon;
+			global::AiForms.Dialogs.Resource.Styleable.MaterialButton_iconGravity = global::PryRutasMoviles.Droid.Resource.Styleable.MaterialButton_iconGravity;
+			global::AiForms.Dialogs.Resource.Styleable.MaterialButton_iconPadding = global::PryRutasMoviles.Droid.Resource.Styleable.MaterialButton_iconPadding;
+			global::AiForms.Dialogs.Resource.Styleable.MaterialButton_iconSize = global::PryRutasMoviles.Droid.Resource.Styleable.MaterialButton_iconSize;
+			global::AiForms.Dialogs.Resource.Styleable.MaterialButton_iconTint = global::PryRutasMoviles.Droid.Resource.Styleable.MaterialButton_iconTint;
+			global::AiForms.Dialogs.Resource.Styleable.MaterialButton_iconTintMode = global::PryRutasMoviles.Droid.Resource.Styleable.MaterialButton_iconTintMode;
+			global::AiForms.Dialogs.Resource.Styleable.MaterialButton_rippleColor = global::PryRutasMoviles.Droid.Resource.Styleable.MaterialButton_rippleColor;
+			global::AiForms.Dialogs.Resource.Styleable.MaterialButton_strokeColor = global::PryRutasMoviles.Droid.Resource.Styleable.MaterialButton_strokeColor;
+			global::AiForms.Dialogs.Resource.Styleable.MaterialButton_strokeWidth = global::PryRutasMoviles.Droid.Resource.Styleable.MaterialButton_strokeWidth;
+			global::AiForms.Dialogs.Resource.Styleable.MaterialCardView = global::PryRutasMoviles.Droid.Resource.Styleable.MaterialCardView;
+			global::AiForms.Dialogs.Resource.Styleable.MaterialCardView_strokeColor = global::PryRutasMoviles.Droid.Resource.Styleable.MaterialCardView_strokeColor;
+			global::AiForms.Dialogs.Resource.Styleable.MaterialCardView_strokeWidth = global::PryRutasMoviles.Droid.Resource.Styleable.MaterialCardView_strokeWidth;
+			global::AiForms.Dialogs.Resource.Styleable.MaterialComponentsTheme = global::PryRutasMoviles.Droid.Resource.Styleable.MaterialComponentsTheme;
+			global::AiForms.Dialogs.Resource.Styleable.MaterialComponentsTheme_bottomSheetDialogTheme = global::PryRutasMoviles.Droid.Resource.Styleable.MaterialComponentsTheme_bottomSheetDialogTheme;
+			global::AiForms.Dialogs.Resource.Styleable.MaterialComponentsTheme_bottomSheetStyle = global::PryRutasMoviles.Droid.Resource.Styleable.MaterialComponentsTheme_bottomSheetStyle;
+			global::AiForms.Dialogs.Resource.Styleable.MaterialComponentsTheme_chipGroupStyle = global::PryRutasMoviles.Droid.Resource.Styleable.MaterialComponentsTheme_chipGroupStyle;
+			global::AiForms.Dialogs.Resource.Styleable.MaterialComponentsTheme_chipStandaloneStyle = global::PryRutasMoviles.Droid.Resource.Styleable.MaterialComponentsTheme_chipStandaloneStyle;
+			global::AiForms.Dialogs.Resource.Styleable.MaterialComponentsTheme_chipStyle = global::PryRutasMoviles.Droid.Resource.Styleable.MaterialComponentsTheme_chipStyle;
+			global::AiForms.Dialogs.Resource.Styleable.MaterialComponentsTheme_colorAccent = global::PryRutasMoviles.Droid.Resource.Styleable.MaterialComponentsTheme_colorAccent;
+			global::AiForms.Dialogs.Resource.Styleable.MaterialComponentsTheme_colorBackgroundFloating = global::PryRutasMoviles.Droid.Resource.Styleable.MaterialComponentsTheme_colorBackgroundFloating;
+			global::AiForms.Dialogs.Resource.Styleable.MaterialComponentsTheme_colorPrimary = global::PryRutasMoviles.Droid.Resource.Styleable.MaterialComponentsTheme_colorPrimary;
+			global::AiForms.Dialogs.Resource.Styleable.MaterialComponentsTheme_colorPrimaryDark = global::PryRutasMoviles.Droid.Resource.Styleable.MaterialComponentsTheme_colorPrimaryDark;
+			global::AiForms.Dialogs.Resource.Styleable.MaterialComponentsTheme_colorSecondary = global::PryRutasMoviles.Droid.Resource.Styleable.MaterialComponentsTheme_colorSecondary;
+			global::AiForms.Dialogs.Resource.Styleable.MaterialComponentsTheme_editTextStyle = global::PryRutasMoviles.Droid.Resource.Styleable.MaterialComponentsTheme_editTextStyle;
+			global::AiForms.Dialogs.Resource.Styleable.MaterialComponentsTheme_floatingActionButtonStyle = global::PryRutasMoviles.Droid.Resource.Styleable.MaterialComponentsTheme_floatingActionButtonStyle;
+			global::AiForms.Dialogs.Resource.Styleable.MaterialComponentsTheme_materialButtonStyle = global::PryRutasMoviles.Droid.Resource.Styleable.MaterialComponentsTheme_materialButtonStyle;
+			global::AiForms.Dialogs.Resource.Styleable.MaterialComponentsTheme_materialCardViewStyle = global::PryRutasMoviles.Droid.Resource.Styleable.MaterialComponentsTheme_materialCardViewStyle;
+			global::AiForms.Dialogs.Resource.Styleable.MaterialComponentsTheme_navigationViewStyle = global::PryRutasMoviles.Droid.Resource.Styleable.MaterialComponentsTheme_navigationViewStyle;
+			global::AiForms.Dialogs.Resource.Styleable.MaterialComponentsTheme_scrimBackground = global::PryRutasMoviles.Droid.Resource.Styleable.MaterialComponentsTheme_scrimBackground;
+			global::AiForms.Dialogs.Resource.Styleable.MaterialComponentsTheme_snackbarButtonStyle = global::PryRutasMoviles.Droid.Resource.Styleable.MaterialComponentsTheme_snackbarButtonStyle;
+			global::AiForms.Dialogs.Resource.Styleable.MaterialComponentsTheme_tabStyle = global::PryRutasMoviles.Droid.Resource.Styleable.MaterialComponentsTheme_tabStyle;
+			global::AiForms.Dialogs.Resource.Styleable.MaterialComponentsTheme_textAppearanceBody1 = global::PryRutasMoviles.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceBody1;
+			global::AiForms.Dialogs.Resource.Styleable.MaterialComponentsTheme_textAppearanceBody2 = global::PryRutasMoviles.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceBody2;
+			global::AiForms.Dialogs.Resource.Styleable.MaterialComponentsTheme_textAppearanceButton = global::PryRutasMoviles.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceButton;
+			global::AiForms.Dialogs.Resource.Styleable.MaterialComponentsTheme_textAppearanceCaption = global::PryRutasMoviles.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceCaption;
+			global::AiForms.Dialogs.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline1 = global::PryRutasMoviles.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline1;
+			global::AiForms.Dialogs.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline2 = global::PryRutasMoviles.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline2;
+			global::AiForms.Dialogs.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline3 = global::PryRutasMoviles.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline3;
+			global::AiForms.Dialogs.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline4 = global::PryRutasMoviles.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline4;
+			global::AiForms.Dialogs.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline5 = global::PryRutasMoviles.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline5;
+			global::AiForms.Dialogs.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline6 = global::PryRutasMoviles.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline6;
+			global::AiForms.Dialogs.Resource.Styleable.MaterialComponentsTheme_textAppearanceOverline = global::PryRutasMoviles.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceOverline;
+			global::AiForms.Dialogs.Resource.Styleable.MaterialComponentsTheme_textAppearanceSubtitle1 = global::PryRutasMoviles.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceSubtitle1;
+			global::AiForms.Dialogs.Resource.Styleable.MaterialComponentsTheme_textAppearanceSubtitle2 = global::PryRutasMoviles.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceSubtitle2;
+			global::AiForms.Dialogs.Resource.Styleable.MaterialComponentsTheme_textInputStyle = global::PryRutasMoviles.Droid.Resource.Styleable.MaterialComponentsTheme_textInputStyle;
+			global::AiForms.Dialogs.Resource.Styleable.MenuGroup = global::PryRutasMoviles.Droid.Resource.Styleable.MenuGroup;
+			global::AiForms.Dialogs.Resource.Styleable.MenuGroup_android_checkableBehavior = global::PryRutasMoviles.Droid.Resource.Styleable.MenuGroup_android_checkableBehavior;
+			global::AiForms.Dialogs.Resource.Styleable.MenuGroup_android_enabled = global::PryRutasMoviles.Droid.Resource.Styleable.MenuGroup_android_enabled;
+			global::AiForms.Dialogs.Resource.Styleable.MenuGroup_android_id = global::PryRutasMoviles.Droid.Resource.Styleable.MenuGroup_android_id;
+			global::AiForms.Dialogs.Resource.Styleable.MenuGroup_android_menuCategory = global::PryRutasMoviles.Droid.Resource.Styleable.MenuGroup_android_menuCategory;
+			global::AiForms.Dialogs.Resource.Styleable.MenuGroup_android_orderInCategory = global::PryRutasMoviles.Droid.Resource.Styleable.MenuGroup_android_orderInCategory;
+			global::AiForms.Dialogs.Resource.Styleable.MenuGroup_android_visible = global::PryRutasMoviles.Droid.Resource.Styleable.MenuGroup_android_visible;
+			global::AiForms.Dialogs.Resource.Styleable.MenuItem = global::PryRutasMoviles.Droid.Resource.Styleable.MenuItem;
+			global::AiForms.Dialogs.Resource.Styleable.MenuItem_actionLayout = global::PryRutasMoviles.Droid.Resource.Styleable.MenuItem_actionLayout;
+			global::AiForms.Dialogs.Resource.Styleable.MenuItem_actionProviderClass = global::PryRutasMoviles.Droid.Resource.Styleable.MenuItem_actionProviderClass;
+			global::AiForms.Dialogs.Resource.Styleable.MenuItem_actionViewClass = global::PryRutasMoviles.Droid.Resource.Styleable.MenuItem_actionViewClass;
+			global::AiForms.Dialogs.Resource.Styleable.MenuItem_alphabeticModifiers = global::PryRutasMoviles.Droid.Resource.Styleable.MenuItem_alphabeticModifiers;
+			global::AiForms.Dialogs.Resource.Styleable.MenuItem_android_alphabeticShortcut = global::PryRutasMoviles.Droid.Resource.Styleable.MenuItem_android_alphabeticShortcut;
+			global::AiForms.Dialogs.Resource.Styleable.MenuItem_android_checkable = global::PryRutasMoviles.Droid.Resource.Styleable.MenuItem_android_checkable;
+			global::AiForms.Dialogs.Resource.Styleable.MenuItem_android_checked = global::PryRutasMoviles.Droid.Resource.Styleable.MenuItem_android_checked;
+			global::AiForms.Dialogs.Resource.Styleable.MenuItem_android_enabled = global::PryRutasMoviles.Droid.Resource.Styleable.MenuItem_android_enabled;
+			global::AiForms.Dialogs.Resource.Styleable.MenuItem_android_icon = global::PryRutasMoviles.Droid.Resource.Styleable.MenuItem_android_icon;
+			global::AiForms.Dialogs.Resource.Styleable.MenuItem_android_id = global::PryRutasMoviles.Droid.Resource.Styleable.MenuItem_android_id;
+			global::AiForms.Dialogs.Resource.Styleable.MenuItem_android_menuCategory = global::PryRutasMoviles.Droid.Resource.Styleable.MenuItem_android_menuCategory;
+			global::AiForms.Dialogs.Resource.Styleable.MenuItem_android_numericShortcut = global::PryRutasMoviles.Droid.Resource.Styleable.MenuItem_android_numericShortcut;
+			global::AiForms.Dialogs.Resource.Styleable.MenuItem_android_onClick = global::PryRutasMoviles.Droid.Resource.Styleable.MenuItem_android_onClick;
+			global::AiForms.Dialogs.Resource.Styleable.MenuItem_android_orderInCategory = global::PryRutasMoviles.Droid.Resource.Styleable.MenuItem_android_orderInCategory;
+			global::AiForms.Dialogs.Resource.Styleable.MenuItem_android_title = global::PryRutasMoviles.Droid.Resource.Styleable.MenuItem_android_title;
+			global::AiForms.Dialogs.Resource.Styleable.MenuItem_android_titleCondensed = global::PryRutasMoviles.Droid.Resource.Styleable.MenuItem_android_titleCondensed;
+			global::AiForms.Dialogs.Resource.Styleable.MenuItem_android_visible = global::PryRutasMoviles.Droid.Resource.Styleable.MenuItem_android_visible;
+			global::AiForms.Dialogs.Resource.Styleable.MenuItem_contentDescription = global::PryRutasMoviles.Droid.Resource.Styleable.MenuItem_contentDescription;
+			global::AiForms.Dialogs.Resource.Styleable.MenuItem_iconTint = global::PryRutasMoviles.Droid.Resource.Styleable.MenuItem_iconTint;
+			global::AiForms.Dialogs.Resource.Styleable.MenuItem_iconTintMode = global::PryRutasMoviles.Droid.Resource.Styleable.MenuItem_iconTintMode;
+			global::AiForms.Dialogs.Resource.Styleable.MenuItem_numericModifiers = global::PryRutasMoviles.Droid.Resource.Styleable.MenuItem_numericModifiers;
+			global::AiForms.Dialogs.Resource.Styleable.MenuItem_showAsAction = global::PryRutasMoviles.Droid.Resource.Styleable.MenuItem_showAsAction;
+			global::AiForms.Dialogs.Resource.Styleable.MenuItem_tooltipText = global::PryRutasMoviles.Droid.Resource.Styleable.MenuItem_tooltipText;
+			global::AiForms.Dialogs.Resource.Styleable.MenuView = global::PryRutasMoviles.Droid.Resource.Styleable.MenuView;
+			global::AiForms.Dialogs.Resource.Styleable.MenuView_android_headerBackground = global::PryRutasMoviles.Droid.Resource.Styleable.MenuView_android_headerBackground;
+			global::AiForms.Dialogs.Resource.Styleable.MenuView_android_horizontalDivider = global::PryRutasMoviles.Droid.Resource.Styleable.MenuView_android_horizontalDivider;
+			global::AiForms.Dialogs.Resource.Styleable.MenuView_android_itemBackground = global::PryRutasMoviles.Droid.Resource.Styleable.MenuView_android_itemBackground;
+			global::AiForms.Dialogs.Resource.Styleable.MenuView_android_itemIconDisabledAlpha = global::PryRutasMoviles.Droid.Resource.Styleable.MenuView_android_itemIconDisabledAlpha;
+			global::AiForms.Dialogs.Resource.Styleable.MenuView_android_itemTextAppearance = global::PryRutasMoviles.Droid.Resource.Styleable.MenuView_android_itemTextAppearance;
+			global::AiForms.Dialogs.Resource.Styleable.MenuView_android_verticalDivider = global::PryRutasMoviles.Droid.Resource.Styleable.MenuView_android_verticalDivider;
+			global::AiForms.Dialogs.Resource.Styleable.MenuView_android_windowAnimationStyle = global::PryRutasMoviles.Droid.Resource.Styleable.MenuView_android_windowAnimationStyle;
+			global::AiForms.Dialogs.Resource.Styleable.MenuView_preserveIconSpacing = global::PryRutasMoviles.Droid.Resource.Styleable.MenuView_preserveIconSpacing;
+			global::AiForms.Dialogs.Resource.Styleable.MenuView_subMenuArrow = global::PryRutasMoviles.Droid.Resource.Styleable.MenuView_subMenuArrow;
+			global::AiForms.Dialogs.Resource.Styleable.NavigationView = global::PryRutasMoviles.Droid.Resource.Styleable.NavigationView;
+			global::AiForms.Dialogs.Resource.Styleable.NavigationView_android_background = global::PryRutasMoviles.Droid.Resource.Styleable.NavigationView_android_background;
+			global::AiForms.Dialogs.Resource.Styleable.NavigationView_android_fitsSystemWindows = global::PryRutasMoviles.Droid.Resource.Styleable.NavigationView_android_fitsSystemWindows;
+			global::AiForms.Dialogs.Resource.Styleable.NavigationView_android_maxWidth = global::PryRutasMoviles.Droid.Resource.Styleable.NavigationView_android_maxWidth;
+			global::AiForms.Dialogs.Resource.Styleable.NavigationView_elevation = global::PryRutasMoviles.Droid.Resource.Styleable.NavigationView_elevation;
+			global::AiForms.Dialogs.Resource.Styleable.NavigationView_headerLayout = global::PryRutasMoviles.Droid.Resource.Styleable.NavigationView_headerLayout;
+			global::AiForms.Dialogs.Resource.Styleable.NavigationView_itemBackground = global::PryRutasMoviles.Droid.Resource.Styleable.NavigationView_itemBackground;
+			global::AiForms.Dialogs.Resource.Styleable.NavigationView_itemHorizontalPadding = global::PryRutasMoviles.Droid.Resource.Styleable.NavigationView_itemHorizontalPadding;
+			global::AiForms.Dialogs.Resource.Styleable.NavigationView_itemIconPadding = global::PryRutasMoviles.Droid.Resource.Styleable.NavigationView_itemIconPadding;
+			global::AiForms.Dialogs.Resource.Styleable.NavigationView_itemIconTint = global::PryRutasMoviles.Droid.Resource.Styleable.NavigationView_itemIconTint;
+			global::AiForms.Dialogs.Resource.Styleable.NavigationView_itemTextAppearance = global::PryRutasMoviles.Droid.Resource.Styleable.NavigationView_itemTextAppearance;
+			global::AiForms.Dialogs.Resource.Styleable.NavigationView_itemTextColor = global::PryRutasMoviles.Droid.Resource.Styleable.NavigationView_itemTextColor;
+			global::AiForms.Dialogs.Resource.Styleable.NavigationView_menu = global::PryRutasMoviles.Droid.Resource.Styleable.NavigationView_menu;
+			global::AiForms.Dialogs.Resource.Styleable.PopupWindow = global::PryRutasMoviles.Droid.Resource.Styleable.PopupWindow;
+			global::AiForms.Dialogs.Resource.Styleable.PopupWindowBackgroundState = global::PryRutasMoviles.Droid.Resource.Styleable.PopupWindowBackgroundState;
+			global::AiForms.Dialogs.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::PryRutasMoviles.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
+			global::AiForms.Dialogs.Resource.Styleable.PopupWindow_android_popupAnimationStyle = global::PryRutasMoviles.Droid.Resource.Styleable.PopupWindow_android_popupAnimationStyle;
+			global::AiForms.Dialogs.Resource.Styleable.PopupWindow_android_popupBackground = global::PryRutasMoviles.Droid.Resource.Styleable.PopupWindow_android_popupBackground;
+			global::AiForms.Dialogs.Resource.Styleable.PopupWindow_overlapAnchor = global::PryRutasMoviles.Droid.Resource.Styleable.PopupWindow_overlapAnchor;
+			global::AiForms.Dialogs.Resource.Styleable.RecycleListView = global::PryRutasMoviles.Droid.Resource.Styleable.RecycleListView;
+			global::AiForms.Dialogs.Resource.Styleable.RecycleListView_paddingBottomNoButtons = global::PryRutasMoviles.Droid.Resource.Styleable.RecycleListView_paddingBottomNoButtons;
+			global::AiForms.Dialogs.Resource.Styleable.RecycleListView_paddingTopNoTitle = global::PryRutasMoviles.Droid.Resource.Styleable.RecycleListView_paddingTopNoTitle;
+			global::AiForms.Dialogs.Resource.Styleable.RecyclerView = global::PryRutasMoviles.Droid.Resource.Styleable.RecyclerView;
+			global::AiForms.Dialogs.Resource.Styleable.RecyclerView_android_clipToPadding = global::PryRutasMoviles.Droid.Resource.Styleable.RecyclerView_android_clipToPadding;
+			global::AiForms.Dialogs.Resource.Styleable.RecyclerView_android_descendantFocusability = global::PryRutasMoviles.Droid.Resource.Styleable.RecyclerView_android_descendantFocusability;
+			global::AiForms.Dialogs.Resource.Styleable.RecyclerView_android_orientation = global::PryRutasMoviles.Droid.Resource.Styleable.RecyclerView_android_orientation;
+			global::AiForms.Dialogs.Resource.Styleable.RecyclerView_fastScrollEnabled = global::PryRutasMoviles.Droid.Resource.Styleable.RecyclerView_fastScrollEnabled;
+			global::AiForms.Dialogs.Resource.Styleable.RecyclerView_fastScrollHorizontalThumbDrawable = global::PryRutasMoviles.Droid.Resource.Styleable.RecyclerView_fastScrollHorizontalThumbDrawable;
+			global::AiForms.Dialogs.Resource.Styleable.RecyclerView_fastScrollHorizontalTrackDrawable = global::PryRutasMoviles.Droid.Resource.Styleable.RecyclerView_fastScrollHorizontalTrackDrawable;
+			global::AiForms.Dialogs.Resource.Styleable.RecyclerView_fastScrollVerticalThumbDrawable = global::PryRutasMoviles.Droid.Resource.Styleable.RecyclerView_fastScrollVerticalThumbDrawable;
+			global::AiForms.Dialogs.Resource.Styleable.RecyclerView_fastScrollVerticalTrackDrawable = global::PryRutasMoviles.Droid.Resource.Styleable.RecyclerView_fastScrollVerticalTrackDrawable;
+			global::AiForms.Dialogs.Resource.Styleable.RecyclerView_layoutManager = global::PryRutasMoviles.Droid.Resource.Styleable.RecyclerView_layoutManager;
+			global::AiForms.Dialogs.Resource.Styleable.RecyclerView_reverseLayout = global::PryRutasMoviles.Droid.Resource.Styleable.RecyclerView_reverseLayout;
+			global::AiForms.Dialogs.Resource.Styleable.RecyclerView_spanCount = global::PryRutasMoviles.Droid.Resource.Styleable.RecyclerView_spanCount;
+			global::AiForms.Dialogs.Resource.Styleable.RecyclerView_stackFromEnd = global::PryRutasMoviles.Droid.Resource.Styleable.RecyclerView_stackFromEnd;
+			global::AiForms.Dialogs.Resource.Styleable.ScrimInsetsFrameLayout = global::PryRutasMoviles.Droid.Resource.Styleable.ScrimInsetsFrameLayout;
+			global::AiForms.Dialogs.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground = global::PryRutasMoviles.Droid.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground;
+			global::AiForms.Dialogs.Resource.Styleable.ScrollingViewBehavior_Layout = global::PryRutasMoviles.Droid.Resource.Styleable.ScrollingViewBehavior_Layout;
+			global::AiForms.Dialogs.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop = global::PryRutasMoviles.Droid.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop;
+			global::AiForms.Dialogs.Resource.Styleable.SearchView = global::PryRutasMoviles.Droid.Resource.Styleable.SearchView;
+			global::AiForms.Dialogs.Resource.Styleable.SearchView_android_focusable = global::PryRutasMoviles.Droid.Resource.Styleable.SearchView_android_focusable;
+			global::AiForms.Dialogs.Resource.Styleable.SearchView_android_imeOptions = global::PryRutasMoviles.Droid.Resource.Styleable.SearchView_android_imeOptions;
+			global::AiForms.Dialogs.Resource.Styleable.SearchView_android_inputType = global::PryRutasMoviles.Droid.Resource.Styleable.SearchView_android_inputType;
+			global::AiForms.Dialogs.Resource.Styleable.SearchView_android_maxWidth = global::PryRutasMoviles.Droid.Resource.Styleable.SearchView_android_maxWidth;
+			global::AiForms.Dialogs.Resource.Styleable.SearchView_closeIcon = global::PryRutasMoviles.Droid.Resource.Styleable.SearchView_closeIcon;
+			global::AiForms.Dialogs.Resource.Styleable.SearchView_commitIcon = global::PryRutasMoviles.Droid.Resource.Styleable.SearchView_commitIcon;
+			global::AiForms.Dialogs.Resource.Styleable.SearchView_defaultQueryHint = global::PryRutasMoviles.Droid.Resource.Styleable.SearchView_defaultQueryHint;
+			global::AiForms.Dialogs.Resource.Styleable.SearchView_goIcon = global::PryRutasMoviles.Droid.Resource.Styleable.SearchView_goIcon;
+			global::AiForms.Dialogs.Resource.Styleable.SearchView_iconifiedByDefault = global::PryRutasMoviles.Droid.Resource.Styleable.SearchView_iconifiedByDefault;
+			global::AiForms.Dialogs.Resource.Styleable.SearchView_layout = global::PryRutasMoviles.Droid.Resource.Styleable.SearchView_layout;
+			global::AiForms.Dialogs.Resource.Styleable.SearchView_queryBackground = global::PryRutasMoviles.Droid.Resource.Styleable.SearchView_queryBackground;
+			global::AiForms.Dialogs.Resource.Styleable.SearchView_queryHint = global::PryRutasMoviles.Droid.Resource.Styleable.SearchView_queryHint;
+			global::AiForms.Dialogs.Resource.Styleable.SearchView_searchHintIcon = global::PryRutasMoviles.Droid.Resource.Styleable.SearchView_searchHintIcon;
+			global::AiForms.Dialogs.Resource.Styleable.SearchView_searchIcon = global::PryRutasMoviles.Droid.Resource.Styleable.SearchView_searchIcon;
+			global::AiForms.Dialogs.Resource.Styleable.SearchView_submitBackground = global::PryRutasMoviles.Droid.Resource.Styleable.SearchView_submitBackground;
+			global::AiForms.Dialogs.Resource.Styleable.SearchView_suggestionRowLayout = global::PryRutasMoviles.Droid.Resource.Styleable.SearchView_suggestionRowLayout;
+			global::AiForms.Dialogs.Resource.Styleable.SearchView_voiceIcon = global::PryRutasMoviles.Droid.Resource.Styleable.SearchView_voiceIcon;
+			global::AiForms.Dialogs.Resource.Styleable.Snackbar = global::PryRutasMoviles.Droid.Resource.Styleable.Snackbar;
+			global::AiForms.Dialogs.Resource.Styleable.SnackbarLayout = global::PryRutasMoviles.Droid.Resource.Styleable.SnackbarLayout;
+			global::AiForms.Dialogs.Resource.Styleable.SnackbarLayout_android_maxWidth = global::PryRutasMoviles.Droid.Resource.Styleable.SnackbarLayout_android_maxWidth;
+			global::AiForms.Dialogs.Resource.Styleable.SnackbarLayout_elevation = global::PryRutasMoviles.Droid.Resource.Styleable.SnackbarLayout_elevation;
+			global::AiForms.Dialogs.Resource.Styleable.SnackbarLayout_maxActionInlineWidth = global::PryRutasMoviles.Droid.Resource.Styleable.SnackbarLayout_maxActionInlineWidth;
+			global::AiForms.Dialogs.Resource.Styleable.Snackbar_snackbarButtonStyle = global::PryRutasMoviles.Droid.Resource.Styleable.Snackbar_snackbarButtonStyle;
+			global::AiForms.Dialogs.Resource.Styleable.Snackbar_snackbarStyle = global::PryRutasMoviles.Droid.Resource.Styleable.Snackbar_snackbarStyle;
+			global::AiForms.Dialogs.Resource.Styleable.Spinner = global::PryRutasMoviles.Droid.Resource.Styleable.Spinner;
+			global::AiForms.Dialogs.Resource.Styleable.Spinner_android_dropDownWidth = global::PryRutasMoviles.Droid.Resource.Styleable.Spinner_android_dropDownWidth;
+			global::AiForms.Dialogs.Resource.Styleable.Spinner_android_entries = global::PryRutasMoviles.Droid.Resource.Styleable.Spinner_android_entries;
+			global::AiForms.Dialogs.Resource.Styleable.Spinner_android_popupBackground = global::PryRutasMoviles.Droid.Resource.Styleable.Spinner_android_popupBackground;
+			global::AiForms.Dialogs.Resource.Styleable.Spinner_android_prompt = global::PryRutasMoviles.Droid.Resource.Styleable.Spinner_android_prompt;
+			global::AiForms.Dialogs.Resource.Styleable.Spinner_popupTheme = global::PryRutasMoviles.Droid.Resource.Styleable.Spinner_popupTheme;
+			global::AiForms.Dialogs.Resource.Styleable.StateListDrawable = global::PryRutasMoviles.Droid.Resource.Styleable.StateListDrawable;
+			global::AiForms.Dialogs.Resource.Styleable.StateListDrawableItem = global::PryRutasMoviles.Droid.Resource.Styleable.StateListDrawableItem;
+			global::AiForms.Dialogs.Resource.Styleable.StateListDrawableItem_android_drawable = global::PryRutasMoviles.Droid.Resource.Styleable.StateListDrawableItem_android_drawable;
+			global::AiForms.Dialogs.Resource.Styleable.StateListDrawable_android_constantSize = global::PryRutasMoviles.Droid.Resource.Styleable.StateListDrawable_android_constantSize;
+			global::AiForms.Dialogs.Resource.Styleable.StateListDrawable_android_dither = global::PryRutasMoviles.Droid.Resource.Styleable.StateListDrawable_android_dither;
+			global::AiForms.Dialogs.Resource.Styleable.StateListDrawable_android_enterFadeDuration = global::PryRutasMoviles.Droid.Resource.Styleable.StateListDrawable_android_enterFadeDuration;
+			global::AiForms.Dialogs.Resource.Styleable.StateListDrawable_android_exitFadeDuration = global::PryRutasMoviles.Droid.Resource.Styleable.StateListDrawable_android_exitFadeDuration;
+			global::AiForms.Dialogs.Resource.Styleable.StateListDrawable_android_variablePadding = global::PryRutasMoviles.Droid.Resource.Styleable.StateListDrawable_android_variablePadding;
+			global::AiForms.Dialogs.Resource.Styleable.StateListDrawable_android_visible = global::PryRutasMoviles.Droid.Resource.Styleable.StateListDrawable_android_visible;
+			global::AiForms.Dialogs.Resource.Styleable.SwitchCompat = global::PryRutasMoviles.Droid.Resource.Styleable.SwitchCompat;
+			global::AiForms.Dialogs.Resource.Styleable.SwitchCompat_android_textOff = global::PryRutasMoviles.Droid.Resource.Styleable.SwitchCompat_android_textOff;
+			global::AiForms.Dialogs.Resource.Styleable.SwitchCompat_android_textOn = global::PryRutasMoviles.Droid.Resource.Styleable.SwitchCompat_android_textOn;
+			global::AiForms.Dialogs.Resource.Styleable.SwitchCompat_android_thumb = global::PryRutasMoviles.Droid.Resource.Styleable.SwitchCompat_android_thumb;
+			global::AiForms.Dialogs.Resource.Styleable.SwitchCompat_showText = global::PryRutasMoviles.Droid.Resource.Styleable.SwitchCompat_showText;
+			global::AiForms.Dialogs.Resource.Styleable.SwitchCompat_splitTrack = global::PryRutasMoviles.Droid.Resource.Styleable.SwitchCompat_splitTrack;
+			global::AiForms.Dialogs.Resource.Styleable.SwitchCompat_switchMinWidth = global::PryRutasMoviles.Droid.Resource.Styleable.SwitchCompat_switchMinWidth;
+			global::AiForms.Dialogs.Resource.Styleable.SwitchCompat_switchPadding = global::PryRutasMoviles.Droid.Resource.Styleable.SwitchCompat_switchPadding;
+			global::AiForms.Dialogs.Resource.Styleable.SwitchCompat_switchTextAppearance = global::PryRutasMoviles.Droid.Resource.Styleable.SwitchCompat_switchTextAppearance;
+			global::AiForms.Dialogs.Resource.Styleable.SwitchCompat_thumbTextPadding = global::PryRutasMoviles.Droid.Resource.Styleable.SwitchCompat_thumbTextPadding;
+			global::AiForms.Dialogs.Resource.Styleable.SwitchCompat_thumbTint = global::PryRutasMoviles.Droid.Resource.Styleable.SwitchCompat_thumbTint;
+			global::AiForms.Dialogs.Resource.Styleable.SwitchCompat_thumbTintMode = global::PryRutasMoviles.Droid.Resource.Styleable.SwitchCompat_thumbTintMode;
+			global::AiForms.Dialogs.Resource.Styleable.SwitchCompat_track = global::PryRutasMoviles.Droid.Resource.Styleable.SwitchCompat_track;
+			global::AiForms.Dialogs.Resource.Styleable.SwitchCompat_trackTint = global::PryRutasMoviles.Droid.Resource.Styleable.SwitchCompat_trackTint;
+			global::AiForms.Dialogs.Resource.Styleable.SwitchCompat_trackTintMode = global::PryRutasMoviles.Droid.Resource.Styleable.SwitchCompat_trackTintMode;
+			global::AiForms.Dialogs.Resource.Styleable.TabItem = global::PryRutasMoviles.Droid.Resource.Styleable.TabItem;
+			global::AiForms.Dialogs.Resource.Styleable.TabItem_android_icon = global::PryRutasMoviles.Droid.Resource.Styleable.TabItem_android_icon;
+			global::AiForms.Dialogs.Resource.Styleable.TabItem_android_layout = global::PryRutasMoviles.Droid.Resource.Styleable.TabItem_android_layout;
+			global::AiForms.Dialogs.Resource.Styleable.TabItem_android_text = global::PryRutasMoviles.Droid.Resource.Styleable.TabItem_android_text;
+			global::AiForms.Dialogs.Resource.Styleable.TabLayout = global::PryRutasMoviles.Droid.Resource.Styleable.TabLayout;
+			global::AiForms.Dialogs.Resource.Styleable.TabLayout_tabBackground = global::PryRutasMoviles.Droid.Resource.Styleable.TabLayout_tabBackground;
+			global::AiForms.Dialogs.Resource.Styleable.TabLayout_tabContentStart = global::PryRutasMoviles.Droid.Resource.Styleable.TabLayout_tabContentStart;
+			global::AiForms.Dialogs.Resource.Styleable.TabLayout_tabGravity = global::PryRutasMoviles.Droid.Resource.Styleable.TabLayout_tabGravity;
+			global::AiForms.Dialogs.Resource.Styleable.TabLayout_tabIconTint = global::PryRutasMoviles.Droid.Resource.Styleable.TabLayout_tabIconTint;
+			global::AiForms.Dialogs.Resource.Styleable.TabLayout_tabIconTintMode = global::PryRutasMoviles.Droid.Resource.Styleable.TabLayout_tabIconTintMode;
+			global::AiForms.Dialogs.Resource.Styleable.TabLayout_tabIndicator = global::PryRutasMoviles.Droid.Resource.Styleable.TabLayout_tabIndicator;
+			global::AiForms.Dialogs.Resource.Styleable.TabLayout_tabIndicatorAnimationDuration = global::PryRutasMoviles.Droid.Resource.Styleable.TabLayout_tabIndicatorAnimationDuration;
+			global::AiForms.Dialogs.Resource.Styleable.TabLayout_tabIndicatorColor = global::PryRutasMoviles.Droid.Resource.Styleable.TabLayout_tabIndicatorColor;
+			global::AiForms.Dialogs.Resource.Styleable.TabLayout_tabIndicatorFullWidth = global::PryRutasMoviles.Droid.Resource.Styleable.TabLayout_tabIndicatorFullWidth;
+			global::AiForms.Dialogs.Resource.Styleable.TabLayout_tabIndicatorGravity = global::PryRutasMoviles.Droid.Resource.Styleable.TabLayout_tabIndicatorGravity;
+			global::AiForms.Dialogs.Resource.Styleable.TabLayout_tabIndicatorHeight = global::PryRutasMoviles.Droid.Resource.Styleable.TabLayout_tabIndicatorHeight;
+			global::AiForms.Dialogs.Resource.Styleable.TabLayout_tabInlineLabel = global::PryRutasMoviles.Droid.Resource.Styleable.TabLayout_tabInlineLabel;
+			global::AiForms.Dialogs.Resource.Styleable.TabLayout_tabMaxWidth = global::PryRutasMoviles.Droid.Resource.Styleable.TabLayout_tabMaxWidth;
+			global::AiForms.Dialogs.Resource.Styleable.TabLayout_tabMinWidth = global::PryRutasMoviles.Droid.Resource.Styleable.TabLayout_tabMinWidth;
+			global::AiForms.Dialogs.Resource.Styleable.TabLayout_tabMode = global::PryRutasMoviles.Droid.Resource.Styleable.TabLayout_tabMode;
+			global::AiForms.Dialogs.Resource.Styleable.TabLayout_tabPadding = global::PryRutasMoviles.Droid.Resource.Styleable.TabLayout_tabPadding;
+			global::AiForms.Dialogs.Resource.Styleable.TabLayout_tabPaddingBottom = global::PryRutasMoviles.Droid.Resource.Styleable.TabLayout_tabPaddingBottom;
+			global::AiForms.Dialogs.Resource.Styleable.TabLayout_tabPaddingEnd = global::PryRutasMoviles.Droid.Resource.Styleable.TabLayout_tabPaddingEnd;
+			global::AiForms.Dialogs.Resource.Styleable.TabLayout_tabPaddingStart = global::PryRutasMoviles.Droid.Resource.Styleable.TabLayout_tabPaddingStart;
+			global::AiForms.Dialogs.Resource.Styleable.TabLayout_tabPaddingTop = global::PryRutasMoviles.Droid.Resource.Styleable.TabLayout_tabPaddingTop;
+			global::AiForms.Dialogs.Resource.Styleable.TabLayout_tabRippleColor = global::PryRutasMoviles.Droid.Resource.Styleable.TabLayout_tabRippleColor;
+			global::AiForms.Dialogs.Resource.Styleable.TabLayout_tabSelectedTextColor = global::PryRutasMoviles.Droid.Resource.Styleable.TabLayout_tabSelectedTextColor;
+			global::AiForms.Dialogs.Resource.Styleable.TabLayout_tabTextAppearance = global::PryRutasMoviles.Droid.Resource.Styleable.TabLayout_tabTextAppearance;
+			global::AiForms.Dialogs.Resource.Styleable.TabLayout_tabTextColor = global::PryRutasMoviles.Droid.Resource.Styleable.TabLayout_tabTextColor;
+			global::AiForms.Dialogs.Resource.Styleable.TabLayout_tabUnboundedRipple = global::PryRutasMoviles.Droid.Resource.Styleable.TabLayout_tabUnboundedRipple;
+			global::AiForms.Dialogs.Resource.Styleable.TextAppearance = global::PryRutasMoviles.Droid.Resource.Styleable.TextAppearance;
+			global::AiForms.Dialogs.Resource.Styleable.TextAppearance_android_fontFamily = global::PryRutasMoviles.Droid.Resource.Styleable.TextAppearance_android_fontFamily;
+			global::AiForms.Dialogs.Resource.Styleable.TextAppearance_android_shadowColor = global::PryRutasMoviles.Droid.Resource.Styleable.TextAppearance_android_shadowColor;
+			global::AiForms.Dialogs.Resource.Styleable.TextAppearance_android_shadowDx = global::PryRutasMoviles.Droid.Resource.Styleable.TextAppearance_android_shadowDx;
+			global::AiForms.Dialogs.Resource.Styleable.TextAppearance_android_shadowDy = global::PryRutasMoviles.Droid.Resource.Styleable.TextAppearance_android_shadowDy;
+			global::AiForms.Dialogs.Resource.Styleable.TextAppearance_android_shadowRadius = global::PryRutasMoviles.Droid.Resource.Styleable.TextAppearance_android_shadowRadius;
+			global::AiForms.Dialogs.Resource.Styleable.TextAppearance_android_textColor = global::PryRutasMoviles.Droid.Resource.Styleable.TextAppearance_android_textColor;
+			global::AiForms.Dialogs.Resource.Styleable.TextAppearance_android_textColorHint = global::PryRutasMoviles.Droid.Resource.Styleable.TextAppearance_android_textColorHint;
+			global::AiForms.Dialogs.Resource.Styleable.TextAppearance_android_textColorLink = global::PryRutasMoviles.Droid.Resource.Styleable.TextAppearance_android_textColorLink;
+			global::AiForms.Dialogs.Resource.Styleable.TextAppearance_android_textFontWeight = global::PryRutasMoviles.Droid.Resource.Styleable.TextAppearance_android_textFontWeight;
+			global::AiForms.Dialogs.Resource.Styleable.TextAppearance_android_textSize = global::PryRutasMoviles.Droid.Resource.Styleable.TextAppearance_android_textSize;
+			global::AiForms.Dialogs.Resource.Styleable.TextAppearance_android_textStyle = global::PryRutasMoviles.Droid.Resource.Styleable.TextAppearance_android_textStyle;
+			global::AiForms.Dialogs.Resource.Styleable.TextAppearance_android_typeface = global::PryRutasMoviles.Droid.Resource.Styleable.TextAppearance_android_typeface;
+			global::AiForms.Dialogs.Resource.Styleable.TextAppearance_fontFamily = global::PryRutasMoviles.Droid.Resource.Styleable.TextAppearance_fontFamily;
+			global::AiForms.Dialogs.Resource.Styleable.TextAppearance_fontVariationSettings = global::PryRutasMoviles.Droid.Resource.Styleable.TextAppearance_fontVariationSettings;
+			global::AiForms.Dialogs.Resource.Styleable.TextAppearance_textAllCaps = global::PryRutasMoviles.Droid.Resource.Styleable.TextAppearance_textAllCaps;
+			global::AiForms.Dialogs.Resource.Styleable.TextAppearance_textLocale = global::PryRutasMoviles.Droid.Resource.Styleable.TextAppearance_textLocale;
+			global::AiForms.Dialogs.Resource.Styleable.TextInputLayout = global::PryRutasMoviles.Droid.Resource.Styleable.TextInputLayout;
+			global::AiForms.Dialogs.Resource.Styleable.TextInputLayout_android_hint = global::PryRutasMoviles.Droid.Resource.Styleable.TextInputLayout_android_hint;
+			global::AiForms.Dialogs.Resource.Styleable.TextInputLayout_android_textColorHint = global::PryRutasMoviles.Droid.Resource.Styleable.TextInputLayout_android_textColorHint;
+			global::AiForms.Dialogs.Resource.Styleable.TextInputLayout_boxBackgroundColor = global::PryRutasMoviles.Droid.Resource.Styleable.TextInputLayout_boxBackgroundColor;
+			global::AiForms.Dialogs.Resource.Styleable.TextInputLayout_boxBackgroundMode = global::PryRutasMoviles.Droid.Resource.Styleable.TextInputLayout_boxBackgroundMode;
+			global::AiForms.Dialogs.Resource.Styleable.TextInputLayout_boxCollapsedPaddingTop = global::PryRutasMoviles.Droid.Resource.Styleable.TextInputLayout_boxCollapsedPaddingTop;
+			global::AiForms.Dialogs.Resource.Styleable.TextInputLayout_boxCornerRadiusBottomEnd = global::PryRutasMoviles.Droid.Resource.Styleable.TextInputLayout_boxCornerRadiusBottomEnd;
+			global::AiForms.Dialogs.Resource.Styleable.TextInputLayout_boxCornerRadiusBottomStart = global::PryRutasMoviles.Droid.Resource.Styleable.TextInputLayout_boxCornerRadiusBottomStart;
+			global::AiForms.Dialogs.Resource.Styleable.TextInputLayout_boxCornerRadiusTopEnd = global::PryRutasMoviles.Droid.Resource.Styleable.TextInputLayout_boxCornerRadiusTopEnd;
+			global::AiForms.Dialogs.Resource.Styleable.TextInputLayout_boxCornerRadiusTopStart = global::PryRutasMoviles.Droid.Resource.Styleable.TextInputLayout_boxCornerRadiusTopStart;
+			global::AiForms.Dialogs.Resource.Styleable.TextInputLayout_boxStrokeColor = global::PryRutasMoviles.Droid.Resource.Styleable.TextInputLayout_boxStrokeColor;
+			global::AiForms.Dialogs.Resource.Styleable.TextInputLayout_boxStrokeWidth = global::PryRutasMoviles.Droid.Resource.Styleable.TextInputLayout_boxStrokeWidth;
+			global::AiForms.Dialogs.Resource.Styleable.TextInputLayout_counterEnabled = global::PryRutasMoviles.Droid.Resource.Styleable.TextInputLayout_counterEnabled;
+			global::AiForms.Dialogs.Resource.Styleable.TextInputLayout_counterMaxLength = global::PryRutasMoviles.Droid.Resource.Styleable.TextInputLayout_counterMaxLength;
+			global::AiForms.Dialogs.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance = global::PryRutasMoviles.Droid.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance;
+			global::AiForms.Dialogs.Resource.Styleable.TextInputLayout_counterTextAppearance = global::PryRutasMoviles.Droid.Resource.Styleable.TextInputLayout_counterTextAppearance;
+			global::AiForms.Dialogs.Resource.Styleable.TextInputLayout_errorEnabled = global::PryRutasMoviles.Droid.Resource.Styleable.TextInputLayout_errorEnabled;
+			global::AiForms.Dialogs.Resource.Styleable.TextInputLayout_errorTextAppearance = global::PryRutasMoviles.Droid.Resource.Styleable.TextInputLayout_errorTextAppearance;
+			global::AiForms.Dialogs.Resource.Styleable.TextInputLayout_helperText = global::PryRutasMoviles.Droid.Resource.Styleable.TextInputLayout_helperText;
+			global::AiForms.Dialogs.Resource.Styleable.TextInputLayout_helperTextEnabled = global::PryRutasMoviles.Droid.Resource.Styleable.TextInputLayout_helperTextEnabled;
+			global::AiForms.Dialogs.Resource.Styleable.TextInputLayout_helperTextTextAppearance = global::PryRutasMoviles.Droid.Resource.Styleable.TextInputLayout_helperTextTextAppearance;
+			global::AiForms.Dialogs.Resource.Styleable.TextInputLayout_hintAnimationEnabled = global::PryRutasMoviles.Droid.Resource.Styleable.TextInputLayout_hintAnimationEnabled;
+			global::AiForms.Dialogs.Resource.Styleable.TextInputLayout_hintEnabled = global::PryRutasMoviles.Droid.Resource.Styleable.TextInputLayout_hintEnabled;
+			global::AiForms.Dialogs.Resource.Styleable.TextInputLayout_hintTextAppearance = global::PryRutasMoviles.Droid.Resource.Styleable.TextInputLayout_hintTextAppearance;
+			global::AiForms.Dialogs.Resource.Styleable.TextInputLayout_passwordToggleContentDescription = global::PryRutasMoviles.Droid.Resource.Styleable.TextInputLayout_passwordToggleContentDescription;
+			global::AiForms.Dialogs.Resource.Styleable.TextInputLayout_passwordToggleDrawable = global::PryRutasMoviles.Droid.Resource.Styleable.TextInputLayout_passwordToggleDrawable;
+			global::AiForms.Dialogs.Resource.Styleable.TextInputLayout_passwordToggleEnabled = global::PryRutasMoviles.Droid.Resource.Styleable.TextInputLayout_passwordToggleEnabled;
+			global::AiForms.Dialogs.Resource.Styleable.TextInputLayout_passwordToggleTint = global::PryRutasMoviles.Droid.Resource.Styleable.TextInputLayout_passwordToggleTint;
+			global::AiForms.Dialogs.Resource.Styleable.TextInputLayout_passwordToggleTintMode = global::PryRutasMoviles.Droid.Resource.Styleable.TextInputLayout_passwordToggleTintMode;
+			global::AiForms.Dialogs.Resource.Styleable.ThemeEnforcement = global::PryRutasMoviles.Droid.Resource.Styleable.ThemeEnforcement;
+			global::AiForms.Dialogs.Resource.Styleable.ThemeEnforcement_android_textAppearance = global::PryRutasMoviles.Droid.Resource.Styleable.ThemeEnforcement_android_textAppearance;
+			global::AiForms.Dialogs.Resource.Styleable.ThemeEnforcement_enforceMaterialTheme = global::PryRutasMoviles.Droid.Resource.Styleable.ThemeEnforcement_enforceMaterialTheme;
+			global::AiForms.Dialogs.Resource.Styleable.ThemeEnforcement_enforceTextAppearance = global::PryRutasMoviles.Droid.Resource.Styleable.ThemeEnforcement_enforceTextAppearance;
+			global::AiForms.Dialogs.Resource.Styleable.Toolbar = global::PryRutasMoviles.Droid.Resource.Styleable.Toolbar;
+			global::AiForms.Dialogs.Resource.Styleable.Toolbar_android_gravity = global::PryRutasMoviles.Droid.Resource.Styleable.Toolbar_android_gravity;
+			global::AiForms.Dialogs.Resource.Styleable.Toolbar_android_minHeight = global::PryRutasMoviles.Droid.Resource.Styleable.Toolbar_android_minHeight;
+			global::AiForms.Dialogs.Resource.Styleable.Toolbar_buttonGravity = global::PryRutasMoviles.Droid.Resource.Styleable.Toolbar_buttonGravity;
+			global::AiForms.Dialogs.Resource.Styleable.Toolbar_collapseContentDescription = global::PryRutasMoviles.Droid.Resource.Styleable.Toolbar_collapseContentDescription;
+			global::AiForms.Dialogs.Resource.Styleable.Toolbar_collapseIcon = global::PryRutasMoviles.Droid.Resource.Styleable.Toolbar_collapseIcon;
+			global::AiForms.Dialogs.Resource.Styleable.Toolbar_contentInsetEnd = global::PryRutasMoviles.Droid.Resource.Styleable.Toolbar_contentInsetEnd;
+			global::AiForms.Dialogs.Resource.Styleable.Toolbar_contentInsetEndWithActions = global::PryRutasMoviles.Droid.Resource.Styleable.Toolbar_contentInsetEndWithActions;
+			global::AiForms.Dialogs.Resource.Styleable.Toolbar_contentInsetLeft = global::PryRutasMoviles.Droid.Resource.Styleable.Toolbar_contentInsetLeft;
+			global::AiForms.Dialogs.Resource.Styleable.Toolbar_contentInsetRight = global::PryRutasMoviles.Droid.Resource.Styleable.Toolbar_contentInsetRight;
+			global::AiForms.Dialogs.Resource.Styleable.Toolbar_contentInsetStart = global::PryRutasMoviles.Droid.Resource.Styleable.Toolbar_contentInsetStart;
+			global::AiForms.Dialogs.Resource.Styleable.Toolbar_contentInsetStartWithNavigation = global::PryRutasMoviles.Droid.Resource.Styleable.Toolbar_contentInsetStartWithNavigation;
+			global::AiForms.Dialogs.Resource.Styleable.Toolbar_logo = global::PryRutasMoviles.Droid.Resource.Styleable.Toolbar_logo;
+			global::AiForms.Dialogs.Resource.Styleable.Toolbar_logoDescription = global::PryRutasMoviles.Droid.Resource.Styleable.Toolbar_logoDescription;
+			global::AiForms.Dialogs.Resource.Styleable.Toolbar_maxButtonHeight = global::PryRutasMoviles.Droid.Resource.Styleable.Toolbar_maxButtonHeight;
+			global::AiForms.Dialogs.Resource.Styleable.Toolbar_menu = global::PryRutasMoviles.Droid.Resource.Styleable.Toolbar_menu;
+			global::AiForms.Dialogs.Resource.Styleable.Toolbar_navigationContentDescription = global::PryRutasMoviles.Droid.Resource.Styleable.Toolbar_navigationContentDescription;
+			global::AiForms.Dialogs.Resource.Styleable.Toolbar_navigationIcon = global::PryRutasMoviles.Droid.Resource.Styleable.Toolbar_navigationIcon;
+			global::AiForms.Dialogs.Resource.Styleable.Toolbar_popupTheme = global::PryRutasMoviles.Droid.Resource.Styleable.Toolbar_popupTheme;
+			global::AiForms.Dialogs.Resource.Styleable.Toolbar_subtitle = global::PryRutasMoviles.Droid.Resource.Styleable.Toolbar_subtitle;
+			global::AiForms.Dialogs.Resource.Styleable.Toolbar_subtitleTextAppearance = global::PryRutasMoviles.Droid.Resource.Styleable.Toolbar_subtitleTextAppearance;
+			global::AiForms.Dialogs.Resource.Styleable.Toolbar_subtitleTextColor = global::PryRutasMoviles.Droid.Resource.Styleable.Toolbar_subtitleTextColor;
+			global::AiForms.Dialogs.Resource.Styleable.Toolbar_title = global::PryRutasMoviles.Droid.Resource.Styleable.Toolbar_title;
+			global::AiForms.Dialogs.Resource.Styleable.Toolbar_titleMargin = global::PryRutasMoviles.Droid.Resource.Styleable.Toolbar_titleMargin;
+			global::AiForms.Dialogs.Resource.Styleable.Toolbar_titleMarginBottom = global::PryRutasMoviles.Droid.Resource.Styleable.Toolbar_titleMarginBottom;
+			global::AiForms.Dialogs.Resource.Styleable.Toolbar_titleMarginEnd = global::PryRutasMoviles.Droid.Resource.Styleable.Toolbar_titleMarginEnd;
+			global::AiForms.Dialogs.Resource.Styleable.Toolbar_titleMargins = global::PryRutasMoviles.Droid.Resource.Styleable.Toolbar_titleMargins;
+			global::AiForms.Dialogs.Resource.Styleable.Toolbar_titleMarginStart = global::PryRutasMoviles.Droid.Resource.Styleable.Toolbar_titleMarginStart;
+			global::AiForms.Dialogs.Resource.Styleable.Toolbar_titleMarginTop = global::PryRutasMoviles.Droid.Resource.Styleable.Toolbar_titleMarginTop;
+			global::AiForms.Dialogs.Resource.Styleable.Toolbar_titleTextAppearance = global::PryRutasMoviles.Droid.Resource.Styleable.Toolbar_titleTextAppearance;
+			global::AiForms.Dialogs.Resource.Styleable.Toolbar_titleTextColor = global::PryRutasMoviles.Droid.Resource.Styleable.Toolbar_titleTextColor;
+			global::AiForms.Dialogs.Resource.Styleable.View = global::PryRutasMoviles.Droid.Resource.Styleable.View;
+			global::AiForms.Dialogs.Resource.Styleable.ViewBackgroundHelper = global::PryRutasMoviles.Droid.Resource.Styleable.ViewBackgroundHelper;
+			global::AiForms.Dialogs.Resource.Styleable.ViewBackgroundHelper_android_background = global::PryRutasMoviles.Droid.Resource.Styleable.ViewBackgroundHelper_android_background;
+			global::AiForms.Dialogs.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::PryRutasMoviles.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
+			global::AiForms.Dialogs.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode = global::PryRutasMoviles.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode;
+			global::AiForms.Dialogs.Resource.Styleable.ViewStubCompat = global::PryRutasMoviles.Droid.Resource.Styleable.ViewStubCompat;
+			global::AiForms.Dialogs.Resource.Styleable.ViewStubCompat_android_id = global::PryRutasMoviles.Droid.Resource.Styleable.ViewStubCompat_android_id;
+			global::AiForms.Dialogs.Resource.Styleable.ViewStubCompat_android_inflatedId = global::PryRutasMoviles.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
+			global::AiForms.Dialogs.Resource.Styleable.ViewStubCompat_android_layout = global::PryRutasMoviles.Droid.Resource.Styleable.ViewStubCompat_android_layout;
+			global::AiForms.Dialogs.Resource.Styleable.View_android_focusable = global::PryRutasMoviles.Droid.Resource.Styleable.View_android_focusable;
+			global::AiForms.Dialogs.Resource.Styleable.View_android_theme = global::PryRutasMoviles.Droid.Resource.Styleable.View_android_theme;
+			global::AiForms.Dialogs.Resource.Styleable.View_paddingEnd = global::PryRutasMoviles.Droid.Resource.Styleable.View_paddingEnd;
+			global::AiForms.Dialogs.Resource.Styleable.View_paddingStart = global::PryRutasMoviles.Droid.Resource.Styleable.View_paddingStart;
+			global::AiForms.Dialogs.Resource.Styleable.View_theme = global::PryRutasMoviles.Droid.Resource.Styleable.View_theme;
 			global::Rg.Plugins.Popup.Resource.Animation.abc_fade_in = global::PryRutasMoviles.Droid.Resource.Animation.abc_fade_in;
 			global::Rg.Plugins.Popup.Resource.Animation.abc_fade_out = global::PryRutasMoviles.Droid.Resource.Animation.abc_fade_out;
 			global::Rg.Plugins.Popup.Resource.Animation.abc_grow_fade_in_from_bottom = global::PryRutasMoviles.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
@@ -10646,25 +13338,31 @@ namespace PryRutasMoviles.Droid
 			public const int ExitToRight = 2130771999;
 			
 			// aapt resource value: 0x7F010020
-			public const int fragment_close_enter = 2130772000;
+			public const int extra_dialog_enter = 2130772000;
 			
 			// aapt resource value: 0x7F010021
-			public const int fragment_close_exit = 2130772001;
+			public const int extra_dialog_exit = 2130772001;
 			
 			// aapt resource value: 0x7F010022
-			public const int fragment_fade_enter = 2130772002;
+			public const int fragment_close_enter = 2130772002;
 			
 			// aapt resource value: 0x7F010023
-			public const int fragment_fade_exit = 2130772003;
+			public const int fragment_close_exit = 2130772003;
 			
 			// aapt resource value: 0x7F010024
-			public const int fragment_fast_out_extra_slow_in = 2130772004;
+			public const int fragment_fade_enter = 2130772004;
 			
 			// aapt resource value: 0x7F010025
-			public const int fragment_open_enter = 2130772005;
+			public const int fragment_fade_exit = 2130772005;
 			
 			// aapt resource value: 0x7F010026
-			public const int fragment_open_exit = 2130772006;
+			public const int fragment_fast_out_extra_slow_in = 2130772006;
+			
+			// aapt resource value: 0x7F010027
+			public const int fragment_open_enter = 2130772007;
+			
+			// aapt resource value: 0x7F010028
+			public const int fragment_open_exit = 2130772008;
 			
 			static Animation()
 			{
@@ -14619,394 +17317,400 @@ namespace PryRutasMoviles.Droid
 			public const int list_item = 2131230880;
 			
 			// aapt resource value: 0x7F0800A1
-			public const int main_appbar = 2131230881;
+			public const int loading_message = 2131230881;
 			
 			// aapt resource value: 0x7F0800A2
-			public const int main_tablayout = 2131230882;
+			public const int main_appbar = 2131230882;
 			
 			// aapt resource value: 0x7F0800A3
-			public const int main_toolbar = 2131230883;
+			public const int main_tablayout = 2131230883;
 			
 			// aapt resource value: 0x7F0800A4
-			public const int main_viewpager = 2131230884;
+			public const int main_toolbar = 2131230884;
 			
 			// aapt resource value: 0x7F0800A5
-			public const int masked = 2131230885;
+			public const int main_viewpager = 2131230885;
 			
 			// aapt resource value: 0x7F0800A6
-			public const int media_actions = 2131230886;
+			public const int masked = 2131230886;
 			
 			// aapt resource value: 0x7F0800A7
-			public const int message = 2131230887;
+			public const int media_actions = 2131230887;
 			
 			// aapt resource value: 0x7F0800A8
-			public const int messenger_send_button = 2131230888;
+			public const int message = 2131230888;
+			
+			// aapt resource value: 0x7F0800A9
+			public const int messenger_send_button = 2131230889;
 			
 			// aapt resource value: 0x7F080003
 			public const int META = 2131230723;
 			
-			// aapt resource value: 0x7F0800A9
-			public const int middle = 2131230889;
-			
 			// aapt resource value: 0x7F0800AA
-			public const int mini = 2131230890;
+			public const int middle = 2131230890;
 			
 			// aapt resource value: 0x7F0800AB
-			public const int mtrl_child_content_container = 2131230891;
+			public const int mini = 2131230891;
 			
 			// aapt resource value: 0x7F0800AC
-			public const int mtrl_internal_children_alpha_tag = 2131230892;
+			public const int mtrl_child_content_container = 2131230892;
 			
 			// aapt resource value: 0x7F0800AD
-			public const int multiply = 2131230893;
+			public const int mtrl_internal_children_alpha_tag = 2131230893;
 			
 			// aapt resource value: 0x7F0800AE
-			public const int navigation_header_container = 2131230894;
+			public const int multiply = 2131230894;
 			
 			// aapt resource value: 0x7F0800AF
-			public const int never = 2131230895;
+			public const int navigation_header_container = 2131230895;
 			
 			// aapt resource value: 0x7F0800B0
-			public const int never_display = 2131230896;
+			public const int never = 2131230896;
 			
 			// aapt resource value: 0x7F0800B1
-			public const int none = 2131230897;
+			public const int never_display = 2131230897;
 			
 			// aapt resource value: 0x7F0800B2
-			public const int normal = 2131230898;
+			public const int none = 2131230898;
 			
 			// aapt resource value: 0x7F0800B3
-			public const int notification_background = 2131230899;
+			public const int normal = 2131230899;
 			
 			// aapt resource value: 0x7F0800B4
-			public const int notification_main_column = 2131230900;
+			public const int notification_background = 2131230900;
 			
 			// aapt resource value: 0x7F0800B5
-			public const int notification_main_column_container = 2131230901;
+			public const int notification_main_column = 2131230901;
 			
 			// aapt resource value: 0x7F0800B6
-			public const int off = 2131230902;
+			public const int notification_main_column_container = 2131230902;
 			
 			// aapt resource value: 0x7F0800B7
-			public const int on = 2131230903;
+			public const int off = 2131230903;
 			
 			// aapt resource value: 0x7F0800B8
-			public const int open_graph = 2131230904;
+			public const int on = 2131230904;
 			
 			// aapt resource value: 0x7F0800B9
-			public const int outline = 2131230905;
+			public const int open_graph = 2131230905;
 			
 			// aapt resource value: 0x7F0800BA
-			public const int page = 2131230906;
+			public const int outline = 2131230906;
 			
 			// aapt resource value: 0x7F0800BB
-			public const int parallax = 2131230907;
+			public const int page = 2131230907;
 			
 			// aapt resource value: 0x7F0800BC
-			public const int parentPanel = 2131230908;
+			public const int parallax = 2131230908;
 			
 			// aapt resource value: 0x7F0800BD
-			public const int parent_matrix = 2131230909;
+			public const int parentPanel = 2131230909;
 			
 			// aapt resource value: 0x7F0800BE
-			public const int pin = 2131230910;
+			public const int parent_matrix = 2131230910;
 			
 			// aapt resource value: 0x7F0800BF
-			public const int progress_bar = 2131230911;
+			public const int pin = 2131230911;
 			
 			// aapt resource value: 0x7F0800C0
-			public const int progress_circular = 2131230912;
+			public const int progress = 2131230912;
 			
 			// aapt resource value: 0x7F0800C1
-			public const int progress_horizontal = 2131230913;
+			public const int progress_bar = 2131230913;
 			
 			// aapt resource value: 0x7F0800C2
-			public const int radio = 2131230914;
+			public const int progress_circular = 2131230914;
 			
 			// aapt resource value: 0x7F0800C3
-			public const int right = 2131230915;
+			public const int progress_horizontal = 2131230915;
 			
 			// aapt resource value: 0x7F0800C4
-			public const int right_icon = 2131230916;
+			public const int radio = 2131230916;
 			
 			// aapt resource value: 0x7F0800C5
-			public const int right_side = 2131230917;
+			public const int right = 2131230917;
 			
 			// aapt resource value: 0x7F0800C6
-			public const int satellite = 2131230918;
+			public const int right_icon = 2131230918;
 			
 			// aapt resource value: 0x7F0800C7
-			public const int save_non_transition_alpha = 2131230919;
+			public const int right_side = 2131230919;
 			
 			// aapt resource value: 0x7F0800C8
-			public const int save_overlay_view = 2131230920;
+			public const int satellite = 2131230920;
 			
 			// aapt resource value: 0x7F0800C9
-			public const int screen = 2131230921;
+			public const int save_non_transition_alpha = 2131230921;
 			
 			// aapt resource value: 0x7F0800CA
-			public const int scroll = 2131230922;
-			
-			// aapt resource value: 0x7F0800CE
-			public const int scrollable = 2131230926;
+			public const int save_overlay_view = 2131230922;
 			
 			// aapt resource value: 0x7F0800CB
-			public const int scrollIndicatorDown = 2131230923;
+			public const int screen = 2131230923;
 			
 			// aapt resource value: 0x7F0800CC
-			public const int scrollIndicatorUp = 2131230924;
-			
-			// aapt resource value: 0x7F0800CD
-			public const int scrollView = 2131230925;
-			
-			// aapt resource value: 0x7F0800CF
-			public const int search_badge = 2131230927;
+			public const int scroll = 2131230924;
 			
 			// aapt resource value: 0x7F0800D0
-			public const int search_bar = 2131230928;
+			public const int scrollable = 2131230928;
+			
+			// aapt resource value: 0x7F0800CD
+			public const int scrollIndicatorDown = 2131230925;
+			
+			// aapt resource value: 0x7F0800CE
+			public const int scrollIndicatorUp = 2131230926;
+			
+			// aapt resource value: 0x7F0800CF
+			public const int scrollView = 2131230927;
 			
 			// aapt resource value: 0x7F0800D1
-			public const int search_button = 2131230929;
+			public const int search_badge = 2131230929;
 			
 			// aapt resource value: 0x7F0800D2
-			public const int search_close_btn = 2131230930;
+			public const int search_bar = 2131230930;
 			
 			// aapt resource value: 0x7F0800D3
-			public const int search_edit_frame = 2131230931;
+			public const int search_button = 2131230931;
 			
 			// aapt resource value: 0x7F0800D4
-			public const int search_go_btn = 2131230932;
+			public const int search_close_btn = 2131230932;
 			
 			// aapt resource value: 0x7F0800D5
-			public const int search_mag_icon = 2131230933;
+			public const int search_edit_frame = 2131230933;
 			
 			// aapt resource value: 0x7F0800D6
-			public const int search_plate = 2131230934;
+			public const int search_go_btn = 2131230934;
 			
 			// aapt resource value: 0x7F0800D7
-			public const int search_src_text = 2131230935;
+			public const int search_mag_icon = 2131230935;
 			
 			// aapt resource value: 0x7F0800D8
-			public const int search_voice_btn = 2131230936;
-			
-			// aapt resource value: 0x7F0800DA
-			public const int selected = 2131230938;
+			public const int search_plate = 2131230936;
 			
 			// aapt resource value: 0x7F0800D9
-			public const int select_dialog_listview = 2131230937;
+			public const int search_src_text = 2131230937;
 			
-			// aapt resource value: 0x7F0800DB
-			public const int shellcontent_appbar = 2131230939;
+			// aapt resource value: 0x7F0800DA
+			public const int search_voice_btn = 2131230938;
 			
 			// aapt resource value: 0x7F0800DC
-			public const int shellcontent_toolbar = 2131230940;
+			public const int selected = 2131230940;
+			
+			// aapt resource value: 0x7F0800DB
+			public const int select_dialog_listview = 2131230939;
+			
+			// aapt resource value: 0x7F0800DD
+			public const int shellcontent_appbar = 2131230941;
+			
+			// aapt resource value: 0x7F0800DE
+			public const int shellcontent_toolbar = 2131230942;
 			
 			// aapt resource value: 0x7F080004
 			public const int SHIFT = 2131230724;
 			
-			// aapt resource value: 0x7F0800DD
-			public const int shortcut = 2131230941;
-			
-			// aapt resource value: 0x7F0800DE
-			public const int showCustom = 2131230942;
-			
 			// aapt resource value: 0x7F0800DF
-			public const int showHome = 2131230943;
+			public const int shortcut = 2131230943;
 			
 			// aapt resource value: 0x7F0800E0
-			public const int showTitle = 2131230944;
+			public const int showCustom = 2131230944;
 			
 			// aapt resource value: 0x7F0800E1
-			public const int sliding_tabs = 2131230945;
+			public const int showHome = 2131230945;
 			
 			// aapt resource value: 0x7F0800E2
-			public const int small = 2131230946;
+			public const int showTitle = 2131230946;
 			
 			// aapt resource value: 0x7F0800E3
-			public const int smallLabel = 2131230947;
+			public const int sliding_tabs = 2131230947;
 			
 			// aapt resource value: 0x7F0800E4
-			public const int snackbar_action = 2131230948;
+			public const int small = 2131230948;
 			
 			// aapt resource value: 0x7F0800E5
-			public const int snackbar_text = 2131230949;
+			public const int smallLabel = 2131230949;
 			
 			// aapt resource value: 0x7F0800E6
-			public const int snap = 2131230950;
+			public const int snackbar_action = 2131230950;
 			
 			// aapt resource value: 0x7F0800E7
-			public const int snapMargins = 2131230951;
+			public const int snackbar_text = 2131230951;
 			
 			// aapt resource value: 0x7F0800E8
-			public const int spacer = 2131230952;
+			public const int snap = 2131230952;
 			
 			// aapt resource value: 0x7F0800E9
-			public const int split_action_bar = 2131230953;
+			public const int snapMargins = 2131230953;
 			
 			// aapt resource value: 0x7F0800EA
-			public const int src_atop = 2131230954;
+			public const int spacer = 2131230954;
 			
 			// aapt resource value: 0x7F0800EB
-			public const int src_in = 2131230955;
+			public const int split_action_bar = 2131230955;
 			
 			// aapt resource value: 0x7F0800EC
-			public const int src_over = 2131230956;
+			public const int src_atop = 2131230956;
 			
 			// aapt resource value: 0x7F0800ED
-			public const int standard = 2131230957;
+			public const int src_in = 2131230957;
 			
 			// aapt resource value: 0x7F0800EE
-			public const int start = 2131230958;
+			public const int src_over = 2131230958;
 			
 			// aapt resource value: 0x7F0800EF
-			public const int status_bar_latest_event_content = 2131230959;
+			public const int standard = 2131230959;
 			
 			// aapt resource value: 0x7F0800F0
-			public const int stretch = 2131230960;
+			public const int start = 2131230960;
 			
 			// aapt resource value: 0x7F0800F1
-			public const int submenuarrow = 2131230961;
+			public const int status_bar_latest_event_content = 2131230961;
 			
 			// aapt resource value: 0x7F0800F2
-			public const int submit_area = 2131230962;
+			public const int stretch = 2131230962;
+			
+			// aapt resource value: 0x7F0800F3
+			public const int submenuarrow = 2131230963;
+			
+			// aapt resource value: 0x7F0800F4
+			public const int submit_area = 2131230964;
 			
 			// aapt resource value: 0x7F080005
 			public const int SYM = 2131230725;
 			
-			// aapt resource value: 0x7F0800F3
-			public const int tabMode = 2131230963;
-			
-			// aapt resource value: 0x7F0800F4
-			public const int tag_accessibility_actions = 2131230964;
-			
 			// aapt resource value: 0x7F0800F5
-			public const int tag_accessibility_clickable_spans = 2131230965;
+			public const int tabMode = 2131230965;
 			
 			// aapt resource value: 0x7F0800F6
-			public const int tag_accessibility_heading = 2131230966;
+			public const int tag_accessibility_actions = 2131230966;
 			
 			// aapt resource value: 0x7F0800F7
-			public const int tag_accessibility_pane_title = 2131230967;
+			public const int tag_accessibility_clickable_spans = 2131230967;
 			
 			// aapt resource value: 0x7F0800F8
-			public const int tag_screen_reader_focusable = 2131230968;
+			public const int tag_accessibility_heading = 2131230968;
 			
 			// aapt resource value: 0x7F0800F9
-			public const int tag_transition_group = 2131230969;
+			public const int tag_accessibility_pane_title = 2131230969;
 			
 			// aapt resource value: 0x7F0800FA
-			public const int tag_unhandled_key_event_manager = 2131230970;
+			public const int tag_screen_reader_focusable = 2131230970;
 			
 			// aapt resource value: 0x7F0800FB
-			public const int tag_unhandled_key_listeners = 2131230971;
+			public const int tag_transition_group = 2131230971;
 			
 			// aapt resource value: 0x7F0800FC
-			public const int terrain = 2131230972;
+			public const int tag_unhandled_key_event_manager = 2131230972;
 			
 			// aapt resource value: 0x7F0800FD
-			public const int text = 2131230973;
+			public const int tag_unhandled_key_listeners = 2131230973;
 			
 			// aapt resource value: 0x7F0800FE
-			public const int text2 = 2131230974;
-			
-			// aapt resource value: 0x7F080103
-			public const int textinput_counter = 2131230979;
-			
-			// aapt resource value: 0x7F080104
-			public const int textinput_error = 2131230980;
-			
-			// aapt resource value: 0x7F080105
-			public const int textinput_helper_text = 2131230981;
+			public const int terrain = 2131230974;
 			
 			// aapt resource value: 0x7F0800FF
-			public const int textSpacerNoButtons = 2131230975;
+			public const int text = 2131230975;
 			
 			// aapt resource value: 0x7F080100
-			public const int textSpacerNoTitle = 2131230976;
+			public const int text2 = 2131230976;
 			
-			// aapt resource value: 0x7F080101
-			public const int textStart = 2131230977;
-			
-			// aapt resource value: 0x7F080102
-			public const int text_input_password_toggle = 2131230978;
+			// aapt resource value: 0x7F080105
+			public const int textinput_counter = 2131230981;
 			
 			// aapt resource value: 0x7F080106
-			public const int time = 2131230982;
+			public const int textinput_error = 2131230982;
 			
 			// aapt resource value: 0x7F080107
-			public const int title = 2131230983;
+			public const int textinput_helper_text = 2131230983;
+			
+			// aapt resource value: 0x7F080101
+			public const int textSpacerNoButtons = 2131230977;
+			
+			// aapt resource value: 0x7F080102
+			public const int textSpacerNoTitle = 2131230978;
+			
+			// aapt resource value: 0x7F080103
+			public const int textStart = 2131230979;
+			
+			// aapt resource value: 0x7F080104
+			public const int text_input_password_toggle = 2131230980;
 			
 			// aapt resource value: 0x7F080108
-			public const int titleDividerNoCustom = 2131230984;
+			public const int time = 2131230984;
 			
 			// aapt resource value: 0x7F080109
-			public const int title_template = 2131230985;
+			public const int title = 2131230985;
 			
 			// aapt resource value: 0x7F08010A
-			public const int toolbar = 2131230986;
+			public const int titleDividerNoCustom = 2131230986;
 			
 			// aapt resource value: 0x7F08010B
-			public const int top = 2131230987;
+			public const int title_template = 2131230987;
 			
 			// aapt resource value: 0x7F08010C
-			public const int topPanel = 2131230988;
+			public const int toolbar = 2131230988;
 			
 			// aapt resource value: 0x7F08010D
-			public const int touch_outside = 2131230989;
+			public const int top = 2131230989;
 			
 			// aapt resource value: 0x7F08010E
-			public const int transition_current_scene = 2131230990;
+			public const int topPanel = 2131230990;
 			
 			// aapt resource value: 0x7F08010F
-			public const int transition_layout_save = 2131230991;
+			public const int touch_outside = 2131230991;
 			
 			// aapt resource value: 0x7F080110
-			public const int transition_position = 2131230992;
+			public const int transition_current_scene = 2131230992;
 			
 			// aapt resource value: 0x7F080111
-			public const int transition_scene_layoutid_cache = 2131230993;
+			public const int transition_layout_save = 2131230993;
 			
 			// aapt resource value: 0x7F080112
-			public const int transition_transform = 2131230994;
+			public const int transition_position = 2131230994;
 			
 			// aapt resource value: 0x7F080113
-			public const int @unchecked = 2131230995;
+			public const int transition_scene_layoutid_cache = 2131230995;
 			
 			// aapt resource value: 0x7F080114
-			public const int uniform = 2131230996;
+			public const int transition_transform = 2131230996;
 			
 			// aapt resource value: 0x7F080115
-			public const int unknown = 2131230997;
+			public const int @unchecked = 2131230997;
 			
 			// aapt resource value: 0x7F080116
-			public const int unlabeled = 2131230998;
+			public const int uniform = 2131230998;
 			
 			// aapt resource value: 0x7F080117
-			public const int up = 2131230999;
+			public const int unknown = 2131230999;
 			
 			// aapt resource value: 0x7F080118
-			public const int useLogo = 2131231000;
+			public const int unlabeled = 2131231000;
 			
 			// aapt resource value: 0x7F080119
-			public const int view_offset_helper = 2131231001;
+			public const int up = 2131231001;
 			
 			// aapt resource value: 0x7F08011A
-			public const int view_tree_saved_state_registry_owner = 2131231002;
+			public const int useLogo = 2131231002;
 			
 			// aapt resource value: 0x7F08011B
-			public const int visible = 2131231003;
+			public const int view_offset_helper = 2131231003;
 			
 			// aapt resource value: 0x7F08011C
-			public const int visible_removing_fragment_view_tag = 2131231004;
+			public const int view_tree_saved_state_registry_owner = 2131231004;
 			
 			// aapt resource value: 0x7F08011D
-			public const int wide = 2131231005;
+			public const int visible = 2131231005;
 			
 			// aapt resource value: 0x7F08011E
-			public const int withText = 2131231006;
+			public const int visible_removing_fragment_view_tag = 2131231006;
 			
 			// aapt resource value: 0x7F08011F
-			public const int wrap_content = 2131231007;
+			public const int wide = 2131231007;
+			
+			// aapt resource value: 0x7F080120
+			public const int withText = 2131231008;
+			
+			// aapt resource value: 0x7F080121
+			public const int wrap_content = 2131231009;
 			
 			static Id()
 			{
@@ -15285,97 +17989,100 @@ namespace PryRutasMoviles.Droid
 			public const int FlyoutContent = 2131427379;
 			
 			// aapt resource value: 0x7F0B0034
-			public const int messenger_button_send_blue_large = 2131427380;
+			public const int LoadingDialogLayout = 2131427380;
 			
 			// aapt resource value: 0x7F0B0035
-			public const int messenger_button_send_blue_round = 2131427381;
+			public const int messenger_button_send_blue_large = 2131427381;
 			
 			// aapt resource value: 0x7F0B0036
-			public const int messenger_button_send_blue_small = 2131427382;
+			public const int messenger_button_send_blue_round = 2131427382;
 			
 			// aapt resource value: 0x7F0B0037
-			public const int messenger_button_send_white_large = 2131427383;
+			public const int messenger_button_send_blue_small = 2131427383;
 			
 			// aapt resource value: 0x7F0B0038
-			public const int messenger_button_send_white_round = 2131427384;
+			public const int messenger_button_send_white_large = 2131427384;
 			
 			// aapt resource value: 0x7F0B0039
-			public const int messenger_button_send_white_small = 2131427385;
+			public const int messenger_button_send_white_round = 2131427385;
 			
 			// aapt resource value: 0x7F0B003A
-			public const int mtrl_layout_snackbar = 2131427386;
+			public const int messenger_button_send_white_small = 2131427386;
 			
 			// aapt resource value: 0x7F0B003B
-			public const int mtrl_layout_snackbar_include = 2131427387;
+			public const int mtrl_layout_snackbar = 2131427387;
 			
 			// aapt resource value: 0x7F0B003C
-			public const int notification_action = 2131427388;
+			public const int mtrl_layout_snackbar_include = 2131427388;
 			
 			// aapt resource value: 0x7F0B003D
-			public const int notification_action_tombstone = 2131427389;
+			public const int notification_action = 2131427389;
 			
 			// aapt resource value: 0x7F0B003E
-			public const int notification_media_action = 2131427390;
+			public const int notification_action_tombstone = 2131427390;
 			
 			// aapt resource value: 0x7F0B003F
-			public const int notification_media_cancel_action = 2131427391;
+			public const int notification_media_action = 2131427391;
 			
 			// aapt resource value: 0x7F0B0040
-			public const int notification_template_big_media = 2131427392;
+			public const int notification_media_cancel_action = 2131427392;
 			
 			// aapt resource value: 0x7F0B0041
-			public const int notification_template_big_media_custom = 2131427393;
+			public const int notification_template_big_media = 2131427393;
 			
 			// aapt resource value: 0x7F0B0042
-			public const int notification_template_big_media_narrow = 2131427394;
+			public const int notification_template_big_media_custom = 2131427394;
 			
 			// aapt resource value: 0x7F0B0043
-			public const int notification_template_big_media_narrow_custom = 2131427395;
+			public const int notification_template_big_media_narrow = 2131427395;
 			
 			// aapt resource value: 0x7F0B0044
-			public const int notification_template_custom_big = 2131427396;
+			public const int notification_template_big_media_narrow_custom = 2131427396;
 			
 			// aapt resource value: 0x7F0B0045
-			public const int notification_template_icon_group = 2131427397;
+			public const int notification_template_custom_big = 2131427397;
 			
 			// aapt resource value: 0x7F0B0046
-			public const int notification_template_lines_media = 2131427398;
+			public const int notification_template_icon_group = 2131427398;
 			
 			// aapt resource value: 0x7F0B0047
-			public const int notification_template_media = 2131427399;
+			public const int notification_template_lines_media = 2131427399;
 			
 			// aapt resource value: 0x7F0B0048
-			public const int notification_template_media_custom = 2131427400;
+			public const int notification_template_media = 2131427400;
 			
 			// aapt resource value: 0x7F0B0049
-			public const int notification_template_part_chronometer = 2131427401;
+			public const int notification_template_media_custom = 2131427401;
 			
 			// aapt resource value: 0x7F0B004A
-			public const int notification_template_part_time = 2131427402;
+			public const int notification_template_part_chronometer = 2131427402;
 			
 			// aapt resource value: 0x7F0B004B
-			public const int RootLayout = 2131427403;
+			public const int notification_template_part_time = 2131427403;
 			
 			// aapt resource value: 0x7F0B004C
-			public const int select_dialog_item_material = 2131427404;
+			public const int RootLayout = 2131427404;
 			
 			// aapt resource value: 0x7F0B004D
-			public const int select_dialog_multichoice_material = 2131427405;
+			public const int select_dialog_item_material = 2131427405;
 			
 			// aapt resource value: 0x7F0B004E
-			public const int select_dialog_singlechoice_material = 2131427406;
+			public const int select_dialog_multichoice_material = 2131427406;
 			
 			// aapt resource value: 0x7F0B004F
-			public const int ShellContent = 2131427407;
+			public const int select_dialog_singlechoice_material = 2131427407;
 			
 			// aapt resource value: 0x7F0B0050
-			public const int support_simple_spinner_dropdown_item = 2131427408;
+			public const int ShellContent = 2131427408;
 			
 			// aapt resource value: 0x7F0B0051
-			public const int Tabbar = 2131427409;
+			public const int support_simple_spinner_dropdown_item = 2131427409;
 			
 			// aapt resource value: 0x7F0B0052
-			public const int Toolbar = 2131427410;
+			public const int Tabbar = 2131427410;
+			
+			// aapt resource value: 0x7F0B0053
+			public const int Toolbar = 2131427411;
 			
 			static Layout()
 			{
@@ -15680,34 +18387,37 @@ namespace PryRutasMoviles.Droid
 			public const int hide_bottom_view_on_scroll_behavior = 2131558488;
 			
 			// aapt resource value: 0x7F0D0059
-			public const int messenger_send_button_text = 2131558489;
+			public const int library_name = 2131558489;
 			
 			// aapt resource value: 0x7F0D005A
-			public const int mtrl_chip_close_icon_content_description = 2131558490;
+			public const int messenger_send_button_text = 2131558490;
 			
 			// aapt resource value: 0x7F0D005B
-			public const int password_toggle_content_description = 2131558491;
+			public const int mtrl_chip_close_icon_content_description = 2131558491;
 			
 			// aapt resource value: 0x7F0D005C
-			public const int path_password_eye = 2131558492;
+			public const int password_toggle_content_description = 2131558492;
 			
 			// aapt resource value: 0x7F0D005D
-			public const int path_password_eye_mask_strike_through = 2131558493;
+			public const int path_password_eye = 2131558493;
 			
 			// aapt resource value: 0x7F0D005E
-			public const int path_password_eye_mask_visible = 2131558494;
+			public const int path_password_eye_mask_strike_through = 2131558494;
 			
 			// aapt resource value: 0x7F0D005F
-			public const int path_password_strike_through = 2131558495;
+			public const int path_password_eye_mask_visible = 2131558495;
 			
 			// aapt resource value: 0x7F0D0060
-			public const int project_id = 2131558496;
+			public const int path_password_strike_through = 2131558496;
 			
 			// aapt resource value: 0x7F0D0061
-			public const int search_menu_title = 2131558497;
+			public const int project_id = 2131558497;
 			
 			// aapt resource value: 0x7F0D0062
-			public const int status_bar_notification_info_overflow = 2131558498;
+			public const int search_menu_title = 2131558498;
+			
+			// aapt resource value: 0x7F0D0063
+			public const int status_bar_notification_info_overflow = 2131558499;
 			
 			static String()
 			{
@@ -16319,1001 +19029,1007 @@ namespace PryRutasMoviles.Droid
 			// aapt resource value: 0x7F0E00C6
 			public const int CardView_Light = 2131624134;
 			
-			// aapt resource value: 0x7F0E0209
-			public const int collectionViewStyle = 2131624457;
-			
-			// aapt resource value: 0x7F0E020A
-			public const int com_facebook_activity_theme = 2131624458;
-			
 			// aapt resource value: 0x7F0E020B
-			public const int com_facebook_auth_dialog = 2131624459;
+			public const int collectionViewStyle = 2131624459;
 			
 			// aapt resource value: 0x7F0E020C
-			public const int com_facebook_auth_dialog_instructions_textview = 2131624460;
+			public const int com_facebook_activity_theme = 2131624460;
 			
 			// aapt resource value: 0x7F0E020D
-			public const int com_facebook_button = 2131624461;
+			public const int com_facebook_auth_dialog = 2131624461;
 			
 			// aapt resource value: 0x7F0E020E
-			public const int com_facebook_button_like = 2131624462;
+			public const int com_facebook_auth_dialog_instructions_textview = 2131624462;
 			
 			// aapt resource value: 0x7F0E020F
-			public const int com_facebook_button_send = 2131624463;
+			public const int com_facebook_button = 2131624463;
 			
 			// aapt resource value: 0x7F0E0210
-			public const int com_facebook_button_share = 2131624464;
+			public const int com_facebook_button_like = 2131624464;
 			
 			// aapt resource value: 0x7F0E0211
-			public const int com_facebook_loginview_default_style = 2131624465;
-			
-			// aapt resource value: 0x7F0E00C7
-			public const int MainTheme = 2131624135;
-			
-			// aapt resource value: 0x7F0E00C8
-			public const int MainTheme_Base = 2131624136;
-			
-			// aapt resource value: 0x7F0E00C9
-			public const int MessengerButton = 2131624137;
-			
-			// aapt resource value: 0x7F0E00D0
-			public const int MessengerButtonText = 2131624144;
-			
-			// aapt resource value: 0x7F0E00D1
-			public const int MessengerButtonText_Blue = 2131624145;
-			
-			// aapt resource value: 0x7F0E00D2
-			public const int MessengerButtonText_Blue_Large = 2131624146;
-			
-			// aapt resource value: 0x7F0E00D3
-			public const int MessengerButtonText_Blue_Small = 2131624147;
-			
-			// aapt resource value: 0x7F0E00D4
-			public const int MessengerButtonText_White = 2131624148;
-			
-			// aapt resource value: 0x7F0E00D5
-			public const int MessengerButtonText_White_Large = 2131624149;
-			
-			// aapt resource value: 0x7F0E00D6
-			public const int MessengerButtonText_White_Small = 2131624150;
-			
-			// aapt resource value: 0x7F0E00CA
-			public const int MessengerButton_Blue = 2131624138;
-			
-			// aapt resource value: 0x7F0E00CB
-			public const int MessengerButton_Blue_Large = 2131624139;
-			
-			// aapt resource value: 0x7F0E00CC
-			public const int MessengerButton_Blue_Small = 2131624140;
-			
-			// aapt resource value: 0x7F0E00CD
-			public const int MessengerButton_White = 2131624141;
-			
-			// aapt resource value: 0x7F0E00CE
-			public const int MessengerButton_White_Large = 2131624142;
-			
-			// aapt resource value: 0x7F0E00CF
-			public const int MessengerButton_White_Small = 2131624143;
-			
-			// aapt resource value: 0x7F0E00D7
-			public const int Platform_AppCompat = 2131624151;
-			
-			// aapt resource value: 0x7F0E00D8
-			public const int Platform_AppCompat_Light = 2131624152;
-			
-			// aapt resource value: 0x7F0E00D9
-			public const int Platform_MaterialComponents = 2131624153;
-			
-			// aapt resource value: 0x7F0E00DA
-			public const int Platform_MaterialComponents_Dialog = 2131624154;
-			
-			// aapt resource value: 0x7F0E00DB
-			public const int Platform_MaterialComponents_Light = 2131624155;
-			
-			// aapt resource value: 0x7F0E00DC
-			public const int Platform_MaterialComponents_Light_Dialog = 2131624156;
-			
-			// aapt resource value: 0x7F0E00DD
-			public const int Platform_ThemeOverlay_AppCompat = 2131624157;
-			
-			// aapt resource value: 0x7F0E00DE
-			public const int Platform_ThemeOverlay_AppCompat_Dark = 2131624158;
-			
-			// aapt resource value: 0x7F0E00DF
-			public const int Platform_ThemeOverlay_AppCompat_Light = 2131624159;
-			
-			// aapt resource value: 0x7F0E00E0
-			public const int Platform_V21_AppCompat = 2131624160;
-			
-			// aapt resource value: 0x7F0E00E1
-			public const int Platform_V21_AppCompat_Light = 2131624161;
-			
-			// aapt resource value: 0x7F0E00E2
-			public const int Platform_V25_AppCompat = 2131624162;
-			
-			// aapt resource value: 0x7F0E00E3
-			public const int Platform_V25_AppCompat_Light = 2131624163;
-			
-			// aapt resource value: 0x7F0E00E4
-			public const int Platform_Widget_AppCompat_Spinner = 2131624164;
-			
-			// aapt resource value: 0x7F0E00E5
-			public const int RtlOverlay_DialogWindowTitle_AppCompat = 2131624165;
-			
-			// aapt resource value: 0x7F0E00E6
-			public const int RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = 2131624166;
-			
-			// aapt resource value: 0x7F0E00E7
-			public const int RtlOverlay_Widget_AppCompat_DialogTitle_Icon = 2131624167;
-			
-			// aapt resource value: 0x7F0E00E8
-			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem = 2131624168;
-			
-			// aapt resource value: 0x7F0E00E9
-			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = 2131624169;
-			
-			// aapt resource value: 0x7F0E00EA
-			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_Shortcut = 2131624170;
-			
-			// aapt resource value: 0x7F0E00EB
-			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_SubmenuArrow = 2131624171;
-			
-			// aapt resource value: 0x7F0E00EC
-			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = 2131624172;
-			
-			// aapt resource value: 0x7F0E00ED
-			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_Title = 2131624173;
-			
-			// aapt resource value: 0x7F0E00F3
-			public const int RtlOverlay_Widget_AppCompat_SearchView_MagIcon = 2131624179;
-			
-			// aapt resource value: 0x7F0E00EE
-			public const int RtlOverlay_Widget_AppCompat_Search_DropDown = 2131624174;
-			
-			// aapt resource value: 0x7F0E00EF
-			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = 2131624175;
-			
-			// aapt resource value: 0x7F0E00F0
-			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = 2131624176;
-			
-			// aapt resource value: 0x7F0E00F1
-			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Query = 2131624177;
-			
-			// aapt resource value: 0x7F0E00F2
-			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Text = 2131624178;
-			
-			// aapt resource value: 0x7F0E00F4
-			public const int RtlUnderlay_Widget_AppCompat_ActionButton = 2131624180;
-			
-			// aapt resource value: 0x7F0E00F5
-			public const int RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = 2131624181;
-			
-			// aapt resource value: 0x7F0E00F6
-			public const int TextAppearance_AppCompat = 2131624182;
-			
-			// aapt resource value: 0x7F0E00F7
-			public const int TextAppearance_AppCompat_Body1 = 2131624183;
-			
-			// aapt resource value: 0x7F0E00F8
-			public const int TextAppearance_AppCompat_Body2 = 2131624184;
-			
-			// aapt resource value: 0x7F0E00F9
-			public const int TextAppearance_AppCompat_Button = 2131624185;
-			
-			// aapt resource value: 0x7F0E00FA
-			public const int TextAppearance_AppCompat_Caption = 2131624186;
-			
-			// aapt resource value: 0x7F0E00FB
-			public const int TextAppearance_AppCompat_Display1 = 2131624187;
-			
-			// aapt resource value: 0x7F0E00FC
-			public const int TextAppearance_AppCompat_Display2 = 2131624188;
-			
-			// aapt resource value: 0x7F0E00FD
-			public const int TextAppearance_AppCompat_Display3 = 2131624189;
-			
-			// aapt resource value: 0x7F0E00FE
-			public const int TextAppearance_AppCompat_Display4 = 2131624190;
-			
-			// aapt resource value: 0x7F0E00FF
-			public const int TextAppearance_AppCompat_Headline = 2131624191;
-			
-			// aapt resource value: 0x7F0E0100
-			public const int TextAppearance_AppCompat_Inverse = 2131624192;
-			
-			// aapt resource value: 0x7F0E0101
-			public const int TextAppearance_AppCompat_Large = 2131624193;
-			
-			// aapt resource value: 0x7F0E0102
-			public const int TextAppearance_AppCompat_Large_Inverse = 2131624194;
-			
-			// aapt resource value: 0x7F0E0103
-			public const int TextAppearance_AppCompat_Light_SearchResult_Subtitle = 2131624195;
-			
-			// aapt resource value: 0x7F0E0104
-			public const int TextAppearance_AppCompat_Light_SearchResult_Title = 2131624196;
-			
-			// aapt resource value: 0x7F0E0105
-			public const int TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = 2131624197;
-			
-			// aapt resource value: 0x7F0E0106
-			public const int TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = 2131624198;
-			
-			// aapt resource value: 0x7F0E0107
-			public const int TextAppearance_AppCompat_Medium = 2131624199;
-			
-			// aapt resource value: 0x7F0E0108
-			public const int TextAppearance_AppCompat_Medium_Inverse = 2131624200;
-			
-			// aapt resource value: 0x7F0E0109
-			public const int TextAppearance_AppCompat_Menu = 2131624201;
-			
-			// aapt resource value: 0x7F0E010A
-			public const int TextAppearance_AppCompat_SearchResult_Subtitle = 2131624202;
-			
-			// aapt resource value: 0x7F0E010B
-			public const int TextAppearance_AppCompat_SearchResult_Title = 2131624203;
-			
-			// aapt resource value: 0x7F0E010C
-			public const int TextAppearance_AppCompat_Small = 2131624204;
-			
-			// aapt resource value: 0x7F0E010D
-			public const int TextAppearance_AppCompat_Small_Inverse = 2131624205;
-			
-			// aapt resource value: 0x7F0E010E
-			public const int TextAppearance_AppCompat_Subhead = 2131624206;
-			
-			// aapt resource value: 0x7F0E010F
-			public const int TextAppearance_AppCompat_Subhead_Inverse = 2131624207;
-			
-			// aapt resource value: 0x7F0E0110
-			public const int TextAppearance_AppCompat_Title = 2131624208;
-			
-			// aapt resource value: 0x7F0E0111
-			public const int TextAppearance_AppCompat_Title_Inverse = 2131624209;
-			
-			// aapt resource value: 0x7F0E0112
-			public const int TextAppearance_AppCompat_Tooltip = 2131624210;
-			
-			// aapt resource value: 0x7F0E0113
-			public const int TextAppearance_AppCompat_Widget_ActionBar_Menu = 2131624211;
-			
-			// aapt resource value: 0x7F0E0114
-			public const int TextAppearance_AppCompat_Widget_ActionBar_Subtitle = 2131624212;
-			
-			// aapt resource value: 0x7F0E0115
-			public const int TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = 2131624213;
-			
-			// aapt resource value: 0x7F0E0116
-			public const int TextAppearance_AppCompat_Widget_ActionBar_Title = 2131624214;
-			
-			// aapt resource value: 0x7F0E0117
-			public const int TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = 2131624215;
-			
-			// aapt resource value: 0x7F0E0118
-			public const int TextAppearance_AppCompat_Widget_ActionMode_Subtitle = 2131624216;
-			
-			// aapt resource value: 0x7F0E0119
-			public const int TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = 2131624217;
-			
-			// aapt resource value: 0x7F0E011A
-			public const int TextAppearance_AppCompat_Widget_ActionMode_Title = 2131624218;
-			
-			// aapt resource value: 0x7F0E011B
-			public const int TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = 2131624219;
-			
-			// aapt resource value: 0x7F0E011C
-			public const int TextAppearance_AppCompat_Widget_Button = 2131624220;
-			
-			// aapt resource value: 0x7F0E011D
-			public const int TextAppearance_AppCompat_Widget_Button_Borderless_Colored = 2131624221;
-			
-			// aapt resource value: 0x7F0E011E
-			public const int TextAppearance_AppCompat_Widget_Button_Colored = 2131624222;
-			
-			// aapt resource value: 0x7F0E011F
-			public const int TextAppearance_AppCompat_Widget_Button_Inverse = 2131624223;
-			
-			// aapt resource value: 0x7F0E0120
-			public const int TextAppearance_AppCompat_Widget_DropDownItem = 2131624224;
-			
-			// aapt resource value: 0x7F0E0121
-			public const int TextAppearance_AppCompat_Widget_PopupMenu_Header = 2131624225;
-			
-			// aapt resource value: 0x7F0E0122
-			public const int TextAppearance_AppCompat_Widget_PopupMenu_Large = 2131624226;
-			
-			// aapt resource value: 0x7F0E0123
-			public const int TextAppearance_AppCompat_Widget_PopupMenu_Small = 2131624227;
-			
-			// aapt resource value: 0x7F0E0124
-			public const int TextAppearance_AppCompat_Widget_Switch = 2131624228;
-			
-			// aapt resource value: 0x7F0E0125
-			public const int TextAppearance_AppCompat_Widget_TextView_SpinnerItem = 2131624229;
-			
-			// aapt resource value: 0x7F0E0126
-			public const int TextAppearance_Compat_Notification = 2131624230;
-			
-			// aapt resource value: 0x7F0E0127
-			public const int TextAppearance_Compat_Notification_Info = 2131624231;
-			
-			// aapt resource value: 0x7F0E0128
-			public const int TextAppearance_Compat_Notification_Info_Media = 2131624232;
-			
-			// aapt resource value: 0x7F0E0129
-			public const int TextAppearance_Compat_Notification_Line2 = 2131624233;
-			
-			// aapt resource value: 0x7F0E012A
-			public const int TextAppearance_Compat_Notification_Line2_Media = 2131624234;
-			
-			// aapt resource value: 0x7F0E012B
-			public const int TextAppearance_Compat_Notification_Media = 2131624235;
-			
-			// aapt resource value: 0x7F0E012C
-			public const int TextAppearance_Compat_Notification_Time = 2131624236;
-			
-			// aapt resource value: 0x7F0E012D
-			public const int TextAppearance_Compat_Notification_Time_Media = 2131624237;
-			
-			// aapt resource value: 0x7F0E012E
-			public const int TextAppearance_Compat_Notification_Title = 2131624238;
-			
-			// aapt resource value: 0x7F0E012F
-			public const int TextAppearance_Compat_Notification_Title_Media = 2131624239;
-			
-			// aapt resource value: 0x7F0E0130
-			public const int TextAppearance_Design_CollapsingToolbar_Expanded = 2131624240;
-			
-			// aapt resource value: 0x7F0E0131
-			public const int TextAppearance_Design_Counter = 2131624241;
-			
-			// aapt resource value: 0x7F0E0132
-			public const int TextAppearance_Design_Counter_Overflow = 2131624242;
-			
-			// aapt resource value: 0x7F0E0133
-			public const int TextAppearance_Design_Error = 2131624243;
-			
-			// aapt resource value: 0x7F0E0134
-			public const int TextAppearance_Design_HelperText = 2131624244;
-			
-			// aapt resource value: 0x7F0E0135
-			public const int TextAppearance_Design_Hint = 2131624245;
-			
-			// aapt resource value: 0x7F0E0136
-			public const int TextAppearance_Design_Snackbar_Message = 2131624246;
-			
-			// aapt resource value: 0x7F0E0137
-			public const int TextAppearance_Design_Tab = 2131624247;
-			
-			// aapt resource value: 0x7F0E0138
-			public const int TextAppearance_MaterialComponents_Body1 = 2131624248;
-			
-			// aapt resource value: 0x7F0E0139
-			public const int TextAppearance_MaterialComponents_Body2 = 2131624249;
-			
-			// aapt resource value: 0x7F0E013A
-			public const int TextAppearance_MaterialComponents_Button = 2131624250;
-			
-			// aapt resource value: 0x7F0E013B
-			public const int TextAppearance_MaterialComponents_Caption = 2131624251;
-			
-			// aapt resource value: 0x7F0E013C
-			public const int TextAppearance_MaterialComponents_Chip = 2131624252;
-			
-			// aapt resource value: 0x7F0E013D
-			public const int TextAppearance_MaterialComponents_Headline1 = 2131624253;
-			
-			// aapt resource value: 0x7F0E013E
-			public const int TextAppearance_MaterialComponents_Headline2 = 2131624254;
-			
-			// aapt resource value: 0x7F0E013F
-			public const int TextAppearance_MaterialComponents_Headline3 = 2131624255;
-			
-			// aapt resource value: 0x7F0E0140
-			public const int TextAppearance_MaterialComponents_Headline4 = 2131624256;
-			
-			// aapt resource value: 0x7F0E0141
-			public const int TextAppearance_MaterialComponents_Headline5 = 2131624257;
-			
-			// aapt resource value: 0x7F0E0142
-			public const int TextAppearance_MaterialComponents_Headline6 = 2131624258;
-			
-			// aapt resource value: 0x7F0E0143
-			public const int TextAppearance_MaterialComponents_Overline = 2131624259;
-			
-			// aapt resource value: 0x7F0E0144
-			public const int TextAppearance_MaterialComponents_Subtitle1 = 2131624260;
-			
-			// aapt resource value: 0x7F0E0145
-			public const int TextAppearance_MaterialComponents_Subtitle2 = 2131624261;
-			
-			// aapt resource value: 0x7F0E0146
-			public const int TextAppearance_MaterialComponents_Tab = 2131624262;
-			
-			// aapt resource value: 0x7F0E0147
-			public const int TextAppearance_Widget_AppCompat_ExpandedMenu_Item = 2131624263;
-			
-			// aapt resource value: 0x7F0E0148
-			public const int TextAppearance_Widget_AppCompat_Toolbar_Subtitle = 2131624264;
-			
-			// aapt resource value: 0x7F0E0149
-			public const int TextAppearance_Widget_AppCompat_Toolbar_Title = 2131624265;
-			
-			// aapt resource value: 0x7F0E017A
-			public const int ThemeOverlay_AppCompat = 2131624314;
-			
-			// aapt resource value: 0x7F0E017B
-			public const int ThemeOverlay_AppCompat_ActionBar = 2131624315;
-			
-			// aapt resource value: 0x7F0E017C
-			public const int ThemeOverlay_AppCompat_Dark = 2131624316;
-			
-			// aapt resource value: 0x7F0E017D
-			public const int ThemeOverlay_AppCompat_Dark_ActionBar = 2131624317;
-			
-			// aapt resource value: 0x7F0E017E
-			public const int ThemeOverlay_AppCompat_DayNight = 2131624318;
-			
-			// aapt resource value: 0x7F0E017F
-			public const int ThemeOverlay_AppCompat_DayNight_ActionBar = 2131624319;
-			
-			// aapt resource value: 0x7F0E0180
-			public const int ThemeOverlay_AppCompat_Dialog = 2131624320;
-			
-			// aapt resource value: 0x7F0E0181
-			public const int ThemeOverlay_AppCompat_Dialog_Alert = 2131624321;
-			
-			// aapt resource value: 0x7F0E0182
-			public const int ThemeOverlay_AppCompat_Light = 2131624322;
-			
-			// aapt resource value: 0x7F0E0183
-			public const int ThemeOverlay_MaterialComponents = 2131624323;
-			
-			// aapt resource value: 0x7F0E0184
-			public const int ThemeOverlay_MaterialComponents_ActionBar = 2131624324;
-			
-			// aapt resource value: 0x7F0E0185
-			public const int ThemeOverlay_MaterialComponents_Dark = 2131624325;
-			
-			// aapt resource value: 0x7F0E0186
-			public const int ThemeOverlay_MaterialComponents_Dark_ActionBar = 2131624326;
-			
-			// aapt resource value: 0x7F0E0187
-			public const int ThemeOverlay_MaterialComponents_Dialog = 2131624327;
-			
-			// aapt resource value: 0x7F0E0188
-			public const int ThemeOverlay_MaterialComponents_Dialog_Alert = 2131624328;
-			
-			// aapt resource value: 0x7F0E0189
-			public const int ThemeOverlay_MaterialComponents_Light = 2131624329;
-			
-			// aapt resource value: 0x7F0E018A
-			public const int ThemeOverlay_MaterialComponents_TextInputEditText = 2131624330;
-			
-			// aapt resource value: 0x7F0E018B
-			public const int ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox = 2131624331;
-			
-			// aapt resource value: 0x7F0E018C
-			public const int ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense = 2131624332;
-			
-			// aapt resource value: 0x7F0E018D
-			public const int ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox = 2131624333;
-			
-			// aapt resource value: 0x7F0E018E
-			public const int ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense = 2131624334;
-			
-			// aapt resource value: 0x7F0E014A
-			public const int Theme_AppCompat = 2131624266;
-			
-			// aapt resource value: 0x7F0E014B
-			public const int Theme_AppCompat_CompactMenu = 2131624267;
-			
-			// aapt resource value: 0x7F0E014C
-			public const int Theme_AppCompat_DayNight = 2131624268;
-			
-			// aapt resource value: 0x7F0E014D
-			public const int Theme_AppCompat_DayNight_DarkActionBar = 2131624269;
-			
-			// aapt resource value: 0x7F0E014E
-			public const int Theme_AppCompat_DayNight_Dialog = 2131624270;
-			
-			// aapt resource value: 0x7F0E0151
-			public const int Theme_AppCompat_DayNight_DialogWhenLarge = 2131624273;
-			
-			// aapt resource value: 0x7F0E014F
-			public const int Theme_AppCompat_DayNight_Dialog_Alert = 2131624271;
-			
-			// aapt resource value: 0x7F0E0150
-			public const int Theme_AppCompat_DayNight_Dialog_MinWidth = 2131624272;
-			
-			// aapt resource value: 0x7F0E0152
-			public const int Theme_AppCompat_DayNight_NoActionBar = 2131624274;
-			
-			// aapt resource value: 0x7F0E0153
-			public const int Theme_AppCompat_Dialog = 2131624275;
-			
-			// aapt resource value: 0x7F0E0156
-			public const int Theme_AppCompat_DialogWhenLarge = 2131624278;
-			
-			// aapt resource value: 0x7F0E0154
-			public const int Theme_AppCompat_Dialog_Alert = 2131624276;
-			
-			// aapt resource value: 0x7F0E0155
-			public const int Theme_AppCompat_Dialog_MinWidth = 2131624277;
-			
-			// aapt resource value: 0x7F0E0157
-			public const int Theme_AppCompat_Light = 2131624279;
-			
-			// aapt resource value: 0x7F0E0158
-			public const int Theme_AppCompat_Light_DarkActionBar = 2131624280;
-			
-			// aapt resource value: 0x7F0E0159
-			public const int Theme_AppCompat_Light_Dialog = 2131624281;
-			
-			// aapt resource value: 0x7F0E015C
-			public const int Theme_AppCompat_Light_DialogWhenLarge = 2131624284;
-			
-			// aapt resource value: 0x7F0E015A
-			public const int Theme_AppCompat_Light_Dialog_Alert = 2131624282;
-			
-			// aapt resource value: 0x7F0E015B
-			public const int Theme_AppCompat_Light_Dialog_MinWidth = 2131624283;
-			
-			// aapt resource value: 0x7F0E015D
-			public const int Theme_AppCompat_Light_NoActionBar = 2131624285;
-			
-			// aapt resource value: 0x7F0E015E
-			public const int Theme_AppCompat_NoActionBar = 2131624286;
-			
-			// aapt resource value: 0x7F0E015F
-			public const int Theme_Design = 2131624287;
-			
-			// aapt resource value: 0x7F0E0160
-			public const int Theme_Design_BottomSheetDialog = 2131624288;
-			
-			// aapt resource value: 0x7F0E0161
-			public const int Theme_Design_Light = 2131624289;
-			
-			// aapt resource value: 0x7F0E0162
-			public const int Theme_Design_Light_BottomSheetDialog = 2131624290;
-			
-			// aapt resource value: 0x7F0E0163
-			public const int Theme_Design_Light_NoActionBar = 2131624291;
-			
-			// aapt resource value: 0x7F0E0164
-			public const int Theme_Design_NoActionBar = 2131624292;
-			
-			// aapt resource value: 0x7F0E0165
-			public const int Theme_MaterialComponents = 2131624293;
-			
-			// aapt resource value: 0x7F0E0166
-			public const int Theme_MaterialComponents_BottomSheetDialog = 2131624294;
-			
-			// aapt resource value: 0x7F0E0167
-			public const int Theme_MaterialComponents_Bridge = 2131624295;
-			
-			// aapt resource value: 0x7F0E0168
-			public const int Theme_MaterialComponents_CompactMenu = 2131624296;
-			
-			// aapt resource value: 0x7F0E0169
-			public const int Theme_MaterialComponents_Dialog = 2131624297;
-			
-			// aapt resource value: 0x7F0E016C
-			public const int Theme_MaterialComponents_DialogWhenLarge = 2131624300;
-			
-			// aapt resource value: 0x7F0E016A
-			public const int Theme_MaterialComponents_Dialog_Alert = 2131624298;
-			
-			// aapt resource value: 0x7F0E016B
-			public const int Theme_MaterialComponents_Dialog_MinWidth = 2131624299;
-			
-			// aapt resource value: 0x7F0E016D
-			public const int Theme_MaterialComponents_Light = 2131624301;
-			
-			// aapt resource value: 0x7F0E016E
-			public const int Theme_MaterialComponents_Light_BottomSheetDialog = 2131624302;
-			
-			// aapt resource value: 0x7F0E016F
-			public const int Theme_MaterialComponents_Light_Bridge = 2131624303;
-			
-			// aapt resource value: 0x7F0E0170
-			public const int Theme_MaterialComponents_Light_DarkActionBar = 2131624304;
-			
-			// aapt resource value: 0x7F0E0171
-			public const int Theme_MaterialComponents_Light_DarkActionBar_Bridge = 2131624305;
-			
-			// aapt resource value: 0x7F0E0172
-			public const int Theme_MaterialComponents_Light_Dialog = 2131624306;
-			
-			// aapt resource value: 0x7F0E0175
-			public const int Theme_MaterialComponents_Light_DialogWhenLarge = 2131624309;
-			
-			// aapt resource value: 0x7F0E0173
-			public const int Theme_MaterialComponents_Light_Dialog_Alert = 2131624307;
-			
-			// aapt resource value: 0x7F0E0174
-			public const int Theme_MaterialComponents_Light_Dialog_MinWidth = 2131624308;
-			
-			// aapt resource value: 0x7F0E0176
-			public const int Theme_MaterialComponents_Light_NoActionBar = 2131624310;
-			
-			// aapt resource value: 0x7F0E0177
-			public const int Theme_MaterialComponents_Light_NoActionBar_Bridge = 2131624311;
-			
-			// aapt resource value: 0x7F0E0178
-			public const int Theme_MaterialComponents_NoActionBar = 2131624312;
-			
-			// aapt resource value: 0x7F0E0179
-			public const int Theme_MaterialComponents_NoActionBar_Bridge = 2131624313;
+			public const int com_facebook_button_send = 2131624465;
 			
 			// aapt resource value: 0x7F0E0212
-			public const int tooltip_bubble_text = 2131624466;
+			public const int com_facebook_button_share = 2131624466;
+			
+			// aapt resource value: 0x7F0E0213
+			public const int com_facebook_loginview_default_style = 2131624467;
+			
+			// aapt resource value: 0x7F0E00C7
+			public const int ExtraDialogAnimSet = 2131624135;
+			
+			// aapt resource value: 0x7F0E00C8
+			public const int MainTheme = 2131624136;
+			
+			// aapt resource value: 0x7F0E00C9
+			public const int MainTheme_Base = 2131624137;
+			
+			// aapt resource value: 0x7F0E00CA
+			public const int MessengerButton = 2131624138;
+			
+			// aapt resource value: 0x7F0E00D1
+			public const int MessengerButtonText = 2131624145;
+			
+			// aapt resource value: 0x7F0E00D2
+			public const int MessengerButtonText_Blue = 2131624146;
+			
+			// aapt resource value: 0x7F0E00D3
+			public const int MessengerButtonText_Blue_Large = 2131624147;
+			
+			// aapt resource value: 0x7F0E00D4
+			public const int MessengerButtonText_Blue_Small = 2131624148;
+			
+			// aapt resource value: 0x7F0E00D5
+			public const int MessengerButtonText_White = 2131624149;
+			
+			// aapt resource value: 0x7F0E00D6
+			public const int MessengerButtonText_White_Large = 2131624150;
+			
+			// aapt resource value: 0x7F0E00D7
+			public const int MessengerButtonText_White_Small = 2131624151;
+			
+			// aapt resource value: 0x7F0E00CB
+			public const int MessengerButton_Blue = 2131624139;
+			
+			// aapt resource value: 0x7F0E00CC
+			public const int MessengerButton_Blue_Large = 2131624140;
+			
+			// aapt resource value: 0x7F0E00CD
+			public const int MessengerButton_Blue_Small = 2131624141;
+			
+			// aapt resource value: 0x7F0E00CE
+			public const int MessengerButton_White = 2131624142;
+			
+			// aapt resource value: 0x7F0E00CF
+			public const int MessengerButton_White_Large = 2131624143;
+			
+			// aapt resource value: 0x7F0E00D0
+			public const int MessengerButton_White_Small = 2131624144;
+			
+			// aapt resource value: 0x7F0E00D8
+			public const int NoDimDialogFragmentStyle = 2131624152;
+			
+			// aapt resource value: 0x7F0E00D9
+			public const int Platform_AppCompat = 2131624153;
+			
+			// aapt resource value: 0x7F0E00DA
+			public const int Platform_AppCompat_Light = 2131624154;
+			
+			// aapt resource value: 0x7F0E00DB
+			public const int Platform_MaterialComponents = 2131624155;
+			
+			// aapt resource value: 0x7F0E00DC
+			public const int Platform_MaterialComponents_Dialog = 2131624156;
+			
+			// aapt resource value: 0x7F0E00DD
+			public const int Platform_MaterialComponents_Light = 2131624157;
+			
+			// aapt resource value: 0x7F0E00DE
+			public const int Platform_MaterialComponents_Light_Dialog = 2131624158;
+			
+			// aapt resource value: 0x7F0E00DF
+			public const int Platform_ThemeOverlay_AppCompat = 2131624159;
+			
+			// aapt resource value: 0x7F0E00E0
+			public const int Platform_ThemeOverlay_AppCompat_Dark = 2131624160;
+			
+			// aapt resource value: 0x7F0E00E1
+			public const int Platform_ThemeOverlay_AppCompat_Light = 2131624161;
+			
+			// aapt resource value: 0x7F0E00E2
+			public const int Platform_V21_AppCompat = 2131624162;
+			
+			// aapt resource value: 0x7F0E00E3
+			public const int Platform_V21_AppCompat_Light = 2131624163;
+			
+			// aapt resource value: 0x7F0E00E4
+			public const int Platform_V25_AppCompat = 2131624164;
+			
+			// aapt resource value: 0x7F0E00E5
+			public const int Platform_V25_AppCompat_Light = 2131624165;
+			
+			// aapt resource value: 0x7F0E00E6
+			public const int Platform_Widget_AppCompat_Spinner = 2131624166;
+			
+			// aapt resource value: 0x7F0E00E7
+			public const int RtlOverlay_DialogWindowTitle_AppCompat = 2131624167;
+			
+			// aapt resource value: 0x7F0E00E8
+			public const int RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = 2131624168;
+			
+			// aapt resource value: 0x7F0E00E9
+			public const int RtlOverlay_Widget_AppCompat_DialogTitle_Icon = 2131624169;
+			
+			// aapt resource value: 0x7F0E00EA
+			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem = 2131624170;
+			
+			// aapt resource value: 0x7F0E00EB
+			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = 2131624171;
+			
+			// aapt resource value: 0x7F0E00EC
+			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_Shortcut = 2131624172;
+			
+			// aapt resource value: 0x7F0E00ED
+			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_SubmenuArrow = 2131624173;
+			
+			// aapt resource value: 0x7F0E00EE
+			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = 2131624174;
+			
+			// aapt resource value: 0x7F0E00EF
+			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_Title = 2131624175;
+			
+			// aapt resource value: 0x7F0E00F5
+			public const int RtlOverlay_Widget_AppCompat_SearchView_MagIcon = 2131624181;
+			
+			// aapt resource value: 0x7F0E00F0
+			public const int RtlOverlay_Widget_AppCompat_Search_DropDown = 2131624176;
+			
+			// aapt resource value: 0x7F0E00F1
+			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = 2131624177;
+			
+			// aapt resource value: 0x7F0E00F2
+			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = 2131624178;
+			
+			// aapt resource value: 0x7F0E00F3
+			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Query = 2131624179;
+			
+			// aapt resource value: 0x7F0E00F4
+			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Text = 2131624180;
+			
+			// aapt resource value: 0x7F0E00F6
+			public const int RtlUnderlay_Widget_AppCompat_ActionButton = 2131624182;
+			
+			// aapt resource value: 0x7F0E00F7
+			public const int RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = 2131624183;
+			
+			// aapt resource value: 0x7F0E00F8
+			public const int TextAppearance_AppCompat = 2131624184;
+			
+			// aapt resource value: 0x7F0E00F9
+			public const int TextAppearance_AppCompat_Body1 = 2131624185;
+			
+			// aapt resource value: 0x7F0E00FA
+			public const int TextAppearance_AppCompat_Body2 = 2131624186;
+			
+			// aapt resource value: 0x7F0E00FB
+			public const int TextAppearance_AppCompat_Button = 2131624187;
+			
+			// aapt resource value: 0x7F0E00FC
+			public const int TextAppearance_AppCompat_Caption = 2131624188;
+			
+			// aapt resource value: 0x7F0E00FD
+			public const int TextAppearance_AppCompat_Display1 = 2131624189;
+			
+			// aapt resource value: 0x7F0E00FE
+			public const int TextAppearance_AppCompat_Display2 = 2131624190;
+			
+			// aapt resource value: 0x7F0E00FF
+			public const int TextAppearance_AppCompat_Display3 = 2131624191;
+			
+			// aapt resource value: 0x7F0E0100
+			public const int TextAppearance_AppCompat_Display4 = 2131624192;
+			
+			// aapt resource value: 0x7F0E0101
+			public const int TextAppearance_AppCompat_Headline = 2131624193;
+			
+			// aapt resource value: 0x7F0E0102
+			public const int TextAppearance_AppCompat_Inverse = 2131624194;
+			
+			// aapt resource value: 0x7F0E0103
+			public const int TextAppearance_AppCompat_Large = 2131624195;
+			
+			// aapt resource value: 0x7F0E0104
+			public const int TextAppearance_AppCompat_Large_Inverse = 2131624196;
+			
+			// aapt resource value: 0x7F0E0105
+			public const int TextAppearance_AppCompat_Light_SearchResult_Subtitle = 2131624197;
+			
+			// aapt resource value: 0x7F0E0106
+			public const int TextAppearance_AppCompat_Light_SearchResult_Title = 2131624198;
+			
+			// aapt resource value: 0x7F0E0107
+			public const int TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = 2131624199;
+			
+			// aapt resource value: 0x7F0E0108
+			public const int TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = 2131624200;
+			
+			// aapt resource value: 0x7F0E0109
+			public const int TextAppearance_AppCompat_Medium = 2131624201;
+			
+			// aapt resource value: 0x7F0E010A
+			public const int TextAppearance_AppCompat_Medium_Inverse = 2131624202;
+			
+			// aapt resource value: 0x7F0E010B
+			public const int TextAppearance_AppCompat_Menu = 2131624203;
+			
+			// aapt resource value: 0x7F0E010C
+			public const int TextAppearance_AppCompat_SearchResult_Subtitle = 2131624204;
+			
+			// aapt resource value: 0x7F0E010D
+			public const int TextAppearance_AppCompat_SearchResult_Title = 2131624205;
+			
+			// aapt resource value: 0x7F0E010E
+			public const int TextAppearance_AppCompat_Small = 2131624206;
+			
+			// aapt resource value: 0x7F0E010F
+			public const int TextAppearance_AppCompat_Small_Inverse = 2131624207;
+			
+			// aapt resource value: 0x7F0E0110
+			public const int TextAppearance_AppCompat_Subhead = 2131624208;
+			
+			// aapt resource value: 0x7F0E0111
+			public const int TextAppearance_AppCompat_Subhead_Inverse = 2131624209;
+			
+			// aapt resource value: 0x7F0E0112
+			public const int TextAppearance_AppCompat_Title = 2131624210;
+			
+			// aapt resource value: 0x7F0E0113
+			public const int TextAppearance_AppCompat_Title_Inverse = 2131624211;
+			
+			// aapt resource value: 0x7F0E0114
+			public const int TextAppearance_AppCompat_Tooltip = 2131624212;
+			
+			// aapt resource value: 0x7F0E0115
+			public const int TextAppearance_AppCompat_Widget_ActionBar_Menu = 2131624213;
+			
+			// aapt resource value: 0x7F0E0116
+			public const int TextAppearance_AppCompat_Widget_ActionBar_Subtitle = 2131624214;
+			
+			// aapt resource value: 0x7F0E0117
+			public const int TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = 2131624215;
+			
+			// aapt resource value: 0x7F0E0118
+			public const int TextAppearance_AppCompat_Widget_ActionBar_Title = 2131624216;
+			
+			// aapt resource value: 0x7F0E0119
+			public const int TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = 2131624217;
+			
+			// aapt resource value: 0x7F0E011A
+			public const int TextAppearance_AppCompat_Widget_ActionMode_Subtitle = 2131624218;
+			
+			// aapt resource value: 0x7F0E011B
+			public const int TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = 2131624219;
+			
+			// aapt resource value: 0x7F0E011C
+			public const int TextAppearance_AppCompat_Widget_ActionMode_Title = 2131624220;
+			
+			// aapt resource value: 0x7F0E011D
+			public const int TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = 2131624221;
+			
+			// aapt resource value: 0x7F0E011E
+			public const int TextAppearance_AppCompat_Widget_Button = 2131624222;
+			
+			// aapt resource value: 0x7F0E011F
+			public const int TextAppearance_AppCompat_Widget_Button_Borderless_Colored = 2131624223;
+			
+			// aapt resource value: 0x7F0E0120
+			public const int TextAppearance_AppCompat_Widget_Button_Colored = 2131624224;
+			
+			// aapt resource value: 0x7F0E0121
+			public const int TextAppearance_AppCompat_Widget_Button_Inverse = 2131624225;
+			
+			// aapt resource value: 0x7F0E0122
+			public const int TextAppearance_AppCompat_Widget_DropDownItem = 2131624226;
+			
+			// aapt resource value: 0x7F0E0123
+			public const int TextAppearance_AppCompat_Widget_PopupMenu_Header = 2131624227;
+			
+			// aapt resource value: 0x7F0E0124
+			public const int TextAppearance_AppCompat_Widget_PopupMenu_Large = 2131624228;
+			
+			// aapt resource value: 0x7F0E0125
+			public const int TextAppearance_AppCompat_Widget_PopupMenu_Small = 2131624229;
+			
+			// aapt resource value: 0x7F0E0126
+			public const int TextAppearance_AppCompat_Widget_Switch = 2131624230;
+			
+			// aapt resource value: 0x7F0E0127
+			public const int TextAppearance_AppCompat_Widget_TextView_SpinnerItem = 2131624231;
+			
+			// aapt resource value: 0x7F0E0128
+			public const int TextAppearance_Compat_Notification = 2131624232;
+			
+			// aapt resource value: 0x7F0E0129
+			public const int TextAppearance_Compat_Notification_Info = 2131624233;
+			
+			// aapt resource value: 0x7F0E012A
+			public const int TextAppearance_Compat_Notification_Info_Media = 2131624234;
+			
+			// aapt resource value: 0x7F0E012B
+			public const int TextAppearance_Compat_Notification_Line2 = 2131624235;
+			
+			// aapt resource value: 0x7F0E012C
+			public const int TextAppearance_Compat_Notification_Line2_Media = 2131624236;
+			
+			// aapt resource value: 0x7F0E012D
+			public const int TextAppearance_Compat_Notification_Media = 2131624237;
+			
+			// aapt resource value: 0x7F0E012E
+			public const int TextAppearance_Compat_Notification_Time = 2131624238;
+			
+			// aapt resource value: 0x7F0E012F
+			public const int TextAppearance_Compat_Notification_Time_Media = 2131624239;
+			
+			// aapt resource value: 0x7F0E0130
+			public const int TextAppearance_Compat_Notification_Title = 2131624240;
+			
+			// aapt resource value: 0x7F0E0131
+			public const int TextAppearance_Compat_Notification_Title_Media = 2131624241;
+			
+			// aapt resource value: 0x7F0E0132
+			public const int TextAppearance_Design_CollapsingToolbar_Expanded = 2131624242;
+			
+			// aapt resource value: 0x7F0E0133
+			public const int TextAppearance_Design_Counter = 2131624243;
+			
+			// aapt resource value: 0x7F0E0134
+			public const int TextAppearance_Design_Counter_Overflow = 2131624244;
+			
+			// aapt resource value: 0x7F0E0135
+			public const int TextAppearance_Design_Error = 2131624245;
+			
+			// aapt resource value: 0x7F0E0136
+			public const int TextAppearance_Design_HelperText = 2131624246;
+			
+			// aapt resource value: 0x7F0E0137
+			public const int TextAppearance_Design_Hint = 2131624247;
+			
+			// aapt resource value: 0x7F0E0138
+			public const int TextAppearance_Design_Snackbar_Message = 2131624248;
+			
+			// aapt resource value: 0x7F0E0139
+			public const int TextAppearance_Design_Tab = 2131624249;
+			
+			// aapt resource value: 0x7F0E013A
+			public const int TextAppearance_MaterialComponents_Body1 = 2131624250;
+			
+			// aapt resource value: 0x7F0E013B
+			public const int TextAppearance_MaterialComponents_Body2 = 2131624251;
+			
+			// aapt resource value: 0x7F0E013C
+			public const int TextAppearance_MaterialComponents_Button = 2131624252;
+			
+			// aapt resource value: 0x7F0E013D
+			public const int TextAppearance_MaterialComponents_Caption = 2131624253;
+			
+			// aapt resource value: 0x7F0E013E
+			public const int TextAppearance_MaterialComponents_Chip = 2131624254;
+			
+			// aapt resource value: 0x7F0E013F
+			public const int TextAppearance_MaterialComponents_Headline1 = 2131624255;
+			
+			// aapt resource value: 0x7F0E0140
+			public const int TextAppearance_MaterialComponents_Headline2 = 2131624256;
+			
+			// aapt resource value: 0x7F0E0141
+			public const int TextAppearance_MaterialComponents_Headline3 = 2131624257;
+			
+			// aapt resource value: 0x7F0E0142
+			public const int TextAppearance_MaterialComponents_Headline4 = 2131624258;
+			
+			// aapt resource value: 0x7F0E0143
+			public const int TextAppearance_MaterialComponents_Headline5 = 2131624259;
+			
+			// aapt resource value: 0x7F0E0144
+			public const int TextAppearance_MaterialComponents_Headline6 = 2131624260;
+			
+			// aapt resource value: 0x7F0E0145
+			public const int TextAppearance_MaterialComponents_Overline = 2131624261;
+			
+			// aapt resource value: 0x7F0E0146
+			public const int TextAppearance_MaterialComponents_Subtitle1 = 2131624262;
+			
+			// aapt resource value: 0x7F0E0147
+			public const int TextAppearance_MaterialComponents_Subtitle2 = 2131624263;
+			
+			// aapt resource value: 0x7F0E0148
+			public const int TextAppearance_MaterialComponents_Tab = 2131624264;
+			
+			// aapt resource value: 0x7F0E0149
+			public const int TextAppearance_Widget_AppCompat_ExpandedMenu_Item = 2131624265;
+			
+			// aapt resource value: 0x7F0E014A
+			public const int TextAppearance_Widget_AppCompat_Toolbar_Subtitle = 2131624266;
+			
+			// aapt resource value: 0x7F0E014B
+			public const int TextAppearance_Widget_AppCompat_Toolbar_Title = 2131624267;
+			
+			// aapt resource value: 0x7F0E017C
+			public const int ThemeOverlay_AppCompat = 2131624316;
+			
+			// aapt resource value: 0x7F0E017D
+			public const int ThemeOverlay_AppCompat_ActionBar = 2131624317;
+			
+			// aapt resource value: 0x7F0E017E
+			public const int ThemeOverlay_AppCompat_Dark = 2131624318;
+			
+			// aapt resource value: 0x7F0E017F
+			public const int ThemeOverlay_AppCompat_Dark_ActionBar = 2131624319;
+			
+			// aapt resource value: 0x7F0E0180
+			public const int ThemeOverlay_AppCompat_DayNight = 2131624320;
+			
+			// aapt resource value: 0x7F0E0181
+			public const int ThemeOverlay_AppCompat_DayNight_ActionBar = 2131624321;
+			
+			// aapt resource value: 0x7F0E0182
+			public const int ThemeOverlay_AppCompat_Dialog = 2131624322;
+			
+			// aapt resource value: 0x7F0E0183
+			public const int ThemeOverlay_AppCompat_Dialog_Alert = 2131624323;
+			
+			// aapt resource value: 0x7F0E0184
+			public const int ThemeOverlay_AppCompat_Light = 2131624324;
+			
+			// aapt resource value: 0x7F0E0185
+			public const int ThemeOverlay_MaterialComponents = 2131624325;
+			
+			// aapt resource value: 0x7F0E0186
+			public const int ThemeOverlay_MaterialComponents_ActionBar = 2131624326;
+			
+			// aapt resource value: 0x7F0E0187
+			public const int ThemeOverlay_MaterialComponents_Dark = 2131624327;
+			
+			// aapt resource value: 0x7F0E0188
+			public const int ThemeOverlay_MaterialComponents_Dark_ActionBar = 2131624328;
+			
+			// aapt resource value: 0x7F0E0189
+			public const int ThemeOverlay_MaterialComponents_Dialog = 2131624329;
+			
+			// aapt resource value: 0x7F0E018A
+			public const int ThemeOverlay_MaterialComponents_Dialog_Alert = 2131624330;
+			
+			// aapt resource value: 0x7F0E018B
+			public const int ThemeOverlay_MaterialComponents_Light = 2131624331;
+			
+			// aapt resource value: 0x7F0E018C
+			public const int ThemeOverlay_MaterialComponents_TextInputEditText = 2131624332;
+			
+			// aapt resource value: 0x7F0E018D
+			public const int ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox = 2131624333;
+			
+			// aapt resource value: 0x7F0E018E
+			public const int ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense = 2131624334;
 			
 			// aapt resource value: 0x7F0E018F
-			public const int Widget_AppCompat_ActionBar = 2131624335;
+			public const int ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox = 2131624335;
 			
 			// aapt resource value: 0x7F0E0190
-			public const int Widget_AppCompat_ActionBar_Solid = 2131624336;
+			public const int ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense = 2131624336;
+			
+			// aapt resource value: 0x7F0E014C
+			public const int Theme_AppCompat = 2131624268;
+			
+			// aapt resource value: 0x7F0E014D
+			public const int Theme_AppCompat_CompactMenu = 2131624269;
+			
+			// aapt resource value: 0x7F0E014E
+			public const int Theme_AppCompat_DayNight = 2131624270;
+			
+			// aapt resource value: 0x7F0E014F
+			public const int Theme_AppCompat_DayNight_DarkActionBar = 2131624271;
+			
+			// aapt resource value: 0x7F0E0150
+			public const int Theme_AppCompat_DayNight_Dialog = 2131624272;
+			
+			// aapt resource value: 0x7F0E0153
+			public const int Theme_AppCompat_DayNight_DialogWhenLarge = 2131624275;
+			
+			// aapt resource value: 0x7F0E0151
+			public const int Theme_AppCompat_DayNight_Dialog_Alert = 2131624273;
+			
+			// aapt resource value: 0x7F0E0152
+			public const int Theme_AppCompat_DayNight_Dialog_MinWidth = 2131624274;
+			
+			// aapt resource value: 0x7F0E0154
+			public const int Theme_AppCompat_DayNight_NoActionBar = 2131624276;
+			
+			// aapt resource value: 0x7F0E0155
+			public const int Theme_AppCompat_Dialog = 2131624277;
+			
+			// aapt resource value: 0x7F0E0158
+			public const int Theme_AppCompat_DialogWhenLarge = 2131624280;
+			
+			// aapt resource value: 0x7F0E0156
+			public const int Theme_AppCompat_Dialog_Alert = 2131624278;
+			
+			// aapt resource value: 0x7F0E0157
+			public const int Theme_AppCompat_Dialog_MinWidth = 2131624279;
+			
+			// aapt resource value: 0x7F0E0159
+			public const int Theme_AppCompat_Light = 2131624281;
+			
+			// aapt resource value: 0x7F0E015A
+			public const int Theme_AppCompat_Light_DarkActionBar = 2131624282;
+			
+			// aapt resource value: 0x7F0E015B
+			public const int Theme_AppCompat_Light_Dialog = 2131624283;
+			
+			// aapt resource value: 0x7F0E015E
+			public const int Theme_AppCompat_Light_DialogWhenLarge = 2131624286;
+			
+			// aapt resource value: 0x7F0E015C
+			public const int Theme_AppCompat_Light_Dialog_Alert = 2131624284;
+			
+			// aapt resource value: 0x7F0E015D
+			public const int Theme_AppCompat_Light_Dialog_MinWidth = 2131624285;
+			
+			// aapt resource value: 0x7F0E015F
+			public const int Theme_AppCompat_Light_NoActionBar = 2131624287;
+			
+			// aapt resource value: 0x7F0E0160
+			public const int Theme_AppCompat_NoActionBar = 2131624288;
+			
+			// aapt resource value: 0x7F0E0161
+			public const int Theme_Design = 2131624289;
+			
+			// aapt resource value: 0x7F0E0162
+			public const int Theme_Design_BottomSheetDialog = 2131624290;
+			
+			// aapt resource value: 0x7F0E0163
+			public const int Theme_Design_Light = 2131624291;
+			
+			// aapt resource value: 0x7F0E0164
+			public const int Theme_Design_Light_BottomSheetDialog = 2131624292;
+			
+			// aapt resource value: 0x7F0E0165
+			public const int Theme_Design_Light_NoActionBar = 2131624293;
+			
+			// aapt resource value: 0x7F0E0166
+			public const int Theme_Design_NoActionBar = 2131624294;
+			
+			// aapt resource value: 0x7F0E0167
+			public const int Theme_MaterialComponents = 2131624295;
+			
+			// aapt resource value: 0x7F0E0168
+			public const int Theme_MaterialComponents_BottomSheetDialog = 2131624296;
+			
+			// aapt resource value: 0x7F0E0169
+			public const int Theme_MaterialComponents_Bridge = 2131624297;
+			
+			// aapt resource value: 0x7F0E016A
+			public const int Theme_MaterialComponents_CompactMenu = 2131624298;
+			
+			// aapt resource value: 0x7F0E016B
+			public const int Theme_MaterialComponents_Dialog = 2131624299;
+			
+			// aapt resource value: 0x7F0E016E
+			public const int Theme_MaterialComponents_DialogWhenLarge = 2131624302;
+			
+			// aapt resource value: 0x7F0E016C
+			public const int Theme_MaterialComponents_Dialog_Alert = 2131624300;
+			
+			// aapt resource value: 0x7F0E016D
+			public const int Theme_MaterialComponents_Dialog_MinWidth = 2131624301;
+			
+			// aapt resource value: 0x7F0E016F
+			public const int Theme_MaterialComponents_Light = 2131624303;
+			
+			// aapt resource value: 0x7F0E0170
+			public const int Theme_MaterialComponents_Light_BottomSheetDialog = 2131624304;
+			
+			// aapt resource value: 0x7F0E0171
+			public const int Theme_MaterialComponents_Light_Bridge = 2131624305;
+			
+			// aapt resource value: 0x7F0E0172
+			public const int Theme_MaterialComponents_Light_DarkActionBar = 2131624306;
+			
+			// aapt resource value: 0x7F0E0173
+			public const int Theme_MaterialComponents_Light_DarkActionBar_Bridge = 2131624307;
+			
+			// aapt resource value: 0x7F0E0174
+			public const int Theme_MaterialComponents_Light_Dialog = 2131624308;
+			
+			// aapt resource value: 0x7F0E0177
+			public const int Theme_MaterialComponents_Light_DialogWhenLarge = 2131624311;
+			
+			// aapt resource value: 0x7F0E0175
+			public const int Theme_MaterialComponents_Light_Dialog_Alert = 2131624309;
+			
+			// aapt resource value: 0x7F0E0176
+			public const int Theme_MaterialComponents_Light_Dialog_MinWidth = 2131624310;
+			
+			// aapt resource value: 0x7F0E0178
+			public const int Theme_MaterialComponents_Light_NoActionBar = 2131624312;
+			
+			// aapt resource value: 0x7F0E0179
+			public const int Theme_MaterialComponents_Light_NoActionBar_Bridge = 2131624313;
+			
+			// aapt resource value: 0x7F0E017A
+			public const int Theme_MaterialComponents_NoActionBar = 2131624314;
+			
+			// aapt resource value: 0x7F0E017B
+			public const int Theme_MaterialComponents_NoActionBar_Bridge = 2131624315;
+			
+			// aapt resource value: 0x7F0E0214
+			public const int tooltip_bubble_text = 2131624468;
 			
 			// aapt resource value: 0x7F0E0191
-			public const int Widget_AppCompat_ActionBar_TabBar = 2131624337;
+			public const int Widget_AppCompat_ActionBar = 2131624337;
 			
 			// aapt resource value: 0x7F0E0192
-			public const int Widget_AppCompat_ActionBar_TabText = 2131624338;
+			public const int Widget_AppCompat_ActionBar_Solid = 2131624338;
 			
 			// aapt resource value: 0x7F0E0193
-			public const int Widget_AppCompat_ActionBar_TabView = 2131624339;
+			public const int Widget_AppCompat_ActionBar_TabBar = 2131624339;
 			
 			// aapt resource value: 0x7F0E0194
-			public const int Widget_AppCompat_ActionButton = 2131624340;
+			public const int Widget_AppCompat_ActionBar_TabText = 2131624340;
 			
 			// aapt resource value: 0x7F0E0195
-			public const int Widget_AppCompat_ActionButton_CloseMode = 2131624341;
+			public const int Widget_AppCompat_ActionBar_TabView = 2131624341;
 			
 			// aapt resource value: 0x7F0E0196
-			public const int Widget_AppCompat_ActionButton_Overflow = 2131624342;
+			public const int Widget_AppCompat_ActionButton = 2131624342;
 			
 			// aapt resource value: 0x7F0E0197
-			public const int Widget_AppCompat_ActionMode = 2131624343;
+			public const int Widget_AppCompat_ActionButton_CloseMode = 2131624343;
 			
 			// aapt resource value: 0x7F0E0198
-			public const int Widget_AppCompat_ActivityChooserView = 2131624344;
+			public const int Widget_AppCompat_ActionButton_Overflow = 2131624344;
 			
 			// aapt resource value: 0x7F0E0199
-			public const int Widget_AppCompat_AutoCompleteTextView = 2131624345;
+			public const int Widget_AppCompat_ActionMode = 2131624345;
 			
 			// aapt resource value: 0x7F0E019A
-			public const int Widget_AppCompat_Button = 2131624346;
-			
-			// aapt resource value: 0x7F0E01A0
-			public const int Widget_AppCompat_ButtonBar = 2131624352;
-			
-			// aapt resource value: 0x7F0E01A1
-			public const int Widget_AppCompat_ButtonBar_AlertDialog = 2131624353;
+			public const int Widget_AppCompat_ActivityChooserView = 2131624346;
 			
 			// aapt resource value: 0x7F0E019B
-			public const int Widget_AppCompat_Button_Borderless = 2131624347;
+			public const int Widget_AppCompat_AutoCompleteTextView = 2131624347;
 			
 			// aapt resource value: 0x7F0E019C
-			public const int Widget_AppCompat_Button_Borderless_Colored = 2131624348;
-			
-			// aapt resource value: 0x7F0E019D
-			public const int Widget_AppCompat_Button_ButtonBar_AlertDialog = 2131624349;
-			
-			// aapt resource value: 0x7F0E019E
-			public const int Widget_AppCompat_Button_Colored = 2131624350;
-			
-			// aapt resource value: 0x7F0E019F
-			public const int Widget_AppCompat_Button_Small = 2131624351;
+			public const int Widget_AppCompat_Button = 2131624348;
 			
 			// aapt resource value: 0x7F0E01A2
-			public const int Widget_AppCompat_CompoundButton_CheckBox = 2131624354;
+			public const int Widget_AppCompat_ButtonBar = 2131624354;
 			
 			// aapt resource value: 0x7F0E01A3
-			public const int Widget_AppCompat_CompoundButton_RadioButton = 2131624355;
+			public const int Widget_AppCompat_ButtonBar_AlertDialog = 2131624355;
+			
+			// aapt resource value: 0x7F0E019D
+			public const int Widget_AppCompat_Button_Borderless = 2131624349;
+			
+			// aapt resource value: 0x7F0E019E
+			public const int Widget_AppCompat_Button_Borderless_Colored = 2131624350;
+			
+			// aapt resource value: 0x7F0E019F
+			public const int Widget_AppCompat_Button_ButtonBar_AlertDialog = 2131624351;
+			
+			// aapt resource value: 0x7F0E01A0
+			public const int Widget_AppCompat_Button_Colored = 2131624352;
+			
+			// aapt resource value: 0x7F0E01A1
+			public const int Widget_AppCompat_Button_Small = 2131624353;
 			
 			// aapt resource value: 0x7F0E01A4
-			public const int Widget_AppCompat_CompoundButton_Switch = 2131624356;
+			public const int Widget_AppCompat_CompoundButton_CheckBox = 2131624356;
 			
 			// aapt resource value: 0x7F0E01A5
-			public const int Widget_AppCompat_DrawerArrowToggle = 2131624357;
+			public const int Widget_AppCompat_CompoundButton_RadioButton = 2131624357;
 			
 			// aapt resource value: 0x7F0E01A6
-			public const int Widget_AppCompat_DropDownItem_Spinner = 2131624358;
+			public const int Widget_AppCompat_CompoundButton_Switch = 2131624358;
 			
 			// aapt resource value: 0x7F0E01A7
-			public const int Widget_AppCompat_EditText = 2131624359;
+			public const int Widget_AppCompat_DrawerArrowToggle = 2131624359;
 			
 			// aapt resource value: 0x7F0E01A8
-			public const int Widget_AppCompat_ImageButton = 2131624360;
+			public const int Widget_AppCompat_DropDownItem_Spinner = 2131624360;
 			
 			// aapt resource value: 0x7F0E01A9
-			public const int Widget_AppCompat_Light_ActionBar = 2131624361;
+			public const int Widget_AppCompat_EditText = 2131624361;
 			
 			// aapt resource value: 0x7F0E01AA
-			public const int Widget_AppCompat_Light_ActionBar_Solid = 2131624362;
+			public const int Widget_AppCompat_ImageButton = 2131624362;
 			
 			// aapt resource value: 0x7F0E01AB
-			public const int Widget_AppCompat_Light_ActionBar_Solid_Inverse = 2131624363;
+			public const int Widget_AppCompat_Light_ActionBar = 2131624363;
 			
 			// aapt resource value: 0x7F0E01AC
-			public const int Widget_AppCompat_Light_ActionBar_TabBar = 2131624364;
+			public const int Widget_AppCompat_Light_ActionBar_Solid = 2131624364;
 			
 			// aapt resource value: 0x7F0E01AD
-			public const int Widget_AppCompat_Light_ActionBar_TabBar_Inverse = 2131624365;
+			public const int Widget_AppCompat_Light_ActionBar_Solid_Inverse = 2131624365;
 			
 			// aapt resource value: 0x7F0E01AE
-			public const int Widget_AppCompat_Light_ActionBar_TabText = 2131624366;
+			public const int Widget_AppCompat_Light_ActionBar_TabBar = 2131624366;
 			
 			// aapt resource value: 0x7F0E01AF
-			public const int Widget_AppCompat_Light_ActionBar_TabText_Inverse = 2131624367;
+			public const int Widget_AppCompat_Light_ActionBar_TabBar_Inverse = 2131624367;
 			
 			// aapt resource value: 0x7F0E01B0
-			public const int Widget_AppCompat_Light_ActionBar_TabView = 2131624368;
+			public const int Widget_AppCompat_Light_ActionBar_TabText = 2131624368;
 			
 			// aapt resource value: 0x7F0E01B1
-			public const int Widget_AppCompat_Light_ActionBar_TabView_Inverse = 2131624369;
+			public const int Widget_AppCompat_Light_ActionBar_TabText_Inverse = 2131624369;
 			
 			// aapt resource value: 0x7F0E01B2
-			public const int Widget_AppCompat_Light_ActionButton = 2131624370;
+			public const int Widget_AppCompat_Light_ActionBar_TabView = 2131624370;
 			
 			// aapt resource value: 0x7F0E01B3
-			public const int Widget_AppCompat_Light_ActionButton_CloseMode = 2131624371;
+			public const int Widget_AppCompat_Light_ActionBar_TabView_Inverse = 2131624371;
 			
 			// aapt resource value: 0x7F0E01B4
-			public const int Widget_AppCompat_Light_ActionButton_Overflow = 2131624372;
+			public const int Widget_AppCompat_Light_ActionButton = 2131624372;
 			
 			// aapt resource value: 0x7F0E01B5
-			public const int Widget_AppCompat_Light_ActionMode_Inverse = 2131624373;
+			public const int Widget_AppCompat_Light_ActionButton_CloseMode = 2131624373;
 			
 			// aapt resource value: 0x7F0E01B6
-			public const int Widget_AppCompat_Light_ActivityChooserView = 2131624374;
+			public const int Widget_AppCompat_Light_ActionButton_Overflow = 2131624374;
 			
 			// aapt resource value: 0x7F0E01B7
-			public const int Widget_AppCompat_Light_AutoCompleteTextView = 2131624375;
+			public const int Widget_AppCompat_Light_ActionMode_Inverse = 2131624375;
 			
 			// aapt resource value: 0x7F0E01B8
-			public const int Widget_AppCompat_Light_DropDownItem_Spinner = 2131624376;
+			public const int Widget_AppCompat_Light_ActivityChooserView = 2131624376;
 			
 			// aapt resource value: 0x7F0E01B9
-			public const int Widget_AppCompat_Light_ListPopupWindow = 2131624377;
+			public const int Widget_AppCompat_Light_AutoCompleteTextView = 2131624377;
 			
 			// aapt resource value: 0x7F0E01BA
-			public const int Widget_AppCompat_Light_ListView_DropDown = 2131624378;
+			public const int Widget_AppCompat_Light_DropDownItem_Spinner = 2131624378;
 			
 			// aapt resource value: 0x7F0E01BB
-			public const int Widget_AppCompat_Light_PopupMenu = 2131624379;
+			public const int Widget_AppCompat_Light_ListPopupWindow = 2131624379;
 			
 			// aapt resource value: 0x7F0E01BC
-			public const int Widget_AppCompat_Light_PopupMenu_Overflow = 2131624380;
+			public const int Widget_AppCompat_Light_ListView_DropDown = 2131624380;
 			
 			// aapt resource value: 0x7F0E01BD
-			public const int Widget_AppCompat_Light_SearchView = 2131624381;
+			public const int Widget_AppCompat_Light_PopupMenu = 2131624381;
 			
 			// aapt resource value: 0x7F0E01BE
-			public const int Widget_AppCompat_Light_Spinner_DropDown_ActionBar = 2131624382;
+			public const int Widget_AppCompat_Light_PopupMenu_Overflow = 2131624382;
 			
 			// aapt resource value: 0x7F0E01BF
-			public const int Widget_AppCompat_ListMenuView = 2131624383;
+			public const int Widget_AppCompat_Light_SearchView = 2131624383;
 			
 			// aapt resource value: 0x7F0E01C0
-			public const int Widget_AppCompat_ListPopupWindow = 2131624384;
+			public const int Widget_AppCompat_Light_Spinner_DropDown_ActionBar = 2131624384;
 			
 			// aapt resource value: 0x7F0E01C1
-			public const int Widget_AppCompat_ListView = 2131624385;
+			public const int Widget_AppCompat_ListMenuView = 2131624385;
 			
 			// aapt resource value: 0x7F0E01C2
-			public const int Widget_AppCompat_ListView_DropDown = 2131624386;
+			public const int Widget_AppCompat_ListPopupWindow = 2131624386;
 			
 			// aapt resource value: 0x7F0E01C3
-			public const int Widget_AppCompat_ListView_Menu = 2131624387;
+			public const int Widget_AppCompat_ListView = 2131624387;
 			
 			// aapt resource value: 0x7F0E01C4
-			public const int Widget_AppCompat_PopupMenu = 2131624388;
+			public const int Widget_AppCompat_ListView_DropDown = 2131624388;
 			
 			// aapt resource value: 0x7F0E01C5
-			public const int Widget_AppCompat_PopupMenu_Overflow = 2131624389;
+			public const int Widget_AppCompat_ListView_Menu = 2131624389;
 			
 			// aapt resource value: 0x7F0E01C6
-			public const int Widget_AppCompat_PopupWindow = 2131624390;
+			public const int Widget_AppCompat_PopupMenu = 2131624390;
 			
 			// aapt resource value: 0x7F0E01C7
-			public const int Widget_AppCompat_ProgressBar = 2131624391;
+			public const int Widget_AppCompat_PopupMenu_Overflow = 2131624391;
 			
 			// aapt resource value: 0x7F0E01C8
-			public const int Widget_AppCompat_ProgressBar_Horizontal = 2131624392;
+			public const int Widget_AppCompat_PopupWindow = 2131624392;
 			
 			// aapt resource value: 0x7F0E01C9
-			public const int Widget_AppCompat_RatingBar = 2131624393;
+			public const int Widget_AppCompat_ProgressBar = 2131624393;
 			
 			// aapt resource value: 0x7F0E01CA
-			public const int Widget_AppCompat_RatingBar_Indicator = 2131624394;
+			public const int Widget_AppCompat_ProgressBar_Horizontal = 2131624394;
 			
 			// aapt resource value: 0x7F0E01CB
-			public const int Widget_AppCompat_RatingBar_Small = 2131624395;
+			public const int Widget_AppCompat_RatingBar = 2131624395;
 			
 			// aapt resource value: 0x7F0E01CC
-			public const int Widget_AppCompat_SearchView = 2131624396;
+			public const int Widget_AppCompat_RatingBar_Indicator = 2131624396;
 			
 			// aapt resource value: 0x7F0E01CD
-			public const int Widget_AppCompat_SearchView_ActionBar = 2131624397;
+			public const int Widget_AppCompat_RatingBar_Small = 2131624397;
 			
 			// aapt resource value: 0x7F0E01CE
-			public const int Widget_AppCompat_SeekBar = 2131624398;
+			public const int Widget_AppCompat_SearchView = 2131624398;
 			
 			// aapt resource value: 0x7F0E01CF
-			public const int Widget_AppCompat_SeekBar_Discrete = 2131624399;
+			public const int Widget_AppCompat_SearchView_ActionBar = 2131624399;
 			
 			// aapt resource value: 0x7F0E01D0
-			public const int Widget_AppCompat_Spinner = 2131624400;
+			public const int Widget_AppCompat_SeekBar = 2131624400;
 			
 			// aapt resource value: 0x7F0E01D1
-			public const int Widget_AppCompat_Spinner_DropDown = 2131624401;
+			public const int Widget_AppCompat_SeekBar_Discrete = 2131624401;
 			
 			// aapt resource value: 0x7F0E01D2
-			public const int Widget_AppCompat_Spinner_DropDown_ActionBar = 2131624402;
+			public const int Widget_AppCompat_Spinner = 2131624402;
 			
 			// aapt resource value: 0x7F0E01D3
-			public const int Widget_AppCompat_Spinner_Underlined = 2131624403;
+			public const int Widget_AppCompat_Spinner_DropDown = 2131624403;
 			
 			// aapt resource value: 0x7F0E01D4
-			public const int Widget_AppCompat_TextView = 2131624404;
+			public const int Widget_AppCompat_Spinner_DropDown_ActionBar = 2131624404;
 			
 			// aapt resource value: 0x7F0E01D5
-			public const int Widget_AppCompat_TextView_SpinnerItem = 2131624405;
+			public const int Widget_AppCompat_Spinner_Underlined = 2131624405;
 			
 			// aapt resource value: 0x7F0E01D6
-			public const int Widget_AppCompat_Toolbar = 2131624406;
+			public const int Widget_AppCompat_TextView = 2131624406;
 			
 			// aapt resource value: 0x7F0E01D7
-			public const int Widget_AppCompat_Toolbar_Button_Navigation = 2131624407;
+			public const int Widget_AppCompat_TextView_SpinnerItem = 2131624407;
 			
 			// aapt resource value: 0x7F0E01D8
-			public const int Widget_Compat_NotificationActionContainer = 2131624408;
+			public const int Widget_AppCompat_Toolbar = 2131624408;
 			
 			// aapt resource value: 0x7F0E01D9
-			public const int Widget_Compat_NotificationActionText = 2131624409;
+			public const int Widget_AppCompat_Toolbar_Button_Navigation = 2131624409;
 			
 			// aapt resource value: 0x7F0E01DA
-			public const int Widget_Design_AppBarLayout = 2131624410;
+			public const int Widget_Compat_NotificationActionContainer = 2131624410;
 			
 			// aapt resource value: 0x7F0E01DB
-			public const int Widget_Design_BottomNavigationView = 2131624411;
+			public const int Widget_Compat_NotificationActionText = 2131624411;
 			
 			// aapt resource value: 0x7F0E01DC
-			public const int Widget_Design_BottomSheet_Modal = 2131624412;
+			public const int Widget_Design_AppBarLayout = 2131624412;
 			
 			// aapt resource value: 0x7F0E01DD
-			public const int Widget_Design_CollapsingToolbar = 2131624413;
+			public const int Widget_Design_BottomNavigationView = 2131624413;
 			
 			// aapt resource value: 0x7F0E01DE
-			public const int Widget_Design_FloatingActionButton = 2131624414;
+			public const int Widget_Design_BottomSheet_Modal = 2131624414;
 			
 			// aapt resource value: 0x7F0E01DF
-			public const int Widget_Design_NavigationView = 2131624415;
+			public const int Widget_Design_CollapsingToolbar = 2131624415;
 			
 			// aapt resource value: 0x7F0E01E0
-			public const int Widget_Design_ScrimInsetsFrameLayout = 2131624416;
+			public const int Widget_Design_FloatingActionButton = 2131624416;
 			
 			// aapt resource value: 0x7F0E01E1
-			public const int Widget_Design_Snackbar = 2131624417;
+			public const int Widget_Design_NavigationView = 2131624417;
 			
 			// aapt resource value: 0x7F0E01E2
-			public const int Widget_Design_TabLayout = 2131624418;
+			public const int Widget_Design_ScrimInsetsFrameLayout = 2131624418;
 			
 			// aapt resource value: 0x7F0E01E3
-			public const int Widget_Design_TextInputLayout = 2131624419;
+			public const int Widget_Design_Snackbar = 2131624419;
 			
 			// aapt resource value: 0x7F0E01E4
-			public const int Widget_MaterialComponents_BottomAppBar = 2131624420;
+			public const int Widget_Design_TabLayout = 2131624420;
 			
 			// aapt resource value: 0x7F0E01E5
-			public const int Widget_MaterialComponents_BottomAppBar_Colored = 2131624421;
+			public const int Widget_Design_TextInputLayout = 2131624421;
 			
 			// aapt resource value: 0x7F0E01E6
-			public const int Widget_MaterialComponents_BottomNavigationView = 2131624422;
+			public const int Widget_MaterialComponents_BottomAppBar = 2131624422;
 			
 			// aapt resource value: 0x7F0E01E7
-			public const int Widget_MaterialComponents_BottomNavigationView_Colored = 2131624423;
+			public const int Widget_MaterialComponents_BottomAppBar_Colored = 2131624423;
 			
 			// aapt resource value: 0x7F0E01E8
-			public const int Widget_MaterialComponents_BottomSheet_Modal = 2131624424;
+			public const int Widget_MaterialComponents_BottomNavigationView = 2131624424;
 			
 			// aapt resource value: 0x7F0E01E9
-			public const int Widget_MaterialComponents_Button = 2131624425;
+			public const int Widget_MaterialComponents_BottomNavigationView_Colored = 2131624425;
 			
 			// aapt resource value: 0x7F0E01EA
-			public const int Widget_MaterialComponents_Button_Icon = 2131624426;
+			public const int Widget_MaterialComponents_BottomSheet_Modal = 2131624426;
 			
 			// aapt resource value: 0x7F0E01EB
-			public const int Widget_MaterialComponents_Button_OutlinedButton = 2131624427;
+			public const int Widget_MaterialComponents_Button = 2131624427;
 			
 			// aapt resource value: 0x7F0E01EC
-			public const int Widget_MaterialComponents_Button_OutlinedButton_Icon = 2131624428;
+			public const int Widget_MaterialComponents_Button_Icon = 2131624428;
 			
 			// aapt resource value: 0x7F0E01ED
-			public const int Widget_MaterialComponents_Button_TextButton = 2131624429;
+			public const int Widget_MaterialComponents_Button_OutlinedButton = 2131624429;
 			
 			// aapt resource value: 0x7F0E01EE
-			public const int Widget_MaterialComponents_Button_TextButton_Dialog = 2131624430;
+			public const int Widget_MaterialComponents_Button_OutlinedButton_Icon = 2131624430;
 			
 			// aapt resource value: 0x7F0E01EF
-			public const int Widget_MaterialComponents_Button_TextButton_Dialog_Icon = 2131624431;
+			public const int Widget_MaterialComponents_Button_TextButton = 2131624431;
 			
 			// aapt resource value: 0x7F0E01F0
-			public const int Widget_MaterialComponents_Button_TextButton_Icon = 2131624432;
+			public const int Widget_MaterialComponents_Button_TextButton_Dialog = 2131624432;
 			
 			// aapt resource value: 0x7F0E01F1
-			public const int Widget_MaterialComponents_Button_UnelevatedButton = 2131624433;
+			public const int Widget_MaterialComponents_Button_TextButton_Dialog_Icon = 2131624433;
 			
 			// aapt resource value: 0x7F0E01F2
-			public const int Widget_MaterialComponents_Button_UnelevatedButton_Icon = 2131624434;
+			public const int Widget_MaterialComponents_Button_TextButton_Icon = 2131624434;
 			
 			// aapt resource value: 0x7F0E01F3
-			public const int Widget_MaterialComponents_CardView = 2131624435;
-			
-			// aapt resource value: 0x7F0E01F8
-			public const int Widget_MaterialComponents_ChipGroup = 2131624440;
+			public const int Widget_MaterialComponents_Button_UnelevatedButton = 2131624435;
 			
 			// aapt resource value: 0x7F0E01F4
-			public const int Widget_MaterialComponents_Chip_Action = 2131624436;
+			public const int Widget_MaterialComponents_Button_UnelevatedButton_Icon = 2131624436;
 			
 			// aapt resource value: 0x7F0E01F5
-			public const int Widget_MaterialComponents_Chip_Choice = 2131624437;
-			
-			// aapt resource value: 0x7F0E01F6
-			public const int Widget_MaterialComponents_Chip_Entry = 2131624438;
-			
-			// aapt resource value: 0x7F0E01F7
-			public const int Widget_MaterialComponents_Chip_Filter = 2131624439;
-			
-			// aapt resource value: 0x7F0E01F9
-			public const int Widget_MaterialComponents_FloatingActionButton = 2131624441;
+			public const int Widget_MaterialComponents_CardView = 2131624437;
 			
 			// aapt resource value: 0x7F0E01FA
-			public const int Widget_MaterialComponents_NavigationView = 2131624442;
+			public const int Widget_MaterialComponents_ChipGroup = 2131624442;
+			
+			// aapt resource value: 0x7F0E01F6
+			public const int Widget_MaterialComponents_Chip_Action = 2131624438;
+			
+			// aapt resource value: 0x7F0E01F7
+			public const int Widget_MaterialComponents_Chip_Choice = 2131624439;
+			
+			// aapt resource value: 0x7F0E01F8
+			public const int Widget_MaterialComponents_Chip_Entry = 2131624440;
+			
+			// aapt resource value: 0x7F0E01F9
+			public const int Widget_MaterialComponents_Chip_Filter = 2131624441;
 			
 			// aapt resource value: 0x7F0E01FB
-			public const int Widget_MaterialComponents_Snackbar = 2131624443;
+			public const int Widget_MaterialComponents_FloatingActionButton = 2131624443;
 			
 			// aapt resource value: 0x7F0E01FC
-			public const int Widget_MaterialComponents_Snackbar_FullWidth = 2131624444;
+			public const int Widget_MaterialComponents_NavigationView = 2131624444;
 			
 			// aapt resource value: 0x7F0E01FD
-			public const int Widget_MaterialComponents_TabLayout = 2131624445;
+			public const int Widget_MaterialComponents_Snackbar = 2131624445;
 			
 			// aapt resource value: 0x7F0E01FE
-			public const int Widget_MaterialComponents_TabLayout_Colored = 2131624446;
+			public const int Widget_MaterialComponents_Snackbar_FullWidth = 2131624446;
 			
 			// aapt resource value: 0x7F0E01FF
-			public const int Widget_MaterialComponents_TextInputEditText_FilledBox = 2131624447;
+			public const int Widget_MaterialComponents_TabLayout = 2131624447;
 			
 			// aapt resource value: 0x7F0E0200
-			public const int Widget_MaterialComponents_TextInputEditText_FilledBox_Dense = 2131624448;
+			public const int Widget_MaterialComponents_TabLayout_Colored = 2131624448;
 			
 			// aapt resource value: 0x7F0E0201
-			public const int Widget_MaterialComponents_TextInputEditText_OutlinedBox = 2131624449;
+			public const int Widget_MaterialComponents_TextInputEditText_FilledBox = 2131624449;
 			
 			// aapt resource value: 0x7F0E0202
-			public const int Widget_MaterialComponents_TextInputEditText_OutlinedBox_Dense = 2131624450;
+			public const int Widget_MaterialComponents_TextInputEditText_FilledBox_Dense = 2131624450;
 			
 			// aapt resource value: 0x7F0E0203
-			public const int Widget_MaterialComponents_TextInputLayout_FilledBox = 2131624451;
+			public const int Widget_MaterialComponents_TextInputEditText_OutlinedBox = 2131624451;
 			
 			// aapt resource value: 0x7F0E0204
-			public const int Widget_MaterialComponents_TextInputLayout_FilledBox_Dense = 2131624452;
+			public const int Widget_MaterialComponents_TextInputEditText_OutlinedBox_Dense = 2131624452;
 			
 			// aapt resource value: 0x7F0E0205
-			public const int Widget_MaterialComponents_TextInputLayout_OutlinedBox = 2131624453;
+			public const int Widget_MaterialComponents_TextInputLayout_FilledBox = 2131624453;
 			
 			// aapt resource value: 0x7F0E0206
-			public const int Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense = 2131624454;
+			public const int Widget_MaterialComponents_TextInputLayout_FilledBox_Dense = 2131624454;
 			
 			// aapt resource value: 0x7F0E0207
-			public const int Widget_MaterialComponents_Toolbar = 2131624455;
+			public const int Widget_MaterialComponents_TextInputLayout_OutlinedBox = 2131624455;
 			
 			// aapt resource value: 0x7F0E0208
-			public const int Widget_Support_CoordinatorLayout = 2131624456;
+			public const int Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense = 2131624456;
+			
+			// aapt resource value: 0x7F0E0209
+			public const int Widget_MaterialComponents_Toolbar = 2131624457;
+			
+			// aapt resource value: 0x7F0E020A
+			public const int Widget_Support_CoordinatorLayout = 2131624458;
 			
 			static Style()
 			{

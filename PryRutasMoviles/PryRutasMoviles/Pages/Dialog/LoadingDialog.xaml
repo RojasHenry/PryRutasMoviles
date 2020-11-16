@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<extra:LoadingView 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:extra="clr-namespace:AiForms.Dialogs.Abstractions;assembly=AiForms.Dialogs.Abstractions"
+    x:Class="PryRutasMoviles.Pages.Dialog.LoadingDialog"
+    OverlayColor="#b3b3b3e0" >
+    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+        <Label Text="Loading..." FontSize="20"/>
+        <ActivityIndicator IsRunning="true" Color="Gray" />      
+    </StackLayout>
+</extra:LoadingView>

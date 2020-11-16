@@ -4,8 +4,12 @@
             x:Class="PryRutasMoviles.Pages.DriverTabbedPage">
     <TabbedPage.ToolbarItems>
         <ToolbarItem Text="View Profile"
-                     Order="Primary"
-                     Priority="0"
+                     Order="Secondary"
+                     Priority="1"
                      Clicked="ToolbarItem_Clicked"/>
+        <ToolbarItem Text="Log out"
+                     Order="Secondary"
+                     Priority="2"
+                     Clicked="ToolbarItem_Clicked_1"/>
     </TabbedPage.ToolbarItems>
 </TabbedPage>

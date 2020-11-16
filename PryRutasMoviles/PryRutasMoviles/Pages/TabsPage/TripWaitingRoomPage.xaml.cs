@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.Linq;
 using PryRutasMoviles.Models;
 using PryRutasMoviles.Repositories;
@@ -9,6 +10,9 @@ namespace PryRutasMoviles.Pages.TabsPage
 {
     public partial class TripWaitingRoomPage : ContentPage
     {
+        private static Stopwatch stopWatch = new Stopwatch();
+        private const int defaultTimespan = 20;
+
         private ObservableCollection<User> _passengersList;
         public Trip Trip { get; set; }
 
@@ -19,6 +23,35 @@ namespace PryRutasMoviles.Pages.TabsPage
             GetPassengersWaiting(Trip);
             EnableDisableTripButtons(Trip.State);
             BindingContext = this;
+            // only if Trip is posted 
+            if (trip.State.Equals("Posted"))
+            {
+                ThreadStateTrip(trip);
+            }
+            
+        }
+
+        void ThreadStateTrip(Trip trip)
+        {
+            // Thread of query to new passengers
+            if (!stopWatch.IsRunning)
+            {
+                stopWatch.Start();
+            }
+
+            Device.StartTimer(new TimeSpan(0, 0, 1), () =>
+            {
+                if (stopWatch.IsRunning && stopWatch.Elapsed.Seconds >= defaultTimespan)
+                {
+                    Console.WriteLine("Consultando.....");
+                    Device.BeginInvokeOnMainThread(() => {
+                        GetPassengersWaiting(trip);
+                    });
+
+                    stopWatch.Restart();
+                }
+                return true;
+            });
         }
                 
         private async void GetPassengersWaiting(Trip trip)
@@ -70,6 +103,7 @@ namespace PryRutasMoviles.Pages.TabsPage
                 {
                     await tripRepository.UpdateStateTrip("OnWay", Trip.TripId);
                     EnableDisableTripButtons("OnWay");
+                    stopWatch.Stop();
                 }
             }
             catch
@@ -87,6 +121,8 @@ namespace PryRutasMoviles.Pages.TabsPage
                     await tripRepository.CancelTrip(Trip.TripId);
                     EnableDisableTripButtons("Canceled");
                     await Navigation.PushAsync(new RegisterDriverRoutePage(Trip.Driver));
+                    // Finish thread of query to new passengers
+                    stopWatch.Stop();
                 }
             }
             catch
@@ -154,7 +190,8 @@ namespace PryRutasMoviles.Pages.TabsPage
                     {
                         await tripRepository.FinishTrip(Trip.TripId);
                         EnableDisableTripButtons("Initial");
-                        await Navigation.PushAsync(new RegisterDriverRoutePage(Trip.Driver));                        
+                        await Navigation.PushAsync(new RegisterDriverRoutePage(Trip.Driver));
+                        stopWatch.Stop();
                     }
                 }
             }

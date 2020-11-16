@@ -34,6 +34,7 @@ namespace PryRutasMoviles.Droid
             Rg.Plugins.Popup.Popup.Init(this, savedInstanceState);
             Xamarin.FormsMaps.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+            AiForms.Dialogs.Dialogs.Init(this);
             LoadApplication(new App());
 
             try

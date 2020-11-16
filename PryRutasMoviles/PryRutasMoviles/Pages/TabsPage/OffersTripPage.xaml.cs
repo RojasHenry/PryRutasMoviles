@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
+using AiForms.Dialogs;
 using PryRutasMoviles.Models;
+using PryRutasMoviles.Pages.Dialog;
 using PryRutasMoviles.Repositories;
 using Rg.Plugins.Popup.Extensions;
 using Xamarin.Forms;
@@ -91,9 +93,12 @@ namespace PryRutasMoviles.Pages.TabsPage
 
                     if (confirmTrip)
                     {
+                        var reusableLoading = Loading.Instance.Create<LoadingDialog>();
 
+                        reusableLoading.Show();
                         await tripRepository.AddPassengerOnATrip(_user, selectedTrip.TripId);
                         await Navigation.PushAsync(new TripAcceptedPage(selectedTrip, _user));
+                        reusableLoading.Hide();
                     }                    
                 }
             }

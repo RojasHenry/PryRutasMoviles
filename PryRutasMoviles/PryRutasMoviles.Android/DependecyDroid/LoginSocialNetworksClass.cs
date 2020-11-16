@@ -174,8 +174,29 @@ namespace PryRutasMoviles.Droid.DependecyDroid
         public void Logout()
         {
             firebaseAuth = FirebaseAuth.Instance;
-
             firebaseAuth.SignOut();
+        }
+
+        public void SaveCredentials(string credentials)
+        {
+            ISharedPreferences pref = MainActivity.ActivityContext.GetSharedPreferences("UserInfo", FileCreationMode.Private);
+            ISharedPreferencesEditor edit = pref.Edit();
+            edit.PutString("credentials", credentials);
+            edit.Apply();
+        }
+
+        public void DeleteCredentials()
+        {
+            ISharedPreferences pref = MainActivity.ActivityContext.GetSharedPreferences("UserInfo", FileCreationMode.Private);
+            ISharedPreferencesEditor edit = pref.Edit();
+            edit.PutString("credentials", "");
+            edit.Apply();
+        }
+
+        public string GetCredentials()
+        {
+            ISharedPreferences pref = MainActivity.ActivityContext.GetSharedPreferences("UserInfo", FileCreationMode.Private);
+            return pref.GetString("credentials","");
         }
     }
 

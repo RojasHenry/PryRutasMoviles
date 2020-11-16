@@ -8,6 +8,9 @@ using Rg.Plugins.Popup.Extensions;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Newtonsoft.Json;
+using System;
+using AiForms.Dialogs;
+using PryRutasMoviles.Pages.Dialog;
 
 namespace PryRutasMoviles
 {
@@ -19,6 +22,48 @@ namespace PryRutasMoviles
         public LoginPage()
         {
             InitializeComponent();
+
+            string credentials = serviceLogin.GetCredentials();
+
+            AutoLogin(credentials);
+            
+        }
+
+        async void AutoLogin(string credentials)
+        {
+            if (!credentials.Equals(""))
+            {
+                var reusableLoading = Loading.Instance.Create<LoadingDialog>();
+
+                reusableLoading.Show();
+
+                User savedUser = JsonConvert.DeserializeObject<User>(credentials);
+
+                var response = await serviceLogin
+                        .LoginWithFirebaseCredentials(savedUser.Email, savedUser.Password);
+
+                if (response)
+                {
+                    using (UserRepository userRepository = new UserRepository())
+                    {
+                        var user = await userRepository.GetUserByEmail(savedUser.Email);
+                        if (user.UserType.Equals("Driver"))
+                        {
+                            reusableLoading.Hide();
+                            var userType = await ShowModalType(Navigation);
+                            serviceLogin.SaveCredentials(JsonConvert.SerializeObject(user));
+                            await Navigation.PushAsync(new DriverTabbedPage(user, userType));
+                        }
+                        else
+                        {
+                            serviceLogin.SaveCredentials(JsonConvert.SerializeObject(user));
+                            await Navigation.PushAsync(new PassengerTabbedPage(user));
+                            reusableLoading.Hide();
+                        }
+                        
+                    }
+                }
+            }
         }
 
         private void BtnRegister_Clicked(object sender, System.EventArgs e)
@@ -57,6 +102,7 @@ namespace PryRutasMoviles
             btnLogin.IsEnabled = controlFlag;
             btnRegister.IsEnabled = controlFlag;
             btnFBLogin.IsEnabled = controlFlag;
+            BtnGoogleLogin.IsEnabled = controlFlag;
             txtEmail.IsEnabled = controlFlag;
             txtPassword.IsEnabled = controlFlag;
         }
@@ -83,10 +129,17 @@ namespace PryRutasMoviles
                             if (user.UserType.Equals("Driver"))
                             {
                                 var userType = await ShowModalType(Navigation);
+                                serviceLogin.SaveCredentials(JsonConvert.SerializeObject(user));
                                 await Navigation.PushAsync(new DriverTabbedPage(user, userType));
                             }
                             else
+                            {
+                                serviceLogin.SaveCredentials(JsonConvert.SerializeObject(user));
                                 await Navigation.PushAsync(new PassengerTabbedPage(user));
+                            }
+                            EnableDisableActivityIndicator(false);
+                            EnableDisableControls(true);
+                            CleanEntries();
                         }
                     }
                     else
@@ -153,8 +206,13 @@ namespace PryRutasMoviles
                                     }
                                     else
                                     {
+                                        EnableDisableActivityIndicator(false);
+                                        EnableDisableControls(true);
                                         await Navigation.PushAsync(new PassengerTabbedPage(userInBD));
                                     }
+                                    EnableDisableActivityIndicator(false);
+                                    EnableDisableControls(true);
+                                    CleanEntries();
                                 }
                                 else
                                 {
@@ -173,7 +231,7 @@ namespace PryRutasMoviles
                         {
                             EnableDisableActivityIndicator(false);
                             EnableDisableControls(true);
-                            await DisplayAlert("Alerta", "Failed to log into Facebook", "Ok");
+                            await DisplayAlert("Alerta", "Failed to login with Facebook", "Ok");
                         }
                     }
                     else
@@ -190,47 +248,71 @@ namespace PryRutasMoviles
                     await DisplayAlert("Alerta", response.Message, "Ok");
                 }
             }
-            catch
+            catch (Exception ex)
             {
                 EnableDisableActivityIndicator(false);
                 EnableDisableControls(true);
-                await DisplayAlert("Error", "An unexpected error has occurred", "Ok");
+                await DisplayAlert("Error", "An unexpected error has occurred" + ex.Message, "Ok");
             }
         }
 
         private async void BtnGoogleLogin_Clicked(object sender, System.EventArgs e)
         {
-            
+            EnableDisableActivityIndicator(true);
+            EnableDisableControls(false);
+
             User user = await serviceLogin.LoginGoogle();
 
             try
             {
-                using (UserRepository userRepository = new UserRepository())
+                if (user != null)
                 {
-                    var userRS = await userRepository.GetUserByEmail(user.Email);
-                    if(userRS != null)
+                    using (UserRepository userRepository = new UserRepository())
                     {
-                        if (user.UserType.Equals("Driver"))
+                        var userRS = await userRepository.GetUserByEmail(user.Email);
+                        if (userRS != null)
                         {
-                            var whatUser = await ShowModalType(Navigation);
-                            await Navigation.PushAsync(new DriverTabbedPage(user, whatUser));
+                            if (user.UserType.Equals("Driver"))
+                            {
+                                EnableDisableActivityIndicator(false);
+                                EnableDisableControls(true);
+                                var whatUser = await ShowModalType(Navigation);
+                                await Navigation.PushAsync(new DriverTabbedPage(user, whatUser));
 
+                            }
+                            else
+                            {
+                                EnableDisableActivityIndicator(false);
+                                EnableDisableControls(true);
+                                await Navigation.PushAsync(new PassengerTabbedPage(user));
+                            }
+
+                            EnableDisableActivityIndicator(false);
+                            EnableDisableControls(true);
+                            CleanEntries();
                         }
                         else
                         {
-                            await Navigation.PushAsync(new PassengerTabbedPage(user));
+                            EnableDisableActivityIndicator(false);
+                            EnableDisableControls(true);
+                            await Navigation.PushAsync(new RegistryPage(user));
                         }
-                    }
-                    else
-                    {
-                        await Navigation.PushAsync(new RegistryPage(user));
-                    }
-                    
-                }
-            }
-            catch
-            {
 
+                    }
+                }
+                else
+                {
+                    EnableDisableActivityIndicator(false);
+                    EnableDisableControls(true);
+                    await DisplayAlert("Alerta", "Failed to login with Google", "Ok");
+                }
+                
+            }
+            catch (Exception ex)
+            {
+                EnableDisableActivityIndicator(false);
+                EnableDisableControls(true);
+                await DisplayAlert("Error", "An unexpected error has occurred"+ ex.Message, "Ok");
             }
         }
 

@@ -1,4 +1,5 @@
 ﻿using System;
+using PryRutasMoviles.Interfaces;
 using PryRutasMoviles.Models;
 using PryRutasMoviles.Pages.TabsPage;
 using PryRutasMoviles.Repositories;
@@ -11,6 +12,8 @@ namespace PryRutasMoviles.Pages
     public partial class DriverTabbedPage : TabbedPage
     {
         private User _user;
+
+        ILoginSocialNetworks serviceLogin = DependencyService.Get<ILoginSocialNetworks>();
 
         public DriverTabbedPage(User user, bool isDriver)
         {
@@ -71,6 +74,13 @@ namespace PryRutasMoviles.Pages
         void ToolbarItem_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new ProfileUserPage(_user));
+        }
+
+        async void ToolbarItem_Clicked_1(System.Object sender, System.EventArgs e)
+        {
+            serviceLogin.Logout();
+            serviceLogin.DeleteCredentials();
+            await Navigation.PopToRootAsync();
         }
     }
 }
