@@ -5,18 +5,12 @@ namespace PryRutasMoviles.Pages.TabsPage
 {
     public partial class ProfileUserPage : ContentPage
     {
-        public ProfileUserPage(User userActual)
+        public User User { get; set; }
+        public ProfileUserPage(User user)
         {
             InitializeComponent();
-
-            if (userActual.Vehicle != null)
-            {
-                // tiene vehiculo
-            }
-            else
-            {
-                // no tiene vehiculo
-            }
+            User = user;
+            BindingContext = this;
         }
     }
 }

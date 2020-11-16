@@ -11,9 +11,6 @@ namespace PryRutasMoviles
             InitializeComponent();
             MainPage = new NavigationPage(new LoginPage());
             //MainPage = new NavigationPage(new ProfileUserPage(new User()));
-            //MainPage = new NavigationPage(new MyTripPassengerPage(new User { 
-            //    Email = "jsrezam@gmail.com"                
-            //}));
         }
 
         protected override void OnStart()
