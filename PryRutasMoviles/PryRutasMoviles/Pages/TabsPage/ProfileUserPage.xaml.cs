@@ -7,9 +7,13 @@ namespace PryRutasMoviles.Pages.TabsPage
 {
     public partial class ProfileUserPage : ContentPage
     {
+        
         public ProfileUserPage(User userActual)
         {
             InitializeComponent();
+
+        
+            
 
             if (userActual.Vehicle != null)
             {
