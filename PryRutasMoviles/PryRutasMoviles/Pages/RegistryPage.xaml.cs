@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using PryRutasMoviles.Extensions;
+﻿using PryRutasMoviles.Extensions;
 using PryRutasMoviles.Interfaces;
 using PryRutasMoviles.Models;
 using PryRutasMoviles.Repositories;
-using Newtonsoft.Json;
+using Rg.Plugins.Popup.Extensions;
+using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace PryRutasMoviles.Pages
@@ -12,43 +11,21 @@ namespace PryRutasMoviles.Pages
     public partial class RegistryPage : ContentPage
     {
         ILoginSocialNetworks serviceLogin = DependencyService.Get<ILoginSocialNetworks>();
-
-        bool isFromSocialNet = false;
-
-        public RegistryPage()
+        private User _user;
+        
+        public RegistryPage(User user)
         {
             InitializeComponent();
-        }
-
-        public RegistryPage(User userGoogle)
-        {
-            InitializeComponent();
-
-            txtEmail.Text = userGoogle.Email;
-            txtLastName.Text = userGoogle.LastName;
-            txtFirstName.Text = userGoogle.FirstName;
-
-            txtEmail.IsEnabled = false;
-            txtLastName.IsEnabled = false;
-            txtFirstName.IsEnabled = false;
-            tblCredentials.IsVisible = false;
-        }
-
-        public RegistryPage(string userFb)
-        {
-            InitializeComponent();
-
-            UserFB userFB = JsonConvert.DeserializeObject<UserFB>(userFb);
-
-            txtEmail.Text = userFB.email;
-            txtLastName.Text = userFB.last_name;
-            txtFirstName.Text = userFB.first_name;
-
-            txtEmail.IsEnabled = false;
-            txtLastName.IsEnabled = false;
-            txtFirstName.IsEnabled = false;
-            tblCredentials.IsVisible = false;
-        }
+            _user = user;
+            if (_user.IsFromSocialNetworks)
+            {
+                txtLastName.Text = _user.LastName;
+                txtFirstName.Text = _user.FirstName;
+                btnNext.IsVisible=false;
+                btnRegister.IsVisible = true;
+                credentialsLayout.IsVisible = false;
+            }
+        }                
 
         private void SwitchCell_OnChanged(object sender, ToggledEventArgs e)
         {
@@ -96,16 +73,16 @@ namespace PryRutasMoviles.Pages
 
         private async void BtnRegister_Clicked(object sender, System.EventArgs e)
         {
-            EnableDisableActivityIndicator(true);
-            btnRegister.IsEnabled = false;
-
             try
             {
+                EnableDisableActivityIndicator(true);
+                btnRegister.IsEnabled = false;
+
                 using (UserRepository userRepository = new UserRepository())
                 {
-                    if (IsValidForm())
+                    if (!_user.IsFromSocialNetworks)
                     {
-                        var userInBDD = await userRepository.GetUserById(txtEmail.Text.ToUpper().Trim());
+                        var userInBDD = await userRepository.GetUserByEmail(txtEmail.Text.ToUpper().Trim());
 
                         if (userInBDD != null)
                         {
@@ -155,10 +132,45 @@ namespace PryRutasMoviles.Pages
                     }
                     else
                     {
-                        EnableDisableActivityIndicator(false);
-                        await DisplayAlert("Alert", "Please complete all entries", "Ok");
+                        if (IsValidForm()) 
+                        {
+                            _user.Address = txtAddress.Text;
+                            _user.State = true;                            
+
+                            if (driverSwitch.On)
+                            {
+                                _user.UserType = "Driver";
+                                _user.Vehicle = new Vehicle
+                                {
+                                    Registration = txtRegistration.Text,
+                                    Brand = carBrand.Text,
+                                    Color = carColor.Text,
+                                    Year = carYear.Text,
+                                    State = true
+                                };
+                            }
+                            else
+                                _user.UserType = "Passenger";
+
+                            await userRepository.AddUser(_user);
+                            EnableDisableActivityIndicator(false);
+                            await DisplayAlert("Alert", $"You are registered succesfully as {_user.UserType}", "Ok");
+                            CleanEntries();
+                            if (_user.UserType.Equals("Driver"))
+                            {
+                                var userType = await ShowModalType(Navigation);
+                                await Navigation.PushAsync(new DriverTabbedPage(_user, userType));
+                            }
+                            else
+                                await Navigation.PushAsync(new PassengerTabbedPage(_user));                                                        
+                        }
+                        else
+                        {
+                            EnableDisableActivityIndicator(false);
+                            await DisplayAlert("Alert", "Please complete all entries", "Ok");
+                        }                        
                     }
-                }
+                }                
             }
             catch
             {
@@ -173,36 +185,18 @@ namespace PryRutasMoviles.Pages
 
         private bool IsValidForm()
         {
-            if (!isFromSocialNet)
-            {
-               if (string.IsNullOrWhiteSpace(txtEmail.Text) ||
-               string.IsNullOrWhiteSpace(txtFirstName.Text) ||
-               string.IsNullOrWhiteSpace(txtLastName.Text) ||
-               string.IsNullOrWhiteSpace(txtAddress.Text) ||
-               string.IsNullOrWhiteSpace(txtPassword.Text)
-               )
+           if (string.IsNullOrWhiteSpace(txtFirstName.Text) ||
+                string.IsNullOrWhiteSpace(txtLastName.Text) ||
+                string.IsNullOrWhiteSpace(txtAddress.Text)
+                )
+                return false;
+            else if (driverSwitch.On)
+                if (string.IsNullOrWhiteSpace(txtRegistration.Text) ||
+                    (string.IsNullOrWhiteSpace(carYear.Text)    || carYear.Text.Equals("None"))  ||
+                    (string.IsNullOrWhiteSpace(carBrand.Text)   || carBrand.Text.Equals("None")) ||
+                    (string.IsNullOrWhiteSpace(carColor.Text)   || carColor.Text.Equals("None"))
+                    )
                     return false;
-                else if (driverSwitch.On)
-                    if ((string.IsNullOrWhiteSpace(carYear.Text) || carYear.Text.Equals("None")) ||
-                        (string.IsNullOrWhiteSpace(carBrand.Text) || carBrand.Text.Equals("None")) ||
-                        (string.IsNullOrWhiteSpace(carColor.Text) || carColor.Text.Equals("None")))
-                        return false;
-            }
-            else
-            {
-                if (string.IsNullOrWhiteSpace(txtEmail.Text) ||
-               string.IsNullOrWhiteSpace(txtFirstName.Text) ||
-               string.IsNullOrWhiteSpace(txtLastName.Text) ||
-               string.IsNullOrWhiteSpace(txtAddress.Text)
-               )
-                    return false;
-                else if (driverSwitch.On)
-                    if ((string.IsNullOrWhiteSpace(carYear.Text) || carYear.Text.Equals("None")) ||
-                        (string.IsNullOrWhiteSpace(carBrand.Text) || carBrand.Text.Equals("None")) ||
-                        (string.IsNullOrWhiteSpace(carColor.Text) || carColor.Text.Equals("None")))
-                        return false;
-            }
-           
             return true;
         }
 
@@ -217,13 +211,57 @@ namespace PryRutasMoviles.Pages
             carYear.Text = "None";
             carBrand.Text = "None";
             carColor.Text = "None";
-        }
+        }       
 
         private void EnableDisableActivityIndicator(bool flagActivityIndicator)
         {
             activity.IsEnabled = flagActivityIndicator;
             activity.IsRunning = flagActivityIndicator;
             activity.IsVisible = flagActivityIndicator;
+        }
+
+        private async void btnNext_Clicked(object sender, System.EventArgs e)
+        {
+
+            if (btnNext.Text.Equals("Next") && !_user.IsFromSocialNetworks)
+            {
+                if (IsValidForm())
+                {
+                    BasicsLayout.IsVisible = false;
+                    vehicleLayout.IsVisible = false;
+                    btnNext.Text = "Previous";
+                    btnRegister.IsVisible = true;
+                    credentialsLayout.IsVisible = true;
+                    return;
+                }
+                else
+                    await DisplayAlert("Alert", "Please complete all entries", "Ok");
+            }
+                       
+            if (btnNext.Text.Equals("Previous") && !_user.IsFromSocialNetworks)
+            {
+                BasicsLayout.IsVisible = true;
+                vehicleLayout.IsVisible = true;
+                btnNext.IsVisible = true;
+                btnNext.Text = "Next";
+                btnRegister.IsVisible = false;
+                credentialsLayout.IsVisible = false;
+                return;
+            }
+        }
+
+        private async Task<bool> ShowModalType(INavigation navigation)
+        {
+            TaskCompletionSource<bool> completionSource = new TaskCompletionSource<bool>();
+
+            void callback(bool didConfirm)
+            {
+                completionSource.TrySetResult(didConfirm);
+            }
+
+            var popup = new SelectTypeModal(callback);
+            await navigation.PushPopupAsync(popup);
+            return await completionSource.Task;
         }
     }
 }

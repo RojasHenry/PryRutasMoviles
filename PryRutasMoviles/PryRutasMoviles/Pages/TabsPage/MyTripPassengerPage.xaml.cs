@@ -1,15 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-
+﻿using PryRutasMoviles.Models;
 using Xamarin.Forms;
 
 namespace PryRutasMoviles.Pages.TabsPage
 {
     public partial class MyTripPassengerPage : ContentPage
     {
-        public MyTripPassengerPage()
+        
+        public MyTripPassengerPage(User passenger)
         {
-            InitializeComponent();
+            InitializeComponent();            
         }
     }
 }

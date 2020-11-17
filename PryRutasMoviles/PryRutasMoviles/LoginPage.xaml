@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage 
-        Title="Bienvenido"    
+        Title="Welcome"    
         BackgroundColor="#3E606F" xmlns="http://xamarin.com/schemas/2014/forms"
         xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
         x:Class="PryRutasMoviles.LoginPage">
@@ -60,20 +60,20 @@
             Clicked="BtnRegister_Clicked"/>
 
             <Button 
-			x:Name="btnPasajero"
-            Text="Passenger" 
+			x:Name="BtnGoogleLogin"
+            Text="Login with Google" 
 			TextColor="#CBDBD7"
             FontSize="20"                
 			BackgroundColor="#193441"
-            Clicked="btnPasajero_Clicked"/>
+            Clicked="BtnGoogleLogin_Clicked"/>
 
             <Button 
-			x:Name="btnConductor"
-            Text="Driver" 
+			x:Name="btnFBLogin"
+            Text="Login with Facebook" 
 			TextColor="#CBDBD7"
             FontSize="20"                
 			BackgroundColor="#193441"
-            Clicked="btnConductor_Clicked"/>
+            Clicked="BtnFBLogin_Clicked"/>
 
         </StackLayout>
     </StackLayout>

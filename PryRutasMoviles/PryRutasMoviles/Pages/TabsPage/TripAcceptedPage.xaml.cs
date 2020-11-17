@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Diagnostics;
 using PryRutasMoviles.Models;
 using PryRutasMoviles.Repositories;
 using Xamarin.Forms;
@@ -8,24 +8,73 @@ namespace PryRutasMoviles.Pages.TabsPage
 {
     public partial class TripAcceptedPage : ContentPage
     {
-        readonly Trip Trip;
-        User user;
-        public TripAcceptedPage(Trip TripAccepted, User userActual)
+        private static Stopwatch stopWatch = new Stopwatch();
+        private const int defaultTimespan = 3;
+        
+        public Trip Trip { get; set; }
+        public User User { get; set; }
+
+        public TripAcceptedPage(Trip trip, User user)
         {
             InitializeComponent();
-            NavigationPage.SetHasNavigationBar(this, false);
-            Trip = TripAccepted;
-            user = userActual;
+            Trip = trip;
+            User = user;
+            ThreadStartTrip();
             BindingContext = this;
         }
 
-        async void btnCancelTrip_Clicked(System.Object sender, System.EventArgs e)
+        void ThreadStartTrip()
+        {
+            // Thread of query to new posted trips
+            if (!stopWatch.IsRunning)
+                stopWatch.Start();
+
+            Device.StartTimer(new TimeSpan(0, 0, 1), () =>
+            {
+                if (stopWatch.IsRunning && stopWatch.Elapsed.Seconds >= defaultTimespan)
+                {
+                    Device.BeginInvokeOnMainThread(() => {
+                        DetectChangeStatusTrip();
+                    });
+
+                    stopWatch.Restart();
+                }
+                return true;
+            });
+        }
+
+        private async void DetectChangeStatusTrip() 
+        {
+            using (TripRepository tripRepository = new TripRepository())
+            {
+                var tripState = await tripRepository.GetStatusTrip(Trip.TripId);
+
+                switch (tripState)
+                {
+                    case "OnWay":
+                        BtnCancelTrip.IsVisible = false;
+                        break;
+
+                    case "Finished":
+                    case "Canceled":
+                        await Navigation.PopAsync();
+                        break;
+                }
+            }
+        }
+
+        protected override bool OnBackButtonPressed()
+        {
+            return true;
+        }
+
+        async void BtnCancelTrip_Clicked(object sender, EventArgs e)
         {
             try
             {
                 using (TripRepository tripRepository = new TripRepository())
                 {
-                    await tripRepository.RemovePassenger(user, Trip.TripId);
+                    await tripRepository.RemovePassenger(User, Trip.TripId);
 
                     await Navigation.PopAsync();
                 }
@@ -33,9 +82,7 @@ namespace PryRutasMoviles.Pages.TabsPage
             catch (Exception exc)
             {
                 await DisplayAlert("Error", "An unexpected error has occurred" + exc.Message, "Ok");
-            }
-
-            
+            }            
         }
     }
 }

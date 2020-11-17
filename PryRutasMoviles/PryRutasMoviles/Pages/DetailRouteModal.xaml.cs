@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using PryRutasMoviles.Entities;
 using PryRutasMoviles.Models;
 using Rg.Plugins.Popup.Extensions;
@@ -12,7 +11,7 @@ namespace PryRutasMoviles.Pages
     public partial class DetailRouteModal : PopupPage
     {
         private readonly Action<bool> setResultAction;
-        private Route _route;
+        private readonly Route _route;
         public Trip TripIn { get; set; }
 
         public DetailRouteModal(Action<bool> setResultAction, Route route)

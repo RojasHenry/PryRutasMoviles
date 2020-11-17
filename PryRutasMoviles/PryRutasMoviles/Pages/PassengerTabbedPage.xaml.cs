@@ -1,41 +1,40 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using PryRutasMoviles.Interfaces;
 using PryRutasMoviles.Models;
 using PryRutasMoviles.Pages.TabsPage;
+using System;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace PryRutasMoviles.Pages
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PassengerTabbedPage : TabbedPage
     {
-        User userActual;
+        private User _user;
+        ILoginSocialNetworks serviceLogin = DependencyService.Get<ILoginSocialNetworks>();
         public PassengerTabbedPage(User user)
         {
             InitializeComponent();
+            _user = user;            
 
-            NavigationPage.SetHasNavigationBar(this, false);
+            NavigationPage offerTrips = new NavigationPage(new OffersTripPage(_user));
+            offerTrips.Title = "Trips offered";
 
-            Title = "Bienvenido, " + user.FirstName + " " + user.LastName;
-
-            NavigationPage offerTrips = new NavigationPage(new OffersTripPage(user));
-            offerTrips.Title = "Oferta de Rutas";
-
-            NavigationPage tripsPassenger = new NavigationPage(new MyTripPassengerPage());
-            tripsPassenger.Title = "Mis Viajes";
+            NavigationPage tripsPassenger = new NavigationPage(new MyTripPassengerPage(_user));
+            tripsPassenger.Title = "My Trips";
 
             Children.Add(offerTrips);
-            Children.Add(tripsPassenger);
-            userActual = user;
+            Children.Add(tripsPassenger);            
         }
 
-        void ToolbarItem_Clicked(System.Object sender, System.EventArgs e)
+        private void ToolbarItem_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new ProfileUserPage(userActual));
+            Navigation.PushAsync(new ProfileUserPage(_user));
+        }
+
+        async void ToolbarItem_Clicked_1(object sender, EventArgs e)
+        {
+            serviceLogin.Logout();
+            serviceLogin.DeleteCredentials();
+            await Navigation.PopToRootAsync();
         }
     }
 }

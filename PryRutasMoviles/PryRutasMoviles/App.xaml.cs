@@ -1,4 +1,6 @@
-﻿using Xamarin.Forms;
+﻿using PryRutasMoviles.Models;
+using PryRutasMoviles.Pages.TabsPage;
+using Xamarin.Forms;
 
 namespace PryRutasMoviles
 {
@@ -7,8 +9,7 @@ namespace PryRutasMoviles
         public App()
         {
             InitializeComponent();
-            MainPage = new NavigationPage(new LoginPage());
-            //MainPage = new NavigationPage(new RegisterRoutePage());
+            MainPage = new NavigationPage(new LoginPage());            
         }
 
         protected override void OnStart()

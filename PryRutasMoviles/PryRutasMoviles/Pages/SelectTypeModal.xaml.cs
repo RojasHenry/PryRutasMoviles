@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using Rg.Plugins.Popup.Extensions;
 using Rg.Plugins.Popup.Pages;
-using Xamarin.Forms;
 
 namespace PryRutasMoviles.Pages
 {
@@ -18,16 +16,16 @@ namespace PryRutasMoviles.Pages
             CloseWhenBackgroundIsClicked = false;
         }
 
-        void btnPassenger_Clicked(System.Object sender, System.EventArgs e)
+        void btnPassenger_Clicked(object sender, EventArgs e)
         {
             setResultAction?.Invoke(false);
-            this.Navigation.PopPopupAsync().ConfigureAwait(false);
+            Navigation.PopPopupAsync().ConfigureAwait(false);
         }
 
-        void btnDriver_Clicked(System.Object sender, System.EventArgs e)
+        void btnDriver_Clicked(object sender, EventArgs e)
         {
             setResultAction?.Invoke(true);
-            this.Navigation.PopPopupAsync().ConfigureAwait(true);
+            Navigation.PopPopupAsync().ConfigureAwait(true);
         }
     }
 }

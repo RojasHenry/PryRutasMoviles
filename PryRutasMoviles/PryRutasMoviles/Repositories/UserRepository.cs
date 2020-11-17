@@ -42,12 +42,12 @@ namespace PryRutasMoviles.Repositories
             .PostAsync(new User());
         }
 
-        public async Task<User> GetUserById(string userName)
+        public async Task<User> GetUserByEmail(string email)
         {
             var result = await GetAll();
             if (result == null)
                 return null;
-            return result.Where(a => a.Email == userName).FirstOrDefault();            
+            return result.Where(a => a.Email == email).FirstOrDefault();            
         }
 
         public async Task UpdatePerson(string personId, string name)

@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.Threading.Tasks;
+using AiForms.Dialogs;
 using PryRutasMoviles.Models;
+using PryRutasMoviles.Pages.Dialog;
 using PryRutasMoviles.Repositories;
 using Rg.Plugins.Popup.Extensions;
 using Xamarin.Forms;
@@ -11,30 +14,50 @@ namespace PryRutasMoviles.Pages.TabsPage
 {
     public partial class OffersTripPage : ContentPage
     {
-        readonly ObservableCollection<Trip> tripOfferList = new ObservableCollection<Trip>();
-        User userActual;
+        private static Stopwatch stopWatch = new Stopwatch();
+        private const int defaultTimespan = 5;
+        private ObservableCollection<Trip> _tripOfferList;
+        private readonly User _user;
+
         public OffersTripPage(User user)
         {
             InitializeComponent();
-
-            OfferTrip.ItemsSource = tripOfferList;
-            userActual = user;
-            GetTripsOfferted();
-
-            ActualUserHasTrip();
+            _user = user;
+            ThreadGetTripsOffered();
+            GetPassengerCurrentTrip();
         }
 
-        async private void ActualUserHasTrip()
+        void ThreadGetTripsOffered()
+        {
+            // Thread of query to new posted trips
+            if (!stopWatch.IsRunning)
+                stopWatch.Start();
+            
+            Device.StartTimer(new TimeSpan(0, 0, 1), () =>
+            {
+                if (stopWatch.IsRunning && stopWatch.Elapsed.Seconds >= defaultTimespan)
+                {
+                    Device.BeginInvokeOnMainThread(() => {
+                        GetTripsOffered();
+                    });
+
+                    stopWatch.Restart();
+                }
+                return true;
+            });
+        }
+
+        private async void GetPassengerCurrentTrip()
         {
             try
             {
                 using (TripRepository tripRepository = new TripRepository())
                 {
-                    Trip actualTrip = await tripRepository.PassengerHasATrip(userActual);
+                    Trip currentPassengerTrip = await tripRepository.GetPassengerCurrentTrip(_user);
 
-                    if(actualTrip != null)
+                    if(currentPassengerTrip != null)
                     {
-                        await Navigation.PushAsync(new TripAcceptedPage(actualTrip, userActual));
+                        await Navigation.PushAsync(new TripAcceptedPage(currentPassengerTrip, _user));
                     }
                 }
             }
@@ -44,15 +67,16 @@ namespace PryRutasMoviles.Pages.TabsPage
             }
         }
 
-        private async void GetTripsOfferted()
+        private async void GetTripsOffered()
         {
             try
             {
                 using (TripRepository tripRepository = new TripRepository())
                 {
-                    tripOfferList.Clear();
-                    List<Trip> list = await tripRepository.GetTripsByState("Posted");
-                    list.ForEach(trip => tripOfferList.Add(trip));
+                    _tripOfferList = new ObservableCollection<Trip>();
+                    List<Trip> list = await tripRepository.GetTripsOffered();
+                    list.ForEach(trip => _tripOfferList.Add(trip));
+                    OfferTrip.ItemsSource = _tripOfferList;
                 }
             }
             catch(Exception e)
@@ -61,47 +85,59 @@ namespace PryRutasMoviles.Pages.TabsPage
             }
         }
 
-        void OfferTrip_Refreshing(System.Object sender, System.EventArgs e)
+        public void OfferTrip_Refreshing(object sender, EventArgs e)
         {
-            GetTripsOfferted();
+            GetTripsOffered();
+            OfferTrip.EndRefresh();
         }
 
-        async void OfferTrip_ItemSelected(System.Object sender, Xamarin.Forms.SelectedItemChangedEventArgs e)
+        public async void OfferTrip_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            var item = (Trip)e.SelectedItem;
-
-            var confirmTrip = await ConfirmPostTrip(Navigation, item);
-
-            if (confirmTrip)
+            try
             {
-                try
-                {
-                    using (TripRepository tripRepository = new TripRepository())
-                    {
-                        int numSeats = await tripRepository.SeatsOcuppateds(item.TripId);
+                if (e.SelectedItem == null)
+                    return;
 
-                        if(numSeats == item.SeatsAvailables)
-                        {
-                            await DisplayAlert("Alert", "Trip with no available seats", "Ok");
-                        }
-                        else
-                        {
-                            bool response = await tripRepository.AddPassenger(userActual,item.TripId);
-                            if (response)
-                            {
-                                await Navigation.PushAsync(new TripAcceptedPage(item,userActual));
-                            }
-                            else
-                            {
-                                await DisplayAlert("Alert", "Trip with no available seats", "Ok");
-                            }
-                        }
-                    }
-                }
-                catch (Exception exc)
+                using (TripRepository tripRepository = new TripRepository())
                 {
-                    await DisplayAlert("Error", "An unexpected error has occurred" + exc.Message, "Ok");
+
+                    var selectedTrip = e.SelectedItem as Trip;
+                    OfferTrip.SelectedItem = null;
+
+                    var response = await tripRepository.TripIsEnable(selectedTrip.TripId);
+
+                    if (!response)
+                    {
+                        await DisplayAlert("Alert", "The trip is no longer available", "Ok");
+                        GetTripsOffered();
+                        return;
+                    }
+
+                    int seatsAvailableOnATrip = await tripRepository.GetSeatsAvailableOnATrip(selectedTrip.TripId);
+
+                    if (seatsAvailableOnATrip == 0)
+                    {
+                        await DisplayAlert("Alert", "Trip with no available seats", "Ok");
+                        GetTripsOffered();
+                        return;
+                    }
+
+                    var confirmTrip = await ConfirmPostTrip(Navigation, selectedTrip);
+
+                    if (confirmTrip)
+                    {
+                        var reusableLoading = Loading.Instance.Create<LoadingDialog>();
+
+                        reusableLoading.Show();
+                        await tripRepository.AddPassengerOnATrip(_user, selectedTrip.TripId);
+                        await Navigation.PushAsync(new TripAcceptedPage(selectedTrip, _user));
+                        reusableLoading.Hide();
+                    }                    
                 }
+            }
+            catch (Exception exc)
+            {
+                await DisplayAlert("Error", "An unexpected error has occurred" + exc.Message, "Ok");
             }
         }
 

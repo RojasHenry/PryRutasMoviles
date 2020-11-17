@@ -18,5 +18,11 @@ namespace PryRutasMoviles.Interfaces
 
         void Logout();
 
+        void SaveCredentials(string credentials);
+
+        void DeleteCredentials();
+
+        string GetCredentials();
+
     }
 }
