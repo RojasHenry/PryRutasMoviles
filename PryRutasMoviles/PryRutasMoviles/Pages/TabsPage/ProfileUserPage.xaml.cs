@@ -5,9 +5,12 @@ namespace PryRutasMoviles.Pages.TabsPage
 {
     public partial class ProfileUserPage : ContentPage
     {
+        public User User { get; set; }
         public ProfileUserPage(User user)
         {
-            InitializeComponent();            
+            InitializeComponent();
+            User = user;
+            BindingContext = this;
         }
     }
 }
