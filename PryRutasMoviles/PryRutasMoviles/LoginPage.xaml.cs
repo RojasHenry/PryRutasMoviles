@@ -24,7 +24,7 @@ namespace PryRutasMoviles
             InitializeComponent();
 
             string credentials = serviceLogin.GetCredentials();
-
+            
             AutoLogin(credentials);
             
         }
@@ -147,7 +147,6 @@ namespace PryRutasMoviles
                         EnableDisableActivityIndicator(false);
                         EnableDisableControls(true);
                         await DisplayAlert("Alert", "User or password incorrect", "Ok");
-                        CleanEntries();
                     }
                 }
                 else
@@ -155,7 +154,6 @@ namespace PryRutasMoviles
                     EnableDisableActivityIndicator(false);
                     EnableDisableControls(true);
                     await DisplayAlert("Alert", "Please complete all entries", "Ok");
-                    CleanEntries();
                 }
             }
             catch
@@ -163,7 +161,6 @@ namespace PryRutasMoviles
                 EnableDisableActivityIndicator(false);
                 EnableDisableControls(true);
                 await DisplayAlert("Error", "An unexpected error has occurred", "Ok");
-                CleanEntries();
             }
         }
 

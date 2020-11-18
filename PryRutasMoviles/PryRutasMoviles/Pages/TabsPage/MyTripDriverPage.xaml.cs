@@ -13,6 +13,7 @@ namespace PryRutasMoviles.Pages.TabsPage
         {
             InitializeComponent();
             _driver = driver;
+            Title = "Welcome, " + driver.FirstName + " " + driver.LastName;
             GetDriverFinishedTrips();
         }
 
@@ -31,10 +32,10 @@ namespace PryRutasMoviles.Pages.TabsPage
             driverTripsListView.SelectedItem = null;
         }
 
-        private void DriverTripsListView_Refreshing(object sender, System.EventArgs e)
+        protected override void OnAppearing()
         {
+            base.OnAppearing();
             GetDriverFinishedTrips();
-            driverTripsListView.EndRefresh();
         }
     }
 }

@@ -32,11 +32,15 @@
             <Label Text="{Binding Trip.MeetingTime, StringFormat='Meeting Time: {0}'}" 
                    FontSize="18" TextColor="Black" HorizontalOptions="Center" />
         </StackLayout>
-        <Button Grid.Row="1" 
+
+        <StackLayout Grid.Row="1" >
+            <Label x:Name="txtwarning" IsVisible="False" Text="Please wait for your driver to finish the trip." FontSize="Medium" TextColor="Red" HorizontalTextAlignment="Center"  />
+            <Button 
                 x:Name="BtnCancelTrip" 
                 Text="Cancel" 
                 BackgroundColor="#1dabf0" 
                 TextColor="White" 
-                Clicked="BtnCancelTrip_Clicked"  />        
+                Clicked="BtnCancelTrip_Clicked"  />     
+        </StackLayout>
     </Grid>    
 </ContentPage>

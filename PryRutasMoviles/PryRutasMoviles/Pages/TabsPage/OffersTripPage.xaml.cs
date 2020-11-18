@@ -23,6 +23,7 @@ namespace PryRutasMoviles.Pages.TabsPage
         {
             InitializeComponent();
             _user = user;
+            Title = "Welcome, " + user.FirstName + " " + user.LastName;
             ThreadGetTripsOffered();
             GetPassengerCurrentTrip();
         }
@@ -85,11 +86,11 @@ namespace PryRutasMoviles.Pages.TabsPage
             }
         }
 
-        public void OfferTrip_Refreshing(object sender, EventArgs e)
+        /*public void OfferTrip_Refreshing(object sender, EventArgs e)
         {
             GetTripsOffered();
             OfferTrip.EndRefresh();
-        }
+        }*/
 
         public async void OfferTrip_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
@@ -153,6 +154,56 @@ namespace PryRutasMoviles.Pages.TabsPage
             var popup = new DetailRouteModal(callback, trip);
             await navigation.PushPopupAsync(popup);
             return await completionSource.Task;
+        }
+
+        async void OfferTrip_SelectionChanged(System.Object sender, Xamarin.Forms.SelectionChangedEventArgs e)
+        {
+            try
+            {
+                if (e.CurrentSelection.Count <= 0)
+                    return;
+
+                using (TripRepository tripRepository = new TripRepository())
+                {
+
+                    var selectedTrip = (e.CurrentSelection[0] as Trip);
+                    OfferTrip.SelectedItem = null;
+
+                    var response = await tripRepository.TripIsEnable(selectedTrip.TripId);
+
+                    if (!response)
+                    {
+                        await DisplayAlert("Alert", "The trip is no longer available", "Ok");
+                        GetTripsOffered();
+                        return;
+                    }
+
+                    int seatsAvailableOnATrip = await tripRepository.GetSeatsAvailableOnATrip(selectedTrip.TripId);
+
+                    if (seatsAvailableOnATrip == 0)
+                    {
+                        await DisplayAlert("Alert", "Trip with no available seats", "Ok");
+                        GetTripsOffered();
+                        return;
+                    }
+
+                    var confirmTrip = await ConfirmPostTrip(Navigation, selectedTrip);
+
+                    if (confirmTrip)
+                    {
+                        var reusableLoading = Loading.Instance.Create<LoadingDialog>();
+
+                        reusableLoading.Show();
+                        await tripRepository.AddPassengerOnATrip(_user, selectedTrip.TripId);
+                        await Navigation.PushAsync(new TripAcceptedPage(selectedTrip, _user));
+                        reusableLoading.Hide();
+                    }
+                }
+            }
+            catch (Exception exc)
+            {
+                await DisplayAlert("Error", "An unexpected error has occurred" + exc.Message, "Ok");
+            }
         }
     }
 }

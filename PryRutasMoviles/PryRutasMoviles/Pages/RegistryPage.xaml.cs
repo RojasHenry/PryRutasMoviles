@@ -82,20 +82,21 @@ namespace PryRutasMoviles.Pages
                 {
                     if (!_user.IsFromSocialNetworks)
                     {
-                        var userInBDD = await userRepository.GetUserByEmail(txtEmail.Text.ToUpper().Trim());
+                        var userInBDD = await userRepository.GetUserByEmail(txtEmail.Text.Trim());
 
                         if (userInBDD != null)
                         {
                             await DisplayAlert("Alert", $"You are already registered  as {userInBDD.UserType}", "Ok");
+                            EnableDisableActivityIndicator(false);
                             return;
                         }
 
                         var user = new User
                         {
-                            Email = txtEmail.Text,
-                            FirstName = txtFirstName.Text,
-                            LastName = txtLastName.Text,
-                            Address = txtAddress.Text,
+                            Email = txtEmail.Text.Trim(),
+                            FirstName = txtFirstName.Text.Trim(),
+                            LastName = txtLastName.Text.Trim(),
+                            Address = txtAddress.Text.Trim(),
                             Password = txtPassword.Text,
                             State = true,
                         };
@@ -104,10 +105,10 @@ namespace PryRutasMoviles.Pages
                             user.UserType = "Driver";
                             user.Vehicle = new Vehicle
                             {
-                                Registration = txtRegistration.Text,
-                                Brand = carBrand.Text,
-                                Color = carColor.Text,
-                                Year = carYear.Text,
+                                Registration = txtRegistration.Text.Trim(),
+                                Brand = carBrand.Text.Trim(),
+                                Color = carColor.Text.Trim(),
+                                Year = carYear.Text.Trim(),
                                 State = true
                             };
                         }
@@ -134,7 +135,7 @@ namespace PryRutasMoviles.Pages
                     {
                         if (IsValidForm()) 
                         {
-                            _user.Address = txtAddress.Text;
+                            _user.Address = txtAddress.Text.Trim();
                             _user.State = true;                            
 
                             if (driverSwitch.On)
@@ -142,10 +143,10 @@ namespace PryRutasMoviles.Pages
                                 _user.UserType = "Driver";
                                 _user.Vehicle = new Vehicle
                                 {
-                                    Registration = txtRegistration.Text,
-                                    Brand = carBrand.Text,
-                                    Color = carColor.Text,
-                                    Year = carYear.Text,
+                                    Registration = txtRegistration.Text.Trim(),
+                                    Brand = carBrand.Text.Trim(),
+                                    Color = carColor.Text.Trim(),
+                                    Year = carYear.Text.Trim(),
                                     State = true
                                 };
                             }

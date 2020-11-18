@@ -5,7 +5,7 @@
     x:Class="PryRutasMoviles.Pages.TabsPage.MyTripPassengerPage">
 
     <StackLayout>
-        <ListView x:Name="passengerTripsListView"
+        <!--<ListView x:Name="passengerTripsListView"
                   HasUnevenRows="True"
                   IsPullToRefreshEnabled="True"
                   Refreshing="PassengerTripsListView_Refreshing"
@@ -13,24 +13,47 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <StackLayout Orientation="Horizontal" 
-                                     Padding="10">
-                            <Image Source="https://icons-for-free.com/iconfiles/png/128/location+map+navigation+paper+travel+trip+icon-1320183131743301155.png"/>
-                            <StackLayout HorizontalOptions="StartAndExpand"
-                                         VerticalOptions="StartAndExpand">
-                                <Label Text="{Binding TripRoute.Resume}" 
-                                       Padding="10" 
-                                       TextColor="black" 
-                                       FontSize="Medium"
-                                       HorizontalOptions="Center" 
-                                       VerticalOptions="Center"/>
-                                <Label Text="{Binding State }" TextColor="Brown"/>
-                                <Label Text="{Binding MeetingDate ,StringFormat='Date: {0}'}" TextColor="CadetBlue"/>
-                            </StackLayout>
-                        </StackLayout>
+                        
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
-        </ListView>
+        </ListView>-->
+
+        <CollectionView x:Name="passengerTripsListView"
+                  SelectedItem="PassengerTripsListView_ItemSelected">
+        <CollectionView.ItemTemplate>
+            <DataTemplate>
+                <StackLayout Orientation="Horizontal" 
+                                     Padding="10">
+                    <Image Source="https://icons-for-free.com/iconfiles/png/128/location+map+navigation+paper+travel+trip+icon-1320183131743301155.png"/>
+                    <StackLayout HorizontalOptions="StartAndExpand"
+                                    VerticalOptions="StartAndExpand">
+                        <Label Text="{Binding TripRoute.Resume}" 
+                                Padding="10" 
+                                TextColor="black" 
+                                FontSize="Medium"
+                                HorizontalOptions="Center" 
+                                VerticalOptions="Center"/>
+                        <Label Text="{Binding State }" TextColor="Brown"/>
+                        <Label Text="{Binding MeetingDate ,StringFormat='Date: {0}'}" TextColor="CadetBlue"/>
+                    </StackLayout>
+                </StackLayout>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+        <CollectionView.EmptyView>
+            <ContentView>
+                <StackLayout HorizontalOptions="CenterAndExpand"
+                             VerticalOptions="CenterAndExpand">
+                     <Image Source="https://icons-for-free.com/iconfiles/png/128/location+map+navigation+paper+travel+trip+icon-1320183131743301155.png"/>
+                    <Label Text="You have no trips yet."
+                                   Margin="10,25,10,10"
+                                   FontAttributes="Bold"
+                                   FontSize="18"
+                                   HorizontalOptions="Fill"
+                                   HorizontalTextAlignment="Center" />
+                </StackLayout>
+            </ContentView>
+        </CollectionView.EmptyView>
+    </CollectionView>
     </StackLayout>
 </ContentPage>

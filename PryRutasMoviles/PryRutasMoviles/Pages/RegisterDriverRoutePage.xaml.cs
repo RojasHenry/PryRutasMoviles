@@ -23,6 +23,7 @@ namespace PryRutasMoviles.Pages
         {
             InitializeComponent();            
             _driver = driver;
+            Title = "Welcome, " + driver.FirstName + " " + driver.LastName;
             GetLocation();
             tpMeetingTime.Time = DateTime.Now.TimeOfDay;
         }        

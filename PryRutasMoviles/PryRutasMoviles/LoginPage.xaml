@@ -1,9 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage 
-        Title="Welcome"    
         BackgroundColor="#3E606F" xmlns="http://xamarin.com/schemas/2014/forms"
         xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-        x:Class="PryRutasMoviles.LoginPage">
+        x:Class="PryRutasMoviles.LoginPage" NavigationPage.HasNavigationBar="False">
 
     <StackLayout VerticalOptions="Center" >
         <AbsoluteLayout>
@@ -15,16 +14,8 @@
                        BackgroundColor="Transparent"
                        AbsoluteLayout.LayoutBounds="0.5,0,20,20" AbsoluteLayout.LayoutFlags="PositionProportional"/>
         </AbsoluteLayout>
-        <StackLayout VerticalOptions ="Center" Padding="0,30">
-            <Label 
-			Text="UI Driver"
-			VerticalOptions="Center"    
-            HorizontalTextAlignment="Center"
-            VerticalTextAlignment="Center"
-            TextColor="#FCFFF5"
-			FontSize="30" 
-			FontAttributes="Bold"  
-			HorizontalOptions="Center" />
+        <StackLayout VerticalOptions ="Center" Padding="0,10">
+             <Image Source="loginicon" HeightRequest="200" VerticalOptions="Start" />
         </StackLayout>
 
         <Entry
@@ -32,7 +23,8 @@
             Placeholder="Email"
             PlaceholderColor="#193441"
             HorizontalTextAlignment="Center"
-            FontSize="20" 
+            FontSize="20"
+            Margin="10,0"
             TextColor="#FCFFF5"/>
         <Entry
             x:Name="txtPassword"
@@ -40,6 +32,7 @@
             PlaceholderColor="#193441"
             HorizontalTextAlignment="Center"
             FontSize="20"
+            Margin="10,0"
             TextColor="#FCFFF5"
             IsPassword="True"/>
 
@@ -51,30 +44,28 @@
             FontSize="20"                
 			BackgroundColor="#193441" 
             Clicked="BtnLogin_Clicked"/>
-            <Button 
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                <ImageButton x:Name="BtnGoogleLogin"
+                Source="googleicon"
+                HeightRequest="60"              
+			    BackgroundColor="transparent"
+                Clicked="BtnGoogleLogin_Clicked" />
+
+            <ImageButton x:Name="btnFBLogin"
+                Source="facebookicon"
+                HeightRequest="60"              
+			    BackgroundColor="transparent"
+                Clicked="BtnFBLogin_Clicked" />
+            </StackLayout>
+        </StackLayout>
+
+        <Button 
 			x:Name="btnRegister"
             Text="Register" 
 			TextColor="#CBDBD7"
-            FontSize="20"                
+            FontSize="20"
+            Margin="10,0"
 			BackgroundColor="#193441"
             Clicked="BtnRegister_Clicked"/>
-
-            <Button 
-			x:Name="BtnGoogleLogin"
-            Text="Login with Google" 
-			TextColor="#CBDBD7"
-            FontSize="20"                
-			BackgroundColor="#193441"
-            Clicked="BtnGoogleLogin_Clicked"/>
-
-            <Button 
-			x:Name="btnFBLogin"
-            Text="Login with Facebook" 
-			TextColor="#CBDBD7"
-            FontSize="20"                
-			BackgroundColor="#193441"
-            Clicked="BtnFBLogin_Clicked"/>
-
-        </StackLayout>
     </StackLayout>
 </ContentPage>

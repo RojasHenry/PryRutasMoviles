@@ -13,6 +13,7 @@ namespace PryRutasMoviles.Pages.TabsPage
         {
             InitializeComponent();
             _passenger = passenger;
+            Title = "Welcome, " + passenger.FirstName + " " + passenger.LastName;
             GetPassengerFinishedTrips();
         }
 
@@ -31,10 +32,10 @@ namespace PryRutasMoviles.Pages.TabsPage
             passengerTripsListView.SelectedItem = null;
         }
 
-        private void PassengerTripsListView_Refreshing(object sender, System.EventArgs e)
+        protected override void OnAppearing()
         {
+            base.OnAppearing();
             GetPassengerFinishedTrips();
-            passengerTripsListView.EndRefresh();
         }
     }
 }

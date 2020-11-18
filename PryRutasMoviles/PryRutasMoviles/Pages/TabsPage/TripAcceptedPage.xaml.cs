@@ -52,6 +52,8 @@ namespace PryRutasMoviles.Pages.TabsPage
                 switch (tripState)
                 {
                     case "OnWay":
+                        txtwarning.Text = "Please wait for " + Trip.Driver.FirstName.Trim() + " to charge you and finish the trip.";
+                        txtwarning.IsVisible = true;
                         BtnCancelTrip.IsVisible = false;
                         break;
 
