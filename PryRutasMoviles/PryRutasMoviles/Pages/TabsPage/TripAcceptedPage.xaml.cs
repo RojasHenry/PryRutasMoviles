@@ -9,7 +9,7 @@ namespace PryRutasMoviles.Pages.TabsPage
     public partial class TripAcceptedPage : ContentPage
     {
         private static Stopwatch stopWatch = new Stopwatch();
-        private const int defaultTimespan = 3;
+        private const int defaultTimespan = 10;
         
         public Trip Trip { get; set; }
         public User User { get; set; }

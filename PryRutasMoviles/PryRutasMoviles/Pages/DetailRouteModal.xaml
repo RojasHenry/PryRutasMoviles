@@ -2,11 +2,11 @@
 <popups:PopupPage xmlns:popups="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
                   xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                   x:Class="PryRutasMoviles.Pages.DetailRouteModal"
-                  xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps" >
+                  xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"  >
     
     <StackLayout HorizontalOptions="Center"
                  VerticalOptions="Center">
-        <Grid BackgroundColor="WhiteSmoke" 
+        <Grid BackgroundColor="#3E606F" 
           HorizontalOptions="Center"
           VerticalOptions="Center"
           RowSpacing="10" 
@@ -28,39 +28,39 @@
             
             <StackLayout Grid.Row="1" Grid.ColumnSpan="2" Orientation="Vertical">
                 <StackLayout Orientation="Horizontal">
-                    <Label Text="Driver: "></Label>
-                    <Label Text="{Binding TripIn.Driver.FirstName}"></Label>
-                    <Label Text="{Binding TripIn.Driver.LastName}"></Label>
+                    <Label Text="Driver: " TextColor="White"></Label>
+                    <Label Text="{Binding TripIn.Driver.FirstName}" TextColor="White"></Label>
+                    <Label Text="{Binding TripIn.Driver.LastName}" TextColor="White"></Label>
                 </StackLayout>
-                <Label Text="Info Car Driver" HorizontalTextAlignment="Center"></Label>
+                <Label Text="Info Car Driver" HorizontalTextAlignment="Center" TextColor="White"></Label>
                 <StackLayout Orientation="Horizontal">
-                    <Label Text="Registration: "></Label>
-                    <Label Text="{Binding TripIn.Driver.Vehicle.Registration}"></Label>
-                </StackLayout>
-
-                <StackLayout Orientation="Horizontal">
-                    <Label Text="Brand: "></Label>
-                    <Label Text="{Binding TripIn.Driver.Vehicle.Brand}"></Label>
-                </StackLayout>
-                <StackLayout Orientation="Horizontal">
-                    <Label Text="Color: "></Label>
-                    <Label Text="{Binding TripIn.Driver.Vehicle.Color}"></Label>
-                </StackLayout>
-
-                <Label Text="Info Trip"  HorizontalTextAlignment="Center"></Label>
-                <Label x:Name="Resume"/>
-                <StackLayout Orientation="Horizontal">
-                    <Label Text="SeatsAvailables: "></Label>
-                    <Label Text="{Binding TripIn.SeatsAvailables}"></Label>
+                    <Label Text="Registration: " TextColor="White"></Label>
+                    <Label Text="{Binding TripIn.Driver.Vehicle.Registration}" TextColor="White"></Label>
                 </StackLayout>
 
                 <StackLayout Orientation="Horizontal">
-                    <Label Text="Price: "></Label>
-                    <Label Text="{Binding TripIn.Price}"></Label>
+                    <Label Text="Brand: " TextColor="White"></Label>
+                    <Label Text="{Binding TripIn.Driver.Vehicle.Brand}" TextColor="White"></Label>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Color: " TextColor="White"></Label>
+                    <Label Text="{Binding TripIn.Driver.Vehicle.Color}" TextColor="White"></Label>
+                </StackLayout>
+
+                <Label Text="Info Trip"  HorizontalTextAlignment="Center" TextColor="White"></Label>
+                <Label x:Name="Resume" TextColor="White"/>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="SeatsAvailables: " TextColor="White"></Label>
+                    <Label Text="{Binding TripIn.SeatsAvailables}" TextColor="White"></Label>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Price: " TextColor="White"></Label>
+                    <Label Text="{Binding TripIn.Price}" TextColor="White"></Label>
                 </StackLayout>
             </StackLayout>
-            <Button Grid.Row="2" Grid.Column="0" Text="Confirm" Clicked="ConfirmAttendanceClicked"/>
-            <Button Grid.Row="2" Grid.Column="1" Text="Cancel" Clicked="CancelAttendanceClicked"/>
+            <Button Grid.Row="2" Grid.Column="0" Text="Confirm" TextColor="White" BackgroundColor="#91D9B7" Clicked="ConfirmAttendanceClicked"/>
+            <Button Grid.Row="2" Grid.Column="1" Text="Cancel" TextColor="White" BackgroundColor="#FF6B6B" Clicked="CancelAttendanceClicked"/>
         </Grid>
     </StackLayout>    
 </popups:PopupPage>

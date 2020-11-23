@@ -4,9 +4,10 @@
     NavigationPage.HasBackButton="false"
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-    x:Class="PryRutasMoviles.Pages.TabsPage.TripAcceptedPage">
+    x:Class="PryRutasMoviles.Pages.TabsPage.TripAcceptedPage"
+    BackgroundColor="#3E606F">
 
-    <Grid Padding="20">
+    <Grid Padding="20" BackgroundColor="#3E606F">
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <RowDefinition Height="40" />            
@@ -17,20 +18,20 @@
                 HeightRequest="150" 
                 WidthRequest="150"/>
             
-            <Label Text="Trip Accepted!" FontSize="30" TextColor="Black" HorizontalOptions="Center" />
+            <Label Text="Trip Accepted!" FontSize="30" TextColor="White" HorizontalOptions="Center" />
             
             <Label Text="{Binding Trip.Driver.FullName, StringFormat='Driver: {0}'}" 
-                   FontSize="18" TextColor="Black" HorizontalOptions="Center" />
+                   FontSize="18" TextColor="White" HorizontalOptions="Center" />
             <Label Text="{Binding Trip.Driver.Vehicle.Brand, StringFormat='Brand Car: {0}'}" 
-                   FontSize="18" TextColor="Black" HorizontalOptions="Center" />
+                   FontSize="18" TextColor="White" HorizontalOptions="Center" />
             <Label Text="{Binding Trip.Driver.Vehicle.Registration, StringFormat='Registration Car: {0}'}" 
-                   FontSize="18" TextColor="Black" HorizontalOptions="Center" />
+                   FontSize="18" TextColor="White" HorizontalOptions="Center" />
             <Label Text="{Binding Trip.Driver.Vehicle.Color, StringFormat='Color Car: {0}'}" 
-                   FontSize="18" TextColor="Black" HorizontalOptions="Center" />
+                   FontSize="18" TextColor="White" HorizontalOptions="Center" />
             <Label Text="{Binding Trip.Price, StringFormat='Total Payment: ${0}'}" 
-                   FontSize="18" TextColor="Black" HorizontalOptions="Center" />
+                   FontSize="18" TextColor="White" HorizontalOptions="Center" />
             <Label Text="{Binding Trip.MeetingTime, StringFormat='Meeting Time: {0}'}" 
-                   FontSize="18" TextColor="Black" HorizontalOptions="Center" />
+                   FontSize="18" TextColor="White" HorizontalOptions="Center" />
         </StackLayout>
 
         <StackLayout Grid.Row="1" >
@@ -38,7 +39,7 @@
             <Button 
                 x:Name="BtnCancelTrip" 
                 Text="Cancel" 
-                BackgroundColor="#1dabf0" 
+                BackgroundColor="#FF6B6B"
                 TextColor="White" 
                 Clicked="BtnCancelTrip_Clicked"  />     
         </StackLayout>

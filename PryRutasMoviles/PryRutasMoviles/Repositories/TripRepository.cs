@@ -56,8 +56,8 @@ namespace PryRutasMoviles.Repositories
                 return null;
 
             return result.Where(t => (t.SeatsAvailables>0) 
-                 && (t.State.Equals("Posted")))
-                 //&& (t.TimestampMeetingDate >= Util.GetCurrentDateTime()))
+                 && (t.State.Equals("Posted"))
+                 && (t.TimestampMeetingDate >= Util.GetCurrentDateTime()))
                 .ToList();
         }
 

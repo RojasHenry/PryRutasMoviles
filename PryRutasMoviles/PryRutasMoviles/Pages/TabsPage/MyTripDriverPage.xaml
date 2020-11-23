@@ -2,7 +2,7 @@
 <ContentPage 
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-    x:Class="PryRutasMoviles.Pages.TabsPage.MyTripDriverPage">
+    x:Class="PryRutasMoviles.Pages.TabsPage.MyTripDriverPage" BackgroundColor="#3E606F">
 
     <StackLayout>
         <!--<ListView x:Name="driverTripsListView"
@@ -38,12 +38,12 @@
                     <DataTemplate>
                         <StackLayout Orientation="Horizontal" 
                                      Padding="10">
-                            <Image Source="https://icons-for-free.com/iconfiles/png/128/taxi-131979029204267403.png"/>
+                            <Image Source="https://icons-for-free.com/iconfiles/png/512/taxi+transport+transportation+vehicle+icon-1320184695560972978.png" HeightRequest="60"/>
                             <StackLayout HorizontalOptions="StartAndExpand"
                                          VerticalOptions="StartAndExpand">
                                 <Label Text="{Binding TripRoute.Resume}" 
                                        Padding="10" 
-                                       TextColor="black" 
+                                       TextColor="White" 
                                        FontSize="Medium"
                                        HorizontalOptions="Center" 
                                        VerticalOptions="Center"/>
@@ -57,11 +57,12 @@
                     <ContentView>
                          <StackLayout HorizontalOptions="CenterAndExpand"
                              VerticalOptions="CenterAndExpand">
-                             <Image Source="https://icons-for-free.com/iconfiles/png/128/taxi-131979029204267403.png"/>
+                             <Image Source="https://icons-for-free.com/iconfiles/png/512/taxi+transport+transportation+vehicle+icon-1320184695560972978.png"/>
                             <Label Text="You have no trips yet."
                                    Margin="10,25,10,10"
                                    FontAttributes="Bold"
                                    FontSize="18"
+                                   TextColor="White" 
                                    HorizontalOptions="Fill"
                                    HorizontalTextAlignment="Center" />
                           </StackLayout>

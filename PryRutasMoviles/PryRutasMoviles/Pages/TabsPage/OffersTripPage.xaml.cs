@@ -15,7 +15,7 @@ namespace PryRutasMoviles.Pages.TabsPage
     public partial class OffersTripPage : ContentPage
     {
         private static Stopwatch stopWatch = new Stopwatch();
-        private const int defaultTimespan = 5;
+        private const int defaultTimespan = 10;
         private ObservableCollection<Trip> _tripOfferList;
         private readonly User _user;
 
@@ -26,6 +26,7 @@ namespace PryRutasMoviles.Pages.TabsPage
             Title = "Welcome, " + user.FirstName + " " + user.LastName;
             ThreadGetTripsOffered();
             GetPassengerCurrentTrip();
+            GetTripsOffered();
         }
 
         void ThreadGetTripsOffered()
@@ -38,6 +39,7 @@ namespace PryRutasMoviles.Pages.TabsPage
             {
                 if (stopWatch.IsRunning && stopWatch.Elapsed.Seconds >= defaultTimespan)
                 {
+                    Console.WriteLine("Get Trips Offered");
                     Device.BeginInvokeOnMainThread(() => {
                         GetTripsOffered();
                     });
@@ -74,9 +76,8 @@ namespace PryRutasMoviles.Pages.TabsPage
             {
                 using (TripRepository tripRepository = new TripRepository())
                 {
-                    _tripOfferList = new ObservableCollection<Trip>();
                     List<Trip> list = await tripRepository.GetTripsOffered();
-                    list.ForEach(trip => _tripOfferList.Add(trip));
+                    _tripOfferList = new ObservableCollection<Trip>(list);
                     OfferTrip.ItemsSource = _tripOfferList;
                 }
             }
@@ -204,6 +205,18 @@ namespace PryRutasMoviles.Pages.TabsPage
             {
                 await DisplayAlert("Error", "An unexpected error has occurred" + exc.Message, "Ok");
             }
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            ThreadGetTripsOffered();
+        }
+        protected override void OnDisappearing()
+        {
+            base.OnDisappearing();
+            if (stopWatch.IsRunning)
+                stopWatch.Stop();
         }
     }
 }

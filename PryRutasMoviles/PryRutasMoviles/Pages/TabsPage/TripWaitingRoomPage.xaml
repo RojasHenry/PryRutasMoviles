@@ -4,9 +4,9 @@
     NavigationPage.HasBackButton="false"
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-    x:Class="PryRutasMoviles.Pages.TabsPage.TripWaitingRoomPage">
+    x:Class="PryRutasMoviles.Pages.TabsPage.TripWaitingRoomPage" BackgroundColor="#3E606F">
 
-    <Grid Margin="10">
+    <Grid Margin="10" BackgroundColor="#3E606F">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
@@ -20,10 +20,10 @@
                 <Label Grid.Row="0" Grid.ColumnSpan="2" 
                        Text="Info Trip"
                        FontSize="18" 
-                       HorizontalTextAlignment="Center"/>
-                <Label Grid.Row="1" Grid.RowSpan="4" Grid.ColumnSpan="2" Text="{Binding Trip.TripRoute.Resume ,StringFormat='Route: {0}'}"/>
-                <Label Grid.Row="4" Grid.Column="0" Text="{Binding Trip.MeetingTime,StringFormat='Meeting Time: {0}'}" />
-                <Label Grid.Row="4" Grid.Column="1" Text="{Binding Trip.Price,StringFormat='Price: ${0}'}" />
+                       HorizontalTextAlignment="Center" TextColor="White"/>
+                <Label Grid.Row="1" Grid.RowSpan="4" Grid.ColumnSpan="2" Text="{Binding Trip.TripRoute.Resume ,StringFormat='Route: {0}'}" TextColor="White"/>
+                <Label Grid.Row="4" Grid.Column="0" Text="{Binding Trip.MeetingTime,StringFormat='Meeting Time: {0}'}" TextColor="White"/>
+                <Label Grid.Row="4" Grid.Column="1" Text="{Binding Trip.Price,StringFormat='Price: ${0}'}" TextColor="White" />
             </Grid>
         </StackLayout>
 
@@ -42,8 +42,8 @@
                             <StackLayout Orientation="Horizontal" Padding="5">
                                 <Image Source="https://icons-for-free.com/iconfiles/png/128/geek+male+man+person+user+icon-1320196226589699231.png"/>
                                 <StackLayout HorizontalOptions="StartAndExpand">
-                                    <Label Text="{Binding FullName }" TextColor="black"/>
-                                    <Label Text="{Binding UserType }" TextColor="Brown"/>
+                                    <Label Text="{Binding FullName }" TextColor="White"/>
+                                    <Label Text="{Binding UserType }" TextColor="SandyBrown"/>
                                 </StackLayout>
                                 <Button 
                                         Text="Finish" 
@@ -81,6 +81,7 @@
                         x:Name="btnInitTrip"
                         Text="Go"
                         BackgroundColor="#537EFF"
+                        TextColor="White"
                         Clicked="BtnInTrip_Clicked" />
                      <Button
                         x:Name="btnFinishTrip" 
@@ -94,6 +95,7 @@
                         x:Name="btnCancelTrip" 
                         Text="Cancel"
                         IsVisible="false"
+                        TextColor="White"
                         BackgroundColor="#FF6B6B"
                         Clicked="BtnCancelTrip_Clicked"/>
             </Grid>

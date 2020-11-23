@@ -2,7 +2,7 @@
 <ContentPage
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-    x:Class="PryRutasMoviles.Pages.TabsPage.MyTripPassengerPage">
+    x:Class="PryRutasMoviles.Pages.TabsPage.MyTripPassengerPage" BackgroundColor="#3E606F">
 
     <StackLayout>
         <!--<ListView x:Name="passengerTripsListView"
@@ -30,7 +30,7 @@
                                     VerticalOptions="StartAndExpand">
                         <Label Text="{Binding TripRoute.Resume}" 
                                 Padding="10" 
-                                TextColor="black" 
+                                TextColor="White"
                                 FontSize="Medium"
                                 HorizontalOptions="Center" 
                                 VerticalOptions="Center"/>
