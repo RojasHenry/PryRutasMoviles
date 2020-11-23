@@ -269,19 +269,19 @@ namespace PryRutasMoviles
                         var userRS = await userRepository.GetUserByEmail(user.Email);
                         if (userRS != null)
                         {
-                            if (user.UserType.Equals("Driver"))
+                            if (userRS.UserType.Equals("Driver"))
                             {
                                 EnableDisableActivityIndicator(false);
                                 EnableDisableControls(true);
                                 var whatUser = await ShowModalType(Navigation);
-                                await Navigation.PushAsync(new DriverTabbedPage(user, whatUser));
+                                await Navigation.PushAsync(new DriverTabbedPage(userRS, whatUser));
 
                             }
                             else
                             {
                                 EnableDisableActivityIndicator(false);
                                 EnableDisableControls(true);
-                                await Navigation.PushAsync(new PassengerTabbedPage(user));
+                                await Navigation.PushAsync(new PassengerTabbedPage(userRS));
                             }
 
                             EnableDisableActivityIndicator(false);
@@ -292,6 +292,7 @@ namespace PryRutasMoviles
                         {
                             EnableDisableActivityIndicator(false);
                             EnableDisableControls(true);
+                            user.IsFromSocialNetworks = true;
                             await Navigation.PushAsync(new RegistryPage(user));
                         }
 
